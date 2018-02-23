@@ -1,0 +1,100 @@
+[Root]
+Most Recent Package=Setup Login
+
+
+[Package|Setup Login|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Desenv\SisInt\Setup_Login
+
+[Package|Setup Login|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Setup Login|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Setup Login|Files Found]
+
+[Package|Setup Login|Files Released]
+
+[Package|Setup Login|Missing Dependency Information]
+C:\WINDOWS\system32\VBxPOLITEC.ocx=
+
+[Package|Setup Login|Out-of-Date Dependency Information]
+
+[Package|Setup Login|Files Added]
+
+[Package|Setup Login|Files Removed]
+
+[Package|Setup Login|Files In Project]
+D:\Desenv\SisInt\prlogin.exe=Yes
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSADODC.OCX=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\MSINET.OCX=Yes
+C:\WINDOWS\system32\VBxPOLITEC.ocx=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\Vb6stkit.dll=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Setup Login|Configure Registry Files]
+Applicable=No
+
+[Package|Setup Login|Configure Remote Servers]
+Applicable=No
+
+[Package|Setup Login|Install Locations]
+D:\Desenv\SisInt\prlogin.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSINET.OCX=$(WinSysPath)
+C:\WINDOWS\system32\VBxPOLITEC.ocx=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\Vb6stkit.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Setup Login|Configure Shared Files]
+Applicable=Yes
+D:\Desenv\SisInt\prlogin.exe=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+
+[Package|Setup Login|Distribution]
+Type=single
+Size=
+Title=prLogin
+
+[Package|Setup Login|IconGroups]
+Group0=prLogin
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Setup Login|prLogin]
+Icon1=prLogin.exe
+Title1=prLogin
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Setup Login|Package]
+PackageFolder=D:\Desenv\SisInt\Setup_Login
+ProjectFolder=D:\Desenv\SisInt
+ServerSideCab=
+File1=D:\Desenv\SisInt\Setup_Login\setup.exe
+File2=D:\Desenv\SisInt\Setup_Login\Setup.Lst
+File3=D:\Desenv\SisInt\Setup_Login\prLogin.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

@@ -1,0 +1,420 @@
+[Root]
+Most Recent Package=Setup - SisInt - Sistema Integrado
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Sistemas\SisInt\Setup
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\COMCTL32.OCX=
+
+[Package|Standard Setup Package 1|Files Added]
+E:\INSTALACAO\MySQL\mysql-connector-odbc-3.51.12-win32\Setup_MYSQL.exe=
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+D:\Sistemas\SisInt\SisInt.exe=Yes
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\MSDATREP.OCX=Yes
+C:\WINDOWS\system32\MSADODC.OCX=Yes
+C:\WINDOWS\system32\MSDATGRD.OCX=Yes
+C:\WINDOWS\system32\MSDATLST.OCX=Yes
+C:\WINDOWS\system32\MSDBRPTR.DLL=Yes
+C:\Arquivos de programas\Arquivos comuns\Designer\MSDERUN.DLL=Yes
+C:\WINDOWS\system32\MSHFLXGD.OCX=Yes
+D:\Sistemas\SisItens\OCX\VBxPOLITEC.ocx=Yes
+C:\WINDOWS\system32\COMCTL32.OCX=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+D:\Sistemas\SisFF\OCX\Skin_Button.ocx=Yes
+D:\Sistemas\SisInt\OCX\ACTIVETEXT.OCX=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\Vb6stkit.dll=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\INSTALACAO\MySQL\mysql-connector-odbc-3.51.12-win32\Setup_MYSQL.exe=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+D:\Sistemas\SisInt\SisInt.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATREP.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\system32\MSHFLXGD.OCX=$(WinSysPath)
+D:\Sistemas\SisItens\OCX\VBxPOLITEC.ocx=$(WinSysPath)
+C:\WINDOWS\system32\COMCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+D:\Sistemas\SisFF\OCX\Skin_Button.ocx=$(WinSysPath)
+D:\Sistemas\SisInt\OCX\ACTIVETEXT.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\Vb6stkit.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\INSTALACAO\MySQL\mysql-connector-odbc-3.51.12-win32\Setup_MYSQL.exe=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+D:\Sistemas\SisInt\SisInt.exe=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+E:\INSTALACAO\MySQL\mysql-connector-odbc-3.51.12-win32\Setup_MYSQL.exe=Yes
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=Sistema Integrado
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=Sistema Integrado
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|Sistema Integrado]
+Icon1=SisInt.exe
+Title1=Sistema Integrado
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=D:\Sistemas\SisInt\Setup
+ProjectFolder=D:\Sistemas\SisInt
+ServerSideCab=
+File1=D:\Sistemas\SisInt\Setup\setup.exe
+File2=D:\Sistemas\SisInt\Setup\Setup.Lst
+File3=D:\Sistemas\SisInt\Setup\SisInt.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Setup - SisInt - Sistema Integrado|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Sistemas\SisInt (desenv)\Setup
+
+[Package|Setup - SisInt - Sistema Integrado|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Setup - SisInt - Sistema Integrado|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Setup - SisInt - Sistema Integrado|Files Found]
+prlogin.exe=E:\Sistemas\SisInt\prlogin.exe
+
+[Package|Setup - SisInt - Sistema Integrado|Files Released]
+setup_mysql.exe=
+Setup_MYSQL_Odbc.exe=
+System_cnc.ini=
+prlogin.exe=
+
+[Package|Setup - SisInt - Sistema Integrado|Missing Dependency Information]
+D:\Sistemas\SisInt\OCX\Skin_Button.ocx=
+D:\Sistemas\SisInt\OCX\ACTIVETEXT.OCX=
+D:\Sistemas\SisItens\OCX\VBxPOLITEC.ocx=
+C:\Arquivos de programas\Microsoft Office\Office\EXCEL9.OLB=
+C:\Arquivos de programas\Ahead\Nero Wave Editor\Axis.ocx=
+C:\WINDOWS\system32\Skin_Button.ocx=
+C:\WINDOWS\system32\ACTIVETEXT.OCX=
+C:\Arquivos de programas\Microsoft Office\Office10\EXCEL.EXE=
+D:\Desenv\SisInt\prlogin.exe=
+E:\Sistemas\SisInt\prlogin.exe=
+C:\WINDOWS\system32\VBxPOLITEC.ocx=
+E:\Sistemas\SisInt\OCX\AspEmail.dll=
+E:\Sistemas\SisInt\OCX\cdonts.dll=
+E:\Sistemas\SisInt\OCX\SMTPSVG.DLL=
+E:\Sistemas\SisInt\OCX\vbSendMail.dll=
+C:\Arquivos de programas\Microsoft Office\Office\MSACC9.OLB=
+D:\Sistemas\SisInt (desenv)\prlogin.exe=
+D:\Sistemas\SisInt (desenv)\OCX\AspEmail.dll=
+D:\Sistemas\SisInt (desenv)\OCX\cdonts.dll=
+D:\Sistemas\SisInt (desenv)\OCX\SMTPSVG.DLL=
+D:\Sistemas\SisInt (desenv)\OCX\vbSendMail.dll=
+C:\Windows\System32\wininet.dll=
+
+[Package|Setup - SisInt - Sistema Integrado|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\COMCTL32.OCX=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\Arquivos de programas\Microsoft Office\Office\MSCAL.OCX=
+C:\Windows\SysWOW64\COMCTL32.OCX=
+C:\Windows\SysWOW64\msstdfmt.dll=
+
+[Package|Setup - SisInt - Sistema Integrado|Files Added]
+d:\sistemas\sisint (desenv)\system.ini=
+d:\sistemas\sisint (desenv)\prlogin.exe=
+d:\sistemas\sisint (desenv)\system_cnc.ini=
+D:\Sistemas\SisInt\System_cnc.ini=
+
+[Package|Setup - SisInt - Sistema Integrado|Files Removed]
+c:\arquivos de programas\ahead\nero wave editor\axis.ocx=
+c:\arquivos de programas\microsoft office\office10\excel.exe=
+
+[Package|Setup - SisInt - Sistema Integrado|Files In Project]
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\WINDOWS\system32\Vb6stkit.dll=Yes
+C:\WINDOWS\system32\msjet40.dll=Yes
+C:\WINDOWS\system32\msjter40.dll=Yes
+C:\WINDOWS\system32\msjint40.dll=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\mswstr10.dll=Yes
+C:\WINDOWS\system32\mswdat10.dll=Yes
+C:\WINDOWS\system32\msrd2x40.dll=Yes
+C:\WINDOWS\system32\msrd3x40.dll=Yes
+C:\WINDOWS\system32\msrepl40.dll=Yes
+C:\WINDOWS\system32\msjtes40.dll=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+D:\Sistemas\SisInt (desenv)\sisint.exe=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\wininet.dll=Yes
+C:\Windows\SysWOW64\MSBIND.DLL=Yes
+C:\Windows\SysWOW64\msstdfmt.dll=Yes
+C:\Windows\SysWOW64\MSDBRPTR.DLL=Yes
+C:\Program Files (x86)\Microsoft Office\Office14\EXCEL.EXE=Yes
+C:\Program Files (x86)\Common Files\DESIGNER\MSDERUN.DLL=Yes
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\dao360.dll=Yes
+C:\Program Files (x86)\Microsoft Office\OFFICE11\MSACC.OLB=Yes
+D:\Sistemas\SisInt (desenv)\OCX\vbSendMail.dll=Yes
+D:\Sistemas\SisInt (desenv)\OCX\SMTPSVG.DLL=Yes
+D:\Sistemas\SisInt (desenv)\OCX\cdonts.dll=Yes
+D:\Sistemas\SisInt (desenv)\OCX\AspEmail.dll=Yes
+C:\Windows\SysWOW64\MSADODC.OCX=Yes
+C:\Windows\SysWOW64\MSDATGRD.OCX=Yes
+C:\Windows\SysWOW64\MSDATLST.OCX=Yes
+C:\Windows\SysWOW64\MSHFLXGD.OCX=Yes
+C:\Windows\SysWOW64\VBxPOLITEC.ocx=Yes
+C:\Windows\SysWOW64\COMCTL32.OCX=Yes
+C:\Windows\SysWOW64\TABCTL32.OCX=Yes
+C:\Windows\SysWOW64\MSFLXGRD.OCX=Yes
+C:\Windows\SysWOW64\comdlg32.ocx=Yes
+C:\Windows\SysWOW64\MSCOMCT2.OCX=Yes
+C:\Windows\SysWOW64\ACTIVETEXT.OCX=Yes
+C:\Windows\SysWOW64\Skin_Button.ocx=Yes
+C:\Windows\SysWOW64\MSINET.OCX=Yes
+C:\Windows\SysWOW64\MSMAPI32.OCX=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\Sistemas\SisInt (desenv)\System.ini=Yes
+D:\Sistemas\SisInt (desenv)\prlogin.exe=Yes
+D:\Sistemas\SisInt (desenv)\System_cnc.ini=Yes
+
+[Package|Setup - SisInt - Sistema Integrado|Configure Registry Files]
+Applicable=No
+
+[Package|Setup - SisInt - Sistema Integrado|Configure Remote Servers]
+Applicable=No
+
+[Package|Setup - SisInt - Sistema Integrado|Install Locations]
+D:\Sistemas\SisInt\SisInt.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSDATREP.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSDATLST.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\system32\MSHFLXGD.OCX=$(WinSysPath)
+D:\Sistemas\SisItens\OCX\VBxPOLITEC.ocx=$(WinSysPath)
+C:\WINDOWS\system32\COMCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+D:\Sistemas\SisFF\OCX\Skin_Button.ocx=$(WinSysPath)
+D:\Sistemas\SisInt\OCX\ACTIVETEXT.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\Vb6stkit.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\INSTALACAO\MySQL\mysql-connector-odbc-3.51.12-win32\Setup_MYSQL.exe=$(AppPath)
+D:\Sistemas\SisInt.exe=$(AppPath)
+C:\WINDOWS\system32\MSFLXGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\comdlg32.ocx=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Office\Office\MSCAL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSMASK32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\msscript.ocx=$(WinSysPath)
+C:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINDOWS\system\DAO360.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\msjet40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjter40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjint40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mswstr10.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mswdat10.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd2x40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd3x40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrepl40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjtes40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+D:\Sistemas\SisFF\OCX\VBxPOLITEC.ocx=$(WinSysPath)
+D:\Sistemas\SisFF\OCX\ACTIVETEXT.OCX=$(WinSysPath)
+D:\Sistemas\SisInt\System.ini=$(AppPath)
+C:\Arquivos de programas\Microsoft Office\Office\EXCEL9.OLB=$(WinSysPath)
+D:\Sistemas\SisCentral\OCX\Skin_Button.ocx=$(WinSysPath)
+D:\Sistemas\SisCentral\OCX\ACTIVETEXT.OCX=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\dao360.dll=$(MSDAOPath)
+D:\Sistemas\SisInt\OCX\Skin_Button.ocx=$(WinSysPath)
+D:\Desenv\SisInt\sisint.exe=$(AppPath)
+C:\Arquivos de programas\Microsoft Office\Office10\EXCEL.EXE=$(AppPath)
+C:\WINDOWS\system32\VBxPOLITEC.ocx=$(WinSysPath)
+C:\WINDOWS\system32\ACTIVETEXT.OCX=$(WinSysPath)
+C:\WINDOWS\system32\Skin_Button.ocx=$(WinSysPath)
+C:\Arquivos de programas\Ahead\Nero Wave Editor\Axis.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSINET.OCX=$(WinSysPath)
+D:\Desenv\SisInt\prlogin.exe=$(AppPath)
+D:\Desenv\Setup_MYSQL_Odbc.exe=$(AppPath)
+D:\Desenv\SisInt\OCX\VBxPOLITEC.ocx=$(WinSysPath)
+D:\Desenv\SisInt\System_cnc.ini=$(AppPath)
+D:\Sistemas\SisCentral\OCX\VBxPOLITEC.ocx=$(WinSysPath)
+D:\Sistemas\SisInt\System_cnc.ini=$(AppPath)
+E:\Sistemas\SisInt\sisint.exe=$(AppPath)
+C:\Arquivos de programas\Microsoft Office\Office\MSACC9.OLB=$(WinSysPath)
+E:\Sistemas\SisInt\OCX\vbSendMail.dll=$(WinSysPath)
+E:\Sistemas\SisInt\OCX\SMTPSVG.DLL=$(WinSysPath)
+E:\Sistemas\SisInt\OCX\cdonts.dll=$(WinSysPath)
+E:\Sistemas\SisInt\OCX\AspEmail.dll=$(WinSysPath)
+C:\WINDOWS\system32\MSMAPI32.OCX=$(WinSysPath)
+E:\Sistemas\SisInt\System.ini=$(AppPath)
+E:\Sistemas\SisInt\prlogin.exe=$(AppPath)
+E:\Sistemas\SisInt\System_cnc.ini=$(AppPath)
+D:\Sistemas\SisInt (desenv)\sisint.exe=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\wininet.dll=$(WinSysPath)
+C:\Windows\SysWOW64\MSBIND.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\msstdfmt.dll=$(WinSysPath)
+C:\Windows\SysWOW64\MSDBRPTR.DLL=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Office\Office14\EXCEL.EXE=$(AppPath)
+C:\Program Files (x86)\Common Files\DESIGNER\MSDERUN.DLL=$(CommonFiles)\designer
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\dao360.dll=$(MSDAOPath)
+C:\Program Files (x86)\Microsoft Office\OFFICE11\MSACC.OLB=$(WinSysPath)
+D:\Sistemas\SisInt (desenv)\OCX\vbSendMail.dll=$(WinSysPath)
+D:\Sistemas\SisInt (desenv)\OCX\SMTPSVG.DLL=$(WinSysPath)
+D:\Sistemas\SisInt (desenv)\OCX\cdonts.dll=$(WinSysPath)
+D:\Sistemas\SisInt (desenv)\OCX\AspEmail.dll=$(WinSysPath)
+C:\Windows\SysWOW64\MSADODC.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSDATGRD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSDATLST.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSHFLXGD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\VBxPOLITEC.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\COMCTL32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSFLXGRD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\comdlg32.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\ACTIVETEXT.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\Skin_Button.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\MSINET.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSMAPI32.OCX=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Sistemas\SisInt (desenv)\System.ini=$(AppPath)
+D:\Sistemas\SisInt (desenv)\prlogin.exe=$(AppPath)
+D:\Sistemas\SisInt (desenv)\System_cnc.ini=$(AppPath)
+
+[Package|Setup - SisInt - Sistema Integrado|Configure Shared Files]
+Applicable=Yes
+D:\Sistemas\SisInt\SisInt.exe=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+E:\INSTALACAO\MySQL\mysql-connector-odbc-3.51.12-win32\Setup_MYSQL.exe=Yes
+D:\Sistemas\SisInt.exe=Yes
+D:\Sistemas\SisInt\System.ini=Yes
+D:\Desenv\SisInt\sisint.exe=Yes
+C:\Arquivos de programas\Microsoft Office\Office10\EXCEL.EXE=No
+D:\Desenv\SisInt\prlogin.exe=Yes
+D:\Desenv\Setup_MYSQL_Odbc.exe=Yes
+D:\Desenv\SisInt\System_cnc.ini=Yes
+D:\Sistemas\SisInt\System_cnc.ini=Yes
+E:\Sistemas\SisInt\sisint.exe=No
+E:\Sistemas\SisInt\System.ini=No
+E:\Sistemas\SisInt\prlogin.exe=No
+E:\Sistemas\SisInt\System_cnc.ini=No
+D:\Sistemas\SisInt (desenv)\sisint.exe=No
+C:\Program Files (x86)\Microsoft Office\Office14\EXCEL.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+D:\Sistemas\SisInt (desenv)\System.ini=No
+D:\Sistemas\SisInt (desenv)\prlogin.exe=No
+D:\Sistemas\SisInt (desenv)\System_cnc.ini=No
+
+[Package|Setup - SisInt - Sistema Integrado|Distribution]
+Type=single
+Size=
+Title=Sistema Integrado
+
+[Package|Setup - SisInt - Sistema Integrado|IconGroups]
+Group0=Sistema Integrado
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Setup - SisInt - Sistema Integrado|Sistema Integrado]
+Icon1=prlogin.exe
+Title1=Sistema Integrado
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Setup - SisInt - Sistema Integrado|Package]
+PackageFolder=D:\Sistemas\SisInt (desenv)\Setup
+ProjectFolder=D:\Sistemas\SisInt (desenv)
+ServerSideCab=
+File1=D:\Sistemas\SisInt (desenv)\Setup\setup.exe
+File2=D:\Sistemas\SisInt (desenv)\Setup\Setup.Lst
+File3=D:\Sistemas\SisInt (desenv)\Setup\sisint.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

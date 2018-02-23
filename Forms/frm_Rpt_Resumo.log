@@ -1,0 +1,16 @@
+Line 22: Class ComctlLib.Toolbar of control TBar was not a loaded control class.
+Line 76: Class rdActiveText.ActiveText of control txt_Bto was not a loaded control class.
+Line 145: Class MSAdodcLib.Adodc of control adoGrid was not a loaded control class.
+Line 192: Class MSHierarchicalFlexGridLib.MSHFlexGrid of control Grid was not a loaded control class.
+Line 211: Class MSAdodcLib.Adodc of control adoCartao was not a loaded control class.
+Line 280: Class rdActiveText.ActiveText of control Txt_DtI was not a loaded control class.
+Line 314: Class MSAdodcLib.Adodc of control adoLogo was not a loaded control class.
+Line 361: Class rdActiveText.ActiveText of control Txt_DtF was not a loaded control class.
+Line 395: Class Skin_Button.ctr_Button of control bt_Rpt_Geral was not a loaded control class.
+Line 434: Class Skin_Button.ctr_Button of control bt_STodos was not a loaded control class.
+Line 475: Class Skin_Button.ctr_Button of control bt_RTodos was not a loaded control class.
+Line 516: Class Skin_Button.ctr_Button of control bt_STodos_Cart was not a loaded control class.
+Line 557: Class Skin_Button.ctr_Button of control bt_RTodos_Cart was not a loaded control class.
+Line 598: Class Skin_Button.ctr_Button of control bt_Consultar was not a loaded control class.
+Line 637: Class rdActiveText.ActiveText of control txt_Liq was not a loaded control class.
+Line 745: Class ComctlLib.ImageList of control IMG was not a loaded control class.

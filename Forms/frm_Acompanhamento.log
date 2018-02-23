@@ -1,0 +1,12 @@
+Line 22: Class ComctlLib.Toolbar of control TBar was not a loaded control class.
+Line 46: Class VBXPolitec.ocxProgressBarTexto of control pgBar was not a loaded control class.
+Line 170: Class rdActiveText.ActiveText of control Txt_DtI was not a loaded control class.
+Line 205: Class rdActiveText.ActiveText of control Txt_DtF was not a loaded control class.
+Line 240: Class rdActiveText.ActiveText of control Txt_DtIP was not a loaded control class.
+Line 275: Class rdActiveText.ActiveText of control Txt_DtFP was not a loaded control class.
+Line 310: Class Skin_Button.ctr_Button of control bt_Gerar was not a loaded control class.
+Line 484: Class MSAdodcLib.Adodc of control adoLogo was not a loaded control class.
+Line 531: Class MSAdodcLib.Adodc of control adoCartao was not a loaded control class.
+Line 578: Class MSDataListLib.DataCombo of control txt_Logo_P was not a loaded control class.
+Line 597: Class MSDataListLib.DataCombo of control txt_Cartao_P was not a loaded control class.
+Line 652: Class ComctlLib.ImageList of control IMG was not a loaded control class.
