@@ -1,6 +1,2 @@
 Line 16: Class ComctlLib.Toolbar of control TBar was not a loaded control class.
-Line 99: Class VBXPolitec.ocxProgressBarTexto of control pgBar was not a loaded control class.
-Line 131: Class rdActiveText.ActiveText of control Txt_DtI was not a loaded control class.
-Line 165: Class rdActiveText.ActiveText of control Txt_DtF was not a loaded control class.
-Line 199: Class Skin_Button.ctr_Button of control bt_Pesq was not a loaded control class.
-Line 238: Class ComctlLib.ImageList of control IMG was not a loaded control class.
+Line 423: Class ComctlLib.ImageList of control IMG was not a loaded control class.

@@ -1,14 +1,14 @@
 VERSION 5.00
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
-Object = "{48E59290-9880-11CF-9754-00AA00C00908}#1.0#0"; "MSINET.OCX"
+Object = "{48E59290-9880-11CF-9754-00AA00C00908}#1.0#0"; "MSINET.Ocx"
 Begin VB.MDIForm MDI 
    BackColor       =   &H8000000C&
    Caption         =   "Menu Principal"
    ClientHeight    =   6840
-   ClientLeft      =   225
-   ClientTop       =   855
+   ClientLeft      =   165
+   ClientTop       =   810
    ClientWidth     =   13470
    Icon            =   "mdi.frx":0000
    LinkTopic       =   "MDIForm1"
@@ -38,7 +38,6 @@ Begin VB.MDIForm MDI
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -65,7 +64,6 @@ Begin VB.MDIForm MDI
             ImageIndex      =   6
          EndProperty
          BeginProperty Button6 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -85,7 +83,6 @@ Begin VB.MDIForm MDI
             ImageIndex      =   7
          EndProperty
          BeginProperty Button9 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -98,7 +95,6 @@ Begin VB.MDIForm MDI
             ImageIndex      =   9
          EndProperty
          BeginProperty Button11 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -315,20 +311,16 @@ Begin VB.MDIForm MDI
             MinWidth        =   3175
             Text            =   "Usuário : "
             TextSave        =   "Usuário : "
-            Key             =   ""
             Object.Tag             =   ""
             Object.ToolTipText     =   "Usuário Logado"
          EndProperty
          BeginProperty Panel2 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             AutoSize        =   1
             Object.Width           =   10292
-            TextSave        =   ""
-            Key             =   ""
             Object.Tag             =   ""
             Object.ToolTipText     =   "Status"
          EndProperty
          BeginProperty Panel3 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
-            TextSave        =   ""
             Key             =   "progbar"
             Object.Tag             =   ""
          EndProperty
@@ -338,7 +330,6 @@ Begin VB.MDIForm MDI
             MinWidth        =   1764
             Text            =   "Ver. 0.0.0"
             TextSave        =   "Ver. 0.0.0"
-            Key             =   ""
             Object.Tag             =   ""
             Object.ToolTipText     =   "Versão do Sistema"
          EndProperty
@@ -349,7 +340,6 @@ Begin VB.MDIForm MDI
             Object.Width           =   900
             MinWidth        =   882
             TextSave        =   "CAPS"
-            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel6 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -358,7 +348,6 @@ Begin VB.MDIForm MDI
             Object.Width           =   873
             MinWidth        =   882
             TextSave        =   "NUM"
-            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel7 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -368,7 +357,6 @@ Begin VB.MDIForm MDI
             Object.Width           =   635
             MinWidth        =   617
             TextSave        =   "INS"
-            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel8 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -376,8 +364,7 @@ Begin VB.MDIForm MDI
             AutoSize        =   2
             Object.Width           =   1773
             MinWidth        =   1764
-            TextSave        =   "26/12/2014"
-            Key             =   ""
+            TextSave        =   "25/12/2018"
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel9 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -385,8 +372,7 @@ Begin VB.MDIForm MDI
             AutoSize        =   2
             Object.Width           =   1058
             MinWidth        =   1058
-            TextSave        =   "11:35"
-            Key             =   ""
+            TextSave        =   "17:27"
             Object.Tag             =   ""
          EndProperty
       EndProperty
@@ -453,11 +439,14 @@ Begin VB.MDIForm MDI
       Caption         =   "Sistema"
       Begin VB.Menu mnuAtu 
          Caption         =   "Atualização"
+         Enabled         =   0   'False
          Begin VB.Menu mnuAtBM 
             Caption         =   "Baixar Arqs. MOV"
+            Enabled         =   0   'False
          End
          Begin VB.Menu mnuAtLog 
             Caption         =   "Login"
+            Enabled         =   0   'False
          End
       End
       Begin VB.Menu mnuSisPar 

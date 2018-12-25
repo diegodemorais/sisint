@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Acompanhamento 
@@ -729,7 +729,7 @@ If (ck(6).Value <> 0 And Txt_DtIP <> "" And Txt_DtFP <> "") _
     Or (ck(3).Value <> 0 And Txt_DtF <> "") Then
     
     pgBar.Visible = True
-    pgBar.Text = "................................ Gerando Relatório ..............................."
+    pgBar.text = "................................ Gerando Relatório ..............................."
     pgBar.Value = 1
     
     If (ck(6).Value <> 0 And Txt_DtIP <> "" And Txt_DtFP <> "") Then
@@ -842,9 +842,9 @@ If (ck(6).Value <> 0 And Txt_DtIP <> "" And Txt_DtFP <> "") _
              If ck(1).Value <> 0 And txt_Cartao_P <> "" Then
                  w_SQL_Saldo = w_SQL_Saldo & " And tab_lanc.lnc_tipoc = " & txt_Cartao_P.BoundText & ""
              End If
-             
-             If ck(3).Value <> 0 And Txt_DtIP <> "" And Txt_DtFP <> "" Then
-                 w_SQL_Saldo = w_SQL_Saldo & " And tab_lanc_parc.lcp_dt_vcto >= '" & Format(Txt_DtF, "yyyy-mm-dd") & "'"
+
+             If ck(3).Value <> 0 And Txt_DtI <> "" And Txt_DtF <> "" Then
+                 w_SQL_Saldo = w_SQL_Saldo & " And tab_lanc_parc.lcp_dt_vcto >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "'" & " And tab_lanc_parc.lcp_dt_vcto <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "'"
              End If
         
         'Progresso
@@ -860,7 +860,7 @@ If (ck(6).Value <> 0 And Txt_DtIP <> "" And Txt_DtFP <> "") _
          Rel_Saldo.WindowState = vbMaximized
          
          
-         Rel_Saldo.Sections("Section4").Controls("lbDT").Caption = "A partir de " & Txt_DtF
+         Rel_Saldo.Sections("Section4").Controls("lbDT").Caption = "De " & Txt_DtI & "  à  " & Txt_DtF
          
          Rel_Saldo.Show
          
@@ -875,7 +875,7 @@ Else
     MsgBox "É necessário escolher pelo menos um tipo de relatório [Venda | Recebido | Saldo]!", vbCritical
 End If
 
-txt.Text = w_SQL_Venda
+txt.text = w_SQL_Venda
 End Sub
 
 Private Sub ck_Click(Index As Integer)
@@ -885,14 +885,13 @@ Private Sub ck_Click(Index As Integer)
         'Venda
         Txt_DtIP.Enabled = ck(6).Value
         Txt_DtFP.Enabled = ck(6).Value
-        
-        'Recebido
-        Txt_DtI.Enabled = ck(2).Value
-        
+                
         'Recebido e Saldo
         If (ck(2).Value Or ck(3).Value) Then
+            Txt_DtI.Enabled = True
             Txt_DtF.Enabled = True
         Else
+            Txt_DtI.Enabled = False
             Txt_DtF.Enabled = False
         End If
         

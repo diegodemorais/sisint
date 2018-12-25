@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDatGrd.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Baixa_Automatica 
@@ -11,14 +11,14 @@ Begin VB.Form frm_Baixa_Automatica
    ClientHeight    =   6960
    ClientLeft      =   45
    ClientTop       =   615
-   ClientWidth     =   11745
+   ClientWidth     =   12840
    Icon            =   "frm_Baixa_Automatica.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
    ScaleHeight     =   6960
-   ScaleWidth      =   11745
+   ScaleWidth      =   12840
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
@@ -26,8 +26,8 @@ Begin VB.Form frm_Baixa_Automatica
       Left            =   0
       TabIndex        =   15
       Top             =   0
-      Width           =   11745
-      _ExtentX        =   20717
+      Width           =   12840
+      _ExtentX        =   22648
       _ExtentY        =   1535
       ButtonWidth     =   1693
       ButtonHeight    =   1429
@@ -225,10 +225,10 @@ Begin VB.Form frm_Baixa_Automatica
    End
    Begin VB.TextBox txtSql 
       Height          =   375
-      Left            =   3720
+      Left            =   3480
       TabIndex        =   43
       Text            =   "[debug]"
-      Top             =   2200
+      Top             =   2280
       Visible         =   0   'False
       Width           =   6135
    End
@@ -245,7 +245,7 @@ Begin VB.Form frm_Baixa_Automatica
    End
    Begin VB.Timer Timer1 
       Interval        =   500
-      Left            =   8880
+      Left            =   10080
       Top             =   6240
    End
    Begin VB.Frame fr 
@@ -401,7 +401,7 @@ Begin VB.Form frm_Baixa_Automatica
          SubFormatType   =   1
       EndProperty
       Height          =   315
-      Left            =   7590
+      Left            =   8670
       TabIndex        =   26
       Top             =   6240
       Width           =   1155
@@ -434,7 +434,7 @@ Begin VB.Form frm_Baixa_Automatica
          SubFormatType   =   1
       EndProperty
       Height          =   315
-      Left            =   6480
+      Left            =   7560
       TabIndex        =   25
       Top             =   6240
       Width           =   1155
@@ -461,8 +461,8 @@ Begin VB.Form frm_Baixa_Automatica
       Height          =   330
       Left            =   0
       Top             =   6630
-      Width           =   11745
-      _ExtentX        =   20717
+      Width           =   12840
+      _ExtentX        =   22648
       _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
@@ -509,8 +509,8 @@ Begin VB.Form frm_Baixa_Automatica
       Left            =   0
       TabIndex        =   17
       Top             =   2520
-      Width           =   11745
-      _ExtentX        =   20717
+      Width           =   12825
+      _ExtentX        =   22622
       _ExtentY        =   6509
       _Version        =   393216
       AllowUpdate     =   0   'False
@@ -604,7 +604,7 @@ Begin VB.Form frm_Baixa_Automatica
          EndProperty
       EndProperty
       BeginProperty Column05 
-         DataField       =   "N"
+         DataField       =   "NDOC"
          Caption         =   "N. Doc"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
@@ -723,8 +723,8 @@ Begin VB.Form frm_Baixa_Automatica
          EndProperty
          BeginProperty Column05 
             Alignment       =   1
-            ColumnAllowSizing=   0   'False
-            Object.Visible         =   0   'False
+            ColumnAllowSizing=   -1  'True
+            Object.Visible         =   -1  'True
             ColumnWidth     =   1094,74
          EndProperty
          BeginProperty Column06 
@@ -768,7 +768,7 @@ Begin VB.Form frm_Baixa_Automatica
          SubFormatType   =   0
       EndProperty
       Height          =   315
-      Left            =   10830
+      Left            =   12030
       TabIndex        =   27
       Top             =   6240
       Width           =   600
@@ -792,7 +792,7 @@ Begin VB.Form frm_Baixa_Automatica
    End
    Begin rdActiveText.ActiveText txtDtAntecipado 
       Height          =   315
-      Left            =   4560
+      Left            =   4920
       TabIndex        =   44
       Top             =   1560
       Visible         =   0   'False
@@ -832,7 +832,7 @@ Begin VB.Form frm_Baixa_Automatica
       Left            =   0
       TabIndex        =   18
       Top             =   840
-      Width           =   11685
+      Width           =   12765
       Begin VB.CheckBox ckAntecipado 
          Caption         =   "Antecipar?"
          BeginProperty Font 
@@ -845,7 +845,7 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   330
-         Left            =   4200
+         Left            =   4680
          TabIndex        =   47
          Top             =   420
          Width           =   1335
@@ -1035,7 +1035,7 @@ Begin VB.Form frm_Baixa_Automatica
          EndProperty
          Height          =   330
          Index           =   5
-         Left            =   4200
+         Left            =   4680
          TabIndex        =   38
          Top             =   150
          Width           =   1935
@@ -1087,7 +1087,7 @@ Begin VB.Form frm_Baixa_Automatica
             SubFormatType   =   3
          EndProperty
          Height          =   315
-         Left            =   6180
+         Left            =   7020
          TabIndex        =   10
          Top             =   1095
          Width           =   1035
@@ -1122,7 +1122,7 @@ Begin VB.Form frm_Baixa_Automatica
             SubFormatType   =   3
          EndProperty
          Height          =   315
-         Left            =   7545
+         Left            =   8385
          TabIndex        =   11
          Top             =   1080
          Width           =   1035
@@ -1171,8 +1171,8 @@ Begin VB.Form frm_Baixa_Automatica
          Left            =   2040
          TabIndex        =   7
          Top             =   1110
-         Width           =   3810
-         _ExtentX        =   6720
+         Width           =   4170
+         _ExtentX        =   7355
          _ExtentY        =   556
          _Version        =   393216
          Enabled         =   0   'False
@@ -1185,7 +1185,7 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin rdActiveText.ActiveText txt_NDOC_P 
          Height          =   315
-         Left            =   8865
+         Left            =   9825
          TabIndex        =   12
          Top             =   510
          Width           =   1275
@@ -1209,7 +1209,7 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin rdActiveText.ActiveText txt_NResumo_P 
          Height          =   315
-         Left            =   8865
+         Left            =   9825
          TabIndex        =   13
          Top             =   1095
          Width           =   1275
@@ -1233,9 +1233,9 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin Skin_Button.ctr_Button bt_Pesq 
          Height          =   1080
-         Left            =   10320
+         Left            =   11520
          TabIndex        =   14
-         Top             =   330
+         Top             =   360
          Width           =   1155
          _ExtentX        =   2037
          _ExtentY        =   1905
@@ -1281,7 +1281,7 @@ Begin VB.Form frm_Baixa_Automatica
             SubFormatType   =   3
          EndProperty
          Height          =   315
-         Left            =   6180
+         Left            =   7020
          TabIndex        =   8
          Top             =   510
          Width           =   1035
@@ -1316,7 +1316,7 @@ Begin VB.Form frm_Baixa_Automatica
             SubFormatType   =   3
          EndProperty
          Height          =   315
-         Left            =   7545
+         Left            =   8385
          TabIndex        =   9
          Top             =   510
          Width           =   1035
@@ -1355,7 +1355,7 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   225
-         Left            =   6240
+         Left            =   7080
          TabIndex        =   40
          Top             =   270
          Width           =   2310
@@ -1375,7 +1375,7 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   270
-         Left            =   7125
+         Left            =   7965
          TabIndex        =   39
          Top             =   555
          Width           =   480
@@ -1394,7 +1394,7 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   180
-         Left            =   8865
+         Left            =   9825
          TabIndex        =   24
          Top             =   270
          Width           =   840
@@ -1413,7 +1413,7 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   165
-         Left            =   8865
+         Left            =   9825
          TabIndex        =   23
          Top             =   855
          Width           =   1365
@@ -1471,7 +1471,7 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   270
-         Left            =   7125
+         Left            =   7965
          TabIndex        =   20
          Top             =   1155
          Width           =   480
@@ -1491,7 +1491,7 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   225
-         Left            =   6195
+         Left            =   6840
          TabIndex        =   19
          Top             =   855
          Width           =   2385
@@ -1589,7 +1589,7 @@ Begin VB.Form frm_Baixa_Automatica
          Strikethrough   =   0   'False
       EndProperty
       Height          =   225
-      Left            =   9360
+      Left            =   10560
       TabIndex        =   28
       Top             =   6285
       Width           =   1335
@@ -1791,14 +1791,14 @@ wHabStatus = False
     wWhereN = wWherePG
     
     If txt_Cartao_P.BoundText = "6" Or txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19" Then
-        w_Str = "SELECT tab_lanc.lnc_tipoc, tab_lanc.lnc_num, tab_lanc_parc.lcp_ndoc as N, tab_lanc_parc.lcp_dt_vcto AS vcto, tab_tipo_cartao.tpc_desc AS cartao,  tab_lanc_parc.lcp_parc,  tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome AS Logo, tab_lanc_parc.lcp_baixa AS Baixa, tab_lanc.lnc_tef_pos AS TEF_POS, Sum(tab_lanc.lnc_vr) AS vr_compra, Sum(tab_lanc_parc.lcp_vr_bto) AS vr_bto, Sum(tab_lanc_parc.lcp_vr_liq) AS vr_liq " & _
+        w_Str = "SELECT tab_lanc.lnc_tipoc, tab_lanc.lnc_num, tab_lanc_parc.lcp_nresumo as N, tab_lanc_parc.lcp_ndoc as NDOC, tab_lanc_parc.lcp_dt_vcto AS vcto, tab_tipo_cartao.tpc_desc AS cartao,  tab_lanc_parc.lcp_parc,  tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome AS Logo, tab_lanc_parc.lcp_baixa AS Baixa, tab_lanc.lnc_tef_pos AS TEF_POS, Sum(tab_lanc.lnc_vr) AS vr_compra, Sum(tab_lanc_parc.lcp_vr_bto) AS vr_bto, Sum(tab_lanc_parc.lcp_vr_liq) AS vr_liq " & _
                 "From tab_usuario, tab_lanc, tab_forma_pg, tab_tipo_cartao, tab_lanc_parc " & _
                 "Where (tab_usuario.usl_cod =  tab_lanc.lnc_loj And tab_lanc_parc.lcp_num_lanc =  tab_lanc.lnc_num  And tab_lanc.lnc_tipoc =  tab_tipo_cartao.tpc_cod  And tab_lanc.lnc_formapg = tab_forma_pg.fpg_cod ) " & _
                 IIf(Len(w_Str) > 0, " and  (" & w_Str & ") ", "") & _
                 "GROUP BY N, tab_lanc_parc.lcp_dt_vcto, cartao, tab_lanc_parc.lcp_parc, tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, Logo, Baixa, TEF_POS " & _
                 "ORDER BY tab_lanc_parc.lcp_dt_vcto, tab_tipo_cartao.tpc_desc;"
     Else
-        w_Str = "SELECT tab_lanc.lnc_tipoc, tab_lanc.lnc_num, tab_lanc_parc.lcp_nresumo as N, tab_lanc_parc.lcp_dt_vcto AS vcto, tab_tipo_cartao.tpc_desc AS cartao,  tab_lanc_parc.lcp_parc,  tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome AS Logo, tab_lanc_parc.lcp_baixa AS Baixa, tab_lanc.lnc_tef_pos AS TEF_POS, Sum(tab_lanc.lnc_vr) AS vr_compra, Sum(tab_lanc_parc.lcp_vr_bto) AS vr_bto, Sum(tab_lanc_parc.lcp_vr_liq) AS vr_liq " & _
+        w_Str = "SELECT tab_lanc.lnc_tipoc, tab_lanc.lnc_num, tab_lanc_parc.lcp_nresumo as N, tab_lanc_parc.lcp_ndoc as NDOC, tab_lanc_parc.lcp_dt_vcto AS vcto, tab_tipo_cartao.tpc_desc AS cartao,  tab_lanc_parc.lcp_parc,  tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome AS Logo, tab_lanc_parc.lcp_baixa AS Baixa, tab_lanc.lnc_tef_pos AS TEF_POS, Sum(tab_lanc.lnc_vr) AS vr_compra, Sum(tab_lanc_parc.lcp_vr_bto) AS vr_bto, Sum(tab_lanc_parc.lcp_vr_liq) AS vr_liq " & _
                 "From tab_usuario, tab_lanc, tab_forma_pg, tab_tipo_cartao, tab_lanc_parc " & _
                 "Where (tab_usuario.usl_cod =  tab_lanc.lnc_loj And tab_lanc_parc.lcp_num_lanc =  tab_lanc.lnc_num  And tab_lanc.lnc_tipoc =  tab_tipo_cartao.tpc_cod  And tab_lanc.lnc_formapg = tab_forma_pg.fpg_cod ) " & _
                 IIf(Len(w_Str) > 0, " and  (" & w_Str & ") ", "") & _

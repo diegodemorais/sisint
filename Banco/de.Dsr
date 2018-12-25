@@ -1,11 +1,11 @@
 VERSION 5.00
 Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de 
-   ClientHeight    =   13995
+   ClientHeight    =   14430
    ClientLeft      =   1080
    ClientTop       =   1500
-   ClientWidth     =   19905
-   _ExtentX        =   35110
-   _ExtentY        =   24686
+   ClientWidth     =   31965
+   _ExtentX        =   56383
+   _ExtentY        =   25453
    FolderFlags     =   3
    TypeLibGuid     =   "{A5DC9AF5-9235-11D1-B067-00DD01144174}"
    TypeInfoGuid    =   "{A5DC9AF6-9235-11D1-B067-00DD01144174}"
@@ -19,7 +19,6 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       ConnectionTimeout=   100000
       SourceOfData    =   3
       ConnectionSource=   $"de.dsx":0000
-      Expanded        =   -1  'True
       QuoteChar       =   96
       SeparatorChar   =   46
    EndProperty
@@ -807,7 +806,6 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandType     =   1
       Grouping        =   -1  'True
       GroupingName    =   "sqlSorocredFicha_Grouping"
-      Expanded        =   -1  'True
       SummaryExpanded =   -1  'True
       DetailExpanded  =   -1  'True
       IsRSReturning   =   -1  'True

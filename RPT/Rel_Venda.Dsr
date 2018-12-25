@@ -9,7 +9,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Venda
    _ExtentX        =   23151
    _ExtentY        =   14896
    _Version        =   393216
-   _DesignerVersion=   100688210
+   _DesignerVersion=   100688423
    ReportWidth     =   11175
    BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
       Name            =   "Arial"
@@ -226,15 +226,15 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Venda
    BeginProperty Section3 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
       _Version        =   393216
       Name            =   "Section1"
-      Object.Height          =   360
+      Object.Height          =   375
       NumControls     =   6
       ItemType0       =   4
       BeginProperty Item0 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Text2"
-         Object.Left            =   2985
+         Object.Left            =   960
          Object.Top             =   60
-         Object.Width           =   1740
+         Object.Width           =   3765
          Object.Height          =   255
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
@@ -291,9 +291,9 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Venda
       BeginProperty Item2 {1C13A8E4-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Shape1"
-         Object.Left            =   2640
+         Object.Left            =   870
          Object.Top             =   345
-         Object.Width           =   7980
+         Object.Width           =   9750
          BackColor       =   0
          BackStyle       =   1
       EndProperty
