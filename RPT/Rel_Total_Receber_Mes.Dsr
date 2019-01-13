@@ -11,7 +11,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Total_Receber_Mes
    _ExtentX        =   23072
    _ExtentY        =   11800
    _Version        =   393216
-   _DesignerVersion=   100688210
+   _DesignerVersion=   100688423
    ReportWidth     =   10995
    BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
       Name            =   "Arial"
@@ -424,7 +424,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Total_Receber_Mes
          Name            =   "Text3"
          Object.Left            =   1110
          Object.Top             =   30
-         Object.Width           =   495
+         Object.Width           =   700
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
@@ -685,7 +685,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Total_Receber_Mes
          _Version        =   393216
          Name            =   "Text7"
          Object.Left            =   10140
-         Object.Width           =   495
+         Object.Width           =   700
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
