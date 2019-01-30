@@ -9,7 +9,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
    _ExtentX        =   22622
    _ExtentY        =   8678
    _Version        =   393216
-   _DesignerVersion=   100688210
+   _DesignerVersion=   100688423
    ReportWidth     =   11265
    BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
       Name            =   "Arial"
@@ -115,8 +115,8 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
    BeginProperty Section1 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
       _Version        =   393216
       Name            =   "Section2"
-      Object.Height          =   363
-      NumControls     =   11
+      Object.Height          =   378
+      NumControls     =   12
       ItemType0       =   3
       BeginProperty Item0 {1C13A8E1-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
@@ -146,7 +146,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
          Name            =   "Label13"
          Object.Left            =   1770
          Object.Top             =   123
-         Object.Width           =   900
+         Object.Width           =   810
          Object.Height          =   237
          Object.BorderStyle     =   1
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -190,9 +190,9 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item3 {1C13A8E1-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Label15"
-         Object.Left            =   2655
+         Object.Left            =   2580
          Object.Top             =   120
-         Object.Width           =   1380
+         Object.Width           =   950
          Object.Height          =   240
          Object.BorderStyle     =   1
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -213,10 +213,10 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item4 {1C13A8E1-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Label16"
-         Object.Left            =   6915
-         Object.Top             =   123
+         Object.Left            =   7185
+         Object.Top             =   120
          Object.Width           =   780
-         Object.Height          =   237
+         Object.Height          =   240
          Object.BorderStyle     =   1
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Times New Roman"
@@ -236,10 +236,10 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item5 {1C13A8E1-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Label17"
-         Object.Left            =   5775
-         Object.Top             =   123
+         Object.Left            =   6045
+         Object.Top             =   120
          Object.Width           =   1140
-         Object.Height          =   237
+         Object.Height          =   240
          Object.BorderStyle     =   1
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Times New Roman"
@@ -282,10 +282,10 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item7 {1C13A8E1-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Label19"
-         Object.Left            =   7680
-         Object.Top             =   123
+         Object.Left            =   7950
+         Object.Top             =   120
          Object.Width           =   1170
-         Object.Height          =   237
+         Object.Height          =   240
          Object.BorderStyle     =   1
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Times New Roman"
@@ -328,9 +328,9 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item9 {1C13A8E1-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Label21"
-         Object.Left            =   8835
+         Object.Left            =   9090
          Object.Top             =   120
-         Object.Width           =   1275
+         Object.Width           =   1020
          Object.Height          =   240
          Object.BorderStyle     =   1
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -351,9 +351,9 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item10 {1C13A8E1-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Label22"
-         Object.Left            =   4005
+         Object.Left            =   4380
          Object.Top             =   120
-         Object.Width           =   1770
+         Object.Width           =   1665
          Object.Height          =   240
          Object.BorderStyle     =   1
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -370,13 +370,36 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
          Object.Caption         =   "Cartao"
          Alignment       =   2
       EndProperty
+      ItemType11      =   3
+      BeginProperty Item11 {1C13A8E1-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "Label12"
+         Object.Left            =   3510
+         Object.Top             =   120
+         Object.Width           =   945
+         Object.Height          =   240
+         Object.BorderStyle     =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Times New Roman"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BackColor       =   14737632
+         BackStyle       =   1
+         Object.Caption         =   "N. Doc"
+         Alignment       =   2
+      EndProperty
    EndProperty
    SectionCode2    =   4
    BeginProperty Section2 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
       _Version        =   393216
       Name            =   "Section1"
       Object.Height          =   240
-      NumControls     =   14
+      NumControls     =   15
       ItemType0       =   4
       BeginProperty Item0 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
@@ -465,8 +488,8 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item3 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Text4"
-         Object.Left            =   8835
-         Object.Width           =   1275
+         Object.Left            =   9090
+         Object.Width           =   1035
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
@@ -493,7 +516,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item4 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Text5"
-         Object.Left            =   7560
+         Object.Left            =   7860
          Object.Width           =   1470
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -521,7 +544,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item5 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Text6"
-         Object.Left            =   6555
+         Object.Left            =   6825
          Object.Width           =   1530
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -549,7 +572,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item6 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Text7"
-         Object.Left            =   5415
+         Object.Left            =   5685
          Object.Width           =   1545
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -577,8 +600,8 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item7 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Text8"
-         Object.Left            =   4005
-         Object.Width           =   1770
+         Object.Left            =   4560
+         Object.Width           =   1530
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
@@ -605,8 +628,8 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
       BeginProperty Item8 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
          _Version        =   393216
          Name            =   "Text9"
-         Object.Left            =   2655
-         Object.Width           =   1380
+         Object.Left            =   2580
+         Object.Width           =   975
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
@@ -634,7 +657,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
          _Version        =   393216
          Name            =   "Text10"
          Object.Left            =   1770
-         Object.Width           =   930
+         Object.Width           =   840
          Object.Height          =   240
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
@@ -706,6 +729,34 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} Rel_Baixa_Automatica
          Name            =   "Line3"
          Object.Left            =   11265
          Object.Height          =   240
+      EndProperty
+      ItemType14      =   4
+      BeginProperty Item14 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "Text2"
+         Object.Left            =   3525
+         Object.Width           =   975
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "NDOC"
+         Alignment       =   2
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   "dd/MM/yy"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1046
+            SubFormatType   =   0
+         EndProperty
       EndProperty
    EndProperty
    SectionCode3    =   7
