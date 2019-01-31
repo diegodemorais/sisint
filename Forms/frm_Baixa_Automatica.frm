@@ -1829,13 +1829,13 @@ txtSql.text = w_Str
     End If
     
     grid.Visible = False
-    If txt_Cartao_P.BoundText = 6 Or txt_Cartao_P.BoundText = 17 Or txt_Cartao_P.BoundText = 18 Or txt_Cartao_P.BoundText = 19 Then
-        grid.Columns(4).Visible = False
-        grid.Columns(5).Visible = True
-    Else
-        grid.Columns(4).Visible = True
-        grid.Columns(5).Visible = False
-    End If
+    'If txt_Cartao_P.BoundText = 6 Or txt_Cartao_P.BoundText = 17 Or txt_Cartao_P.BoundText = 18 Or txt_Cartao_P.BoundText = 19 Then
+    '    grid.Columns(4).Visible = False
+    '    grid.Columns(5).Visible = True
+    'Else
+    '    grid.Columns(4).Visible = True
+    '    grid.Columns(5).Visible = False
+    'End If
     grid.Visible = True
     
 wHabStatus = True
