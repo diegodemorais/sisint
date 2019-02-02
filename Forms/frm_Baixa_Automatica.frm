@@ -1795,14 +1795,14 @@ wHabStatus = False
                 "From tab_usuario, tab_lanc, tab_forma_pg, tab_tipo_cartao, tab_lanc_parc " & _
                 "Where (tab_usuario.usl_cod =  tab_lanc.lnc_loj And tab_lanc_parc.lcp_num_lanc =  tab_lanc.lnc_num  And tab_lanc.lnc_tipoc =  tab_tipo_cartao.tpc_cod  And tab_lanc.lnc_formapg = tab_forma_pg.fpg_cod ) " & _
                 IIf(Len(w_Str) > 0, " and  (" & w_Str & ") ", "") & _
-                "GROUP BY N, tab_lanc_parc.lcp_dt_vcto, cartao, tab_lanc_parc.lcp_parc, tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, Logo, Baixa, TEF_POS " & _
+                "GROUP BY N, NDOC, tab_lanc_parc.lcp_dt_vcto, cartao, tab_lanc_parc.lcp_parc, tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, Logo, Baixa, TEF_POS " & _
                 "ORDER BY tab_lanc_parc.lcp_dt_vcto, tab_tipo_cartao.tpc_desc;"
     Else
         w_Str = "SELECT tab_lanc.lnc_tipoc, tab_lanc.lnc_num, tab_lanc_parc.lcp_nresumo as N, tab_lanc_parc.lcp_ndoc as NDOC, tab_lanc_parc.lcp_dt_vcto AS vcto, tab_tipo_cartao.tpc_desc AS cartao,  tab_lanc_parc.lcp_parc,  tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome AS Logo, tab_lanc_parc.lcp_baixa AS Baixa, tab_lanc.lnc_tef_pos AS TEF_POS, Sum(tab_lanc.lnc_vr) AS vr_compra, Sum(tab_lanc_parc.lcp_vr_bto) AS vr_bto, Sum(tab_lanc_parc.lcp_vr_liq) AS vr_liq " & _
                 "From tab_usuario, tab_lanc, tab_forma_pg, tab_tipo_cartao, tab_lanc_parc " & _
                 "Where (tab_usuario.usl_cod =  tab_lanc.lnc_loj And tab_lanc_parc.lcp_num_lanc =  tab_lanc.lnc_num  And tab_lanc.lnc_tipoc =  tab_tipo_cartao.tpc_cod  And tab_lanc.lnc_formapg = tab_forma_pg.fpg_cod ) " & _
                 IIf(Len(w_Str) > 0, " and  (" & w_Str & ") ", "") & _
-                "GROUP BY N, tab_lanc_parc.lcp_dt_vcto, cartao, tab_lanc_parc.lcp_parc, tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, Logo, Baixa, TEF_POS " & _
+                "GROUP BY N, NDOC, tab_lanc_parc.lcp_dt_vcto, cartao, tab_lanc_parc.lcp_parc, tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, Logo, Baixa, TEF_POS " & _
                 "ORDER BY tab_lanc_parc.lcp_dt_vcto, tab_tipo_cartao.tpc_desc;"
     End If
 
