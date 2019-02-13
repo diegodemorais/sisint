@@ -1888,20 +1888,21 @@ End Sub
 Private Sub bt_Sal_F_Click()
 Dim wAdo As ADODB.Recordset
    
-    If txt_Cartao_P = "" Then
-        wCampo = "lcp_nresumo"
-    Else
-        If txt_Cartao_P.BoundText = 6 Or txt_Cartao_P.BoundText = 17 Or txt_Cartao_P.BoundText = 18 Or txt_Cartao_P.BoundText = 19 Then
-            wCampo = "lcp_ndoc"
-        Else
-            wCampo = "lcp_nresumo"
-        End If
-    End If
+   'If txt_Cartao_P = "" Then
+    '    wCampo = "lcp_nresumo"
+    'Else
+    '    If txt_Cartao_P.BoundText = 6 Or txt_Cartao_P.BoundText = 17 Or txt_Cartao_P.BoundText = 18 Or txt_Cartao_P.BoundText = 19 Then
+    '        wCampo = "lcp_ndoc"
+    '    Else
+    '        wCampo = "lcp_nresumo"
+    '    End If
+    'End If
     w_Str = "SELECT tab_lanc_parc.lcp_num " & _
             "From tab_lanc, tab_lanc_parc " & _
             "Where (tab_lanc_parc.lcp_num_lanc =  tab_lanc.lnc_num) " & _
             " and tab_lanc_parc.lcp_parc = " & adoReg.Recordset.Fields("lcp_parc") & _
-            " and tab_lanc_parc." & wCampo & " = '" & adoReg.Recordset.Fields("N") & _
+            " and tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("N") & _
+            "' and tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("NDOC") & _
             "' and tab_lanc.lnc_loj = " & adoReg.Recordset.Fields("lnc_loj") & _
             " and tab_lanc.lnc_tipoc = " & adoReg.Recordset.Fields("lnc_tipoc") & _
             " and tab_lanc.lnc_dt_vnd = '" & adoReg.Recordset.Fields("lnc_dt_vnd") & "'"
@@ -2085,13 +2086,14 @@ On Error Resume Next
     w_Pos = adoReg.Recordset.AbsolutePosition - 1
     Dim wAdo As ADODB.Recordset
     
-    If txt_Cartao_P.BoundText = "6" Or txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19" Then
-        wCampo = "tab_lanc_parc.lcp_ndoc"
-    Else
-        wCampo = "tab_lanc_parc.lcp_nresumo"
-    End If
+    'If txt_Cartao_P.BoundText = "6" Or txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19" Then
+    '    wCampo = "tab_lanc_parc.lcp_ndoc"
+    'Else
+    '    wCampo = "tab_lanc_parc.lcp_nresumo"
+    'End If
     
-    Set wAdo = ExecuteSQL("SELECT lcp_num FROM tab_lanc , tab_lanc_parc WHERE tab_lanc.lnc_num = tab_lanc_parc.lcp_num_lanc AND " & wCampo & "  = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc.lnc_tipoc = " & adoReg.Recordset.Fields("lnc_tipoc") & " AND tab_lanc.lnc_loj = " & adoReg.Recordset.Fields("lnc_loj") & " AND lcp_Baixa = '0000-00-00' AND tab_lanc_parc.lcp_parc = " & adoReg.Recordset.Fields("lcp_parc") & " AND tab_lanc_parc.lcp_dt_vcto = '" & adoReg.Recordset.Fields("vcto") & "'").Clone
+    'Set wAdo = ExecuteSQL("SELECT lcp_num FROM tab_lanc , tab_lanc_parc WHERE tab_lanc.lnc_num = tab_lanc_parc.lcp_num_lanc AND " & wCampo & "  = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc.lnc_tipoc = " & adoReg.Recordset.Fields("lnc_tipoc") & " AND tab_lanc.lnc_loj = " & adoReg.Recordset.Fields("lnc_loj") & " AND lcp_Baixa = '0000-00-00' AND tab_lanc_parc.lcp_parc = " & adoReg.Recordset.Fields("lcp_parc") & " AND tab_lanc_parc.lcp_dt_vcto = '" & adoReg.Recordset.Fields("vcto") & "'").Clone
+    Set wAdo = ExecuteSQL("SELECT lcp_num FROM tab_lanc , tab_lanc_parc WHERE tab_lanc.lnc_num = tab_lanc_parc.lcp_num_lanc AND tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("ndoc") & "'AND tab_lanc.lnc_tipoc = " & adoReg.Recordset.Fields("lnc_tipoc") & " AND tab_lanc.lnc_loj = " & adoReg.Recordset.Fields("lnc_loj") & " AND lcp_Baixa = '0000-00-00' AND tab_lanc_parc.lcp_parc = " & adoReg.Recordset.Fields("lcp_parc") & " AND tab_lanc_parc.lcp_dt_vcto = '" & adoReg.Recordset.Fields("vcto") & "'").Clone
     'txtSql.Text = "SELECT lcp_num FROM tab_lanc , tab_lanc_parc WHERE tab_lanc.lnc_num = tab_lanc_parc.lcp_num_lanc AND " & wCampo & "  = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc.lnc_tipoc = " & adoReg.Recordset.Fields("lnc_tipoc") & " AND tab_lanc.lnc_loj = " & adoReg.Recordset.Fields("lnc_loj") & " AND lcp_Baixa = '0000-00-00' AND tab_lanc_parc.lcp_parc = " & adoReg.Recordset.Fields("lcp_parc")
     'txtSql.Visible = True
     Do While Not wAdo.EOF
@@ -2100,7 +2102,7 @@ On Error Resume Next
     Loop
     
     If Not IsEmpty(wNum) Then
-        Call ExecuteSQL("UPDATE tab_lanc_parc SET lcp_Baixa = '" & IIf(wAntecipado, Format(txtDtAntecipado, "yyyy-mm-dd"), Format(adoReg.Recordset.Fields("VCTO"), "yyyy-mm-dd")) & "', lcp_usu_baixa = " & w_Usu_Cod & " WHERE (" & wCampo & " = '" & adoReg.Recordset.Fields("N") & "' AND lcp_num IN(" & wNum & "))")
+        Call ExecuteSQL("UPDATE tab_lanc_parc SET lcp_Baixa = '" & IIf(wAntecipado, Format(txtDtAntecipado, "yyyy-mm-dd"), Format(adoReg.Recordset.Fields("VCTO"), "yyyy-mm-dd")) & "', lcp_usu_baixa = " & w_Usu_Cod & " WHERE (tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("ndoc") & "' AND lcp_num IN(" & wNum & "))")
         bt_Pesq_Click
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
         grid.SetFocus
@@ -2135,13 +2137,13 @@ On Error Resume Next
     
     Dim wAdo As ADODB.Recordset
     
-    If txt_Cartao_P.BoundText = "6" Or txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19" Then
-        wCampo = "tab_lanc_parc.lcp_ndoc"
-    Else
-        wCampo = "lcp_nresumo"
-    End If
+    'If txt_Cartao_P.BoundText = "6" Or txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19" Then
+    '    wCampo = "tab_lanc_parc.lcp_ndoc"
+    'Else
+    '    wCampo = "tab_lanc_parc.lcp_nresumo"
+    'End If
     
-    Set wAdo = ExecuteSQL("SELECT lcp_num FROM tab_lanc , tab_lanc_parc WHERE tab_lanc.lnc_num = tab_lanc_parc.lcp_num_lanc AND " & wCampo & " = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc.lnc_tipoc = " & adoReg.Recordset.Fields("lnc_tipoc") & " AND tab_lanc.lnc_loj = " & adoReg.Recordset.Fields("lnc_loj") & " AND lcp_Baixa <> '0000-00-00'  AND tab_lanc_parc.lcp_parc = " & adoReg.Recordset.Fields("lcp_parc")).Clone
+    Set wAdo = ExecuteSQL("SELECT lcp_num FROM tab_lanc , tab_lanc_parc WHERE tab_lanc.lnc_num = tab_lanc_parc.lcp_num_lanc AND tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("ndoc") & "' AND tab_lanc.lnc_tipoc = " & adoReg.Recordset.Fields("lnc_tipoc") & " AND tab_lanc.lnc_loj = " & adoReg.Recordset.Fields("lnc_loj") & " AND lcp_Baixa <> '0000-00-00'  AND tab_lanc_parc.lcp_parc = " & adoReg.Recordset.Fields("lcp_parc")).Clone
    
     Do While Not wAdo.EOF
         wNum = wNum & IIf(Len(wNum) > 0, ",", "") & wAdo.Fields(0)
@@ -2150,7 +2152,7 @@ On Error Resume Next
     
     
     If Not IsEmpty(wNum) Then
-        Call ExecuteSQL("UPDATE tab_lanc_parc SET lcp_Baixa = '0000-00-00' WHERE (" & wCampo & " = '" & adoReg.Recordset.Fields("n") & "' AND lcp_num IN(" & wNum & "))")
+        Call ExecuteSQL("UPDATE tab_lanc_parc SET lcp_Baixa = '0000-00-00' WHERE (tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("ndoc") & "' AND lcp_num IN(" & wNum & "))")
         bt_Pesq_Click
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
         grid.SetFocus
