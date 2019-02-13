@@ -44,7 +44,6 @@ Begin VB.Form frm_Baixa_Automatica
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -65,7 +64,6 @@ Begin VB.Form frm_Baixa_Automatica
             ImageIndex      =   9
          EndProperty
          BeginProperty Button5 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -1901,8 +1899,8 @@ Dim wAdo As ADODB.Recordset
             "From tab_lanc, tab_lanc_parc " & _
             "Where (tab_lanc_parc.lcp_num_lanc =  tab_lanc.lnc_num) " & _
             " and tab_lanc_parc.lcp_parc = " & adoReg.Recordset.Fields("lcp_parc") & _
-            " and tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("N") & _
-            "' and tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("NDOC") & _
+            " and tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("N") & _
+            "' and tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("NDOC") & _
             "' and tab_lanc.lnc_loj = " & adoReg.Recordset.Fields("lnc_loj") & _
             " and tab_lanc.lnc_tipoc = " & adoReg.Recordset.Fields("lnc_tipoc") & _
             " and tab_lanc.lnc_dt_vnd = '" & adoReg.Recordset.Fields("lnc_dt_vnd") & "'"
