@@ -8,17 +8,17 @@ Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Lancamento 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Lançamentos"
-   ClientHeight    =   6270
+   ClientHeight    =   6855
    ClientLeft      =   45
    ClientTop       =   615
-   ClientWidth     =   11265
+   ClientWidth     =   11340
    Icon            =   "frm_Lancamento.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   6270
-   ScaleWidth      =   11265
+   ScaleHeight     =   6855
+   ScaleWidth      =   11340
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
@@ -26,8 +26,8 @@ Begin VB.Form frm_Lancamento
       Left            =   0
       TabIndex        =   11
       Top             =   0
-      Width           =   11265
-      _ExtentX        =   19870
+      Width           =   11340
+      _ExtentX        =   20003
       _ExtentY        =   1535
       ButtonWidth     =   1667
       ButtonHeight    =   1429
@@ -44,6 +44,7 @@ Begin VB.Form frm_Lancamento
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -56,6 +57,7 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -75,6 +77,7 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -118,9 +121,9 @@ Begin VB.Form frm_Lancamento
    End
    Begin Skin_Button.ctr_Button txt_Calc 
       Height          =   615
-      Left            =   8760
+      Left            =   8880
       TabIndex        =   10
-      Top             =   5280
+      Top             =   5880
       Width           =   2175
       _ExtentX        =   3836
       _ExtentY        =   1085
@@ -156,13 +159,13 @@ Begin VB.Form frm_Lancamento
       VALUE           =   0   'False
    End
    Begin MSHierarchicalFlexGridLib.MSHFlexGrid Grid 
-      Height          =   2715
+      Height          =   3195
       Left            =   5505
       TabIndex        =   32
       Top             =   1200
       Width           =   5355
       _ExtentX        =   9446
-      _ExtentY        =   4789
+      _ExtentY        =   5636
       _Version        =   393216
       Cols            =   7
       ScrollBars      =   2
@@ -385,7 +388,7 @@ Begin VB.Form frm_Lancamento
       Height          =   315
       Left            =   9600
       TabIndex        =   6
-      Top             =   4800
+      Top             =   5280
       Width           =   675
       _ExtentX        =   1191
       _ExtentY        =   556
@@ -415,10 +418,10 @@ Begin VB.Form frm_Lancamento
          SubFormatType   =   2
       EndProperty
       Height          =   315
-      Left            =   5745
+      Left            =   6360
       TabIndex        =   14
       TabStop         =   0   'False
-      Top             =   4080
+      Top             =   4560
       Width           =   1065
       _ExtentX        =   1879
       _ExtentY        =   556
@@ -450,10 +453,10 @@ Begin VB.Form frm_Lancamento
          SubFormatType   =   5
       EndProperty
       Height          =   315
-      Left            =   9885
+      Left            =   9765
       TabIndex        =   15
       TabStop         =   0   'False
-      Top             =   4065
+      Top             =   4560
       Width           =   945
       _ExtentX        =   1667
       _ExtentY        =   556
@@ -630,9 +633,9 @@ Begin VB.Form frm_Lancamento
          SubFormatType   =   3
       EndProperty
       Height          =   315
-      Left            =   5760
+      Left            =   6360
       TabIndex        =   5
-      Top             =   4800
+      Top             =   5280
       Visible         =   0   'False
       Width           =   1035
       _ExtentX        =   1826
@@ -681,9 +684,9 @@ Begin VB.Form frm_Lancamento
          SubFormatType   =   1
       EndProperty
       Height          =   315
-      Left            =   7350
+      Left            =   7320
       TabIndex        =   9
-      Top             =   5490
+      Top             =   6240
       Width           =   1305
       _ExtentX        =   2302
       _ExtentY        =   556
@@ -719,12 +722,12 @@ Begin VB.Form frm_Lancamento
    End
    Begin rdActiveText.ActiveText txt_NResumo 
       Height          =   315
-      Left            =   4680
+      Left            =   1680
       TabIndex        =   8
-      Top             =   5505
+      Top             =   6225
       Visible         =   0   'False
-      Width           =   1395
-      _ExtentX        =   2461
+      Width           =   4155
+      _ExtentX        =   7329
       _ExtentY        =   556
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -736,7 +739,7 @@ Begin VB.Form frm_Lancamento
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      MaxLength       =   20
+      MaxLength       =   40
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
@@ -753,9 +756,9 @@ Begin VB.Form frm_Lancamento
          SubFormatType   =   1
       EndProperty
       Height          =   315
-      Left            =   5760
+      Left            =   6360
       TabIndex        =   37
-      Top             =   4800
+      Top             =   5280
       Visible         =   0   'False
       Width           =   1305
       _ExtentX        =   2302
@@ -788,9 +791,9 @@ Begin VB.Form frm_Lancamento
          Strikethrough   =   0   'False
       EndProperty
       Height          =   255
-      Left            =   4200
+      Left            =   4800
       TabIndex        =   38
-      Top             =   4875
+      Top             =   5400
       Visible         =   0   'False
       Width           =   1455
    End
@@ -808,9 +811,9 @@ Begin VB.Form frm_Lancamento
          Strikethrough   =   0   'False
       EndProperty
       Height          =   255
-      Left            =   3150
+      Left            =   150
       TabIndex        =   36
-      Top             =   5565
+      Top             =   6285
       Visible         =   0   'False
       Width           =   1425
    End
@@ -828,9 +831,9 @@ Begin VB.Form frm_Lancamento
          Strikethrough   =   0   'False
       EndProperty
       Height          =   255
-      Left            =   5835
+      Left            =   5760
       TabIndex        =   34
-      Top             =   5565
+      Top             =   6240
       Width           =   1455
    End
    Begin VB.Label Label9 
@@ -848,7 +851,7 @@ Begin VB.Form frm_Lancamento
       Height          =   225
       Left            =   10335
       TabIndex        =   31
-      Top             =   4860
+      Top             =   5340
       Width           =   555
    End
    Begin VB.Label lbPre 
@@ -865,9 +868,9 @@ Begin VB.Form frm_Lancamento
          Strikethrough   =   0   'False
       EndProperty
       Height          =   240
-      Left            =   4395
+      Left            =   4920
       TabIndex        =   30
-      Top             =   4875
+      Top             =   5400
       Visible         =   0   'False
       Width           =   1305
    End
@@ -961,9 +964,9 @@ Begin VB.Form frm_Lancamento
          Strikethrough   =   0   'False
       EndProperty
       Height          =   255
-      Left            =   9015
+      Left            =   8895
       TabIndex        =   21
-      Top             =   4140
+      Top             =   4680
       Width           =   810
    End
    Begin VB.Label Label5 
@@ -980,9 +983,9 @@ Begin VB.Form frm_Lancamento
          Strikethrough   =   0   'False
       EndProperty
       Height          =   255
-      Left            =   4680
+      Left            =   5280
       TabIndex        =   20
-      Top             =   4155
+      Top             =   4680
       Width           =   975
    End
    Begin VB.Label Label4 
@@ -1001,7 +1004,7 @@ Begin VB.Form frm_Lancamento
       Height          =   195
       Left            =   8235
       TabIndex        =   19
-      Top             =   4860
+      Top             =   5400
       Width           =   1305
    End
    Begin VB.Label Label3 
@@ -1062,8 +1065,8 @@ Begin VB.Form frm_Lancamento
       Width           =   1215
    End
    Begin VB.Shape Shape1 
-      Height          =   5175
-      Left            =   120
+      Height          =   5775
+      Left            =   240
       Top             =   960
       Width           =   10935
    End
@@ -1424,6 +1427,27 @@ On Error GoTo err1
     txt_tx_po = "0"
     
     Set adoForma.Recordset = ExecuteSQL("SELECT tab_forma_pg.fpg_cod, tab_forma_pg.fpg_desc, tab_forma_pg.fpg_qt_parc, tab_forma_pg.fpg_Tipo FROM tab_forma_pg, tab_tipo_forma WHERE (tab_forma_pg.fpg_cod = tab_tipo_forma.fpg_cod) AND (tab_tipo_forma.tpc_cod = '" & txt_tipoC & "') ORDER BY tab_forma_pg.fpg_desc").Clone
+
+
+    If txt_tipoC = "7" Or txt_tipoC = "6" Or txt_tipoC = "29" Or txt_tipoC = "31" Then
+        lbResumo.Caption = "Cliente"
+        lbResumo.Visible = True
+        txt_NResumo.Visible = True
+    Else
+        lbResumo.Caption = "Nº Resumo"
+        If Not w_Usu_Tipo = "L" Then
+            lbResumo.Visible = True
+            txt_NResumo.Visible = True
+        Else
+            lbResumo.Visible = False
+            txt_NResumo.Visible = False
+        End If
+        
+    End If
+    
+
+    
+
 
     Format_Grid
 
