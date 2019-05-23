@@ -44,7 +44,6 @@ Begin VB.Form frm_Lancamento
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -57,7 +56,6 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -77,7 +75,6 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -1244,7 +1241,8 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_NDOC <> "" And grid.TextMatrix(1, 2) <> "" Th
     
     'Salvar o Cabeçalho
     w_NRESUMO = InversaDate()   'IIf(txt_Desc_Parc = "N", 0, 0)
-    If w_NRESUMO = 0 And txt_NResumo <> "0" Then w_NRESUMO = txt_NResumo
+    'If w_NRESUMO = 0 And txt_NResumo <> "0" Then w_NRESUMO = txt_NResumo
+    If txt_NResumo <> "0" Then w_NRESUMO = txt_NResumo
     
     strSQL = "INSERT INTO tab_lanc(lnc_ndoc, lnc_loj, lnc_tipoc, lnc_formapg, lnc_dt_vnd, lnc_tx,  " _
            & "lnc_tx_fixo, lnc_tx_po, lnc_usu, lnc_dt_lanc, lnc_nresumo,lnc_vr,lnc_tipo, lnc_vr_liq, lnc_tef_pos) " _
