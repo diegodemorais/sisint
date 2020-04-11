@@ -1,2 +1,2 @@
-Line 23: Class ComctlLib.Toolbar of control TBar was not a loaded control class.
-Line 799: Class ComctlLib.ImageList of control IMG was not a loaded control class.
+Line 667: Property ColumnWidth in Column00 had an invalid value.
+Line 671: Property ColumnWidth in Column01 had an invalid value.

@@ -1,2 +1,4 @@
-Line 22: Class ComctlLib.Toolbar of control TBar was not a loaded control class.
-Line 661: Class ComctlLib.ImageList of control IMG was not a loaded control class.
+Line 203: Property FontSize in Txt_DtI had an invalid value.
+Line 238: Property FontSize in Txt_DtF had an invalid value.
+Line 273: Property FontSize in Txt_DtIP had an invalid value.
+Line 308: Property FontSize in Txt_DtFP had an invalid value.

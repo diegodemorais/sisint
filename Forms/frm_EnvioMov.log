@@ -1,5 +1,1 @@
-Line 21: Class MSMAPI.MAPIMessages of control MAPIMessages1 was not a loaded control class.
-Line 33: Class MSMAPI.MAPISession of control MAPISession1 was not a loaded control class.
-Line 43: Class VBXPolitec.ocxProgressBarTexto of control pbar was not a loaded control class.
-Line 75: Class Skin_Button.ctr_Button of control bt_Enviar was not a loaded control class.
-Line 114: Class rdActiveText.ActiveText of control txt_dt was not a loaded control class.
+Line 146: Property FontSize in txt_dt had an invalid value.

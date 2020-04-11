@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
@@ -22,13 +22,13 @@ Begin VB.Form frm_Banco
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   840
       Left            =   0
       TabIndex        =   11
       Top             =   0
       Width           =   7695
       _ExtentX        =   13573
-      _ExtentY        =   1535
+      _ExtentY        =   1482
       ButtonWidth     =   1482
       ButtonHeight    =   1376
       ImageList       =   "IMG"
@@ -142,8 +142,8 @@ Begin VB.Form frm_Banco
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Banco.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Painel"
-      Tab(1).Control(1)=   "Grid"
+      Tab(1).Control(0)=   "Grid"
+      Tab(1).Control(1)=   "Painel"
       Tab(1).ControlCount=   2
       Begin VB.Frame Painel 
          Caption         =   "Tipo de Filtro"
@@ -315,11 +315,9 @@ Begin VB.Form frm_Banco
             ScrollBars      =   2
             BeginProperty Column00 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   689,953
             EndProperty
             BeginProperty Column01 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   4364,788
             EndProperty
          EndProperty
       End
@@ -355,7 +353,7 @@ Begin VB.Form frm_Banco
          TextCase        =   1
          RawText         =   0
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin VB.Shape Shape1 
          Height          =   1815

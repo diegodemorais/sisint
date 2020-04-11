@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
-Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MShflxgd.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
+Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MSHFLXGD.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Lancamento 
@@ -344,7 +344,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSDataListLib.DataCombo txt_Logo 
       Bindings        =   "frm_Lancamento.frx":4910
@@ -402,7 +402,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_tx_fixo 
       BeginProperty DataFormat 
@@ -437,7 +437,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_tx_po 
       BeginProperty DataFormat 
@@ -472,7 +472,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_NDOC 
       Height          =   315
@@ -496,7 +496,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSDataListLib.DataCombo txt_FormaPg 
       Bindings        =   "frm_Lancamento.frx":493E
@@ -581,7 +581,7 @@ Begin VB.Form frm_Lancamento
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSDataListLib.DataCombo txt_FormaPg_Parc 
       Bindings        =   "frm_Lancamento.frx":4985
@@ -652,7 +652,7 @@ Begin VB.Form frm_Lancamento
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSDataListLib.DataCombo txt_LbDoc 
       Bindings        =   "frm_Lancamento.frx":49B3
@@ -699,7 +699,7 @@ Begin VB.Form frm_Lancamento
       MaxLength       =   9
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSDataListLib.DataCombo txt_Desc_Parc 
       Bindings        =   "frm_Lancamento.frx":49CB
@@ -740,7 +740,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_Valor_Entrada 
       BeginProperty DataFormat 
@@ -772,7 +772,7 @@ Begin VB.Form frm_Lancamento
       MaxLength       =   9
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin VB.Label lbEntrada 
       Alignment       =   1  'Right Justify
@@ -1595,6 +1595,23 @@ err1:
     Resume sair
 End Sub
 
+Public Function ProximoDiaUtil(data As Variant) As Variant
+    Dim dayOfWeek, dataConvertida
+    
+    dataConvertida = CVDate(data)
+    dayOfWeek = Weekday(data)
+    
+    If (dayOfWeek = vbSaturday) Then
+        ProximoDiaUtil = dataConvertida + 2
+    ElseIf (dayOfWeek = vbSunday) Then
+        ProximoDiaUtil = dataConvertida + 1
+    Else
+        ProximoDiaUtil = dataConvertida
+    End If
+End Function
+
+
+
 'Procedimento :  Calcula as Parcelas e coloca no grid
 Sub Calc_Grid()
 Dim wDt As Date
@@ -1667,7 +1684,7 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                     If i = 1 Then w_DT_Calc = CVDate(w_DT_Calc - 31)
                     w_DT_Calc = CVDate(w_DT_Calc + 31)
                     w_DT_Calc = CVDate(w_Day & Format(w_DT_Calc, "mm/yyyy"))
-                    grid.TextMatrix(i, 2) = w_DT_Calc
+                    grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
                                     
                 Else
                 
@@ -1680,22 +1697,22 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                        Else
                           w_Dt = w_Dt + CDbl(txt_dias_V)
                        End If
-                        grid.TextMatrix(i, 2) = w_Dt
+                        grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
                     Else 'Pre Datado
-                        grid.TextMatrix(i, 2) = txt_Pre
+                        grid.TextMatrix(i, 2) = ProximoDiaUtil(txt_Pre)
                     End If
                     
                     If (txt_tipoC = 22) Then
                         w_DT_Calc = CVDate(w_DT_Calc + 31)
                         w_DT_Calc = CVDate("10/" & Format(w_DT_Calc, "mm/yyyy"))
-                        grid.TextMatrix(i, 2) = w_DT_Calc
+                        grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
                     End If
                  'End If
                 
             End If
             
             Else 'Se for DbCred
-                grid.TextMatrix(i, 2) = w_Dt
+                grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
                 w_Dt = Format(Day(w_Dt), "00") & "/" & Format(CVDate(w_Dt) + 32, "mm/yyyy")
             End If
             
@@ -1711,7 +1728,7 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                     w_DT_Calc = CVDate("05/" & Format(w_DT_Calc, "mm/yyyy"))
                 End If
                 w_Dt = w_DT_Calc
-                grid.TextMatrix(i, 2) = w_Dt
+                grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
             
         End If
         

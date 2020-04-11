@@ -1,8 +1,8 @@
 VERSION 5.00
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
-Object = "{48E59290-9880-11CF-9754-00AA00C00908}#1.0#0"; "MSINET.Ocx"
+Object = "{48E59290-9880-11CF-9754-00AA00C00908}#1.0#0"; "MSINET.OCX"
 Begin VB.MDIForm MDI 
    BackColor       =   &H8000000C&
    Caption         =   "Menu Principal"
@@ -364,7 +364,7 @@ Begin VB.MDIForm MDI
             AutoSize        =   2
             Object.Width           =   1773
             MinWidth        =   1764
-            TextSave        =   "25/12/2018"
+            TextSave        =   "11/04/2020"
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel9 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -372,7 +372,7 @@ Begin VB.MDIForm MDI
             AutoSize        =   2
             Object.Width           =   1058
             MinWidth        =   1058
-            TextSave        =   "17:27"
+            TextSave        =   "09:17"
             Object.Tag             =   ""
          EndProperty
       EndProperty
