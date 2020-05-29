@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Usuario 
@@ -43,6 +43,7 @@ Begin VB.Form frm_Usuario
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -55,6 +56,7 @@ Begin VB.Form frm_Usuario
             ImageIndex      =   2
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             ImageIndex      =   3
             Style           =   3
@@ -75,6 +77,7 @@ Begin VB.Form frm_Usuario
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -182,8 +185,8 @@ Begin VB.Form frm_Usuario
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Usuario.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Painel"
-      Tab(1).Control(1)=   "Grid"
+      Tab(1).Control(0)=   "Grid"
+      Tab(1).Control(1)=   "Painel"
       Tab(1).ControlCount=   2
       Begin VB.TextBox Text2 
          Alignment       =   2  'Center
@@ -532,31 +535,24 @@ Begin VB.Form frm_Usuario
             ScrollBars      =   2
             BeginProperty Column00 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   524,976
             EndProperty
             BeginProperty Column01 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   2489,953
             EndProperty
             BeginProperty Column02 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   599,811
             EndProperty
             BeginProperty Column03 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   645,165
             EndProperty
             BeginProperty Column04 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   599,811
             EndProperty
             BeginProperty Column05 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   450,142
             EndProperty
             BeginProperty Column06 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   494,929
             EndProperty
          EndProperty
       End
@@ -1157,7 +1153,7 @@ End Sub
 
 
 Private Sub txt_ac_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_filtro_Change()
@@ -1375,12 +1371,12 @@ End Sub
 
 
 Private Sub txt_grupo_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 
 Private Sub txt_ordem_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 
 End Sub
 
@@ -1405,7 +1401,7 @@ End Sub
 
 
 Private Sub txt_Rpt_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_Tipo_KeyDown(KeyCode As Integer, Shift As Integer)

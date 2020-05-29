@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Rpt_Cod_Bon 
@@ -203,7 +203,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText Txt_DtF 
       BeginProperty DataFormat 
@@ -237,7 +237,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin Skin_Button.ctr_Button bt_Pesq 
       Height          =   840

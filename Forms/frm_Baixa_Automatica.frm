@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDatGrd.ocx"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "comctl32.Ocx"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Baixa_Automatica 
@@ -44,6 +44,7 @@ Begin VB.Form frm_Baixa_Automatica
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -64,6 +65,7 @@ Begin VB.Form frm_Baixa_Automatica
             ImageIndex      =   9
          EndProperty
          BeginProperty Button5 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -288,7 +290,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin Skin_Button.ctr_Button bt_Sal_F 
          Height          =   525
@@ -419,7 +421,7 @@ Begin VB.Form frm_Baixa_Automatica
       Text            =   "0,00"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_Liq 
       BeginProperty DataFormat 
@@ -452,7 +454,7 @@ Begin VB.Form frm_Baixa_Automatica
       Text            =   "0,00"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSAdodcLib.Adodc adoReg 
       Align           =   2  'Align Bottom
@@ -698,60 +700,48 @@ Begin VB.Form frm_Baixa_Automatica
          ScrollBars      =   2
          BeginProperty Column00 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   569,764
          EndProperty
          BeginProperty Column01 
             ColumnAllowSizing=   -1  'True
-            ColumnWidth     =   1214,929
          EndProperty
          BeginProperty Column02 
             Alignment       =   2
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   555,024
          EndProperty
          BeginProperty Column03 
             Alignment       =   2
             ColumnAllowSizing=   -1  'True
-            ColumnWidth     =   959,811
          EndProperty
          BeginProperty Column04 
             Alignment       =   1
             ColumnAllowSizing=   -1  'True
-            ColumnWidth     =   1094,74
          EndProperty
          BeginProperty Column05 
             Alignment       =   1
             ColumnAllowSizing=   -1  'True
             Object.Visible         =   -1  'True
-            ColumnWidth     =   1094,74
          EndProperty
          BeginProperty Column06 
             ColumnAllowSizing=   -1  'True
-            ColumnWidth     =   1890,142
          EndProperty
          BeginProperty Column07 
             Alignment       =   1
             ColumnAllowSizing=   -1  'True
-            ColumnWidth     =   989,858
          EndProperty
          BeginProperty Column08 
             Alignment       =   1
             ColumnAllowSizing=   -1  'True
-            ColumnWidth     =   1005,165
          EndProperty
          BeginProperty Column09 
             Alignment       =   1
-            ColumnWidth     =   1035,213
          EndProperty
          BeginProperty Column10 
             Alignment       =   2
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   854,929
          EndProperty
          BeginProperty Column11 
             Alignment       =   2
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   989,858
          EndProperty
       EndProperty
    End
@@ -786,7 +776,7 @@ Begin VB.Form frm_Baixa_Automatica
       Text            =   "0"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txtDtAntecipado 
       Height          =   315
@@ -813,7 +803,7 @@ Begin VB.Form frm_Baixa_Automatica
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin VB.Frame frFiltro 
       Caption         =   " Filtros "
@@ -1107,7 +1097,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText Txt_DtF 
          BeginProperty DataFormat 
@@ -1142,7 +1132,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin MSDataListLib.DataCombo txt_Logo_P 
          Bindings        =   "frm_Baixa_Automatica.frx":3E77
@@ -1203,7 +1193,7 @@ Begin VB.Form frm_Baixa_Automatica
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText txt_NResumo_P 
          Height          =   315
@@ -1227,7 +1217,7 @@ Begin VB.Form frm_Baixa_Automatica
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin Skin_Button.ctr_Button bt_Pesq 
          Height          =   1080
@@ -1301,7 +1291,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText Txt_DtFP 
          BeginProperty DataFormat 
@@ -1336,7 +1326,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin VB.Label lb_DtP 
          Alignment       =   2  'Center
@@ -1710,7 +1700,7 @@ Private Sub bt_Canc_F_Click()
     txt_DtVcto = ""
     fr.Visible = False
     frFiltro.Visible = True
-    grid.Enabled = True
+    Grid.Enabled = True
     adoReg.Enabled = True
 End Sub
 
@@ -1809,7 +1799,7 @@ txtSql.text = w_Str
     DoEvents
     Set adoReg.Recordset = ExecuteSQL(w_Str)
 
-    grid.Visible = False
+    Grid.Visible = False
     txt_Liq = 0
     txt_Bto = 0
     txt_Qtde = 0
@@ -1826,7 +1816,7 @@ txtSql.text = w_Str
         txt_Qtde = adoReg.Recordset.RecordCount
     End If
     
-    grid.Visible = False
+    Grid.Visible = False
     'If txt_Cartao_P.BoundText = 6 Or txt_Cartao_P.BoundText = 17 Or txt_Cartao_P.BoundText = 18 Or txt_Cartao_P.BoundText = 19 Then
     '    grid.Columns(4).Visible = False
     '    grid.Columns(5).Visible = True
@@ -1834,12 +1824,12 @@ txtSql.text = w_Str
     '    grid.Columns(4).Visible = True
     '    grid.Columns(5).Visible = False
     'End If
-    grid.Visible = True
+    Grid.Visible = True
     
 wHabStatus = True
     
 sair:
-    grid.Visible = True
+    Grid.Visible = True
     pic_Pesq.Visible = False
     Exit Sub
 err1:
@@ -1912,7 +1902,7 @@ Dim wAdo As ADODB.Recordset
         wAdo.MoveNext
     Loop
     
-    grid.Enabled = True
+    Grid.Enabled = True
     adoReg.Enabled = True
     fr.Visible = False
     frFiltro.Visible = True
@@ -2103,7 +2093,7 @@ On Error Resume Next
         Call ExecuteSQL("UPDATE tab_lanc_parc SET lcp_Baixa = '" & IIf(wAntecipado, Format(txtDtAntecipado, "yyyy-mm-dd"), Format(adoReg.Recordset.Fields("VCTO"), "yyyy-mm-dd")) & "', lcp_usu_baixa = " & w_Usu_Cod & " WHERE (tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("ndoc") & "' AND lcp_num IN(" & wNum & "))")
         bt_Pesq_Click
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
-        grid.SetFocus
+        Grid.SetFocus
     Else
         MsgBox "Não foi possível baixar, especifique na consulta qual cartão deseja!", vbCritical
     End If
@@ -2153,7 +2143,7 @@ On Error Resume Next
         Call ExecuteSQL("UPDATE tab_lanc_parc SET lcp_Baixa = '0000-00-00' WHERE (tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("ndoc") & "' AND lcp_num IN(" & wNum & "))")
         bt_Pesq_Click
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
-        grid.SetFocus
+        Grid.SetFocus
     Else
         MsgBox "Não foi possível remover a baixa, especifique na consulta qual cartão deseja!", vbCritical
     End If
@@ -2184,7 +2174,7 @@ On Error GoTo err1
         frFiltro.Visible = False
         fr.Visible = True
         txt_DtVcto = Format(adoReg.Recordset.Fields("vcto"), "dd/mm/yyyy")
-        grid.Enabled = False
+        Grid.Enabled = False
         adoReg.Enabled = False
     Else
         MsgBox "Não é possível alterar o vcto porque esta parcela já foi baixada!", vbCritical
@@ -2268,7 +2258,7 @@ End Sub
 
 
 Private Sub Text2_GotFocus()
-    grid.SetFocus
+    Grid.SetFocus
 End Sub
 
 Private Sub Timer1_Timer()

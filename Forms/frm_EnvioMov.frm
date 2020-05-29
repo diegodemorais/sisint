@@ -143,7 +143,7 @@ Begin VB.Form frm_EnvioMov
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin VB.Label Label8 
       Alignment       =   1  'Right Justify
@@ -219,7 +219,7 @@ On Error Resume Next
     
     pbar.Visible = True
     pbar.Value = 1
-    pbar.Text = " Preparando Caixa  -  CREDIÁRIOS"
+    pbar.text = " Preparando Caixa  -  CREDIÁRIOS"
     Pause 1
     
     'Inserir os Contratos Alterados nesta data
@@ -227,7 +227,7 @@ On Error Resume Next
     Call Insert_Cred_todos 'Inseri todos os contratos , parcelas e pagamentos .... dos Atualizados na Data requerida
     
     pbar.Value = 1
-    pbar.Text = "Preparando Caixa - Clientes"
+    pbar.text = "Preparando Caixa - Clientes"
     Call Insert_Clientes 'Inseri os contratos , parcelas e pagamentos ... Dos q/ Foram Atualizados
     
     
@@ -236,7 +236,7 @@ On Error Resume Next
     w_Access.OpenCurrentDatabase App.Path & "\modelo\modelo.mdb", False
     Dim w_Tab As String
     
-    pbar.Text = "Exportando Tabelas..........."
+    pbar.text = "Exportando Tabelas..........."
     pbar.Value = 1
     Pause 1
     
@@ -721,7 +721,7 @@ On Error GoTo ErroGeral
     Inet1.Password = strFTPPassW
     pgBar.Value = 0
     pgBar.MaxProgress = 10000
-    pgBar.Text = "Enviando Caixa ....................."
+    pgBar.text = "Enviando Caixa ....................."
     Pause 1
     pgBar.Visible = True
         w_Arq = LCase("m" & Right(w_Usu_Nome, 2) & Format(txt_dt, "ddmm") & ".arj")
@@ -751,7 +751,7 @@ On Error GoTo ErroGeral
     ElseIf Inet1.ResponseCode = 0 Then
     
         pgBar.Value = pgBar.MaxProgress
-        pgBar.Text = "Atualizado com sucesso!"
+        pgBar.text = "Atualizado com sucesso!"
         Pause 0.5
     End If
 

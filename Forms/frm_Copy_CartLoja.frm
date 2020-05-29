@@ -474,13 +474,13 @@ Dim wCodMax As Long
     'Retorna Array do Select
     Set wReg = ExecuteSQL("Select * from tab_cartao_loja Where ctl_loja = " & txt_Logo.BoundText & " and ctl_tipoc = " & txt_Cartao.BoundText & "").Clone
     If wReg.EOF Then
-        pb.Text = "Nada consta!"
+        pb.text = "Nada consta!"
         Exit Sub
     End If
     For i = 0 To List_loja.ListCount - 1
         If List_loja.Selected(i) = True Then
             pb.Value = 0
-            pb.Text = "Copiando taxa p/ Loja : " & List_loja.List(i)
+            pb.text = "Copiando taxa p/ Loja : " & List_loja.List(i)
             wCodMax = wCodMax + 1
             adoLogo.Recordset.MoveFirst
             adoLogo.Recordset.Find "usl_nome = '" & List_loja.List(i) & "'"
@@ -495,25 +495,27 @@ Dim wCodMax As Long
                     wSQL2 = "DELETE FROM tab_cartao_loja WHERE " & wReg.Fields(0).Name & " = " & wLogo & " AND " & wReg.Fields(1).Name & " = " & txt_Cartao.BoundText
                     Call ExecuteSQL(wSQL2, wRegAf2)
                     Pause 0.5
-                    wSQL = "INSERT INTO tab_cartao_loja " & _
+                     wSQL = "INSERT INTO tab_cartao_loja " & _
                                   "(" & wReg.Fields(0).Name & " # " & wReg.Fields(1).Name & " # " & wReg.Fields(2).Name & " # " & wReg.Fields(3).Name & " # " & wReg.Fields(4).Name & " # " & wReg.Fields(5).Name & " # " & wReg.Fields(6).Name & _
-                                  " # " & wReg.Fields(7).Name & " # " & wReg.Fields(8).Name & " # " & wReg.Fields(9).Name & " # " & wReg.Fields(10).Name & " # " & wReg.Fields(11).Name & " # " & wReg.Fields(12).Name & " ) " & _
+                                  " # " & wReg.Fields(7).Name & " # " & wReg.Fields(8).Name & " # " & wReg.Fields(9).Name & " # " & wReg.Fields(10).Name & " # " & wReg.Fields(11).Name & " # " & wReg.Fields(12).Name & _
+                                  " # " & wReg.Fields(13).Name & " # " & wReg.Fields(14).Name & " ) " & _
                            "VALUES " & _
                                   "(" & wLogo & " # " & txt_Cartao.BoundText & " # '" & wReg.Fields(2) & "' # '" & wReg.Fields(3) & "' # '" & wReg.Fields(4) & "' # '" & wReg.Fields(5) & "' # '" & wReg.Fields(6) & _
-                                  "' # '" & wReg.Fields(7) & "' # '" & wReg.Fields(8) & "' # '" & wReg.Fields(9) & "' # '" & wReg.Fields(10) & "' # '" & wReg.Fields(11) & "' # " & wCodMax & ")"
+                                  "' # '" & wReg.Fields(7) & "' # '" & wReg.Fields(8) & "' # '" & wReg.Fields(9) & "' # '" & wReg.Fields(10) & "' # '" & wReg.Fields(11) & "' # " & wCodMax & _
+                                  " # '" & wReg.Fields(13) & "' # '" & wReg.Fields(14) & "')"
                     wSQL = Replace(wSQL, ",", ".")
                     wSQL = Replace(wSQL, "#", ",")
                     Pause 0.5
                     pb.Value = 2
                     Call ExecuteSQL(wSQL, wRegAf)
                 'End If
-                If wRegAf = 0 Then MsgBox "Erro ao copiar a taxa p/ a loja " & txt_Logo, vbCritical
+                If wRegAf = 0 Then MsgBox "Erro ao copiar a taxa da loja " & txt_Logo, vbCritical
                 Pause 0.5
                 pb.Value = 3
             End If
         End If
     Next i
-    pb.Text = "Copia concluída!"
+    pb.text = "Copia concluída!"
     pb.Value = 3
 End Sub
 

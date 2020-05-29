@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Cod_Bon 
@@ -129,7 +129,7 @@ Begin VB.Form frm_Cod_Bon
       Text            =   "0"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_vr_cred 
       Height          =   375
@@ -152,7 +152,7 @@ Begin VB.Form frm_Cod_Bon
       Text            =   "0"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin VB.TextBox txt_obs 
       Height          =   780
@@ -380,44 +380,34 @@ Begin VB.Form frm_Cod_Bon
          ScrollBars      =   2
          BeginProperty Column00 
             Object.Visible         =   0   'False
-            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column01 
             Alignment       =   2
             Object.Visible         =   -1  'True
-            ColumnWidth     =   900,284
          EndProperty
          BeginProperty Column02 
             Alignment       =   2
             Object.Visible         =   -1  'True
-            ColumnWidth     =   900,284
          EndProperty
          BeginProperty Column03 
             Alignment       =   2
-            ColumnWidth     =   900,284
          EndProperty
          BeginProperty Column04 
             Alignment       =   2
-            ColumnWidth     =   1094,74
          EndProperty
          BeginProperty Column05 
             Object.Visible         =   0   'False
-            ColumnWidth     =   1995,024
          EndProperty
          BeginProperty Column06 
             Object.Visible         =   0   'False
-            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column07 
-            ColumnWidth     =   2294,929
          EndProperty
          BeginProperty Column08 
             Alignment       =   2
-            ColumnWidth     =   900,284
          EndProperty
          BeginProperty Column09 
             Alignment       =   2
-            ColumnWidth     =   1200,189
          EndProperty
       EndProperty
    End
@@ -519,7 +509,7 @@ Begin VB.Form frm_Cod_Bon
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_Valor_Vnd 
       BeginProperty DataFormat 
@@ -552,7 +542,7 @@ Begin VB.Form frm_Cod_Bon
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_bonus 
       BeginProperty DataFormat 
@@ -585,7 +575,7 @@ Begin VB.Form frm_Cod_Bon
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_acum 
       BeginProperty DataFormat 
@@ -618,7 +608,7 @@ Begin VB.Form frm_Cod_Bon
       Text            =   "R$ 0,00"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSDataListLib.DataCombo txt_Usu_AC 
       Bindings        =   "frm_Cod_Bon.frx":27CE
@@ -753,7 +743,7 @@ Begin VB.Form frm_Cod_Bon
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin VB.Label lbl_vr_cred_acum 
       Caption         =   "V.Cred.Acum"

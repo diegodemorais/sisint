@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Total_Lanc 
@@ -22,13 +22,13 @@ Begin VB.Form frm_Total_Lanc
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   840
       Left            =   0
       TabIndex        =   0
       Top             =   0
       Width           =   9735
       _ExtentX        =   17171
-      _ExtentY        =   1535
+      _ExtentY        =   1482
       ButtonWidth     =   1244
       ButtonHeight    =   1376
       ImageList       =   "IMG"
@@ -211,7 +211,7 @@ Begin VB.Form frm_Total_Lanc
          MaxLength       =   20
          RawText         =   0
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin Skin_Button.ctr_Button bt_Sal_F 
          Height          =   525
@@ -569,37 +569,29 @@ Begin VB.Form frm_Total_Lanc
             BeginProperty Column00 
                ColumnAllowSizing=   0   'False
                Object.Visible         =   -1  'True
-               ColumnWidth     =   1065,26
             EndProperty
             BeginProperty Column01 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   1860,095
             EndProperty
             BeginProperty Column02 
                Alignment       =   2
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   464,882
             EndProperty
             BeginProperty Column03 
                Alignment       =   2
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   1005,165
             EndProperty
             BeginProperty Column04 
                Alignment       =   1
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   1349,858
             EndProperty
             BeginProperty Column05 
                Alignment       =   2
-               ColumnWidth     =   1409,953
             EndProperty
             BeginProperty Column06 
                Alignment       =   1
-               ColumnWidth     =   1049,953
             EndProperty
             BeginProperty Column07 
-               ColumnWidth     =   494,929
             EndProperty
          EndProperty
       End
@@ -653,7 +645,7 @@ Begin VB.Form frm_Total_Lanc
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin MSAdodcLib.Adodc adoLogo 
          Height          =   375
@@ -734,7 +726,7 @@ Begin VB.Form frm_Total_Lanc
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin VB.Label Label1 
          BackStyle       =   0  'Transparent
@@ -1208,7 +1200,7 @@ Private Sub Txt_DtI_Validate(Cancel As Boolean)
 End Sub
 
 Private Sub txt_Logo_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_NResumo_KeyDown(KeyCode As Integer, Shift As Integer)

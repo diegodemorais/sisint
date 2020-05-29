@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Lancamento_Pesq 
@@ -44,6 +44,7 @@ Begin VB.Form frm_Lancamento_Pesq
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -56,6 +57,7 @@ Begin VB.Form frm_Lancamento_Pesq
             ImageIndex      =   5
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -67,6 +69,7 @@ Begin VB.Form frm_Lancamento_Pesq
             ImageIndex      =   9
          EndProperty
          BeginProperty Button6 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -328,52 +331,41 @@ Begin VB.Form frm_Lancamento_Pesq
          ScrollBars      =   2
          BeginProperty Column00 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   480,189
          EndProperty
          BeginProperty Column01 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   1124,787
          EndProperty
          BeginProperty Column02 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   1184,882
          EndProperty
          BeginProperty Column03 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   764,787
          EndProperty
          BeginProperty Column04 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   1544,882
          EndProperty
          BeginProperty Column05 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   1244,976
          EndProperty
          BeginProperty Column06 
             Alignment       =   1
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   1154,835
          EndProperty
          BeginProperty Column07 
             Alignment       =   2
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   615,118
          EndProperty
          BeginProperty Column08 
             Alignment       =   1
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   959,811
          EndProperty
          BeginProperty Column09 
             Alignment       =   2
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   794,835
          EndProperty
          BeginProperty Column10 
             Alignment       =   2
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   975,118
          EndProperty
       EndProperty
    End
@@ -663,7 +655,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText Txt_DtF 
          BeginProperty DataFormat 
@@ -698,7 +690,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin MSDataListLib.DataCombo txt_Logo_P 
          Bindings        =   "frm_Lancamento_Pesq.frx":2F03
@@ -759,7 +751,7 @@ Begin VB.Form frm_Lancamento_Pesq
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText txt_NResumo_P 
          Height          =   315
@@ -783,7 +775,7 @@ Begin VB.Form frm_Lancamento_Pesq
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin Skin_Button.ctr_Button bt_Pesq 
          Height          =   1080
@@ -1093,23 +1085,18 @@ Begin VB.Form frm_Lancamento_Pesq
          MarqueeStyle    =   3
          BeginProperty Column00 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   524,976
          EndProperty
          BeginProperty Column01 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   900,284
          EndProperty
          BeginProperty Column02 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   1049,953
          EndProperty
          BeginProperty Column03 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   1094,74
          EndProperty
          BeginProperty Column04 
             ColumnAllowSizing=   0   'False
-            ColumnWidth     =   1214,929
          EndProperty
       EndProperty
    End
@@ -1148,7 +1135,7 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSDataListLib.DataCombo txt_Logo 
       Bindings        =   "frm_Lancamento_Pesq.frx":327D
@@ -1226,7 +1213,7 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_tx_po 
       DataField       =   "lnc_tx_po"
@@ -1263,7 +1250,7 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_NDOC 
       DataField       =   "lnc_ndoc"
@@ -1289,7 +1276,7 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin MSDataListLib.DataCombo txt_FormaPg 
       Bindings        =   "frm_Lancamento_Pesq.frx":32AB
@@ -1346,7 +1333,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_Valor_Vnd 
       DataField       =   "lnc_vr"
@@ -1381,7 +1368,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Text            =   "R$ 0,00"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_NResumo 
       DataField       =   "lnc_nresumo"
@@ -1407,7 +1394,7 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8,25
+      FontSize        =   8.25
    End
    Begin VB.Label Label4 
       Alignment       =   1  'Right Justify
@@ -1722,7 +1709,7 @@ On Error GoTo err1
     w_Str = "SELECT tab_usuario.usl_nome AS Logo, tab_tipo_cartao.tpc_desc AS Cartao, tab_forma_pg.fpg_desc AS FormaPG, tab_lanc.lnc_ndoc, tab_lanc.lnc_dt_vnd, tab_lanc.lnc_tx, tab_lanc.lnc_tx_fixo, tab_lanc.lnc_tx_po, tab_lanc.lnc_vr, tab_lanc.lnc_vr_liq, tab_lanc.lnc_num, tab_lanc.lnc_nresumo, tab_lanc.lnc_tef_pos as TEF_POS FROM tab_lanc, tab_usuario, tab_tipo_cartao, tab_forma_pg WHERE " & w_Str & IIf(Len(w_Str) > 0, " and ", "") & "(tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_formapg = tab_forma_pg.fpg_cod) ORDER BY tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome, tab_tipo_cartao.tpc_desc, tab_forma_pg.fpg_desc"
     w_str_Det = "SELECT * FROM tab_lanc_parc"
     
-    txt2.Text = w_Str
+    txt2.text = w_Str
 
     pic_Pesq.Visible = True
     Set adoReg.Recordset = ExecuteSQL(w_Str).Clone
@@ -1829,7 +1816,7 @@ Private Sub TBar_ButtonClick(ByVal Button As ComctlLib.Button)
 End Sub
 
 Private Sub txt_bco_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub Timer1_Timer()
@@ -1838,11 +1825,11 @@ Private Sub Timer1_Timer()
 End Sub
 
 Private Sub txt_Cartao_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_Cartao_P_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 
@@ -1866,11 +1853,11 @@ End Sub
 
 
 Private Sub txt_FormaPg_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_Logo_P_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 

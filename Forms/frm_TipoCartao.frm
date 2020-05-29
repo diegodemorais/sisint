@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_TipoCartao 
@@ -144,8 +144,8 @@ Begin VB.Form frm_TipoCartao
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_TipoCartao.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Grid"
-      Tab(1).Control(1)=   "Painel"
+      Tab(1).Control(0)=   "Painel"
+      Tab(1).Control(1)=   "Grid"
       Tab(1).ControlCount=   2
       Begin VB.Frame frame1 
          BackColor       =   &H80000000&
@@ -664,11 +664,9 @@ Begin VB.Form frm_TipoCartao
             ScrollBars      =   2
             BeginProperty Column00 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   689,953
             EndProperty
             BeginProperty Column01 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   4394,835
             EndProperty
          EndProperty
       End

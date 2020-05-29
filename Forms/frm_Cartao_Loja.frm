@@ -45,6 +45,7 @@ Begin VB.Form frm_Cartao_Loja
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -57,6 +58,7 @@ Begin VB.Form frm_Cartao_Loja
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -76,6 +78,7 @@ Begin VB.Form frm_Cartao_Loja
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -88,6 +91,7 @@ Begin VB.Form frm_Cartao_Loja
             ImageIndex      =   5
          EndProperty
          BeginProperty Button9 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -100,6 +104,7 @@ Begin VB.Form frm_Cartao_Loja
             ImageIndex      =   10
          EndProperty
          BeginProperty Button11 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -1450,7 +1455,7 @@ Begin VB.Form frm_Cartao_Loja
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00404040&
-         Height          =   2295
+         Height          =   2175
          Left            =   6960
          TabIndex        =   37
          Top             =   2400
