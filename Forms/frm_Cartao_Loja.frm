@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
@@ -30,8 +30,8 @@ Begin VB.Form frm_Cartao_Loja
       Width           =   11670
       _ExtentX        =   20585
       _ExtentY        =   1535
-      ButtonWidth     =   1482
-      ButtonHeight    =   1376
+      ButtonWidth     =   1720
+      ButtonHeight    =   1429
       ImageList       =   "IMG"
       _Version        =   327682
       BeginProperty Buttons {0713E452-850A-101B-AFC0-4210102A8DA7} 
@@ -45,7 +45,6 @@ Begin VB.Form frm_Cartao_Loja
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -58,7 +57,6 @@ Begin VB.Form frm_Cartao_Loja
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -78,7 +76,6 @@ Begin VB.Form frm_Cartao_Loja
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -91,7 +88,6 @@ Begin VB.Form frm_Cartao_Loja
             ImageIndex      =   5
          EndProperty
          BeginProperty Button9 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -104,7 +100,6 @@ Begin VB.Form frm_Cartao_Loja
             ImageIndex      =   10
          EndProperty
          BeginProperty Button11 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -232,35 +227,45 @@ Begin VB.Form frm_Cartao_Loja
       Tab(0).Control(13).Enabled=   0   'False
       Tab(0).Control(14)=   "Label12"
       Tab(0).Control(14).Enabled=   0   'False
-      Tab(0).Control(15)=   "txt_label_ndoc"
+      Tab(0).Control(15)=   "Label15"
       Tab(0).Control(15).Enabled=   0   'False
-      Tab(0).Control(16)=   "txt_bco_add"
+      Tab(0).Control(16)=   "Label16"
       Tab(0).Control(16).Enabled=   0   'False
-      Tab(0).Control(17)=   "txt_tx_Po_add"
+      Tab(0).Control(17)=   "Label17"
       Tab(0).Control(17).Enabled=   0   'False
-      Tab(0).Control(18)=   "txt_vr_desc_Pz_add"
+      Tab(0).Control(18)=   "txt_parc_alta_qt"
       Tab(0).Control(18).Enabled=   0   'False
-      Tab(0).Control(19)=   "txt_dias_P_add"
+      Tab(0).Control(19)=   "txt_parc_alta_tx"
       Tab(0).Control(19).Enabled=   0   'False
-      Tab(0).Control(20)=   "txt_tx_Pz_add"
+      Tab(0).Control(20)=   "txt_label_ndoc"
       Tab(0).Control(20).Enabled=   0   'False
-      Tab(0).Control(21)=   "txt_vr_desc_V_add"
+      Tab(0).Control(21)=   "txt_bco_add"
       Tab(0).Control(21).Enabled=   0   'False
-      Tab(0).Control(22)=   "txt_dias_V_add"
+      Tab(0).Control(22)=   "txt_tx_Po_add"
       Tab(0).Control(22).Enabled=   0   'False
-      Tab(0).Control(23)=   "txt_Cartao_add"
+      Tab(0).Control(23)=   "txt_vr_desc_Pz_add"
       Tab(0).Control(23).Enabled=   0   'False
-      Tab(0).Control(24)=   "txt_Logo_add"
+      Tab(0).Control(24)=   "txt_dias_P_add"
       Tab(0).Control(24).Enabled=   0   'False
-      Tab(0).Control(25)=   "txt_txV_add"
+      Tab(0).Control(25)=   "txt_tx_Pz_add"
       Tab(0).Control(25).Enabled=   0   'False
-      Tab(0).Control(26)=   "txt_Des_Parc"
+      Tab(0).Control(26)=   "txt_vr_desc_V_add"
       Tab(0).Control(26).Enabled=   0   'False
-      Tab(0).Control(27)=   "adoLogo"
+      Tab(0).Control(27)=   "txt_dias_V_add"
       Tab(0).Control(27).Enabled=   0   'False
-      Tab(0).Control(28)=   "adoCartao"
+      Tab(0).Control(28)=   "txt_Cartao_add"
       Tab(0).Control(28).Enabled=   0   'False
-      Tab(0).ControlCount=   29
+      Tab(0).Control(29)=   "txt_Logo_add"
+      Tab(0).Control(29).Enabled=   0   'False
+      Tab(0).Control(30)=   "txt_txV_add"
+      Tab(0).Control(30).Enabled=   0   'False
+      Tab(0).Control(31)=   "txt_Des_Parc"
+      Tab(0).Control(31).Enabled=   0   'False
+      Tab(0).Control(32)=   "adoLogo"
+      Tab(0).Control(32).Enabled=   0   'False
+      Tab(0).Control(33)=   "adoCartao"
+      Tab(0).Control(33).Enabled=   0   'False
+      Tab(0).ControlCount=   34
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Cartao_Loja.frx":27BE
       Tab(1).ControlEnabled=   0   'False
@@ -726,20 +731,16 @@ Begin VB.Form frm_Cartao_Loja
             AllowSizing     =   0   'False
             BeginProperty Column00 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   1049,953
             EndProperty
             BeginProperty Column01 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   1904,882
             EndProperty
             BeginProperty Column02 
                Alignment       =   1
-               ColumnWidth     =   734,74
             EndProperty
             BeginProperty Column03 
                Alignment       =   2
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   659,906
             EndProperty
             BeginProperty Column04 
                Alignment       =   1
@@ -748,26 +749,21 @@ Begin VB.Form frm_Cartao_Loja
             BeginProperty Column05 
                Alignment       =   1
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   780,095
             EndProperty
             BeginProperty Column06 
                Alignment       =   2
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   750,047
             EndProperty
             BeginProperty Column07 
                Alignment       =   1
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   1200,189
             EndProperty
             BeginProperty Column08 
                Alignment       =   1
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   929,764
             EndProperty
             BeginProperty Column09 
                ColumnAllowSizing=   0   'False
-               ColumnWidth     =   1484,787
             EndProperty
          EndProperty
       End
@@ -804,7 +800,7 @@ Begin VB.Form frm_Cartao_Loja
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin MSDataListLib.DataCombo txt_Logo_add 
          Bindings        =   "frm_Cartao_Loja.frx":2B67
@@ -867,18 +863,18 @@ Begin VB.Form frm_Cartao_Loja
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText txt_vr_desc_V_add 
          DataField       =   "ctl_vr_des_v"
          BeginProperty DataFormat 
             Type            =   1
-            Format          =   """R$ ""#.##0,00"
+            Format          =   "#,##0.00"
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
-            LCID            =   1046
-            SubFormatType   =   2
+            LCID            =   2057
+            SubFormatType   =   1
          EndProperty
          DataSource      =   "adoReg"
          Height          =   315
@@ -898,11 +894,10 @@ Begin VB.Form frm_Cartao_Loja
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Text            =   "R$ 0,00"
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText txt_tx_Pz_add 
          DataField       =   "ctl_txp"
@@ -937,7 +932,7 @@ Begin VB.Form frm_Cartao_Loja
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText txt_dias_P_add 
          DataField       =   "ctl_dias_p"
@@ -962,18 +957,18 @@ Begin VB.Form frm_Cartao_Loja
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText txt_vr_desc_Pz_add 
          DataField       =   "ctl_vr_des_p"
          BeginProperty DataFormat 
             Type            =   1
-            Format          =   """R$ ""#.##0,00"
+            Format          =   "#,##0.00"
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
-            LCID            =   1046
-            SubFormatType   =   2
+            LCID            =   2057
+            SubFormatType   =   1
          EndProperty
          DataSource      =   "adoReg"
          Height          =   315
@@ -993,11 +988,10 @@ Begin VB.Form frm_Cartao_Loja
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Text            =   "R$ 0,00"
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText txt_tx_Po_add 
          DataField       =   "ctl_vr_po"
@@ -1031,7 +1025,7 @@ Begin VB.Form frm_Cartao_Loja
          MaxLength       =   7
          RawText         =   0
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin MSDataListLib.DataCombo txt_bco_add 
          Bindings        =   "frm_Cartao_Loja.frx":2B95
@@ -1072,7 +1066,124 @@ Begin VB.Form frm_Cartao_Loja
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
+      End
+      Begin rdActiveText.ActiveText txt_parc_alta_tx 
+         DataField       =   "ctl_parc_alta_tx"
+         BeginProperty DataFormat 
+            Type            =   1
+            Format          =   "0,00%"
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1046
+            SubFormatType   =   5
+         EndProperty
+         DataSource      =   "adoReg"
+         Height          =   315
+         Left            =   9240
+         TabIndex        =   42
+         Top             =   4080
+         Width           =   660
+         _ExtentX        =   1164
+         _ExtentY        =   556
+         Alignment       =   2
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MaxLength       =   7
+         RawText         =   0
+         eAuto           =   1
+         FontName        =   "MS Sans Serif"
+         FontSize        =   8.25
+      End
+      Begin rdActiveText.ActiveText txt_parc_alta_qt 
+         DataField       =   "ctl_parc_alta_qt"
+         DataSource      =   "adoReg"
+         Height          =   315
+         Left            =   7200
+         TabIndex        =   43
+         Top             =   4080
+         Width           =   765
+         _ExtentX        =   1349
+         _ExtentY        =   556
+         Alignment       =   2
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         RawText         =   0
+         eAuto           =   1
+         FontName        =   "MS Sans Serif"
+         FontSize        =   8.25
+      End
+      Begin VB.Label Label17 
+         Alignment       =   2  'Center
+         BackStyle       =   0  'Transparent
+         Caption         =   "%"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   9240
+         TabIndex        =   41
+         Top             =   3840
+         Width           =   615
+      End
+      Begin VB.Label Label16 
+         BackStyle       =   0  'Transparent
+         Caption         =   "A partir da parcela"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   7200
+         TabIndex        =   40
+         Top             =   3840
+         Width           =   1935
+      End
+      Begin VB.Label Label15 
+         Alignment       =   2  'Center
+         BackStyle       =   0  'Transparent
+         Caption         =   "Retenção - Qtde maior de parcelas"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   -1  'True
+            Italic          =   -1  'True
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00404040&
+         Height          =   255
+         Left            =   6960
+         TabIndex        =   39
+         Top             =   3480
+         Width           =   3855
       End
       Begin VB.Label Label12 
          BackStyle       =   0  'Transparent
@@ -1318,11 +1429,11 @@ Begin VB.Form frm_Cartao_Loja
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00404040&
-         Height          =   930
-         Left            =   8235
+         Height          =   1050
+         Left            =   8040
          TabIndex        =   36
-         Top             =   1110
-         Width           =   2490
+         Top             =   1080
+         Width           =   2850
       End
       Begin VB.Label Label14 
          Alignment       =   2  'Center
@@ -1339,11 +1450,11 @@ Begin VB.Form frm_Cartao_Loja
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00404040&
-         Height          =   975
-         Left            =   7140
+         Height          =   2295
+         Left            =   6960
          TabIndex        =   37
          Top             =   2400
-         Width           =   3585
+         Width           =   3885
       End
    End
    Begin MSAdodcLib.Adodc adoSQL 
@@ -1627,19 +1738,20 @@ On Error GoTo err1
          "ctl_dias_p = '" & txt_dias_P_add & "', ctl_vr_des_v = '" & Replace(CDbl(txt_vr_desc_V_add), ",", ".") & "', " & _
          "ctl_vr_des_p = '" & Replace(CDbl(txt_vr_desc_Pz_add), ",", ".") & "', ctl_vr_po = '" & Replace(Format(txt_tx_Po_add, "0.00##"), ",", ".") & "', " & _
          "ctl_banco = '" & txt_bco_add.BoundText & "', ctl_label_ndoc = '" & txt_label_ndoc & "', " & _
+         "ctl_parc_alta_qt = '" & txt_parc_alta_qt & "', ctl_parc_alta_tx = '" & Replace(Format(txt_parc_alta_tx, "0.00##"), ",", ".") & "', " & _
          "ctl_des_parc = '" & Replace(txt_Des_Parc, ",", ".") & "', ctl_cod = '" & adoReg.Recordset.Fields("ctl_cod") & "'" & _
          " WHERE ctl_cod = " & adoReg.Recordset.Fields("ctl_cod")
 
     Else
          
          strSQL = "INSERT INTO tab_cartao_loja (ctl_loja , ctl_tipoc, ctl_txv, ctl_txp, ctl_dias_v, ctl_dias_p," & _
-         "ctl_vr_des_v, ctl_vr_des_p, ctl_vr_po, ctl_banco, ctl_label_ndoc, ctl_des_parc, ctl_cod) " & _
+         "ctl_vr_des_v, ctl_vr_des_p, ctl_vr_po, ctl_banco, ctl_label_ndoc, ctl_des_parc, ctl_cod, txt_parc_alta_qt, txt_parc_alta_tx) " & _
          "VALUES ('" & txt_Logo_add.BoundText & "', '" & txt_Cartao_add.BoundText & "', " & _
          "'" & Replace(Format(txt_txV_add, "0.00##"), ",", ".") & "', '" & Replace(Format(txt_tx_Pz_add, "0.00##"), ",", ".") & "', " & _
          "'" & txt_dias_V_add & "', '" & txt_dias_P_add & "', '" & Replace(CDbl(txt_vr_desc_V_add), ",", ".") & "', " & _
          "'" & Replace(CDbl(txt_vr_desc_Pz_add), ",", ".") & "', '" & Replace(Format(txt_tx_Po_add, "0.00##"), ",", ".") & "', " & _
          "'" & txt_bco_add.BoundText & "', '" & txt_label_ndoc & "', '" & Replace(txt_Des_Parc, ",", ".") & "', " & _
-         "'" & w_cod & "')"
+         "'" & w_cod & "', '" & txt_parc_alta_qt & "', '" & Replace(Format(txt_parc_alta_tx, "0.00##"), ",", ".") & "')"
          
     End If
     
@@ -1662,6 +1774,8 @@ On Error GoTo err1
     Set txt_txV_add.DataSource = adoReg
     Set txt_vr_desc_Pz_add.DataSource = adoReg
     Set txt_vr_desc_V_add.DataSource = adoReg
+    Set txt_parc_alta_tx.DataSource = adoReg
+    Set txt_parc_alta_qt.DataSource = adoReg
     
     
     If adoSQL.Recordset.Filter <> 0 Then w_filtro = adoSQL.Recordset.Filter
@@ -1687,7 +1801,7 @@ On Error GoTo err1
         adoReg.Recordset.MoveFirst
         adoReg.Recordset.Find "ctl_cod = " & w_cod & ""
         txt_Logo_add.SetFocus
-        SendKeys "{esc}"
+        Sendkeys "{esc}"
     End If
 sair:
     Exit Sub
@@ -1934,16 +2048,16 @@ End Sub
 
 
 Private Sub txt_bco_add_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_Cartao_add_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 
 Private Sub txt_Des_Parc_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_filtro_Change()
@@ -1955,7 +2069,7 @@ End Sub
 
 
 Private Sub txt_Logo_add_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_tx_Po_add_KeyDown(KeyCode As Integer, Shift As Integer)

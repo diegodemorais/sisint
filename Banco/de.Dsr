@@ -19,6 +19,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       ConnectionTimeout=   100000
       SourceOfData    =   3
       ConnectionSource=   $"de.dsx":0000
+      Expanded        =   -1  'True
       QuoteChar       =   96
       SeparatorChar   =   46
    EndProperty
@@ -548,13 +549,13 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
    BeginProperty Recordset9 
       CommandName     =   "Sql_Cartao_Loja"
       CommDispId      =   1170
-      RsDispId        =   1176
+      RsDispId        =   1210
       CommandText     =   $"de.dsx":02E5
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       Locktype        =   2
       IsRSReturning   =   -1  'True
-      NumFields       =   15
+      NumFields       =   17
       BeginProperty Field1 
          Precision       =   4
          Size            =   4
@@ -675,13 +676,29 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
          Name            =   "ctl_des_parc"
          Caption         =   "ctl_des_parc"
       EndProperty
+      BeginProperty Field16 
+         Precision       =   4
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "ctl_parc_alta_qt"
+         Caption         =   "ctl_parc_alta_qt"
+      EndProperty
+      BeginProperty Field17 
+         Precision       =   8
+         Size            =   8
+         Scale           =   0
+         Type            =   5
+         Name            =   "ctl_parc_alta_tx"
+         Caption         =   "ctl_parc_alta_tx"
+      EndProperty
       NumGroups       =   0
       ParamCount      =   1
       BeginProperty P1 
          RealName        =   "Param1"
          Direction       =   1
          Precision       =   255
-         Scale           =   0
+         Scale           =   112
          Size            =   255
          DataType        =   200
          HostType        =   8
@@ -694,7 +711,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "Sql_Tipo_Forma"
       CommDispId      =   1173
       RsDispId        =   1175
-      CommandText     =   $"de.dsx":0653
+      CommandText     =   $"de.dsx":0697
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       IsRSReturning   =   -1  'True
@@ -742,7 +759,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "Command1"
       CommDispId      =   1177
       RsDispId        =   -1
-      CommandText     =   $"de.dsx":0753
+      CommandText     =   $"de.dsx":0797
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       NumFields       =   0
@@ -755,7 +772,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "Command2"
       CommDispId      =   1179
       RsDispId        =   -1
-      CommandText     =   $"de.dsx":0D21
+      CommandText     =   $"de.dsx":0D65
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       NumFields       =   0
@@ -768,7 +785,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "total_diario_a_receber"
       CommDispId      =   1183
       RsDispId        =   -1
-      CommandText     =   $"de.dsx":0E0A
+      CommandText     =   $"de.dsx":0E4E
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       NumFields       =   0
@@ -801,7 +818,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "sqlSorocredFicha"
       CommDispId      =   1185
       RsDispId        =   1209
-      CommandText     =   $"de.dsx":0F36
+      CommandText     =   $"de.dsx":0F7A
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       Grouping        =   -1  'True

@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MSHFLXGD.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Rpt_Resumo 
@@ -104,7 +104,7 @@ Begin VB.Form frm_Rpt_Resumo
          Text            =   "0,00"
          RawText         =   0
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin VB.Frame Painel 
          Caption         =   "Agrupar por: "
@@ -309,7 +309,7 @@ Begin VB.Form frm_Rpt_Resumo
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin MSAdodcLib.Adodc adoLogo 
          Height          =   375
@@ -390,7 +390,7 @@ Begin VB.Form frm_Rpt_Resumo
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin Skin_Button.ctr_Button bt_Rpt_Geral 
          Height          =   615
@@ -665,7 +665,7 @@ Begin VB.Form frm_Rpt_Resumo
          Text            =   "0,00"
          RawText         =   0
          FontName        =   "MS Sans Serif"
-         FontSize        =   8,25
+         FontSize        =   8.25
       End
       Begin VB.Label Label3 
          BackStyle       =   0  'Transparent
@@ -1078,7 +1078,7 @@ Private Sub Txt_DtI_Validate(Cancel As Boolean)
 End Sub
 
 Private Sub txt_Logo_KeyDown(KeyCode As Integer, Shift As Integer)
-    If KeyCode = 13 Then SendKeys "{tab}"
+    If KeyCode = 13 Then Sendkeys "{tab}"
 End Sub
 
 Private Sub txt_NResumo_KeyDown(KeyCode As Integer, Shift As Integer)
