@@ -9,17 +9,17 @@ Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Cartao_Loja 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Taxas Cartão / Loja"
-   ClientHeight    =   6990
+   ClientHeight    =   7155
    ClientLeft      =   45
    ClientTop       =   615
-   ClientWidth     =   11670
+   ClientWidth     =   11685
    Icon            =   "frm_Cartao_Loja.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   6990
-   ScaleWidth      =   11670
+   ScaleHeight     =   7155
+   ScaleWidth      =   11685
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
@@ -27,8 +27,8 @@ Begin VB.Form frm_Cartao_Loja
       Left            =   0
       TabIndex        =   3
       Top             =   0
-      Width           =   11670
-      _ExtentX        =   20585
+      Width           =   11685
+      _ExtentX        =   20611
       _ExtentY        =   1535
       ButtonWidth     =   1720
       ButtonHeight    =   1429
@@ -192,7 +192,7 @@ Begin VB.Form frm_Cartao_Loja
       Height          =   5775
       Left            =   120
       TabIndex        =   2
-      Top             =   840
+      Top             =   960
       Width           =   11430
       _ExtentX        =   20161
       _ExtentY        =   10186
@@ -274,9 +274,9 @@ Begin VB.Form frm_Cartao_Loja
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Cartao_Loja.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "txt_Status_Filtro"
+      Tab(1).Control(0)=   "grid"
       Tab(1).Control(1)=   "Painel"
-      Tab(1).Control(2)=   "grid"
+      Tab(1).Control(2)=   "txt_Status_Filtro"
       Tab(1).ControlCount=   3
       Begin MSAdodcLib.Adodc adoCartao 
          Height          =   375
@@ -1466,9 +1466,9 @@ Begin VB.Form frm_Cartao_Loja
       Align           =   2  'Align Bottom
       Height          =   330
       Left            =   0
-      Top             =   6660
-      Width           =   11670
-      _ExtentX        =   20585
+      Top             =   6825
+      Width           =   11685
+      _ExtentX        =   20611
       _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
