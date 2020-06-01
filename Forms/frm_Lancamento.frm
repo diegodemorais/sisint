@@ -11,14 +11,14 @@ Begin VB.Form frm_Lancamento
    ClientHeight    =   6855
    ClientLeft      =   45
    ClientTop       =   615
-   ClientWidth     =   11340
+   ClientWidth     =   11625
    Icon            =   "frm_Lancamento.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
    ScaleHeight     =   6855
-   ScaleWidth      =   11340
+   ScaleWidth      =   11625
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
@@ -26,8 +26,8 @@ Begin VB.Form frm_Lancamento
       Left            =   0
       TabIndex        =   11
       Top             =   0
-      Width           =   11340
-      _ExtentX        =   20003
+      Width           =   11625
+      _ExtentX        =   20505
       _ExtentY        =   1535
       ButtonWidth     =   1667
       ButtonHeight    =   1429
@@ -44,6 +44,7 @@ Begin VB.Form frm_Lancamento
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -56,6 +57,7 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -75,6 +77,7 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -1063,9 +1066,9 @@ Begin VB.Form frm_Lancamento
    End
    Begin VB.Shape Shape1 
       Height          =   5775
-      Left            =   240
+      Left            =   120
       Top             =   960
-      Width           =   10935
+      Width           =   11055
    End
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
