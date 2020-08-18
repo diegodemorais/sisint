@@ -1,9 +1,9 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MSHFLXGD.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDatGrd.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
+Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MShflxgd.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Lancamento_Alt 
@@ -46,6 +46,7 @@ Begin VB.Form frm_Lancamento_Alt
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -59,6 +60,7 @@ Begin VB.Form frm_Lancamento_Alt
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -78,6 +80,7 @@ Begin VB.Form frm_Lancamento_Alt
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -1464,7 +1467,7 @@ End Function
 Sub Salvar()
 On Error GoTo err1
 
-If CDbl(txt_Valor_Vnd) > 0 And txt_NDOC <> "" And Grid.TextMatrix(1, 2) <> "" Then
+If CDbl(txt_Valor_Vnd) > 0 And txt_NDOC <> "" And grid.TextMatrix(1, 2) <> "" Then
     
     'Exclui as parcelas do Lanç.
     Call ExecuteSQL("DELETE FROM tab_lanc_parc WHERE lcp_num_lanc = " & CDbl(txt_NUM))
@@ -1493,11 +1496,11 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_NDOC <> "" And Grid.TextMatrix(1, 2) <> "" Th
                 w_NumLanc = ExecuteSQL("Select max(lnc_num) from tab_lanc WHERE lnc_loj = '" & txt_Logo.BoundText & "'").Fields(0)
                 
                 'Salva as Parcelas
-                For i = 1 To Grid.Rows - 1
-                    Grid.Row = i
+                For i = 1 To grid.Rows - 1
+                    grid.Row = i
                     strSQL = "INSERT INTO tab_lanc_parc(lcp_ndoc, lcp_parc, lcp_dt_vcto, lcp_vr_bto, lcp_vr_liq, lcp_num_lanc, lcp_tipo, lcp_nresumo, lcp_baixa) " _
-                           & "VALUES ('" & Grid.TextMatrix(i, 5) & "', " & i & ", '" & Format(Grid.TextMatrix(i, 2), "YYYY-MM-DD") & "', " _
-                           & "'" & Grid.TextMatrix(i, 3) & "', '" & Grid.TextMatrix(i, 6) & "', '" & w_NumLanc & "', " _
+                           & "VALUES ('" & grid.TextMatrix(i, 5) & "', " & i & ", '" & Format(grid.TextMatrix(i, 2), "YYYY-MM-DD") & "', " _
+                           & "'" & grid.TextMatrix(i, 3) & "', '" & grid.TextMatrix(i, 6) & "', '" & w_NumLanc & "', " _
                            & "'" & txt_FormaPg_Tipo & "', '" & w_NRESUMO & "','0000-00-00')"
                     'add parcelas
                     Call ExecuteSQL(strSQL, wRegAf)
@@ -1524,7 +1527,7 @@ Else
         'MsgBox "Preencha o valor da compra!", vbExclamation
     ElseIf txt_NDOC = "" Then
         MsgBox "Preencha o Nº Doc.!", vbExclamation
-    ElseIf Grid.TextMatrix(1, 2) = "" Then
+    ElseIf grid.TextMatrix(1, 2) = "" Then
         MsgBox "Clique em calcular parcelas!", vbExclamation
     End If
 End If
@@ -1672,7 +1675,10 @@ Private Sub txt_FormaPg_Change()
         txt_tx_po.Visible = False
         lb_tx_po.Visible = False
     ElseIf Not adoCartao.Recordset.EOF Then
-        taxaAlta_qt = adoCartao.Recordset.Fields(15)
+        On Error Resume Next
+        taxaAlta_qt = IIf(adoCartao.Recordset.Fields.Count = 15, 0, adoCartao.Recordset.Fields(15))
+        On Error GoTo err1
+        
         qtParcelas = IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc)
     
         ' Se qt de parcelas selecionada >= qt de parcelas com taxa de retenção maior, então pega taxa maior, senão pega taxa a prazo normal
@@ -1702,6 +1708,13 @@ Private Sub txt_FormaPg_Change()
     
     Format_Grid
     txt_dt_vnd_Validate False
+
+sair:
+    Exit Sub
+
+err1:
+     MsgBox msgErro(err), vbCritical
+    Resume sair
     
 End Sub
 
@@ -1730,43 +1743,43 @@ End Sub
 'Procedimento q/ Formata o Grid
 Sub Format_Grid()
 On Error GoTo err1
-    Grid.Rows = 0
+    grid.Rows = 0
     'Caption da Colunas
-    Grid.Rows = IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc) + 1
-    Grid.FixedRows = 1
-    Grid.TextArray(1) = "Parc."
-    Grid.TextArray(2) = "Dt. Vcto"
-    Grid.TextArray(3) = "Vr Bruto"
-    Grid.TextArray(4) = "Vr. Liq"
-    Grid.TextArray(5) = "Num. Doc."
-    Grid.TextArray(6) = "Vr. Liq com todas as casas decimais"
+    grid.Rows = IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc) + 1
+    grid.FixedRows = 1
+    grid.TextArray(1) = "Parc."
+    grid.TextArray(2) = "Dt. Vcto"
+    grid.TextArray(3) = "Vr Bruto"
+    grid.TextArray(4) = "Vr. Liq"
+    grid.TextArray(5) = "Num. Doc."
+    grid.TextArray(6) = "Vr. Liq com todas as casas decimais"
     
     'Formata a Largura das colunas
-    Grid.ColWidth(0) = 250
-    Grid.ColWidth(1) = 550
-    Grid.ColWidth(2) = 1000
-    Grid.ColWidth(3) = 1000
-    Grid.ColWidth(4) = 1000
-    Grid.ColWidth(5) = 1430
-    Grid.ColWidth(6) = 0
+    grid.ColWidth(0) = 250
+    grid.ColWidth(1) = 550
+    grid.ColWidth(2) = 1000
+    grid.ColWidth(3) = 1000
+    grid.ColWidth(4) = 1000
+    grid.ColWidth(5) = 1430
+    grid.ColWidth(6) = 0
     
     'Formata Alinhamento do Texto
-    Grid.ColAlignment(1) = 6
-    Grid.ColAlignment(2) = 4
-    Grid.ColAlignment(3) = 6
-    Grid.ColAlignment(4) = 6
-    Grid.ColAlignment(5) = 6
+    grid.ColAlignment(1) = 6
+    grid.ColAlignment(2) = 4
+    grid.ColAlignment(3) = 6
+    grid.ColAlignment(4) = 6
+    grid.ColAlignment(5) = 6
 
-    Grid.ColAlignmentFixed(1) = 6
-    Grid.ColAlignmentFixed(2) = 4
-    Grid.ColAlignmentFixed(3) = 6
-    Grid.ColAlignmentFixed(4) = 6
-    Grid.ColAlignmentFixed(5) = 6
+    grid.ColAlignmentFixed(1) = 6
+    grid.ColAlignmentFixed(2) = 4
+    grid.ColAlignmentFixed(3) = 6
+    grid.ColAlignmentFixed(4) = 6
+    grid.ColAlignmentFixed(5) = 6
     
-    Grid.Row = 0
+    grid.Row = 0
     For c = 1 To 5
-        Grid.Col = c
-        Grid.CellFontBold = True
+        grid.Col = c
+        grid.CellFontBold = True
     Next c
     
 sair:
@@ -1841,7 +1854,7 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
         'Qtde de Parcelas q/ Resta
         v_QtParcRest = CDbl(txt_FormaPg_Parc) - (i - 1)
         
-        Grid.TextMatrix(i, 1) = i & "º"   'Identifica a Parcela
+        grid.TextMatrix(i, 1) = i & "º"   'Identifica a Parcela
                 
         'se não for MaxCred
         If Not (txt_tipoC = "8") Then
@@ -1863,7 +1876,7 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                     If i = 1 Then w_DT_Calc = CVDate(w_DT_Calc - 31)
                     w_DT_Calc = CVDate(w_DT_Calc + 31)
                     w_DT_Calc = CVDate(w_Day & Format(w_DT_Calc, "mm/yyyy"))
-                    Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
+                    grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
                                     
                 Else
                 
@@ -1876,22 +1889,22 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                        Else
                           w_Dt = w_Dt + CDbl(txt_dias_V)
                        End If
-                        Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
+                        grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
                     Else 'Pre Datado
-                        Grid.TextMatrix(i, 2) = ProximoDiaUtil(txt_Pre)
+                        grid.TextMatrix(i, 2) = ProximoDiaUtil(txt_Pre)
                     End If
                     
                     If (txt_tipoC = 22) Then
                         w_DT_Calc = CVDate(w_DT_Calc + 31)
                         w_DT_Calc = CVDate("10/" & Format(w_DT_Calc, "mm/yyyy"))
-                        Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
+                        grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
                     End If
                  'End If
                 
             End If
             
             Else 'Se for DbCred
-                Grid.TextMatrix(i, 2) = w_Dt
+                grid.TextMatrix(i, 2) = w_Dt
                 w_Dt = Format(Day(w_Dt), "00") & "/" & Format(CVDate(w_Dt) + 32, "mm/yyyy")
             End If
             
@@ -1907,7 +1920,7 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                     w_DT_Calc = CVDate("05/" & Format(w_DT_Calc, "mm/yyyy"))
                 End If
                 w_Dt = w_DT_Calc
-                Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
+                grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
             
         End If
         
@@ -1916,32 +1929,32 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
             w_taxa_adesao = 9.99
             w_valor_entrada_SEM_TAXA = txt_Valor_Entrada - w_taxa_adesao
             If i = 1 Then 'Se parcela 1
-                Grid.TextMatrix(i, 3) = Format(((txt_Valor_Vnd - w_valor_entrada_SEM_TAXA) / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc) + w_valor_entrada_SEM_TAXA), "0.00")
+                grid.TextMatrix(i, 3) = Format(((txt_Valor_Vnd - w_valor_entrada_SEM_TAXA) / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc) + w_valor_entrada_SEM_TAXA), "0.00")
             Else
-                Grid.TextMatrix(i, 3) = Format(((txt_Valor_Vnd - w_valor_entrada_SEM_TAXA) / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc)), "0.00")
+                grid.TextMatrix(i, 3) = Format(((txt_Valor_Vnd - w_valor_entrada_SEM_TAXA) / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc)), "0.00")
             End If
         Else
-            Grid.TextMatrix(i, 3) = Format(txt_Valor_Vnd / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc), "0.00")
+            grid.TextMatrix(i, 3) = Format(txt_Valor_Vnd / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc), "0.00")
         End If
-        Grid.TextMatrix(i, 3) = Replace(Grid.TextMatrix(i, 3), ",", ".")
+        grid.TextMatrix(i, 3) = Replace(grid.TextMatrix(i, 3), ",", ".")
         v_ValorCalc = Calc_ParcLiq(v_QtParcRest, i)
         
         'Inserir o Valor Liquido da Parcela -  Com as Retenções
-        Grid.TextMatrix(i, 4) = Format(v_ValorCalc, "0.00")
-        Grid.TextMatrix(i, 4) = Replace(Grid.TextMatrix(i, 4), ",", ".")
+        grid.TextMatrix(i, 4) = Format(v_ValorCalc, "0.00")
+        grid.TextMatrix(i, 4) = Replace(grid.TextMatrix(i, 4), ",", ".")
 
         'Inserir o Valor Liquido da Parcela -  Com as Retenções   na Com todas as Casas Decimais
-        Grid.TextMatrix(i, 6) = v_ValorCalc
-        Grid.TextMatrix(i, 6) = Replace(Grid.TextMatrix(i, 6), ",", ".")
+        grid.TextMatrix(i, 6) = v_ValorCalc
+        grid.TextMatrix(i, 6) = Replace(grid.TextMatrix(i, 6), ",", ".")
        
         w_Total_liq = w_Total_liq + v_ValorCalc
         
         If txt_Desc_Parc = "N" Then
             'Inserir o Nº DOC
-            Grid.TextMatrix(i, 5) = txt_NDOC
+            grid.TextMatrix(i, 5) = txt_NDOC
         Else
             'Inserir o Nº DOC
-            Grid.TextMatrix(i, 5) = txt_NDOC + (i - 1)
+            grid.TextMatrix(i, 5) = txt_NDOC + (i - 1)
         End If
         
     Next i
