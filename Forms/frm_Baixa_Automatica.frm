@@ -34,7 +34,7 @@ Begin VB.Form frm_Baixa_Automatica
       ImageList       =   "IMG"
       _Version        =   327682
       BeginProperty Buttons {0713E452-850A-101B-AFC0-4210102A8DA7} 
-         NumButtons      =   6
+         NumButtons      =   8
          BeginProperty Button1 {0713F354-850A-101B-AFC0-4210102A8DA7} 
             Caption         =   "Fecha&r"
             Key             =   "fechar"
@@ -61,7 +61,6 @@ Begin VB.Form frm_Baixa_Automatica
             Key             =   "altlanc"
             Object.ToolTipText     =   "Altera o Lançamento"
             Object.Tag             =   ""
-            ImageIndex      =   9
          EndProperty
          BeginProperty Button5 {0713F354-850A-101B-AFC0-4210102A8DA7} 
             Object.Tag             =   ""
@@ -75,10 +74,21 @@ Begin VB.Form frm_Baixa_Automatica
             Object.Tag             =   ""
             ImageIndex      =   8
          EndProperty
+         BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Object.Tag             =   ""
+            Style           =   3
+            MixedState      =   -1  'True
+         EndProperty
+         BeginProperty Button8 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Caption         =   "E&xcel"
+            Key             =   "excel"
+            Object.Tag             =   ""
+            ImageIndex      =   10
+         EndProperty
       EndProperty
       Begin Skin_Button.ctr_Button btn_Acompanhamento 
          Height          =   735
-         Left            =   8600
+         Left            =   9600
          TabIndex        =   42
          Top             =   45
          Width           =   615
@@ -117,7 +127,7 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin Skin_Button.ctr_Button ctr_Button1 
          Height          =   735
-         Left            =   10365
+         Left            =   11520
          TabIndex        =   35
          TabStop         =   0   'False
          ToolTipText     =   "Cartões não Recebidos"
@@ -158,7 +168,7 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin Skin_Button.ctr_Button bt_Rel 
          Height          =   735
-         Left            =   9285
+         Left            =   10440
          TabIndex        =   34
          TabStop         =   0   'False
          ToolTipText     =   "Cartões Recebidos"
@@ -212,7 +222,7 @@ Begin VB.Form frm_Baixa_Automatica
          EndProperty
          ForeColor       =   &H00C00000&
          Height          =   615
-         Left            =   3720
+         Left            =   4920
          Locked          =   -1  'True
          TabIndex        =   16
          TabStop         =   0   'False
@@ -695,8 +705,6 @@ Begin VB.Form frm_Baixa_Automatica
       SplitCount      =   1
       BeginProperty Split0 
          MarqueeStyle    =   3
-         AllowRowSizing  =   -1  'True
-         AllowSizing     =   -1  'True
          BeginProperty Column00 
             ColumnAllowSizing=   0   'False
          EndProperty
@@ -1592,7 +1600,7 @@ Begin VB.Form frm_Baixa_Automatica
       MaskColor       =   12632256
       _Version        =   327682
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
-         NumListImages   =   9
+         NumListImages   =   10
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
             Picture         =   "frm_Baixa_Automatica.frx":41DB
             Key             =   ""
@@ -1627,6 +1635,10 @@ Begin VB.Form frm_Baixa_Automatica
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
             Picture         =   "frm_Baixa_Automatica.frx":582B
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage10 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+            Picture         =   "frm_Baixa_Automatica.frx":5B45
             Key             =   ""
          EndProperty
       EndProperty
@@ -2202,6 +2214,43 @@ On Error Resume Next
 
 End Sub
 
+Private Sub mnuExcel_Click()
+    
+    Set w_Rec = adoReg.Recordset.Clone
+    
+Dim sFileName As String
+'sFileName = "c:\BaixaAutomatica_" & Format(Date, "ddmmyyyy") & ".xls"
+sFileNameBase = GetIni("SYSTEM", "BaixaAutomaticaTemplate", App.Path & "\System.INI")
+sFileName = GetIni("SYSTEM", "BaixaAutomaticaTarget", App.Path & "\System.INI")
+'sFileNameBase = "C:\Modelo_BaixaAutomatica.xls"
+'sFileName = "C:\BaixaAutomatica.xls"
+
+Dim oXLApp As Object       'Declare the object variables
+Dim oXLBook As Object
+Dim oXLSheet As Object
+
+  Set oXLApp = CreateObject("Excel.Application")  'Create a new instance of Excel
+  If Dir(sFileNameBase) = "" Then
+    Set oXLBook = oXLApp.Workbooks.Add  'File doesnt exist - add a new workbook
+  Else
+    Set oXLBook = oXLApp.Workbooks.Open(sFileNameBase)  'File exists - load it
+  End If
+  Set oXLSheet = oXLBook.Worksheets(1)  'Work with the first worksheet
+ 
+  'oXLSheet.UsedRange.Clear
+  oXLSheet.Range("A2").CopyFromRecordset w_Rec.Clone
+ 
+  Set oXLSheet = Nothing               'disconnect from the Worksheet
+  oXLBook.SaveAs sFileName  'Save (and disconnect from) the Workbook
+  oXLBook.Close SaveChanges:=False
+  
+  Set oXLBook = Nothing
+  oXLApp.Quit                                'Close (and disconnect from) Excel
+  Set oXLApp = Nothing
+  
+
+End Sub
+
 
 Private Sub mnuAltlanc_Click()
 On Error GoTo err1
@@ -2244,6 +2293,7 @@ Private Sub TBar_ButtonClick(ByVal Button As ComctlLib.Button)
         Case "alterar": mnuAlt_Click
         Case "altlanc": mnuAltlanc_Click
         Case "relatorio": mnuRelatorio_Click
+        Case "excel": mnuExcel_Click
     End Select
 End Sub
 

@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
-Object = "{20C62CAE-15DA-101B-B9A8-444553540000}#1.1#0"; "MSMAPI32.OCX"
+Object = "{20C62CAE-15DA-101B-B9A8-444553540000}#1.1#0"; "msmapi32.Ocx"
 Begin VB.Form frm_EnvioMov 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Envio de Movimento"
@@ -172,7 +172,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 'Conexões com os Arquivos de Movimento
 Dim DB_PX_OF As DAO.Database
-Dim db_ACCESS As Database
+'Dim db_ACCESS As Database
 Dim wks As Workspace
 
 Private Sub Form_Load()
