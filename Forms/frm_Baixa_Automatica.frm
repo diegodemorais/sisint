@@ -44,6 +44,7 @@ Begin VB.Form frm_Baixa_Automatica
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -63,6 +64,7 @@ Begin VB.Form frm_Baixa_Automatica
             Object.Tag             =   ""
          EndProperty
          BeginProperty Button5 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -75,6 +77,7 @@ Begin VB.Form frm_Baixa_Automatica
             ImageIndex      =   8
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -233,10 +236,10 @@ Begin VB.Form frm_Baixa_Automatica
    End
    Begin VB.TextBox txtSql 
       Height          =   375
-      Left            =   3480
+      Left            =   6360
       TabIndex        =   43
       Text            =   "[debug]"
-      Top             =   2280
+      Top             =   2160
       Visible         =   0   'False
       Width           =   6135
    End
@@ -787,9 +790,9 @@ Begin VB.Form frm_Baixa_Automatica
    End
    Begin rdActiveText.ActiveText txtDtAntecipado 
       Height          =   315
-      Left            =   5640
+      Left            =   2520
       TabIndex        =   44
-      Top             =   1920
+      Top             =   2040
       Visible         =   0   'False
       Width           =   1275
       _ExtentX        =   2249
@@ -828,187 +831,10 @@ Begin VB.Form frm_Baixa_Automatica
       TabIndex        =   18
       Top             =   840
       Width           =   12765
-      Begin VB.ListBox List_loja_bounded 
-         Appearance      =   0  'Flat
-         Enabled         =   0   'False
-         Height          =   930
-         ItemData        =   "frm_Baixa_Automatica.frx":3E77
-         Left            =   4800
-         List            =   "frm_Baixa_Automatica.frx":3E79
-         Style           =   1  'Checkbox
-         TabIndex        =   51
-         Top             =   120
-         Visible         =   0   'False
-         Width           =   735
-      End
-      Begin Skin_Button.ctr_Button bt_RTodos 
-         Height          =   465
-         Left            =   2100
-         TabIndex        =   50
-         TabStop         =   0   'False
-         ToolTipText     =   "Retira Selecão de todos"
-         Top             =   1080
-         Width           =   345
-         _ExtentX        =   609
-         _ExtentY        =   820
-         BTYPE           =   2
-         TX              =   " "
-         ENAB            =   0   'False
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Baixa_Automatica.frx":3E7B
-         PICN            =   "frm_Baixa_Automatica.frx":3E97
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
-      End
-      Begin Skin_Button.ctr_Button bt_STodos 
-         Height          =   465
-         Left            =   2100
-         TabIndex        =   49
-         TabStop         =   0   'False
-         ToolTipText     =   "Seleciona todos"
-         Top             =   600
-         Width           =   345
-         _ExtentX        =   609
-         _ExtentY        =   820
-         BTYPE           =   2
-         TX              =   " "
-         ENAB            =   0   'False
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Baixa_Automatica.frx":53E9
-         PICN            =   "frm_Baixa_Automatica.frx":5405
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
-      End
-      Begin VB.ListBox List_loja 
-         Appearance      =   0  'Flat
-         Enabled         =   0   'False
-         Height          =   1155
-         ItemData        =   "frm_Baixa_Automatica.frx":2F7A6
-         Left            =   2520
-         List            =   "frm_Baixa_Automatica.frx":2F7A8
-         Style           =   1  'Checkbox
-         TabIndex        =   48
-         Top             =   360
-         Width           =   1335
-      End
-      Begin VB.CheckBox ckAntecipado 
-         Caption         =   "Antecipar?"
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   330
-         Left            =   5280
-         TabIndex        =   47
-         Top             =   840
-         Width           =   1335
-      End
-      Begin VB.Timer Timer2 
-         Enabled         =   0   'False
-         Interval        =   100
-         Left            =   1200
-         Top             =   960
-      End
-      Begin MSAdodcLib.Adodc adoLogo 
-         Height          =   330
-         Left            =   2505
-         Top             =   525
-         Visible         =   0   'False
-         Width           =   1200
-         _ExtentX        =   2117
-         _ExtentY        =   582
-         ConnectMode     =   0
-         CursorLocation  =   3
-         IsolationLevel  =   -1
-         ConnectionTimeout=   15
-         CommandTimeout  =   30
-         CursorType      =   3
-         LockType        =   3
-         CommandType     =   8
-         CursorOptions   =   0
-         CacheSize       =   50
-         MaxRecords      =   0
-         BOFAction       =   0
-         EOFAction       =   0
-         ConnectStringType=   1
-         Appearance      =   1
-         BackColor       =   -2147483643
-         ForeColor       =   -2147483640
-         Orientation     =   0
-         Enabled         =   -1
-         Connect         =   ""
-         OLEDBString     =   ""
-         OLEDBFile       =   ""
-         DataSourceName  =   ""
-         OtherAttributes =   ""
-         UserName        =   ""
-         Password        =   ""
-         RecordSource    =   ""
-         Caption         =   "Adodc1"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         _Version        =   393216
-      End
       Begin MSAdodcLib.Adodc adoCartao 
          Height          =   330
-         Left            =   3720
-         Top             =   1110
+         Left            =   4680
+         Top             =   120
          Visible         =   0   'False
          Width           =   1200
          _ExtentX        =   2117
@@ -1041,6 +867,183 @@ Begin VB.Form frm_Baixa_Automatica
          Password        =   ""
          RecordSource    =   ""
          Caption         =   "adoCartao"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         _Version        =   393216
+      End
+      Begin VB.ListBox List_cartao_bounded 
+         Appearance      =   0  'Flat
+         Enabled         =   0   'False
+         Height          =   930
+         ItemData        =   "frm_Baixa_Automatica.frx":3E77
+         Left            =   4680
+         List            =   "frm_Baixa_Automatica.frx":3E79
+         Style           =   1  'Checkbox
+         TabIndex        =   51
+         Top             =   240
+         Visible         =   0   'False
+         Width           =   735
+      End
+      Begin Skin_Button.ctr_Button bt_RTodos 
+         Height          =   345
+         Left            =   6070
+         TabIndex        =   50
+         TabStop         =   0   'False
+         ToolTipText     =   "Retira Selecão de todos"
+         Top             =   120
+         Width           =   345
+         _ExtentX        =   609
+         _ExtentY        =   609
+         BTYPE           =   2
+         TX              =   " "
+         ENAB            =   0   'False
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   14215660
+         BCOLO           =   14215660
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Baixa_Automatica.frx":3E7B
+         PICN            =   "frm_Baixa_Automatica.frx":3E97
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
+      End
+      Begin Skin_Button.ctr_Button bt_STodos 
+         Height          =   345
+         Left            =   6480
+         TabIndex        =   49
+         TabStop         =   0   'False
+         ToolTipText     =   "Seleciona todos"
+         Top             =   120
+         Width           =   345
+         _ExtentX        =   609
+         _ExtentY        =   609
+         BTYPE           =   2
+         TX              =   " "
+         ENAB            =   0   'False
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   14215660
+         BCOLO           =   14215660
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Baixa_Automatica.frx":53E9
+         PICN            =   "frm_Baixa_Automatica.frx":5405
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
+      End
+      Begin VB.ListBox List_cartao 
+         Appearance      =   0  'Flat
+         Enabled         =   0   'False
+         Height          =   1155
+         ItemData        =   "frm_Baixa_Automatica.frx":2F7A6
+         Left            =   4080
+         List            =   "frm_Baixa_Automatica.frx":2F7A8
+         Style           =   1  'Checkbox
+         TabIndex        =   48
+         Top             =   480
+         Width           =   2865
+      End
+      Begin VB.CheckBox ckAntecipado 
+         Caption         =   "Antecipar?"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   195
+         Left            =   2040
+         TabIndex        =   47
+         Top             =   960
+         Width           =   1335
+      End
+      Begin VB.Timer Timer2 
+         Enabled         =   0   'False
+         Interval        =   100
+         Left            =   1200
+         Top             =   960
+      End
+      Begin MSAdodcLib.Adodc adoLogo 
+         Height          =   330
+         Left            =   2640
+         Top             =   120
+         Visible         =   0   'False
+         Width           =   1200
+         _ExtentX        =   2117
+         _ExtentY        =   582
+         ConnectMode     =   0
+         CursorLocation  =   3
+         IsolationLevel  =   -1
+         ConnectionTimeout=   15
+         CommandTimeout  =   30
+         CursorType      =   3
+         LockType        =   3
+         CommandType     =   8
+         CursorOptions   =   0
+         CacheSize       =   50
+         MaxRecords      =   0
+         BOFAction       =   0
+         EOFAction       =   0
+         ConnectStringType=   1
+         Appearance      =   1
+         BackColor       =   -2147483643
+         ForeColor       =   -2147483640
+         Orientation     =   0
+         Enabled         =   -1
+         Connect         =   ""
+         OLEDBString     =   ""
+         OLEDBFile       =   ""
+         DataSourceName  =   ""
+         OtherAttributes =   ""
+         UserName        =   ""
+         Password        =   ""
+         RecordSource    =   ""
+         Caption         =   "Adodc1"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
             Size            =   8.25
@@ -1135,12 +1138,12 @@ Begin VB.Form frm_Baixa_Automatica
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   570
+         Height          =   330
          Index           =   5
-         Left            =   3960
+         Left            =   2040
          TabIndex        =   38
-         Top             =   840
-         Width           =   1575
+         Top             =   600
+         Width           =   2055
       End
       Begin VB.CheckBox ck 
          Caption         =   "Cartão"
@@ -1248,16 +1251,15 @@ Begin VB.Form frm_Baixa_Automatica
          FontName        =   "MS Sans Serif"
          FontSize        =   8.25
       End
-      Begin MSDataListLib.DataCombo txt_Logo_P2 
+      Begin MSDataListLib.DataCombo txt_Logo_P 
          Bindings        =   "frm_Baixa_Automatica.frx":2F7AA
          Height          =   315
          Left            =   2640
          TabIndex        =   6
          TabStop         =   0   'False
-         Top             =   120
-         Visible         =   0   'False
-         Width           =   885
-         _ExtentX        =   1561
+         Top             =   240
+         Width           =   1125
+         _ExtentX        =   1984
          _ExtentY        =   556
          _Version        =   393216
          Enabled         =   0   'False
@@ -1268,14 +1270,15 @@ Begin VB.Form frm_Baixa_Automatica
          Text            =   ""
          Object.DataMember      =   ""
       End
-      Begin MSDataListLib.DataCombo txt_Cartao_P 
+      Begin MSDataListLib.DataCombo txt_Cartao_P2 
          Bindings        =   "frm_Baixa_Automatica.frx":2F7C0
          Height          =   315
-         Left            =   3960
+         Left            =   5400
          TabIndex        =   7
-         Top             =   480
-         Width           =   2970
-         _ExtentX        =   5239
+         Top             =   120
+         Visible         =   0   'False
+         Width           =   1530
+         _ExtentX        =   2699
          _ExtentY        =   556
          _Version        =   393216
          Enabled         =   0   'False
@@ -1805,10 +1808,14 @@ Private Sub adoReg_MoveComplete(ByVal adReason As ADODB.EventReasonEnum, ByVal p
 On Error GoTo err1
     adoReg.Caption = "Registro " & adoReg.Recordset.AbsolutePosition & " de " & adoReg.Recordset.RecordCount
     
-    If wHabStatus = True And (txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19") Then
-        MDI.StatusBar1.Panels(2).text = adoReg.Recordset.Fields("N")
-    ElseIf wHabStatus = True Then
-        MDI.StatusBar1.Panels(2).text = ""
+    'If wHabStatus = True And (txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19") Then
+    '    MDI.StatusBar1.Panels(2).Text = adoReg.Recordset.Fields("N")
+    'ElseIf wHabStatus = True Then
+    '    MDI.StatusBar1.Panels(2).Text = ""
+    'End If
+    
+    If wHabStatus = True Then
+        MDI.StatusBar1.Panels(2).Text = ""
     End If
 
 sair:
@@ -1829,32 +1836,35 @@ End Sub
 
 Private Sub bt_Pesq_Click()
 Dim w_Str As String
-Dim w_loja As String
+Dim w_cartao As String
 On Error GoTo err1
 
 wHabStatus = False
 
     wWherePG = ""
-    'If ck(0).Value <> 0 And txt_Logo_P <> "" Then
-    If ck(0).Value <> 0 Then
-        Call Copy_List_loja_to_bounded
-        w_loja = ""
-        For i = 0 To List_loja_bounded.ListCount - 1
-            If List_loja_bounded.Selected(i) = True Then
-                If w_loja <> "" Then
-                    w_loja = w_loja & " or "
+    w_cartao = ""
+    If ck(0).Value <> 0 And txt_Logo_P <> "" Then
+        w_Str = "tab_lanc.lnc_loj = " & txt_Logo_P.BoundText & ""
+    End If
+    'If ck(1).Value <> 0 And txt_Cartao_P <> "" Then
+    If ck(1).Value <> 0 Then
+        Call Copy_List_cartao_to_bounded
+        For i = 0 To List_cartao_bounded.ListCount - 1
+            If List_cartao_bounded.Selected(i) = True Then
+                If w_cartao <> "" Then
+                    w_cartao = w_cartao & " or "
                 End If
-                w_loja = w_loja & " tab_lanc.lnc_loj = " & List_loja_bounded.List(i) & " "
+                w_cartao = w_cartao & " tab_lanc.lnc_tipoc = " & List_cartao_bounded.List(i) & " "
             End If
         Next i
-        If w_loja <> "" Then
-            w_Str = "(" & w_loja & ")"
+        If w_cartao <> "" Then
+            w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
+            w_Str = w_Str & "(" & w_cartao & ")"
         End If
-        'w_Str = "tab_lanc.lnc_loj = " & txt_Logo_P.BoundText & ""
-    End If
-    If ck(1).Value <> 0 And txt_Cartao_P <> "" Then
-        w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
-        w_Str = w_Str & "tab_lanc.lnc_tipoc = " & txt_Cartao_P.BoundText & ""
+
+        'w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
+        'w_Str = w_Str & "tab_lanc.lnc_tipoc = " & txt_Cartao_P.BoundText & ""
+
     End If
     wWherePG = w_Str
     
@@ -1916,7 +1926,7 @@ wHabStatus = False
     
     wWhereN = wWherePG
     
-    If txt_Cartao_P.BoundText = "6" Or txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19" Then
+    If Contains("6", w_cartao) Or Contains("17", w_cartao) Or Contains("18", w_cartao) Or Contains("19", w_cartao) Then
         w_Str = "SELECT tab_lanc.lnc_tipoc, tab_lanc.lnc_num, tab_lanc_parc.lcp_nresumo as N, tab_lanc_parc.lcp_ndoc as NDOC, tab_lanc_parc.lcp_dt_vcto AS vcto, tab_tipo_cartao.tpc_desc AS cartao,  tab_lanc_parc.lcp_parc,  tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome AS Logo, tab_lanc_parc.lcp_baixa AS Baixa, tab_lanc.lnc_tef_pos AS TEF_POS, Sum(tab_lanc.lnc_vr) AS vr_compra, Sum(tab_lanc_parc.lcp_vr_bto) AS vr_bto, Sum(tab_lanc_parc.lcp_vr_liq) AS vr_liq " & _
                 "From tab_usuario, tab_lanc, tab_forma_pg, tab_tipo_cartao, tab_lanc_parc " & _
                 "Where (tab_usuario.usl_cod =  tab_lanc.lnc_loj And tab_lanc_parc.lcp_num_lanc =  tab_lanc.lnc_num  And tab_lanc.lnc_tipoc =  tab_tipo_cartao.tpc_cod  And tab_lanc.lnc_formapg = tab_forma_pg.fpg_cod ) " & _
@@ -1932,7 +1942,7 @@ wHabStatus = False
                 "ORDER BY tab_lanc_parc.lcp_dt_vcto, tab_tipo_cartao.tpc_desc;"
     End If
 
-txtSql.text = w_Str
+txtSql.Text = w_Str
     pic_Pesq.Visible = True
     DoEvents
     Set adoReg.Recordset = ExecuteSQL(w_Str)
@@ -1975,6 +1985,12 @@ err1:
     Resume sair
 End Sub
 
+Function Contains(Value As String, Text As String, Optional Prefix_Sufix As String = " ")
+    Contains = InStr(1, Prefix_Sufix & Value & Prefix_Sufix, Text) > 0
+End Function
+
+
+
 Private Sub bt_Rel_Click()
 On Error GoTo err1
 
@@ -2012,10 +2028,10 @@ err1:
 End Sub
 
 Private Sub bt_RTodos_Click()
-    For i = List_loja.ListCount - 1 To 0 Step -1
-        List_loja.Selected(i) = False
+    For i = List_cartao.ListCount - 1 To 0 Step -1
+        List_cartao.Selected(i) = False
     Next i
-    List_loja.Selected(0) = False
+    List_cartao.Selected(0) = False
 End Sub
 
 Private Sub bt_Sal_F_Click()
@@ -2056,8 +2072,8 @@ Dim wAdo As ADODB.Recordset
 End Sub
 
 Private Sub bt_STodos_Click()
-    For i = List_loja.ListCount - 1 To 0 Step -1
-        List_loja.Selected(i) = True
+    For i = List_cartao.ListCount - 1 To 0 Step -1
+        List_cartao.Selected(i) = True
     Next i
     
 End Sub
@@ -2071,16 +2087,16 @@ On Error GoTo err1
     Select Case Index
     Case 0:
             lb_Logo.Enabled = ck(Index).Value
-            'txt_Logo_P.Enabled = ck(Index).Value
-            'If txt_Logo_P.Enabled = True Then txt_Logo_P.SetFocus
-            bt_RTodos.Enabled = ck(Index).Value
-            bt_STodos.Enabled = ck(Index).Value
-            List_loja.Enabled = ck(Index).Value
-            If List_loja.Enabled = True Then List_loja.SetFocus
+            txt_Logo_P.Enabled = ck(Index).Value
+            If txt_Logo_P.Enabled = True Then txt_Logo_P.SetFocus
     Case 1:
             lb_Cartao.Enabled = ck(Index).Value
-            txt_Cartao_P.Enabled = ck(Index).Value
-            If txt_Cartao_P.Enabled = True Then txt_Cartao_P.SetFocus
+            'txt_Cartao_P.Enabled = ck(Index).Value
+            'If txt_Cartao_P.Enabled = True Then txt_Cartao_P.SetFocus
+            bt_RTodos.Enabled = ck(Index).Value
+            bt_STodos.Enabled = ck(Index).Value
+            List_cartao.Enabled = ck(Index).Value
+            If List_cartao.Enabled = True Then List_cartao.SetFocus
     Case 2:
             lb_Dt.Enabled = ck(Index).Value
             lb_Dt2.Enabled = ck(Index).Value
@@ -2138,9 +2154,9 @@ Private Sub ckAntecipado_Click()
     End If
 End Sub
 
-Sub Copy_List_loja_to_bounded()
-    For i = List_loja.ListCount - 1 To 0 Step -1
-        List_loja_bounded.Selected(i) = List_loja.Selected(i)
+Sub Copy_List_cartao_to_bounded()
+    For i = List_cartao.ListCount - 1 To 0 Step -1
+        List_cartao_bounded.Selected(i) = List_cartao.Selected(i)
     Next i
 End Sub
 
@@ -2192,14 +2208,14 @@ On Error GoTo err1
     Set adoLogo.Recordset = w_ado_Logo.Clone
     Set adoCartao.Recordset = w_ado_CadCartao.Clone
     
-    List_loja.Enabled = True
-    adoLogo.Recordset.MoveFirst
-    For i = 1 To adoLogo.Recordset.RecordCount
-        Call List_loja.AddItem(adoLogo.Recordset.Fields("USL_NOME"), List_loja.ListCount)
-        Call List_loja_bounded.AddItem(adoLogo.Recordset.Fields("USL_COD"), List_loja_bounded.ListCount)
-        adoLogo.Recordset.MoveNext
+    List_cartao.Enabled = True
+    adoCartao.Recordset.MoveFirst
+    For i = 1 To adoCartao.Recordset.RecordCount
+        Call List_cartao.AddItem(adoCartao.Recordset.Fields("tpc_desc"), List_cartao.ListCount)
+        Call List_cartao_bounded.AddItem(adoCartao.Recordset.Fields("tpc_cod"), List_cartao_bounded.ListCount)
+        adoCartao.Recordset.MoveNext
     Next i
-    List_loja.Enabled = False
+    List_cartao.Enabled = False
     
     Txt_DtI = w_Data_Server
     Txt_DtF = w_Data_Server
@@ -2435,7 +2451,7 @@ err1:
 End Sub
 
 Private Sub mnuFechar_Click()
-    MDI.StatusBar1.Panels(2).text = ""
+    MDI.StatusBar1.Panels(2).Text = ""
     If wRPT = True Then
         Unload Rel_ResumoRec
         wRPT = False
