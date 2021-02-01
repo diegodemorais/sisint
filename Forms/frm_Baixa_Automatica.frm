@@ -83,7 +83,7 @@ Begin VB.Form frm_Baixa_Automatica
             Caption         =   "E&xcel"
             Key             =   "excel"
             Object.Tag             =   ""
-            ImageIndex      =   10
+            ImageIndex      =   11
          EndProperty
       EndProperty
       Begin Skin_Button.ctr_Button btn_Acompanhamento 
@@ -787,9 +787,9 @@ Begin VB.Form frm_Baixa_Automatica
    End
    Begin rdActiveText.ActiveText txtDtAntecipado 
       Height          =   315
-      Left            =   4920
+      Left            =   5640
       TabIndex        =   44
-      Top             =   1560
+      Top             =   1920
       Visible         =   0   'False
       Width           =   1275
       _ExtentX        =   2249
@@ -828,6 +828,113 @@ Begin VB.Form frm_Baixa_Automatica
       TabIndex        =   18
       Top             =   840
       Width           =   12765
+      Begin VB.ListBox List_loja_bounded 
+         Appearance      =   0  'Flat
+         Enabled         =   0   'False
+         Height          =   930
+         ItemData        =   "frm_Baixa_Automatica.frx":3E77
+         Left            =   4800
+         List            =   "frm_Baixa_Automatica.frx":3E79
+         Style           =   1  'Checkbox
+         TabIndex        =   51
+         Top             =   120
+         Visible         =   0   'False
+         Width           =   735
+      End
+      Begin Skin_Button.ctr_Button bt_RTodos 
+         Height          =   465
+         Left            =   2100
+         TabIndex        =   50
+         TabStop         =   0   'False
+         ToolTipText     =   "Retira Selecão de todos"
+         Top             =   1080
+         Width           =   345
+         _ExtentX        =   609
+         _ExtentY        =   820
+         BTYPE           =   2
+         TX              =   " "
+         ENAB            =   0   'False
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   14215660
+         BCOLO           =   14215660
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Baixa_Automatica.frx":3E7B
+         PICN            =   "frm_Baixa_Automatica.frx":3E97
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
+      End
+      Begin Skin_Button.ctr_Button bt_STodos 
+         Height          =   465
+         Left            =   2100
+         TabIndex        =   49
+         TabStop         =   0   'False
+         ToolTipText     =   "Seleciona todos"
+         Top             =   600
+         Width           =   345
+         _ExtentX        =   609
+         _ExtentY        =   820
+         BTYPE           =   2
+         TX              =   " "
+         ENAB            =   0   'False
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   14215660
+         BCOLO           =   14215660
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Baixa_Automatica.frx":53E9
+         PICN            =   "frm_Baixa_Automatica.frx":5405
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
+      End
+      Begin VB.ListBox List_loja 
+         Appearance      =   0  'Flat
+         Enabled         =   0   'False
+         Height          =   1155
+         ItemData        =   "frm_Baixa_Automatica.frx":2F7A6
+         Left            =   2520
+         List            =   "frm_Baixa_Automatica.frx":2F7A8
+         Style           =   1  'Checkbox
+         TabIndex        =   48
+         Top             =   360
+         Width           =   1335
+      End
       Begin VB.CheckBox ckAntecipado 
          Caption         =   "Antecipar?"
          BeginProperty Font 
@@ -840,9 +947,9 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   330
-         Left            =   4680
+         Left            =   5280
          TabIndex        =   47
-         Top             =   420
+         Top             =   840
          Width           =   1335
       End
       Begin VB.Timer Timer2 
@@ -1028,12 +1135,12 @@ Begin VB.Form frm_Baixa_Automatica
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   330
+         Height          =   570
          Index           =   5
-         Left            =   4680
+         Left            =   3960
          TabIndex        =   38
-         Top             =   150
-         Width           =   1935
+         Top             =   840
+         Width           =   1575
       End
       Begin VB.CheckBox ck 
          Caption         =   "Cartão"
@@ -1141,15 +1248,16 @@ Begin VB.Form frm_Baixa_Automatica
          FontName        =   "MS Sans Serif"
          FontSize        =   8.25
       End
-      Begin MSDataListLib.DataCombo txt_Logo_P 
-         Bindings        =   "frm_Baixa_Automatica.frx":3E77
+      Begin MSDataListLib.DataCombo txt_Logo_P2 
+         Bindings        =   "frm_Baixa_Automatica.frx":2F7AA
          Height          =   315
-         Left            =   2040
+         Left            =   2640
          TabIndex        =   6
          TabStop         =   0   'False
-         Top             =   510
-         Width           =   1965
-         _ExtentX        =   3466
+         Top             =   120
+         Visible         =   0   'False
+         Width           =   885
+         _ExtentX        =   1561
          _ExtentY        =   556
          _Version        =   393216
          Enabled         =   0   'False
@@ -1161,13 +1269,13 @@ Begin VB.Form frm_Baixa_Automatica
          Object.DataMember      =   ""
       End
       Begin MSDataListLib.DataCombo txt_Cartao_P 
-         Bindings        =   "frm_Baixa_Automatica.frx":3E8D
+         Bindings        =   "frm_Baixa_Automatica.frx":2F7C0
          Height          =   315
-         Left            =   2040
+         Left            =   3960
          TabIndex        =   7
-         Top             =   1110
-         Width           =   4170
-         _ExtentX        =   7355
+         Top             =   480
+         Width           =   2970
+         _ExtentX        =   5239
          _ExtentY        =   556
          _Version        =   393216
          Enabled         =   0   'False
@@ -1228,11 +1336,11 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin Skin_Button.ctr_Button bt_Pesq 
          Height          =   1080
-         Left            =   11520
+         Left            =   11640
          TabIndex        =   14
          Top             =   360
-         Width           =   1155
-         _ExtentX        =   2037
+         Width           =   1035
+         _ExtentX        =   1826
          _ExtentY        =   1905
          BTYPE           =   2
          TX              =   "&Consultar"
@@ -1254,8 +1362,8 @@ Begin VB.Form frm_Baixa_Automatica
          FCOLO           =   0
          MCOL            =   12632256
          MPTR            =   1
-         MICON           =   "frm_Baixa_Automatica.frx":3EA5
-         PICN            =   "frm_Baixa_Automatica.frx":3EC1
+         MICON           =   "frm_Baixa_Automatica.frx":2F7D8
+         PICN            =   "frm_Baixa_Automatica.frx":2F7F4
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   2
@@ -1427,9 +1535,9 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   225
-         Left            =   2040
+         Left            =   3960
          TabIndex        =   22
-         Top             =   870
+         Top             =   240
          Width           =   1215
       End
       Begin VB.Label lb_Logo 
@@ -1600,45 +1708,49 @@ Begin VB.Form frm_Baixa_Automatica
       MaskColor       =   12632256
       _Version        =   327682
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
-         NumListImages   =   10
+         NumListImages   =   11
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":41DB
+            Picture         =   "frm_Baixa_Automatica.frx":2FB0E
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":44F5
+            Picture         =   "frm_Baixa_Automatica.frx":2FE28
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":46CF
+            Picture         =   "frm_Baixa_Automatica.frx":30002
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":49E9
+            Picture         =   "frm_Baixa_Automatica.frx":3031C
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":4D03
+            Picture         =   "frm_Baixa_Automatica.frx":30636
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":501D
+            Picture         =   "frm_Baixa_Automatica.frx":30950
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":5337
+            Picture         =   "frm_Baixa_Automatica.frx":30C6A
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":5511
+            Picture         =   "frm_Baixa_Automatica.frx":30E44
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":582B
+            Picture         =   "frm_Baixa_Automatica.frx":3115E
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":5B45
+            Picture         =   "frm_Baixa_Automatica.frx":31478
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage11 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+            Picture         =   "frm_Baixa_Automatica.frx":31C92
             Key             =   ""
          EndProperty
       EndProperty
@@ -1717,13 +1829,28 @@ End Sub
 
 Private Sub bt_Pesq_Click()
 Dim w_Str As String
+Dim w_loja As String
 On Error GoTo err1
 
 wHabStatus = False
 
     wWherePG = ""
-    If ck(0).Value <> 0 And txt_Logo_P <> "" Then
-        w_Str = "tab_lanc.lnc_loj = " & txt_Logo_P.BoundText & ""
+    'If ck(0).Value <> 0 And txt_Logo_P <> "" Then
+    If ck(0).Value <> 0 Then
+        Call Copy_List_loja_to_bounded
+        w_loja = ""
+        For i = 0 To List_loja_bounded.ListCount - 1
+            If List_loja_bounded.Selected(i) = True Then
+                If w_loja <> "" Then
+                    w_loja = w_loja & " or "
+                End If
+                w_loja = w_loja & " tab_lanc.lnc_loj = " & List_loja_bounded.List(i) & " "
+            End If
+        Next i
+        If w_loja <> "" Then
+            w_Str = "(" & w_loja & ")"
+        End If
+        'w_Str = "tab_lanc.lnc_loj = " & txt_Logo_P.BoundText & ""
     End If
     If ck(1).Value <> 0 And txt_Cartao_P <> "" Then
         w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
@@ -1884,6 +2011,13 @@ err1:
     Resume sair
 End Sub
 
+Private Sub bt_RTodos_Click()
+    For i = List_loja.ListCount - 1 To 0 Step -1
+        List_loja.Selected(i) = False
+    Next i
+    List_loja.Selected(0) = False
+End Sub
+
 Private Sub bt_Sal_F_Click()
 Dim wAdo As ADODB.Recordset
    
@@ -1921,6 +2055,13 @@ Dim wAdo As ADODB.Recordset
     bt_Pesq_Click
 End Sub
 
+Private Sub bt_STodos_Click()
+    For i = List_loja.ListCount - 1 To 0 Step -1
+        List_loja.Selected(i) = True
+    Next i
+    
+End Sub
+
 Private Sub btn_Acompanhamento_Click()
     frm_Acompanhamento.Show
 End Sub
@@ -1930,8 +2071,12 @@ On Error GoTo err1
     Select Case Index
     Case 0:
             lb_Logo.Enabled = ck(Index).Value
-            txt_Logo_P.Enabled = ck(Index).Value
-            If txt_Logo_P.Enabled = True Then txt_Logo_P.SetFocus
+            'txt_Logo_P.Enabled = ck(Index).Value
+            'If txt_Logo_P.Enabled = True Then txt_Logo_P.SetFocus
+            bt_RTodos.Enabled = ck(Index).Value
+            bt_STodos.Enabled = ck(Index).Value
+            List_loja.Enabled = ck(Index).Value
+            If List_loja.Enabled = True Then List_loja.SetFocus
     Case 1:
             lb_Cartao.Enabled = ck(Index).Value
             txt_Cartao_P.Enabled = ck(Index).Value
@@ -1993,6 +2138,12 @@ Private Sub ckAntecipado_Click()
     End If
 End Sub
 
+Sub Copy_List_loja_to_bounded()
+    For i = List_loja.ListCount - 1 To 0 Step -1
+        List_loja_bounded.Selected(i) = List_loja.Selected(i)
+    Next i
+End Sub
+
 Private Sub ctr_Button1_Click()
 Dim rs As Object
 On Error GoTo err1
@@ -2040,6 +2191,15 @@ On Error GoTo err1
   
     Set adoLogo.Recordset = w_ado_Logo.Clone
     Set adoCartao.Recordset = w_ado_CadCartao.Clone
+    
+    List_loja.Enabled = True
+    adoLogo.Recordset.MoveFirst
+    For i = 1 To adoLogo.Recordset.RecordCount
+        Call List_loja.AddItem(adoLogo.Recordset.Fields("USL_NOME"), List_loja.ListCount)
+        Call List_loja_bounded.AddItem(adoLogo.Recordset.Fields("USL_COD"), List_loja_bounded.ListCount)
+        adoLogo.Recordset.MoveNext
+    Next i
+    List_loja.Enabled = False
     
     Txt_DtI = w_Data_Server
     Txt_DtF = w_Data_Server
