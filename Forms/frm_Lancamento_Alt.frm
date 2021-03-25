@@ -46,7 +46,6 @@ Begin VB.Form frm_Lancamento_Alt
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -60,7 +59,6 @@ Begin VB.Form frm_Lancamento_Alt
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -80,7 +78,6 @@ Begin VB.Form frm_Lancamento_Alt
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -1676,13 +1673,22 @@ Private Sub txt_FormaPg_Change()
         lb_tx_po.Visible = False
     ElseIf Not adoCartao.Recordset.EOF Then
         On Error Resume Next
-        taxaAlta_qt = IIf(adoCartao.Recordset.Fields.Count = 15, 0, adoCartao.Recordset.Fields(15))
-        On Error GoTo err1
+        If adoCartao.Recordset.Fields.Count = 15 Then
+            taxaAlta_qt = 0
+        Else
+            taxaAlta_qt = adoCartao.Recordset.Fields(15)
+        End If
         
+        On Error GoTo err1
         qtParcelas = IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc)
     
         ' Se qt de parcelas selecionada >= qt de parcelas com taxa de retenção maior, então pega taxa maior, senão pega taxa a prazo normal
-        txt_tx = IIf(qtParcelas >= taxaAlta_qt, Format(adoCartao.Recordset.Fields(16), "0.00%"), Format(adoCartao.Recordset.Fields(6), "0.00%"))
+        If (qtParcelas >= taxaAlta_qt And taxaAlta_qt > 0) Then
+            txt_tx = Format(adoCartao.Recordset.Fields(16), "0.00%")
+        Else
+            txt_tx = Format(adoCartao.Recordset.Fields(6), "0.00%")
+        End If
+
         txt_tx_fixo = adoCartao.Recordset.Fields(8)
         txt_dias_V = adoCartao.Recordset.Fields(7)
         txt_tx_po = Format(adoCartao.Recordset.Fields(9), "0.00%")
