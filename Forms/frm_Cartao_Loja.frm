@@ -1,9 +1,9 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDatGrd.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.ocx"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Cartao_Loja 
@@ -274,9 +274,9 @@ Begin VB.Form frm_Cartao_Loja
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Cartao_Loja.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "grid"
+      Tab(1).Control(0)=   "txt_Status_Filtro"
       Tab(1).Control(1)=   "Painel"
-      Tab(1).Control(2)=   "txt_Status_Filtro"
+      Tab(1).Control(2)=   "grid"
       Tab(1).ControlCount=   3
       Begin MSAdodcLib.Adodc adoCartao 
          Height          =   375
@@ -1750,7 +1750,7 @@ On Error GoTo err1
     Else
          
          strSQL = "INSERT INTO tab_cartao_loja (ctl_loja , ctl_tipoc, ctl_txv, ctl_txp, ctl_dias_v, ctl_dias_p," & _
-         "ctl_vr_des_v, ctl_vr_des_p, ctl_vr_po, ctl_banco, ctl_label_ndoc, ctl_des_parc, ctl_cod, txt_parc_alta_qt, txt_parc_alta_tx) " & _
+         "ctl_vr_des_v, ctl_vr_des_p, ctl_vr_po, ctl_banco, ctl_label_ndoc, ctl_des_parc, ctl_cod, ctl_parc_alta_qt, ctl_parc_alta_tx) " & _
          "VALUES ('" & txt_Logo_add.BoundText & "', '" & txt_Cartao_add.BoundText & "', " & _
          "'" & Replace(Format(txt_txV_add, "0.00##"), ",", ".") & "', '" & Replace(Format(txt_tx_Pz_add, "0.00##"), ",", ".") & "', " & _
          "'" & txt_dias_V_add & "', '" & txt_dias_P_add & "', '" & Replace(CDbl(txt_vr_desc_V_add), ",", ".") & "', " & _
@@ -1762,6 +1762,8 @@ On Error GoTo err1
     
     
     ExecuteSQL strSQL, w_RegAf, , False
+    
+    MsgBox "Registro Salvo com sucesso!", vbInformation
     
     str_SQL = "SELECT tab_cartao_loja.* FROM tab_cartao_loja, tab_usuario WHERE tab_cartao_loja.ctl_loja = tab_usuario.usl_cod AND (tab_usuario.usl_nome LIKE '" & w_Usu & "') ORDER BY tab_usuario.usl_nome"
     Set adoReg.Recordset = ExecuteSQL(str_SQL).Clone
@@ -1787,8 +1789,7 @@ On Error GoTo err1
     At_Grid
     If w_filtro <> 0 Then adoSQL.Recordset.Filter = w_filtro
     
-    MsgBox "Registro Salvo com sucesso!", vbInformation
-
+    
 sair:
     Exit Sub
 err1:
