@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MSHFLXGD.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
+Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MShflxgd.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.ocx"
 Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Lancamento 
@@ -44,7 +44,6 @@ Begin VB.Form frm_Lancamento
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -57,7 +56,6 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -77,7 +75,6 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -1430,7 +1427,7 @@ On Error GoTo err1
     Set adoForma.Recordset = ExecuteSQL("SELECT tab_forma_pg.fpg_cod, tab_forma_pg.fpg_desc, tab_forma_pg.fpg_qt_parc, tab_forma_pg.fpg_Tipo FROM tab_forma_pg, tab_tipo_forma WHERE (tab_forma_pg.fpg_cod = tab_tipo_forma.fpg_cod) AND (tab_tipo_forma.tpc_cod = '" & txt_tipoC & "') ORDER BY tab_forma_pg.fpg_desc").Clone
 
 
-    If txt_tipoC = "7" Or txt_tipoC = "6" Or txt_tipoC = "29" Or txt_tipoC = "31" Then
+    If txt_tipoC = "7" Or txt_tipoC = "6" Or txt_tipoC = "29" Or txt_tipoC = "31" Or txt_tipoC = "39" Then
         lbResumo.Caption = "Cliente"
         lbResumo.Visible = True
         txt_NResumo.Visible = True
