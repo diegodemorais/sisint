@@ -7,7 +7,7 @@ Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Baixa_Automatica 
    BorderStyle     =   3  'Fixed Dialog
-   Caption         =   "Baixa Autom?tica"
+   Caption         =   "Baixa Automática"
    ClientHeight    =   6960
    ClientLeft      =   45
    ClientTop       =   615
@@ -58,9 +58,9 @@ Begin VB.Form frm_Baixa_Automatica
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
             Object.Visible         =   0   'False
-            Caption         =   "Alt. Lan?."
+            Caption         =   "Alt. Lanç."
             Key             =   "altlanc"
-            Object.ToolTipText     =   "Altera o Lan?amento"
+            Object.ToolTipText     =   "Altera o Lançamento"
             Object.Tag             =   ""
          EndProperty
          BeginProperty Button5 {0713F354-850A-101B-AFC0-4210102A8DA7} 
@@ -70,9 +70,9 @@ Begin VB.Form frm_Baixa_Automatica
             MixedState      =   -1  'True
          EndProperty
          BeginProperty Button6 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Caption         =   "&Relat?rio"
+            Caption         =   "&Relatório"
             Key             =   "relatorio"
-            Object.ToolTipText     =   "Visualizar Relat?rio para Impress?o"
+            Object.ToolTipText     =   "Visualizar Relatório para Impressão"
             Object.Tag             =   ""
             ImageIndex      =   8
          EndProperty
@@ -133,13 +133,13 @@ Begin VB.Form frm_Baixa_Automatica
          Left            =   11520
          TabIndex        =   35
          TabStop         =   0   'False
-         ToolTipText     =   "Cart?es n?o Recebidos"
+         ToolTipText     =   "Cartões não Recebidos"
          Top             =   60
          Width           =   1035
          _ExtentX        =   1826
          _ExtentY        =   1296
          BTYPE           =   2
-         TX              =   "N?o Rec."
+         TX              =   "Não Rec."
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
@@ -174,7 +174,7 @@ Begin VB.Form frm_Baixa_Automatica
          Left            =   10440
          TabIndex        =   34
          TabStop         =   0   'False
-         ToolTipText     =   "Cart?es Recebidos"
+         ToolTipText     =   "Cartões Recebidos"
          Top             =   60
          Width           =   1035
          _ExtentX        =   1826
@@ -229,7 +229,7 @@ Begin VB.Form frm_Baixa_Automatica
          Locked          =   -1  'True
          TabIndex        =   16
          TabStop         =   0   'False
-         Text            =   "Baixa Autom?tica"
+         Text            =   "Baixa Automática"
          Top             =   120
          Width           =   4005
       End
@@ -580,7 +580,7 @@ Begin VB.Form frm_Baixa_Automatica
          Caption         =   "Parc."
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   1
-            Format          =   "0?"
+            Format          =   "0º"
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
@@ -629,7 +629,7 @@ Begin VB.Form frm_Baixa_Automatica
       EndProperty
       BeginProperty Column06 
          DataField       =   "Cartao"
-         Caption         =   "Cart?o"
+         Caption         =   "Cartão"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -896,7 +896,7 @@ Begin VB.Form frm_Baixa_Automatica
          Left            =   6070
          TabIndex        =   50
          TabStop         =   0   'False
-         ToolTipText     =   "Retira Selec?o de todos"
+         ToolTipText     =   "Retira Selecão de todos"
          Top             =   120
          Width           =   345
          _ExtentX        =   609
@@ -1056,7 +1056,7 @@ Begin VB.Form frm_Baixa_Automatica
          _Version        =   393216
       End
       Begin VB.CheckBox ck 
-         Caption         =   "N? Resumo"
+         Caption         =   "Nº Resumo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
             Size            =   8.25
@@ -1074,7 +1074,7 @@ Begin VB.Form frm_Baixa_Automatica
          Width           =   1575
       End
       Begin VB.CheckBox ck 
-         Caption         =   "N? Doc"
+         Caption         =   "Nº Doc"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
             Size            =   8.25
@@ -1146,7 +1146,7 @@ Begin VB.Form frm_Baixa_Automatica
          Width           =   2055
       End
       Begin VB.CheckBox ck 
-         Caption         =   "Cart?o"
+         Caption         =   "Cartão"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
             Size            =   8.25
@@ -1469,7 +1469,7 @@ Begin VB.Form frm_Baixa_Automatica
       Begin VB.Label lb_Dt2P 
          Alignment       =   2  'Center
          BackStyle       =   0  'Transparent
-         Caption         =   "?"
+         Caption         =   "à"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -1488,7 +1488,7 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin VB.Label lb_Doc 
          BackStyle       =   0  'Transparent
-         Caption         =   "N? Doc"
+         Caption         =   "Nº Doc"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -1507,7 +1507,7 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin VB.Label lb_resumo 
          BackStyle       =   0  'Transparent
-         Caption         =   "N? Resumo"
+         Caption         =   "Nº Resumo"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -1526,7 +1526,7 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin VB.Label lb_Cartao 
          BackStyle       =   0  'Transparent
-         Caption         =   "Cart?o"
+         Caption         =   "Cartão"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -1565,7 +1565,7 @@ Begin VB.Form frm_Baixa_Automatica
       Begin VB.Label lb_Dt2 
          Alignment       =   2  'Center
          BackStyle       =   0  'Transparent
-         Caption         =   "?"
+         Caption         =   "à"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -1765,11 +1765,11 @@ Begin VB.Form frm_Baixa_Automatica
       Caption         =   "|  &Alterar Vcto  |"
    End
    Begin VB.Menu mnuAltlanc 
-      Caption         =   "Altera Lan?.  |"
+      Caption         =   "Altera Lanç.  |"
       Visible         =   0   'False
    End
    Begin VB.Menu mnuAc 
-      Caption         =   "A??es"
+      Caption         =   "Ações"
       Begin VB.Menu mnuAcBaixar 
          Caption         =   "Baixar"
          Shortcut        =   {F5}
@@ -1871,7 +1871,7 @@ wHabStatus = False
     If ck(2).Value <> 0 And Txt_DtI <> "" And Txt_DtF <> "" Then
         w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
         
-        'Mostrar Baixados n?o selecionado
+        'Mostrar Baixados não selecionado
         If ck(5).Value = 0 Then
             w_Str = w_Str & "tab_lanc_parc.lcp_dt_vcto >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "' and tab_lanc_parc.lcp_dt_vcto <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "'"
         
@@ -2016,7 +2016,7 @@ On Error GoTo err1
         Rel_ResumoRec.Show
         Rel_ResumoRec.WindowState = vbMaximized
     Else
-        MsgBox "Nenhum registro encontrado para gerar o relat?rio!", vbExclamation
+        MsgBox "Nenhum registro encontrado para gerar o relatório!", vbExclamation
     End If
 
 sair:
@@ -2176,15 +2176,15 @@ On Error GoTo err1
         mnuAlt.Visible = False
         Set Rel_ResumoRec.DataSource = rs.Clone
         If ck(0).Value = 0 Then
-            Rel_ResumoRec.Sections("SecCab").Controls("LBTitulo").Caption = "N?o Recebidos"
+            Rel_ResumoRec.Sections("SecCab").Controls("LBTitulo").Caption = "Não Recebidos"
         Else
-            Rel_ResumoRec.Sections("SecCab").Controls("LBTitulo").Caption = txt_Logo_P & " - N?o Recebidos"
+            Rel_ResumoRec.Sections("SecCab").Controls("LBTitulo").Caption = txt_Logo_P & " - Não Recebidos"
             'Rel_ResumoRec.Sections("SecDet").Controls("txtlogo").Visible = False
         End If
         Rel_ResumoRec.Show
         Rel_ResumoRec.WindowState = vbMaximized
     Else
-        MsgBox "Nenhum registro encontrado para gerar o relat?rio!", vbExclamation
+        MsgBox "Nenhum registro encontrado para gerar o relatório!", vbExclamation
     End If
 
 sair:
@@ -2251,7 +2251,7 @@ On Error Resume Next
     wAntecipado = False
     If ckAntecipado.Value Then
         If Not IsDate(txtDtAntecipado) Then
-            MsgBox "Preencha o campo da Data de Antecipa??o ou retire a sele??o do item 'Antecipado?'", vbCritical, "Data de antecipa??o n?o preenchida"
+            MsgBox "Preencha o campo da Data de Antecipação ou retire a seleção do item 'Antecipado?'", vbCritical, "Data de antecipação não preenchida"
             Exit Sub
         Else
             wAntecipado = True
@@ -2282,7 +2282,7 @@ On Error Resume Next
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
         grid.SetFocus
     Else
-        MsgBox "N?o foi poss?vel baixar, especifique na consulta qual cart?o deseja!", vbCritical
+        MsgBox "Não foi possível baixar, especifique na consulta qual cartão deseja!", vbCritical
     End If
    
 End Sub
@@ -2298,7 +2298,7 @@ On Error Resume Next
         wQtRegistros = adoReg.Recordset.RecordCount
         mnuAcBaixar_Click
         If wQtRegistros = adoReg.Recordset.RecordCount Then
-            MsgBox "N?o foi poss?vel baixar algum cart?o. Cancelando!", vbCritical, "Erro de baixa"
+            MsgBox "Não foi possível baixar algum cartão. Cancelando!", vbCritical, "Erro de baixa"
             Exit Sub
         End If
     Loop
@@ -2332,7 +2332,7 @@ On Error Resume Next
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
         grid.SetFocus
     Else
-        MsgBox "N?o foi poss?vel remover a baixa, especifique na consulta qual cart?o deseja!", vbCritical
+        MsgBox "Não foi possível remover a baixa, especifique na consulta qual cartão deseja!", vbCritical
     End If
     
 End Sub
@@ -2348,7 +2348,7 @@ On Error Resume Next
         wQtRegistros = adoReg.Recordset.RecordCount
         mnuAcRem_Click
         If wQtRegistros = adoReg.Recordset.RecordCount Then
-            MsgBox "N?o foi poss?vel remover a baixa algum cart?o. Cancelando!", vbCritical, "Erro de remo??o de baixa"
+            MsgBox "Não foi possível remover a baixa algum cartão. Cancelando!", vbCritical, "Erro de remoção de baixa"
             Exit Sub
         End If
     Loop
@@ -2364,7 +2364,7 @@ On Error GoTo err1
         grid.Enabled = False
         adoReg.Enabled = False
     Else
-        MsgBox "N?o ? poss?vel alterar o vcto porque esta parcela j? foi baixada!", vbCritical
+        MsgBox "Não é possível alterar o vcto porque esta parcela já foi baixada!", vbCritical
     End If
 
 sair:
@@ -2384,8 +2384,8 @@ On Error Resume Next
 
     Set Rel_Baixa_Automatica.DataSource = w_Rec.Clone
     Rel_Baixa_Automatica.WindowState = vbMaximized
-    'Se "mostrar baixados", muda t?tulo para "Pend?ncia do Relat?rio das Baixas"
-    If ck(5).Value = 1 Then Rel_Baixa_Automatica.Sections("Section4").Controls("lbTitulo").Caption = "Pend?ncia do Relat?rio das Baixas"
+    'Se "mostrar baixados", muda título para "Pendência do Relatório das Baixas"
+    If ck(5).Value = 1 Then Rel_Baixa_Automatica.Sections("Section4").Controls("lbTitulo").Caption = "Pendência do Relatório das Baixas"
     Rel_Baixa_Automatica.Show
 
 End Sub
@@ -2434,7 +2434,7 @@ On Error GoTo err1
     wResp = vbYes
     'Verifica se possui alguma parcela baixada
     If 0 <> ExecuteSQL("Select Count(*) from tab_lanc_parc Where lcp_num_lanc = '" & adoReg.Recordset.Fields("lnc_num") & "' and lcp_baixa <> '0000-00-00'").Fields(0) Then
-        wResp = MsgBox("Umas das parcelas j? foi baixada, pois ap?s a altera??o as parcelas baixadas retonar?o como n?o baixadas! " & Chr(13) & "Deseja realmente alterar?", vbQuestion + vbYesNo)
+        wResp = MsgBox("Umas das parcelas já foi baixada, pois após a alteração as parcelas baixadas retonarão como não baixadas! " & Chr(13) & "Deseja realmente alterar?", vbQuestion + vbYesNo)
     End If
     
     If wResp = vbYes Then

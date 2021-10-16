@@ -1,31 +1,31 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Begin VB.Form frm_Config 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Config"
-   ClientHeight    =   3330
-   ClientLeft      =   45
-   ClientTop       =   615
-   ClientWidth     =   4455
+   ClientHeight    =   3328
+   ClientLeft      =   39
+   ClientTop       =   611
+   ClientWidth     =   4459
    Icon            =   "frm_Config.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   3330
-   ScaleWidth      =   4455
+   ScaleHeight     =   3328
+   ScaleWidth      =   4459
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   819
       Left            =   0
       TabIndex        =   0
       Top             =   0
-      Width           =   4455
-      _ExtentX        =   7858
-      _ExtentY        =   1535
+      Width           =   4459
+      _ExtentX        =   7860
+      _ExtentY        =   1438
       ButtonWidth     =   1667
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -67,7 +67,7 @@ Begin VB.Form frm_Config
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -101,8 +101,8 @@ Begin VB.Form frm_Config
       Left            =   0
       Top             =   2955
       Width           =   4455
-      _ExtentX        =   7858
-      _ExtentY        =   661
+      _ExtentX        =   7860
+      _ExtentY        =   671
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -133,7 +133,7 @@ Begin VB.Form frm_Config
       Caption         =   "Registro(s): 0 / 0"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -150,12 +150,12 @@ Begin VB.Form frm_Config
       TabIndex        =   3
       Top             =   2040
       Width           =   1140
-      _ExtentX        =   2011
-      _ExtentY        =   556
+      _ExtentX        =   2013
+      _ExtentY        =   551
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -165,7 +165,7 @@ Begin VB.Form frm_Config
       TextCase        =   1
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin VB.Label lblFieldLabel 
       Alignment       =   1  'Right Justify
@@ -174,7 +174,7 @@ Begin VB.Form frm_Config
       Caption         =   "Versão  EXE:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.83
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -195,7 +195,7 @@ Begin VB.Form frm_Config
       Caption         =   "Versão Login:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.83
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -218,8 +218,8 @@ Begin VB.Form frm_Config
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32

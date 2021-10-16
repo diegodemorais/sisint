@@ -1,34 +1,34 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
-Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MShflxgd.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "msdatlst.ocx"
+Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MSHFLXGD.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Lancamento 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Lançamentos"
-   ClientHeight    =   6855
-   ClientLeft      =   45
-   ClientTop       =   615
-   ClientWidth     =   11625
+   ClientHeight    =   6864
+   ClientLeft      =   39
+   ClientTop       =   611
+   ClientWidth     =   11635
    Icon            =   "frm_Lancamento.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   6855
-   ScaleWidth      =   11625
+   ScaleHeight     =   6864
+   ScaleWidth      =   11635
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   819
       Left            =   0
       TabIndex        =   11
       Top             =   0
-      Width           =   11625
-      _ExtentX        =   20505
-      _ExtentY        =   1535
+      Width           =   11635
+      _ExtentX        =   20512
+      _ExtentY        =   1438
       ButtonWidth     =   1667
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -44,6 +44,7 @@ Begin VB.Form frm_Lancamento
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -56,6 +57,7 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -75,6 +77,7 @@ Begin VB.Form frm_Lancamento
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -87,7 +90,7 @@ Begin VB.Form frm_Lancamento
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -122,38 +125,8 @@ Begin VB.Form frm_Lancamento
       TabIndex        =   10
       Top             =   5880
       Width           =   2175
-      _ExtentX        =   3836
-      _ExtentY        =   1085
-      BTYPE           =   2
-      TX              =   "Calcular Parcelas"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Lancamento.frx":27BA
-      PICN            =   "frm_Lancamento.frx":27D6
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   0
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentX        =   3834
+      _ExtentY        =   1078
    End
    Begin MSHierarchicalFlexGridLib.MSHFlexGrid Grid 
       Height          =   3195
@@ -161,8 +134,8 @@ Begin VB.Form frm_Lancamento
       TabIndex        =   32
       Top             =   1200
       Width           =   5355
-      _ExtentX        =   9446
-      _ExtentY        =   5636
+      _ExtentX        =   9441
+      _ExtentY        =   5631
       _Version        =   393216
       Cols            =   7
       ScrollBars      =   2
@@ -176,8 +149,8 @@ Begin VB.Form frm_Lancamento
       Top             =   2640
       Visible         =   0   'False
       Width           =   1200
-      _ExtentX        =   2117
-      _ExtentY        =   582
+      _ExtentX        =   2109
+      _ExtentY        =   575
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -208,7 +181,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "adoForma"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -223,8 +196,8 @@ Begin VB.Form frm_Lancamento
       Top             =   1920
       Visible         =   0   'False
       Width           =   1200
-      _ExtentX        =   2117
-      _ExtentY        =   582
+      _ExtentX        =   2109
+      _ExtentY        =   575
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -255,7 +228,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "adoCartao"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -270,8 +243,8 @@ Begin VB.Form frm_Lancamento
       Top             =   1200
       Visible         =   0   'False
       Width           =   1200
-      _ExtentX        =   2117
-      _ExtentY        =   582
+      _ExtentX        =   2109
+      _ExtentY        =   575
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -302,7 +275,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "adoLogo"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -327,13 +300,13 @@ Begin VB.Form frm_Lancamento
       TabStop         =   0   'False
       Top             =   4080
       Width           =   735
-      _ExtentX        =   1296
-      _ExtentY        =   556
+      _ExtentX        =   1294
+      _ExtentY        =   551
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -344,18 +317,18 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_Logo 
-      Bindings        =   "frm_Lancamento.frx":4910
-      Height          =   315
-      Left            =   1680
+      Bindings        =   "frm_Lancamento.frx":27BA
+      Height          =   286
+      Left            =   1677
       TabIndex        =   0
       TabStop         =   0   'False
-      Top             =   1200
-      Width           =   1965
-      _ExtentX        =   3466
-      _ExtentY        =   556
+      Top             =   1196
+      Width           =   1976
+      _ExtentX        =   3642
+      _ExtentY        =   503
       _Version        =   393216
       MatchEntry      =   -1  'True
       Style           =   2
@@ -365,14 +338,14 @@ Begin VB.Form frm_Lancamento
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_Cartao 
-      Bindings        =   "frm_Lancamento.frx":4926
-      Height          =   315
-      Left            =   1680
+      Bindings        =   "frm_Lancamento.frx":27D0
+      Height          =   286
+      Left            =   1677
       TabIndex        =   1
-      Top             =   1920
-      Width           =   3075
-      _ExtentX        =   5424
-      _ExtentY        =   556
+      Top             =   1924
+      Width           =   3068
+      _ExtentX        =   5655
+      _ExtentY        =   503
       _Version        =   393216
       MatchEntry      =   -1  'True
       Style           =   2
@@ -387,12 +360,12 @@ Begin VB.Form frm_Lancamento
       TabIndex        =   6
       Top             =   5280
       Width           =   675
-      _ExtentX        =   1191
-      _ExtentY        =   556
+      _ExtentX        =   1198
+      _ExtentY        =   551
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -402,7 +375,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_tx_fixo 
       BeginProperty DataFormat 
@@ -420,13 +393,13 @@ Begin VB.Form frm_Lancamento
       TabStop         =   0   'False
       Top             =   4560
       Width           =   1065
-      _ExtentX        =   1879
-      _ExtentY        =   556
+      _ExtentX        =   1869
+      _ExtentY        =   551
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -437,7 +410,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_tx_po 
       BeginProperty DataFormat 
@@ -455,13 +428,13 @@ Begin VB.Form frm_Lancamento
       TabStop         =   0   'False
       Top             =   4560
       Width           =   945
-      _ExtentX        =   1667
-      _ExtentY        =   556
+      _ExtentX        =   1677
+      _ExtentY        =   551
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -472,7 +445,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_NDOC 
       Height          =   315
@@ -480,12 +453,12 @@ Begin VB.Form frm_Lancamento
       TabIndex        =   7
       Top             =   5520
       Width           =   1755
-      _ExtentX        =   3096
-      _ExtentY        =   556
+      _ExtentX        =   3091
+      _ExtentY        =   551
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -496,17 +469,17 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_FormaPg 
-      Bindings        =   "frm_Lancamento.frx":493E
-      Height          =   315
-      Left            =   1680
+      Bindings        =   "frm_Lancamento.frx":27E8
+      Height          =   286
+      Left            =   1677
       TabIndex        =   3
-      Top             =   2640
-      Width           =   2640
-      _ExtentX        =   4657
-      _ExtentY        =   556
+      Top             =   2639
+      Width           =   2639
+      _ExtentX        =   4864
+      _ExtentY        =   503
       _Version        =   393216
       MatchEntry      =   -1  'True
       Style           =   2
@@ -516,14 +489,14 @@ Begin VB.Form frm_Lancamento
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_banco 
-      Bindings        =   "frm_Lancamento.frx":4955
-      Height          =   315
-      Left            =   1680
+      Bindings        =   "frm_Lancamento.frx":27FF
+      Height          =   286
+      Left            =   1677
       TabIndex        =   24
-      Top             =   3360
-      Width           =   3240
-      _ExtentX        =   5715
-      _ExtentY        =   556
+      Top             =   3354
+      Width           =   3250
+      _ExtentX        =   5991
+      _ExtentY        =   503
       _Version        =   393216
       Enabled         =   0   'False
       BackColor       =   -2147483643
@@ -534,15 +507,15 @@ Begin VB.Form frm_Lancamento
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_tipoC 
-      Bindings        =   "frm_Lancamento.frx":496D
-      Height          =   315
-      Left            =   2160
+      Bindings        =   "frm_Lancamento.frx":2817
+      Height          =   286
+      Left            =   2158
       TabIndex        =   26
-      Top             =   3480
+      Top             =   3484
       Visible         =   0   'False
-      Width           =   840
-      _ExtentX        =   1482
-      _ExtentY        =   556
+      Width           =   845
+      _ExtentX        =   1558
+      _ExtentY        =   503
       _Version        =   393216
       ListField       =   "ctl_tipoc"
       BoundColumn     =   "ctl_cod"
@@ -564,11 +537,11 @@ Begin VB.Form frm_Lancamento
       TabIndex        =   4
       Top             =   4800
       Width           =   1035
-      _ExtentX        =   1826
-      _ExtentY        =   556
+      _ExtentX        =   1821
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -581,18 +554,18 @@ Begin VB.Form frm_Lancamento
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_FormaPg_Parc 
-      Bindings        =   "frm_Lancamento.frx":4985
-      Height          =   315
-      Left            =   1920
+      Bindings        =   "frm_Lancamento.frx":282F
+      Height          =   286
+      Left            =   1924
       TabIndex        =   28
-      Top             =   2760
+      Top             =   2756
       Visible         =   0   'False
-      Width           =   960
-      _ExtentX        =   1693
-      _ExtentY        =   556
+      Width           =   962
+      _ExtentX        =   1773
+      _ExtentY        =   503
       _Version        =   393216
       MatchEntry      =   -1  'True
       Style           =   2
@@ -602,15 +575,15 @@ Begin VB.Form frm_Lancamento
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_FormaPg_Tipo 
-      Bindings        =   "frm_Lancamento.frx":499C
-      Height          =   315
+      Bindings        =   "frm_Lancamento.frx":2846
+      Height          =   286
       Left            =   3120
       TabIndex        =   29
-      Top             =   2760
+      Top             =   2756
       Visible         =   0   'False
-      Width           =   960
-      _ExtentX        =   1693
-      _ExtentY        =   556
+      Width           =   962
+      _ExtentX        =   1773
+      _ExtentY        =   503
       _Version        =   393216
       MatchEntry      =   -1  'True
       Style           =   2
@@ -635,11 +608,11 @@ Begin VB.Form frm_Lancamento
       Top             =   5280
       Visible         =   0   'False
       Width           =   1035
-      _ExtentX        =   1826
-      _ExtentY        =   556
+      _ExtentX        =   1821
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -652,18 +625,18 @@ Begin VB.Form frm_Lancamento
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_LbDoc 
-      Bindings        =   "frm_Lancamento.frx":49B3
-      Height          =   315
-      Left            =   3000
+      Bindings        =   "frm_Lancamento.frx":285D
+      Height          =   286
+      Left            =   3003
       TabIndex        =   33
-      Top             =   3480
+      Top             =   3484
       Visible         =   0   'False
-      Width           =   1440
-      _ExtentX        =   2540
-      _ExtentY        =   556
+      Width           =   1443
+      _ExtentX        =   2660
+      _ExtentY        =   503
       _Version        =   393216
       ListField       =   "ctl_label_Ndoc"
       BoundColumn     =   "ctl_cod"
@@ -685,11 +658,11 @@ Begin VB.Form frm_Lancamento
       TabIndex        =   9
       Top             =   6240
       Width           =   1305
-      _ExtentX        =   2302
-      _ExtentY        =   556
+      _ExtentX        =   2300
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -699,18 +672,18 @@ Begin VB.Form frm_Lancamento
       MaxLength       =   9
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_Desc_Parc 
-      Bindings        =   "frm_Lancamento.frx":49CB
-      Height          =   315
-      Left            =   3480
+      Bindings        =   "frm_Lancamento.frx":2875
+      Height          =   286
+      Left            =   3484
       TabIndex        =   35
-      Top             =   2040
+      Top             =   2041
       Visible         =   0   'False
-      Width           =   840
-      _ExtentX        =   1482
-      _ExtentY        =   556
+      Width           =   845
+      _ExtentX        =   1558
+      _ExtentY        =   503
       _Version        =   393216
       ListField       =   "ctl_des_parc"
       BoundColumn     =   "ctl_cod"
@@ -724,12 +697,12 @@ Begin VB.Form frm_Lancamento
       Top             =   6225
       Visible         =   0   'False
       Width           =   4155
-      _ExtentX        =   7329
-      _ExtentY        =   556
+      _ExtentX        =   7332
+      _ExtentY        =   551
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -740,7 +713,7 @@ Begin VB.Form frm_Lancamento
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_Valor_Entrada 
       BeginProperty DataFormat 
@@ -758,11 +731,11 @@ Begin VB.Form frm_Lancamento
       Top             =   5280
       Visible         =   0   'False
       Width           =   1305
-      _ExtentX        =   2302
-      _ExtentY        =   556
+      _ExtentX        =   2300
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -772,7 +745,7 @@ Begin VB.Form frm_Lancamento
       MaxLength       =   9
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin VB.Label lbEntrada 
       Alignment       =   1  'Right Justify
@@ -780,7 +753,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Valor Entrada"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -800,7 +773,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Nº Resumo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -820,7 +793,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Valor Compra"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -838,7 +811,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Dia(s)"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -857,7 +830,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Pré-Datado p/:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -877,7 +850,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Data Protocolo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -896,7 +869,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Banco"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -915,7 +888,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Forma de Pagamento"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -934,7 +907,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Nº Doc"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -953,7 +926,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "%-Adic"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -972,7 +945,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Vr Fixo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -991,7 +964,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "1º Parc daqui"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1010,7 +983,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "%"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1029,7 +1002,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Cartão"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1048,7 +1021,7 @@ Begin VB.Form frm_Lancamento
       Caption         =   "Logo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1070,8 +1043,8 @@ Begin VB.Form frm_Lancamento
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -1080,35 +1053,35 @@ Begin VB.Form frm_Lancamento
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":49E3
+            Picture         =   "frm_Lancamento.frx":288D
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":4CFD
+            Picture         =   "frm_Lancamento.frx":2BA7
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":4ED7
+            Picture         =   "frm_Lancamento.frx":2D81
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":51F1
+            Picture         =   "frm_Lancamento.frx":309B
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":550B
+            Picture         =   "frm_Lancamento.frx":33B5
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":5825
+            Picture         =   "frm_Lancamento.frx":36CF
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":5B3F
+            Picture         =   "frm_Lancamento.frx":39E9
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":5D19
+            Picture         =   "frm_Lancamento.frx":3BC3
             Key             =   ""
          EndProperty
       EndProperty

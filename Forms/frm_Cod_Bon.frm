@@ -1,34 +1,34 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "msdatgrd.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "msdatlst.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Cod_Bon 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Código / Bônus"
-   ClientHeight    =   7815
-   ClientLeft      =   45
-   ClientTop       =   735
-   ClientWidth     =   10125
+   ClientHeight    =   7813
+   ClientLeft      =   39
+   ClientTop       =   741
+   ClientWidth     =   10127
    Icon            =   "frm_Cod_Bon.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   7815
-   ScaleWidth      =   10125
+   ScaleHeight     =   7813
+   ScaleWidth      =   10127
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   819
       Left            =   0
       TabIndex        =   8
       Top             =   0
-      Width           =   10125
-      _ExtentX        =   17859
-      _ExtentY        =   1535
+      Width           =   10127
+      _ExtentX        =   17852
+      _ExtentY        =   1438
       ButtonWidth     =   1667
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -89,7 +89,7 @@ Begin VB.Form frm_Cod_Bon
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -114,12 +114,12 @@ Begin VB.Form frm_Cod_Bon
       Top             =   3960
       Visible         =   0   'False
       Width           =   1335
-      _ExtentX        =   2355
-      _ExtentY        =   661
+      _ExtentX        =   2348
+      _ExtentY        =   671
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -129,7 +129,7 @@ Begin VB.Form frm_Cod_Bon
       Text            =   "0"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_vr_cred 
       Height          =   375
@@ -137,12 +137,12 @@ Begin VB.Form frm_Cod_Bon
       TabIndex        =   6
       Top             =   3960
       Width           =   1335
-      _ExtentX        =   2355
-      _ExtentY        =   661
+      _ExtentX        =   2348
+      _ExtentY        =   671
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -152,7 +152,7 @@ Begin VB.Form frm_Cod_Bon
       Text            =   "0"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin VB.TextBox txt_obs 
       Height          =   780
@@ -169,8 +169,8 @@ Begin VB.Form frm_Cod_Bon
       Top             =   7440
       Visible         =   0   'False
       Width           =   2340
-      _ExtentX        =   4128
-      _ExtentY        =   582
+      _ExtentX        =   4122
+      _ExtentY        =   575
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -201,7 +201,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -217,8 +217,8 @@ Begin VB.Form frm_Cod_Bon
       TabIndex        =   16
       Top             =   4680
       Width           =   8775
-      _ExtentX        =   15478
-      _ExtentY        =   5292
+      _ExtentX        =   15480
+      _ExtentY        =   5296
       _Version        =   393216
       AllowUpdate     =   0   'False
       HeadLines       =   1
@@ -226,7 +226,7 @@ Begin VB.Form frm_Cod_Bon
       FormatLocked    =   -1  'True
       BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -235,7 +235,7 @@ Begin VB.Form frm_Cod_Bon
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -417,8 +417,8 @@ Begin VB.Form frm_Cod_Bon
       Top             =   960
       Visible         =   0   'False
       Width           =   1200
-      _ExtentX        =   2117
-      _ExtentY        =   582
+      _ExtentX        =   2109
+      _ExtentY        =   575
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -449,7 +449,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -460,14 +460,14 @@ Begin VB.Form frm_Cod_Bon
    End
    Begin MSDataListLib.DataCombo txt_Logo 
       Bindings        =   "frm_Cod_Bon.frx":27B8
-      Height          =   315
-      Left            =   3195
+      Height          =   286
+      Left            =   3198
       TabIndex        =   0
       TabStop         =   0   'False
-      Top             =   1440
-      Width           =   1695
-      _ExtentX        =   2990
-      _ExtentY        =   556
+      Top             =   1443
+      Width           =   1703
+      _ExtentX        =   3139
+      _ExtentY        =   503
       _Version        =   393216
       MatchEntry      =   -1  'True
       Style           =   2
@@ -491,12 +491,12 @@ Begin VB.Form frm_Cod_Bon
       TabIndex        =   1
       Top             =   1440
       Width           =   1275
-      _ExtentX        =   2249
-      _ExtentY        =   556
+      _ExtentX        =   2252
+      _ExtentY        =   551
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -509,7 +509,7 @@ Begin VB.Form frm_Cod_Bon
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_Valor_Vnd 
       BeginProperty DataFormat 
@@ -526,12 +526,12 @@ Begin VB.Form frm_Cod_Bon
       TabIndex        =   2
       Top             =   1890
       Width           =   1695
-      _ExtentX        =   2990
-      _ExtentY        =   556
+      _ExtentX        =   2995
+      _ExtentY        =   551
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -542,7 +542,7 @@ Begin VB.Form frm_Cod_Bon
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_bonus 
       BeginProperty DataFormat 
@@ -559,12 +559,12 @@ Begin VB.Form frm_Cod_Bon
       TabIndex        =   3
       Top             =   1890
       Width           =   1275
-      _ExtentX        =   2249
-      _ExtentY        =   556
+      _ExtentX        =   2252
+      _ExtentY        =   551
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -575,7 +575,7 @@ Begin VB.Form frm_Cod_Bon
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_acum 
       BeginProperty DataFormat 
@@ -593,12 +593,12 @@ Begin VB.Form frm_Cod_Bon
       Top             =   2370
       Visible         =   0   'False
       Width           =   1305
-      _ExtentX        =   2302
-      _ExtentY        =   556
+      _ExtentX        =   2300
+      _ExtentY        =   551
       Alignment       =   2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -608,19 +608,19 @@ Begin VB.Form frm_Cod_Bon
       Text            =   "R$ 0,00"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_Usu_AC 
       Bindings        =   "frm_Cod_Bon.frx":27CE
-      Height          =   315
+      Height          =   286
       Left            =   3315
       TabIndex        =   15
       TabStop         =   0   'False
-      Top             =   960
+      Top             =   962
       Visible         =   0   'False
-      Width           =   615
-      _ExtentX        =   1085
-      _ExtentY        =   556
+      Width           =   611
+      _ExtentX        =   1126
+      _ExtentY        =   503
       _Version        =   393216
       MatchEntry      =   -1  'True
       Style           =   2
@@ -637,38 +637,8 @@ Begin VB.Form frm_Cod_Bon
       ToolTipText     =   "Excluir Lançamento selecionado"
       Top             =   6180
       Width           =   840
-      _ExtentX        =   1482
-      _ExtentY        =   2646
-      BTYPE           =   2
-      TX              =   "&Excluir"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Cod_Bon.frx":27E4
-      PICN            =   "frm_Cod_Bon.frx":2800
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   2
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentX        =   1486
+      _ExtentY        =   2636
    End
    Begin Skin_Button.ctr_Button bt_Edit 
       Height          =   1485
@@ -678,38 +648,8 @@ Begin VB.Form frm_Cod_Bon
       ToolTipText     =   "Editar Lançamento selecionado"
       Top             =   4695
       Width           =   840
-      _ExtentX        =   1482
-      _ExtentY        =   2619
-      BTYPE           =   2
-      TX              =   "&Editar"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Cod_Bon.frx":2B1A
-      PICN            =   "frm_Cod_Bon.frx":2B36
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   2
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentX        =   1486
+      _ExtentY        =   2612
    End
    Begin rdActiveText.ActiveText ActiveText1 
       BeginProperty DataFormat 
@@ -726,11 +666,11 @@ Begin VB.Form frm_Cod_Bon
       TabIndex        =   20
       Top             =   0
       Width           =   1275
-      _ExtentX        =   2249
-      _ExtentY        =   556
+      _ExtentX        =   2252
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -743,13 +683,13 @@ Begin VB.Form frm_Cod_Bon
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin VB.Label lbl_vr_cred_acum 
       Caption         =   "V.Cred.Acum"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -767,7 +707,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "V.Cred"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -785,7 +725,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "Observação"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -816,7 +756,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "Acumulado"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -836,7 +776,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "Bônus"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -855,7 +795,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "Vnd"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -874,7 +814,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "Data"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -893,7 +833,7 @@ Begin VB.Form frm_Cod_Bon
       Caption         =   "Logo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -909,8 +849,8 @@ Begin VB.Form frm_Cod_Bon
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -919,35 +859,35 @@ Begin VB.Form frm_Cod_Bon
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cod_Bon.frx":2E50
+            Picture         =   "frm_Cod_Bon.frx":27E4
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cod_Bon.frx":316A
+            Picture         =   "frm_Cod_Bon.frx":2AFE
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cod_Bon.frx":3344
+            Picture         =   "frm_Cod_Bon.frx":2CD8
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cod_Bon.frx":365E
+            Picture         =   "frm_Cod_Bon.frx":2FF2
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cod_Bon.frx":3978
+            Picture         =   "frm_Cod_Bon.frx":330C
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cod_Bon.frx":3C92
+            Picture         =   "frm_Cod_Bon.frx":3626
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cod_Bon.frx":3FAC
+            Picture         =   "frm_Cod_Bon.frx":3940
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cod_Bon.frx":4186
+            Picture         =   "frm_Cod_Bon.frx":3B1A
             Key             =   ""
          EndProperty
       EndProperty

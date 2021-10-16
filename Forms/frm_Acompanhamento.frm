@@ -1,33 +1,33 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "msdatlst.ocx"
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Acompanhamento 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Acompanhamento"
-   ClientHeight    =   2355
-   ClientLeft      =   45
-   ClientTop       =   330
-   ClientWidth     =   11190
+   ClientHeight    =   2366
+   ClientLeft      =   39
+   ClientTop       =   325
+   ClientWidth     =   11193
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   2355
-   ScaleWidth      =   11190
+   ScaleHeight     =   2366
+   ScaleWidth      =   11193
    ShowInTaskbar   =   0   'False
    StartUpPosition =   3  'Windows Default
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   630
+      Height          =   819
       Left            =   0
       TabIndex        =   13
       Top             =   0
-      Width           =   11190
-      _ExtentX        =   19738
-      _ExtentY        =   1111
+      Width           =   11193
+      _ExtentX        =   19745
+      _ExtentY        =   1438
       ButtonWidth     =   1244
       ButtonHeight    =   1005
       ImageList       =   "IMG"
@@ -50,11 +50,11 @@ Begin VB.Form frm_Acompanhamento
          Top             =   240
          Visible         =   0   'False
          Width           =   4815
-         _ExtentX        =   8493
-         _ExtentY        =   741
+         _ExtentX        =   8483
+         _ExtentY        =   743
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Times New Roman"
-            Size            =   9
+            Size            =   8.8302
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -63,7 +63,7 @@ Begin VB.Form frm_Acompanhamento
          EndProperty
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Times New Roman"
-            Size            =   9
+            Size            =   8.8302
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -79,7 +79,7 @@ Begin VB.Form frm_Acompanhamento
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -101,7 +101,7 @@ Begin VB.Form frm_Acompanhamento
       Caption         =   " Relatório "
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -117,7 +117,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Venda"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -135,7 +135,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Recebimento"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -153,7 +153,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Saldo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -182,12 +182,12 @@ Begin VB.Form frm_Acompanhamento
          TabIndex        =   7
          Top             =   1200
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -200,7 +200,7 @@ Begin VB.Form frm_Acompanhamento
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin rdActiveText.ActiveText Txt_DtF 
          BeginProperty DataFormat 
@@ -217,12 +217,12 @@ Begin VB.Form frm_Acompanhamento
          TabIndex        =   8
          Top             =   1185
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -235,7 +235,7 @@ Begin VB.Form frm_Acompanhamento
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin rdActiveText.ActiveText Txt_DtIP 
          BeginProperty DataFormat 
@@ -252,12 +252,12 @@ Begin VB.Form frm_Acompanhamento
          TabIndex        =   5
          Top             =   600
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -270,7 +270,7 @@ Begin VB.Form frm_Acompanhamento
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin rdActiveText.ActiveText Txt_DtFP 
          BeginProperty DataFormat 
@@ -287,12 +287,12 @@ Begin VB.Form frm_Acompanhamento
          TabIndex        =   6
          Top             =   600
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -305,7 +305,7 @@ Begin VB.Form frm_Acompanhamento
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin Skin_Button.ctr_Button bt_Gerar 
          Height          =   1080
@@ -314,13 +314,13 @@ Begin VB.Form frm_Acompanhamento
          Top             =   360
          Width           =   1155
          _ExtentX        =   2037
-         _ExtentY        =   1905
+         _ExtentY        =   1917
          BTYPE           =   2
          TX              =   "&Gerar"
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   9.75
+            Size            =   8.8302
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -352,7 +352,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Escopo de Data Vcto"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -371,7 +371,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "à"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -390,7 +390,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "à"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -409,7 +409,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Escopo de Data Protocolo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -427,7 +427,7 @@ Begin VB.Form frm_Acompanhamento
       Caption         =   " Filtros "
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -452,7 +452,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Logo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -470,7 +470,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Cartão"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -496,8 +496,8 @@ Begin VB.Form frm_Acompanhamento
          Top             =   525
          Visible         =   0   'False
          Width           =   1200
-         _ExtentX        =   2117
-         _ExtentY        =   582
+         _ExtentX        =   2109
+         _ExtentY        =   575
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -528,7 +528,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Adodc1"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -543,8 +543,8 @@ Begin VB.Form frm_Acompanhamento
          Top             =   1110
          Visible         =   0   'False
          Width           =   1200
-         _ExtentX        =   2117
-         _ExtentY        =   582
+         _ExtentX        =   2109
+         _ExtentY        =   575
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -575,7 +575,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "adoCartao"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -586,14 +586,14 @@ Begin VB.Form frm_Acompanhamento
       End
       Begin MSDataListLib.DataCombo txt_Logo_P 
          Bindings        =   "frm_Acompanhamento.frx":0336
-         Height          =   315
-         Left            =   1440
+         Height          =   286
+         Left            =   1443
          TabIndex        =   2
          TabStop         =   0   'False
-         Top             =   510
-         Width           =   1965
-         _ExtentX        =   3466
-         _ExtentY        =   556
+         Top             =   507
+         Width           =   1976
+         _ExtentX        =   3642
+         _ExtentY        =   503
          _Version        =   393216
          Enabled         =   0   'False
          MatchEntry      =   -1  'True
@@ -605,13 +605,13 @@ Begin VB.Form frm_Acompanhamento
       End
       Begin MSDataListLib.DataCombo txt_Cartao_P 
          Bindings        =   "frm_Acompanhamento.frx":034C
-         Height          =   315
-         Left            =   1440
+         Height          =   286
+         Left            =   1443
          TabIndex        =   4
-         Top             =   1110
-         Width           =   3210
-         _ExtentX        =   5662
-         _ExtentY        =   556
+         Top             =   1105
+         Width           =   3211
+         _ExtentX        =   5919
+         _ExtentY        =   503
          _Version        =   393216
          Enabled         =   0   'False
          MatchEntry      =   -1  'True
@@ -626,7 +626,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Logo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -644,7 +644,7 @@ Begin VB.Form frm_Acompanhamento
          Caption         =   "Cartão"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -661,8 +661,8 @@ Begin VB.Form frm_Acompanhamento
    Begin ComctlLib.ImageList IMG 
       Left            =   4920
       Top             =   360
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -729,7 +729,7 @@ If (ck(6).Value <> 0 And Txt_DtIP <> "" And Txt_DtFP <> "") _
     Or (ck(3).Value <> 0 And Txt_DtF <> "") Then
     
     pgBar.Visible = True
-    pgBar.text = "................................ Gerando Relatório ..............................."
+    pgBar.Text = "................................ Gerando Relatório ..............................."
     pgBar.Value = 1
     
     If (ck(6).Value <> 0 And Txt_DtIP <> "" And Txt_DtFP <> "") Then
@@ -875,7 +875,7 @@ Else
     MsgBox "É necessário escolher pelo menos um tipo de relatório [Venda | Recebido | Saldo]!", vbCritical
 End If
 
-txt.text = w_SQL_Venda
+txt.Text = w_SQL_Venda
 End Sub
 
 Private Sub ck_Click(Index As Integer)

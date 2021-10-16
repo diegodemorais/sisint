@@ -1,33 +1,33 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
 Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MSHFLXGD.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Rpt_Resumo 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "R. Resumo"
-   ClientHeight    =   5430
-   ClientLeft      =   45
-   ClientTop       =   615
-   ClientWidth     =   11520
+   ClientHeight    =   5434
+   ClientLeft      =   39
+   ClientTop       =   611
+   ClientWidth     =   11531
    Icon            =   "frm_Rpt_Resumo.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   5430
-   ScaleWidth      =   11520
+   ScaleHeight     =   5434
+   ScaleWidth      =   11531
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   819
       Left            =   0
       TabIndex        =   5
       Top             =   0
-      Width           =   11520
-      _ExtentX        =   20320
-      _ExtentY        =   1535
+      Width           =   11531
+      _ExtentX        =   20344
+      _ExtentY        =   1438
       ButtonWidth     =   1376
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -49,7 +49,7 @@ Begin VB.Form frm_Rpt_Resumo
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -88,13 +88,13 @@ Begin VB.Form frm_Rpt_Resumo
          TabIndex        =   18
          Top             =   4080
          Width           =   765
-         _ExtentX        =   1349
-         _ExtentY        =   556
+         _ExtentX        =   1342
+         _ExtentY        =   551
          Alignment       =   1
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -104,13 +104,13 @@ Begin VB.Form frm_Rpt_Resumo
          Text            =   "0,00"
          RawText         =   0
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin VB.Frame Painel 
          Caption         =   "Agrupar por: "
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -148,8 +148,8 @@ Begin VB.Form frm_Rpt_Resumo
          Top             =   3000
          Visible         =   0   'False
          Width           =   1215
-         _ExtentX        =   2143
-         _ExtentY        =   661
+         _ExtentX        =   2133
+         _ExtentY        =   671
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -180,7 +180,7 @@ Begin VB.Form frm_Rpt_Resumo
          Caption         =   ""
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -196,8 +196,8 @@ Begin VB.Form frm_Rpt_Resumo
          TabIndex        =   16
          Top             =   1200
          Width           =   5160
-         _ExtentX        =   9102
-         _ExtentY        =   4974
+         _ExtentX        =   9106
+         _ExtentY        =   4984
          _Version        =   393216
          Cols            =   5
          AllowBigSelection=   0   'False
@@ -214,8 +214,8 @@ Begin VB.Form frm_Rpt_Resumo
          Top             =   1920
          Visible         =   0   'False
          Width           =   1215
-         _ExtentX        =   2143
-         _ExtentY        =   582
+         _ExtentX        =   2133
+         _ExtentY        =   575
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -246,7 +246,7 @@ Begin VB.Form frm_Rpt_Resumo
          Caption         =   "Adodc1"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -257,7 +257,7 @@ Begin VB.Form frm_Rpt_Resumo
       End
       Begin VB.ListBox List_Cartao 
          Appearance      =   0  'Flat
-         Height          =   3180
+         Height          =   3146
          ItemData        =   "frm_Rpt_Resumo.frx":27B8
          Left            =   2520
          List            =   "frm_Rpt_Resumo.frx":27BA
@@ -268,7 +268,7 @@ Begin VB.Form frm_Rpt_Resumo
       End
       Begin VB.ListBox List_loja 
          Appearance      =   0  'Flat
-         Height          =   3855
+         Height          =   3731
          ItemData        =   "frm_Rpt_Resumo.frx":27BC
          Left            =   240
          List            =   "frm_Rpt_Resumo.frx":27BE
@@ -292,11 +292,11 @@ Begin VB.Form frm_Rpt_Resumo
          TabIndex        =   1
          Top             =   510
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -309,7 +309,7 @@ Begin VB.Form frm_Rpt_Resumo
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin MSAdodcLib.Adodc adoLogo 
          Height          =   375
@@ -317,8 +317,8 @@ Begin VB.Form frm_Rpt_Resumo
          Top             =   120
          Visible         =   0   'False
          Width           =   1215
-         _ExtentX        =   2143
-         _ExtentY        =   661
+         _ExtentX        =   2133
+         _ExtentY        =   671
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -349,7 +349,7 @@ Begin VB.Form frm_Rpt_Resumo
          Caption         =   "Adodc1"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -373,11 +373,11 @@ Begin VB.Form frm_Rpt_Resumo
          TabIndex        =   2
          Top             =   510
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -390,7 +390,7 @@ Begin VB.Form frm_Rpt_Resumo
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin Skin_Button.ctr_Button bt_Rpt_Geral 
          Height          =   615
@@ -398,38 +398,8 @@ Begin VB.Form frm_Rpt_Resumo
          TabIndex        =   4
          Top             =   240
          Width           =   1650
-         _ExtentX        =   2910
-         _ExtentY        =   1085
-         BTYPE           =   2
-         TX              =   "Resumo Geral"
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":27C0
-         PICN            =   "frm_Rpt_Resumo.frx":27DC
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   2899
+         _ExtentY        =   1078
       End
       Begin Skin_Button.ctr_Button bt_STodos 
          Height          =   495
@@ -439,38 +409,8 @@ Begin VB.Form frm_Rpt_Resumo
          ToolTipText     =   "Seleciona todos"
          Top             =   510
          Width           =   525
-         _ExtentX        =   926
-         _ExtentY        =   873
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":3ABE
-         PICN            =   "frm_Rpt_Resumo.frx":3ADA
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   935
+         _ExtentY        =   863
       End
       Begin Skin_Button.ctr_Button bt_RTodos 
          Height          =   495
@@ -480,38 +420,8 @@ Begin VB.Form frm_Rpt_Resumo
          ToolTipText     =   "Retira Selecão de todos"
          Top             =   1080
          Width           =   525
-         _ExtentX        =   926
-         _ExtentY        =   873
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":3DF4
-         PICN            =   "frm_Rpt_Resumo.frx":3E10
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   935
+         _ExtentY        =   863
       End
       Begin Skin_Button.ctr_Button bt_STodos_Cart 
          Height          =   495
@@ -521,38 +431,8 @@ Begin VB.Form frm_Rpt_Resumo
          ToolTipText     =   "Seleciona todos"
          Top             =   1200
          Width           =   525
-         _ExtentX        =   926
-         _ExtentY        =   873
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":412A
-         PICN            =   "frm_Rpt_Resumo.frx":4146
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   935
+         _ExtentY        =   863
       End
       Begin Skin_Button.ctr_Button bt_RTodos_Cart 
          Height          =   495
@@ -562,38 +442,8 @@ Begin VB.Form frm_Rpt_Resumo
          ToolTipText     =   "Retira Selecão de todos"
          Top             =   1770
          Width           =   525
-         _ExtentX        =   926
-         _ExtentY        =   873
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":4460
-         PICN            =   "frm_Rpt_Resumo.frx":447C
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   935
+         _ExtentY        =   863
       End
       Begin Skin_Button.ctr_Button bt_Consultar 
          Height          =   615
@@ -601,38 +451,8 @@ Begin VB.Form frm_Rpt_Resumo
          TabIndex        =   17
          Top             =   240
          Width           =   1650
-         _ExtentX        =   2910
-         _ExtentY        =   1085
-         BTYPE           =   2
-         TX              =   "Consultar"
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":4796
-         PICN            =   "frm_Rpt_Resumo.frx":47B2
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   2899
+         _ExtentY        =   1078
       End
       Begin rdActiveText.ActiveText txt_Liq 
          BeginProperty DataFormat 
@@ -649,13 +469,13 @@ Begin VB.Form frm_Rpt_Resumo
          TabIndex        =   19
          Top             =   4080
          Width           =   765
-         _ExtentX        =   1349
-         _ExtentY        =   556
+         _ExtentX        =   1342
+         _ExtentY        =   551
          Alignment       =   1
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -665,14 +485,14 @@ Begin VB.Form frm_Rpt_Resumo
          Text            =   "0,00"
          RawText         =   0
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin VB.Label Label3 
          BackStyle       =   0  'Transparent
          Caption         =   "Cartão :"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -690,7 +510,7 @@ Begin VB.Form frm_Rpt_Resumo
          Caption         =   "Logo:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -709,7 +529,7 @@ Begin VB.Form frm_Rpt_Resumo
          Caption         =   "Escopo de Data"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -728,7 +548,7 @@ Begin VB.Form frm_Rpt_Resumo
          Caption         =   "à"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -745,8 +565,8 @@ Begin VB.Form frm_Rpt_Resumo
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -755,35 +575,35 @@ Begin VB.Form frm_Rpt_Resumo
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":763C
+            Picture         =   "frm_Rpt_Resumo.frx":27C0
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":7956
+            Picture         =   "frm_Rpt_Resumo.frx":2ADA
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":7B30
+            Picture         =   "frm_Rpt_Resumo.frx":2CB4
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":7E4A
+            Picture         =   "frm_Rpt_Resumo.frx":2FCE
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":8164
+            Picture         =   "frm_Rpt_Resumo.frx":32E8
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":847E
+            Picture         =   "frm_Rpt_Resumo.frx":3602
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":8798
+            Picture         =   "frm_Rpt_Resumo.frx":391C
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":8972
+            Picture         =   "frm_Rpt_Resumo.frx":3AF6
             Key             =   ""
          EndProperty
       EndProperty
@@ -818,23 +638,23 @@ On Error GoTo err1
         End If
     Next i
     
-    w_Cartao = ""
+    w_cartao = ""
     'Pega o Codigo de Todos os Cartões Selecionados
-    For i = 0 To List_Cartao.ListCount - 1
-        If List_Cartao.Selected(i) = True Then
+    For i = 0 To List_cartao.ListCount - 1
+        If List_cartao.Selected(i) = True Then
             adoCartao.Recordset.MoveFirst
             Call adoCartao.Recordset.Move(i)
-            w_Cartao = w_Cartao & IIf(Len(w_Cartao) > 0, ",", "") & adoCartao.Recordset.Fields(0)
+            w_cartao = w_cartao & IIf(Len(w_cartao) > 0, ",", "") & adoCartao.Recordset.Fields(0)
         End If
     Next i
 
 
-If Len(w_Cartao) > 0 And Len(w_logo) > 0 Then
+If Len(w_cartao) > 0 And Len(w_logo) > 0 Then
    
     If op1.Value = True Then
-        w_SQL = "SELECT tab_tipo_cartao.tpc_desc AS Cartao, tab_usuario.usl_nome AS Logo, ROUND(Sum(tab_lanc.lnc_vr)) as Vr, ROUND(Sum(tab_lanc.lnc_vr_liq)) as VrLiq FROM tab_lanc, tab_usuario, tab_tipo_cartao WHERE (tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_loj IN (" & w_logo & ")) AND (tab_lanc.lnc_dt_vnd >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "') AND (tab_lanc.lnc_dt_vnd <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "' and tab_tipo_cartao.tpc_cod IN (" & w_Cartao & ")) GROUP BY CARTAO, LOGO ORDER BY tab_tipo_cartao.tpc_desc, tab_usuario.usl_nome"
+        w_SQL = "SELECT tab_tipo_cartao.tpc_desc AS Cartao, tab_usuario.usl_nome AS Logo, ROUND(Sum(tab_lanc.lnc_vr)) as Vr, ROUND(Sum(tab_lanc.lnc_vr_liq)) as VrLiq FROM tab_lanc, tab_usuario, tab_tipo_cartao WHERE (tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_loj IN (" & w_logo & ")) AND (tab_lanc.lnc_dt_vnd >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "') AND (tab_lanc.lnc_dt_vnd <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "' and tab_tipo_cartao.tpc_cod IN (" & w_cartao & ")) GROUP BY CARTAO, LOGO ORDER BY tab_tipo_cartao.tpc_desc, tab_usuario.usl_nome"
     Else
-        w_SQL = "SELECT tab_usuario.usl_nome AS Logo, tab_tipo_cartao.tpc_desc AS Cartao, ROUND(Sum(tab_lanc.lnc_vr)) as Vr, ROUND(Sum(tab_lanc.lnc_vr_liq)) as VrLiq FROM tab_lanc, tab_usuario, tab_tipo_cartao WHERE (tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_loj IN (" & w_logo & ")) AND (tab_lanc.lnc_dt_vnd >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "') AND (tab_lanc.lnc_dt_vnd <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "' and tab_tipo_cartao.tpc_cod IN (" & w_Cartao & ")) GROUP BY LOGO, CARTAO ORDER BY tab_usuario.usl_nome, tab_tipo_cartao.tpc_desc"
+        w_SQL = "SELECT tab_usuario.usl_nome AS Logo, tab_tipo_cartao.tpc_desc AS Cartao, ROUND(Sum(tab_lanc.lnc_vr)) as Vr, ROUND(Sum(tab_lanc.lnc_vr_liq)) as VrLiq FROM tab_lanc, tab_usuario, tab_tipo_cartao WHERE (tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_loj IN (" & w_logo & ")) AND (tab_lanc.lnc_dt_vnd >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "') AND (tab_lanc.lnc_dt_vnd <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "' and tab_tipo_cartao.tpc_cod IN (" & w_cartao & ")) GROUP BY LOGO, CARTAO ORDER BY tab_usuario.usl_nome, tab_tipo_cartao.tpc_desc"
     End If
     
     Set w_Rec = ExecuteSQL(w_SQL, , "MSDataShape").Clone
@@ -854,11 +674,11 @@ If Len(w_Cartao) > 0 And Len(w_logo) > 0 Then
         MsgBox "Nenhum registro encontrado para gerar o relatório!", vbExclamation
     End If
     
-ElseIf Len(w_logo) = 0 And Len(w_Cartao) = 0 Then
+ElseIf Len(w_logo) = 0 And Len(w_cartao) = 0 Then
     MsgBox "Escolha a loja e o cartão desejado!", vbExclamation
 ElseIf Len(w_logo) = 0 Then
     MsgBox "Escolha a loja desejada!", vbExclamation
-ElseIf Len(w_Cartao) = 0 Then
+ElseIf Len(w_cartao) = 0 Then
     MsgBox "Escolha o cartão desejado!", vbExclamation
 End If
     
@@ -887,23 +707,23 @@ On Error GoTo err1
         End If
     Next i
     
-    w_Cartao = ""
+    w_cartao = ""
     'Pega o Codigo de Todos os Cartões Selecionados
-    For i = 0 To List_Cartao.ListCount - 1
-        If List_Cartao.Selected(i) = True Then
+    For i = 0 To List_cartao.ListCount - 1
+        If List_cartao.Selected(i) = True Then
             adoCartao.Recordset.MoveFirst
             Call adoCartao.Recordset.Move(i)
-            w_Cartao = w_Cartao & IIf(Len(w_Cartao) > 0, ",", "") & adoCartao.Recordset.Fields(0)
+            w_cartao = w_cartao & IIf(Len(w_cartao) > 0, ",", "") & adoCartao.Recordset.Fields(0)
         End If
     Next i
 
 
-If Len(w_Cartao) > 0 And Len(w_logo) > 0 Then
+If Len(w_cartao) > 0 And Len(w_logo) > 0 Then
    
     If op1.Value = True Then
-        w_SQL = "SHAPE {SELECT tab_tipo_cartao.tpc_desc AS Cartao, tab_usuario.usl_nome AS Logo,  Sum(tab_lanc.lnc_vr) as Vr, Sum(tab_lanc.lnc_vr_liq) as VrLiq FROM tab_lanc, tab_usuario, tab_tipo_cartao WHERE (tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_loj IN (" & w_logo & ")) AND (tab_lanc.lnc_dt_vnd >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "') AND (tab_lanc.lnc_dt_vnd <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "' and tab_tipo_cartao.tpc_cod IN (" & w_Cartao & ")) GROUP BY CARTAO, LOGO ORDER BY tab_tipo_cartao.tpc_desc, tab_usuario.usl_nome}  AS Sql_Lanc_Resumo COMPUTE Sql_Lanc_Resumo BY 'Cartao'"
+        w_SQL = "SHAPE {SELECT tab_tipo_cartao.tpc_desc AS Cartao, tab_usuario.usl_nome AS Logo,  Sum(tab_lanc.lnc_vr) as Vr, Sum(tab_lanc.lnc_vr_liq) as VrLiq FROM tab_lanc, tab_usuario, tab_tipo_cartao WHERE (tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_loj IN (" & w_logo & ")) AND (tab_lanc.lnc_dt_vnd >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "') AND (tab_lanc.lnc_dt_vnd <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "' and tab_tipo_cartao.tpc_cod IN (" & w_cartao & ")) GROUP BY CARTAO, LOGO ORDER BY tab_tipo_cartao.tpc_desc, tab_usuario.usl_nome}  AS Sql_Lanc_Resumo COMPUTE Sql_Lanc_Resumo BY 'Cartao'"
     Else
-        w_SQL = "SHAPE {SELECT tab_tipo_cartao.tpc_desc AS Cartao, tab_usuario.usl_nome AS Logo,  Sum(tab_lanc.lnc_vr) as Vr, Sum(tab_lanc.lnc_vr_liq) as VrLiq FROM tab_lanc, tab_usuario, tab_tipo_cartao WHERE (tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_loj IN (" & w_logo & ")) AND (tab_lanc.lnc_dt_vnd >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "') AND (tab_lanc.lnc_dt_vnd <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "' and tab_tipo_cartao.tpc_cod IN (" & w_Cartao & ")) GROUP BY LOGO, CARTAO ORDER BY tab_usuario.usl_nome, tab_tipo_cartao.tpc_desc}  AS Sql_Lanc_Resumo COMPUTE Sql_Lanc_Resumo BY 'Logo'"
+        w_SQL = "SHAPE {SELECT tab_tipo_cartao.tpc_desc AS Cartao, tab_usuario.usl_nome AS Logo,  Sum(tab_lanc.lnc_vr) as Vr, Sum(tab_lanc.lnc_vr_liq) as VrLiq FROM tab_lanc, tab_usuario, tab_tipo_cartao WHERE (tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_loj IN (" & w_logo & ")) AND (tab_lanc.lnc_dt_vnd >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "') AND (tab_lanc.lnc_dt_vnd <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "' and tab_tipo_cartao.tpc_cod IN (" & w_cartao & ")) GROUP BY LOGO, CARTAO ORDER BY tab_usuario.usl_nome, tab_tipo_cartao.tpc_desc}  AS Sql_Lanc_Resumo COMPUTE Sql_Lanc_Resumo BY 'Logo'"
     End If
     Set w_Rec = ExecuteSQL(w_SQL, , "MSDataShape").Clone
    
@@ -925,11 +745,11 @@ If Len(w_Cartao) > 0 And Len(w_logo) > 0 Then
         MsgBox "Nenhum registro encontrado para gerar o relatório!", vbExclamation
     End If
     
-ElseIf Len(w_logo) = 0 And Len(w_Cartao) = 0 Then
+ElseIf Len(w_logo) = 0 And Len(w_cartao) = 0 Then
     MsgBox "Escolha a loja e o cartão desejado!", vbExclamation
 ElseIf Len(w_logo) = 0 Then
     MsgBox "Escolha a loja desejada!", vbExclamation
-ElseIf Len(w_Cartao) = 0 Then
+ElseIf Len(w_cartao) = 0 Then
     MsgBox "Escolha o cartão desejado!", vbExclamation
 End If
     
@@ -960,17 +780,17 @@ Private Sub bt_STodos_Click()
 End Sub
 
 Private Sub bt_RTodos_Cart_Click()
-    For i = List_Cartao.ListCount - 1 To 0 Step -1
-        List_Cartao.Selected(i) = False
+    For i = List_cartao.ListCount - 1 To 0 Step -1
+        List_cartao.Selected(i) = False
     Next i
-    List_Cartao.Selected(0) = False
+    List_cartao.Selected(0) = False
 End Sub
 
 Private Sub bt_STodos_Cart_Click()
-    For i = List_Cartao.ListCount - 1 To 0 Step -1
-        List_Cartao.Selected(i) = True
+    For i = List_cartao.ListCount - 1 To 0 Step -1
+        List_cartao.Selected(i) = True
     Next i
-    List_Cartao.Selected(0) = True
+    List_cartao.Selected(0) = True
 End Sub
 
 
@@ -1005,7 +825,7 @@ On Error GoTo err1
     
     'monta lista dos cartões
     For i = 1 To adoCartao.Recordset.RecordCount
-        Call List_Cartao.AddItem(adoCartao.Recordset.Fields("tpc_desc"), List_Cartao.ListCount)
+        Call List_cartao.AddItem(adoCartao.Recordset.Fields("tpc_desc"), List_cartao.ListCount)
         adoCartao.Recordset.MoveNext
     Next i
     

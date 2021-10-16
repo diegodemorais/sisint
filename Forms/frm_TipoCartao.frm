@@ -1,34 +1,34 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "msdatgrd.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "msdatlst.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_TipoCartao 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Tipo de Cartão"
    ClientHeight    =   7215
-   ClientLeft      =   45
-   ClientTop       =   615
-   ClientWidth     =   8250
+   ClientLeft      =   39
+   ClientTop       =   611
+   ClientWidth     =   8255
    Icon            =   "frm_TipoCartao.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
    ScaleHeight     =   7215
-   ScaleWidth      =   8250
+   ScaleWidth      =   8255
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   819
       Left            =   0
       TabIndex        =   11
       Top             =   0
-      Width           =   8250
-      _ExtentX        =   14552
-      _ExtentY        =   1535
+      Width           =   8255
+      _ExtentX        =   14569
+      _ExtentY        =   1438
       ButtonWidth     =   1667
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -96,7 +96,7 @@ Begin VB.Form frm_TipoCartao
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -121,7 +121,7 @@ Begin VB.Form frm_TipoCartao
       Top             =   960
       Width           =   7485
       _ExtentX        =   13203
-      _ExtentY        =   10186
+      _ExtentY        =   10184
       _Version        =   393216
       Tabs            =   2
       TabHeight       =   520
@@ -144,15 +144,15 @@ Begin VB.Form frm_TipoCartao
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_TipoCartao.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Painel"
-      Tab(1).Control(1)=   "Grid"
+      Tab(1).Control(0)=   "Grid"
+      Tab(1).Control(1)=   "Painel"
       Tab(1).ControlCount=   2
       Begin VB.Frame frame1 
          BackColor       =   &H80000000&
          Caption         =   " Formas de Pagamento "
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -170,8 +170,8 @@ Begin VB.Form frm_TipoCartao
             Top             =   480
             Visible         =   0   'False
             Width           =   1200
-            _ExtentX        =   2117
-            _ExtentY        =   661
+            _ExtentX        =   2109
+            _ExtentY        =   671
             ConnectMode     =   0
             CursorLocation  =   3
             IsolationLevel  =   -1
@@ -202,7 +202,7 @@ Begin VB.Form frm_TipoCartao
             Caption         =   "Adodc1"
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "MS Sans Serif"
-               Size            =   8.25
+               Size            =   7.47
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -213,14 +213,14 @@ Begin VB.Form frm_TipoCartao
          End
          Begin MSDataListLib.DataCombo txt_FormaPg 
             Bindings        =   "frm_TipoCartao.frx":27DA
-            Height          =   315
-            Left            =   255
+            Height          =   286
+            Left            =   260
             TabIndex        =   20
-            Top             =   495
+            Top             =   494
             Visible         =   0   'False
-            Width           =   4080
-            _ExtentX        =   7197
-            _ExtentY        =   556
+            Width           =   4082
+            _ExtentX        =   7524
+            _ExtentY        =   503
             _Version        =   393216
             MatchEntry      =   -1  'True
             Style           =   2
@@ -236,38 +236,8 @@ Begin VB.Form frm_TipoCartao
             TabStop         =   0   'False
             Top             =   1440
             Width           =   495
-            _ExtentX        =   873
-            _ExtentY        =   926
-            BTYPE           =   2
-            TX              =   ""
-            ENAB            =   -1  'True
-            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            COLTYPE         =   1
-            FOCUSR          =   -1  'True
-            BCOL            =   14215660
-            BCOLO           =   14215660
-            FCOL            =   0
-            FCOLO           =   0
-            MCOL            =   12632256
-            MPTR            =   1
-            MICON           =   "frm_TipoCartao.frx":27F3
-            PICN            =   "frm_TipoCartao.frx":280F
-            UMCOL           =   -1  'True
-            SOFT            =   0   'False
-            PICPOS          =   0
-            NGREY           =   0   'False
-            FX              =   0
-            HAND            =   0   'False
-            CHECK           =   0   'False
-            VALUE           =   0   'False
+            _ExtentX        =   863
+            _ExtentY        =   935
          End
          Begin MSAdodcLib.Adodc adoFormas 
             Height          =   330
@@ -275,8 +245,8 @@ Begin VB.Form frm_TipoCartao
             Top             =   2280
             Visible         =   0   'False
             Width           =   1215
-            _ExtentX        =   2143
-            _ExtentY        =   582
+            _ExtentX        =   2133
+            _ExtentY        =   575
             ConnectMode     =   0
             CursorLocation  =   3
             IsolationLevel  =   -1
@@ -307,7 +277,7 @@ Begin VB.Form frm_TipoCartao
             Caption         =   "Adodc1"
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "MS Sans Serif"
-               Size            =   8.25
+               Size            =   7.47
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -323,38 +293,8 @@ Begin VB.Form frm_TipoCartao
             TabStop         =   0   'False
             Top             =   2040
             Width           =   495
-            _ExtentX        =   873
-            _ExtentY        =   926
-            BTYPE           =   2
-            TX              =   ""
-            ENAB            =   -1  'True
-            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            COLTYPE         =   1
-            FOCUSR          =   -1  'True
-            BCOL            =   14215660
-            BCOLO           =   14215660
-            FCOL            =   0
-            FCOLO           =   0
-            MCOL            =   12632256
-            MPTR            =   1
-            MICON           =   "frm_TipoCartao.frx":4431
-            PICN            =   "frm_TipoCartao.frx":444D
-            UMCOL           =   -1  'True
-            SOFT            =   0   'False
-            PICPOS          =   0
-            NGREY           =   0   'False
-            FX              =   0
-            HAND            =   0   'False
-            CHECK           =   0   'False
-            VALUE           =   0   'False
+            _ExtentX        =   863
+            _ExtentY        =   935
          End
          Begin Skin_Button.ctr_Button bt_Sal_F 
             Height          =   525
@@ -364,38 +304,8 @@ Begin VB.Form frm_TipoCartao
             Top             =   270
             Visible         =   0   'False
             Width           =   495
-            _ExtentX        =   873
-            _ExtentY        =   926
-            BTYPE           =   2
-            TX              =   ""
-            ENAB            =   -1  'True
-            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            COLTYPE         =   1
-            FOCUSR          =   -1  'True
-            BCOL            =   14215660
-            BCOLO           =   14215660
-            FCOL            =   0
-            FCOLO           =   0
-            MCOL            =   12632256
-            MPTR            =   1
-            MICON           =   "frm_TipoCartao.frx":49E7
-            PICN            =   "frm_TipoCartao.frx":4A03
-            UMCOL           =   -1  'True
-            SOFT            =   0   'False
-            PICPOS          =   0
-            NGREY           =   0   'False
-            FX              =   0
-            HAND            =   0   'False
-            CHECK           =   0   'False
-            VALUE           =   0   'False
+            _ExtentX        =   863
+            _ExtentY        =   935
          End
          Begin Skin_Button.ctr_Button bt_Canc_F 
             Height          =   525
@@ -405,48 +315,18 @@ Begin VB.Form frm_TipoCartao
             Top             =   270
             Visible         =   0   'False
             Width           =   495
-            _ExtentX        =   873
-            _ExtentY        =   926
-            BTYPE           =   2
-            TX              =   ""
-            ENAB            =   -1  'True
-            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            COLTYPE         =   1
-            FOCUSR          =   -1  'True
-            BCOL            =   14215660
-            BCOLO           =   14215660
-            FCOL            =   0
-            FCOLO           =   0
-            MCOL            =   12632256
-            MPTR            =   1
-            MICON           =   "frm_TipoCartao.frx":4D1D
-            PICN            =   "frm_TipoCartao.frx":4D39
-            UMCOL           =   -1  'True
-            SOFT            =   0   'False
-            PICPOS          =   0
-            NGREY           =   0   'False
-            FX              =   0
-            HAND            =   0   'False
-            CHECK           =   0   'False
-            VALUE           =   0   'False
+            _ExtentX        =   863
+            _ExtentY        =   935
          End
          Begin MSDataGridLib.DataGrid Grid_Formas 
-            Bindings        =   "frm_TipoCartao.frx":5053
+            Bindings        =   "frm_TipoCartao.frx":27F3
             Height          =   2385
             Left            =   255
             TabIndex        =   15
             Top             =   270
             Width           =   4560
-            _ExtentX        =   8043
-            _ExtentY        =   4207
+            _ExtentX        =   8051
+            _ExtentY        =   4217
             _Version        =   393216
             AllowUpdate     =   0   'False
             HeadLines       =   1
@@ -454,7 +334,7 @@ Begin VB.Form frm_TipoCartao
             FormatLocked    =   -1  'True
             BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "MS Sans Serif"
-               Size            =   8.25
+               Size            =   7.4717
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -463,7 +343,7 @@ Begin VB.Form frm_TipoCartao
             EndProperty
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "MS Sans Serif"
-               Size            =   8.25
+               Size            =   7.4717
                Charset         =   0
                Weight          =   400
                Underline       =   0   'False
@@ -489,7 +369,7 @@ Begin VB.Form frm_TipoCartao
                ScrollBars      =   2
                BeginProperty Column00 
                   ColumnAllowSizing=   0   'False
-                  ColumnWidth     =   3960
+                  ColumnWidth     =   3966.803
                EndProperty
             EndProperty
          End
@@ -544,38 +424,8 @@ Begin VB.Form frm_TipoCartao
             TabStop         =   0   'False
             Top             =   120
             Width           =   735
-            _ExtentX        =   1296
-            _ExtentY        =   1508
-            BTYPE           =   9
-            TX              =   "&Filtrar"
-            ENAB            =   -1  'True
-            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   700
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            COLTYPE         =   2
-            FOCUSR          =   -1  'True
-            BCOL            =   -2147483633
-            BCOLO           =   -2147483624
-            FCOL            =   0
-            FCOLO           =   0
-            MCOL            =   12632256
-            MPTR            =   1
-            MICON           =   "frm_TipoCartao.frx":506B
-            PICN            =   "frm_TipoCartao.frx":5087
-            UMCOL           =   -1  'True
-            SOFT            =   0   'False
-            PICPOS          =   2
-            NGREY           =   0   'False
-            FX              =   0
-            HAND            =   0   'False
-            CHECK           =   0   'False
-            VALUE           =   0   'False
+            _ExtentX        =   1294
+            _ExtentY        =   1510
          End
          Begin VB.Label lblFieldLabel 
             Alignment       =   1  'Right Justify
@@ -584,7 +434,7 @@ Begin VB.Form frm_TipoCartao
             Caption         =   "Digite:"
             BeginProperty Font 
                Name            =   "MS Sans Serif"
-               Size            =   9.75
+               Size            =   8.83
                Charset         =   0
                Weight          =   700
                Underline       =   0   'False
@@ -600,14 +450,14 @@ Begin VB.Form frm_TipoCartao
          End
       End
       Begin MSDataGridLib.DataGrid Grid 
-         Bindings        =   "frm_TipoCartao.frx":53A1
+         Bindings        =   "frm_TipoCartao.frx":280B
          Height          =   4080
          Left            =   -74280
          TabIndex        =   7
          Top             =   1575
          Width           =   5655
-         _ExtentX        =   9975
-         _ExtentY        =   7197
+         _ExtentX        =   9968
+         _ExtentY        =   7189
          _Version        =   393216
          AllowUpdate     =   0   'False
          HeadLines       =   1
@@ -615,7 +465,7 @@ Begin VB.Form frm_TipoCartao
          FormatLocked    =   -1  'True
          BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -624,7 +474,7 @@ Begin VB.Form frm_TipoCartao
          EndProperty
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
-            Size            =   6.75
+            Size            =   6.7925
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -711,7 +561,7 @@ Begin VB.Form frm_TipoCartao
          Caption         =   "Descrição:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   9.75
+            Size            =   8.83
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -732,7 +582,7 @@ Begin VB.Form frm_TipoCartao
          Caption         =   "Código:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   9.75
+            Size            =   8.83
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -749,12 +599,12 @@ Begin VB.Form frm_TipoCartao
    End
    Begin MSAdodcLib.Adodc adoReg 
       Align           =   2  'Align Bottom
-      Height          =   375
+      Height          =   377
       Left            =   0
-      Top             =   6840
-      Width           =   8250
-      _ExtentX        =   14552
-      _ExtentY        =   661
+      Top             =   6838
+      Width           =   8255
+      _ExtentX        =   14569
+      _ExtentY        =   671
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -785,7 +635,7 @@ Begin VB.Form frm_TipoCartao
       Caption         =   "Registro(s): 0 / 0"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -797,8 +647,8 @@ Begin VB.Form frm_TipoCartao
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -807,35 +657,35 @@ Begin VB.Form frm_TipoCartao
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_TipoCartao.frx":53B6
+            Picture         =   "frm_TipoCartao.frx":2820
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_TipoCartao.frx":56D0
+            Picture         =   "frm_TipoCartao.frx":2B3A
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_TipoCartao.frx":58AA
+            Picture         =   "frm_TipoCartao.frx":2D14
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_TipoCartao.frx":5BC4
+            Picture         =   "frm_TipoCartao.frx":302E
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_TipoCartao.frx":5EDE
+            Picture         =   "frm_TipoCartao.frx":3348
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_TipoCartao.frx":61F8
+            Picture         =   "frm_TipoCartao.frx":3662
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_TipoCartao.frx":6512
+            Picture         =   "frm_TipoCartao.frx":397C
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_TipoCartao.frx":66EC
+            Picture         =   "frm_TipoCartao.frx":3B56
             Key             =   ""
          EndProperty
       EndProperty

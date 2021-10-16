@@ -1,9 +1,2 @@
-Line 318: Property ColumnWidth in Column00 had an invalid value.
-Line 322: Property ColumnWidth in Column01 had an invalid value.
-Line 358: Property FontSize in txtfor_Desc had an invalid value.
-Line 318: Property ColumnWidth in Column00 had an invalid value.
-Line 322: Property ColumnWidth in Column01 had an invalid value.
-Line 358: Property FontSize in txtfor_Desc had an invalid value.
-Line 318: Property ColumnWidth in Column00 had an invalid value.
-Line 322: Property ColumnWidth in Column01 had an invalid value.
-Line 358: Property FontSize in txtfor_Desc had an invalid value.
+Line 23: Class ComctlLib.Toolbar of control TBar was not a loaded control class.
+Line 454: Class ComctlLib.ImageList of control IMG was not a loaded control class.

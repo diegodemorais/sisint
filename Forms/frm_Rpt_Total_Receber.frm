@@ -1,27 +1,27 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Rpt_Total_Receber 
    Caption         =   "Teste"
-   ClientHeight    =   8220
-   ClientLeft      =   1830
-   ClientTop       =   2550
-   ClientWidth     =   5355
+   ClientHeight    =   8216
+   ClientLeft      =   1833
+   ClientTop       =   2548
+   ClientWidth     =   5356
    LinkTopic       =   "Form1"
-   ScaleHeight     =   8220
-   ScaleWidth      =   5355
+   ScaleHeight     =   8216
+   ScaleWidth      =   5356
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   630
+      Height          =   819
       Left            =   0
       TabIndex        =   6
       Top             =   0
-      Width           =   5355
-      _ExtentX        =   9446
-      _ExtentY        =   1111
+      Width           =   5356
+      _ExtentX        =   9441
+      _ExtentY        =   1438
       ButtonWidth     =   1244
       ButtonHeight    =   1005
       ImageList       =   "IMG"
@@ -43,7 +43,7 @@ Begin VB.Form frm_Rpt_Total_Receber
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -63,7 +63,7 @@ Begin VB.Form frm_Rpt_Total_Receber
    End
    Begin VB.ListBox List_loja 
       Appearance      =   0  'Flat
-      Height          =   3855
+      Height          =   3731
       ItemData        =   "frm_Rpt_Total_Receber.frx":0000
       Left            =   1080
       List            =   "frm_Rpt_Total_Receber.frx":0002
@@ -85,7 +85,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Caption         =   "&Mês a mês"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.83
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -102,7 +102,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Caption         =   "&Dia a Dia"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.83
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -123,11 +123,11 @@ Begin VB.Form frm_Rpt_Total_Receber
       Top             =   7680
       Visible         =   0   'False
       Width           =   4815
-      _ExtentX        =   8493
-      _ExtentY        =   529
+      _ExtentX        =   8483
+      _ExtentY        =   527
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Times New Roman"
-         Size            =   9
+         Size            =   8.8302
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -136,7 +136,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Times New Roman"
-         Size            =   9
+         Size            =   8.8302
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -163,11 +163,11 @@ Begin VB.Form frm_Rpt_Total_Receber
       TabIndex        =   1
       Top             =   2280
       Width           =   1275
-      _ExtentX        =   2249
-      _ExtentY        =   556
+      _ExtentX        =   2252
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.8302
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -180,7 +180,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   9.75
+      FontSize        =   8.83
    End
    Begin rdActiveText.ActiveText Txt_DtF 
       BeginProperty DataFormat 
@@ -197,11 +197,11 @@ Begin VB.Form frm_Rpt_Total_Receber
       TabIndex        =   2
       Top             =   2280
       Width           =   1275
-      _ExtentX        =   2249
-      _ExtentY        =   556
+      _ExtentX        =   2252
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.8302
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -214,7 +214,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   9.75
+      FontSize        =   8.83
    End
    Begin Skin_Button.ctr_Button bt_Pesq 
       Height          =   1080
@@ -223,37 +223,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Top             =   6240
       Width           =   1155
       _ExtentX        =   2037
-      _ExtentY        =   1905
-      BTYPE           =   2
-      TX              =   "&Gerar Relatório"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   9.75
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Rpt_Total_Receber.frx":0004
-      PICN            =   "frm_Rpt_Total_Receber.frx":0020
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   2
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentY        =   1917
    End
    Begin MSAdodcLib.Adodc adoLogo 
       Height          =   375
@@ -261,8 +231,8 @@ Begin VB.Form frm_Rpt_Total_Receber
       Top             =   7050
       Visible         =   0   'False
       Width           =   1335
-      _ExtentX        =   2355
-      _ExtentY        =   661
+      _ExtentX        =   2348
+      _ExtentY        =   671
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -293,7 +263,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -310,38 +280,8 @@ Begin VB.Form frm_Rpt_Total_Receber
       ToolTipText     =   "Seleciona todos"
       Top             =   3360
       Width           =   1965
-      _ExtentX        =   3466
-      _ExtentY        =   873
-      BTYPE           =   2
-      TX              =   "Selecionar Todos"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Rpt_Total_Receber.frx":033A
-      PICN            =   "frm_Rpt_Total_Receber.frx":0356
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   0
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentX        =   3475
+      _ExtentY        =   863
    End
    Begin Skin_Button.ctr_Button bt_RTodos 
       Height          =   495
@@ -351,45 +291,15 @@ Begin VB.Form frm_Rpt_Total_Receber
       ToolTipText     =   "Retira Selecão de todos"
       Top             =   3960
       Width           =   1965
-      _ExtentX        =   3466
-      _ExtentY        =   873
-      BTYPE           =   2
-      TX              =   "Remover Seleção"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Rpt_Total_Receber.frx":0670
-      PICN            =   "frm_Rpt_Total_Receber.frx":068C
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   0
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentX        =   3475
+      _ExtentY        =   863
    End
    Begin VB.Label Label2 
       BackStyle       =   0  'Transparent
       Caption         =   "Descontar (B)s:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.83
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -407,7 +317,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Caption         =   "Tipo:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.83
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -423,8 +333,8 @@ Begin VB.Form frm_Rpt_Total_Receber
    Begin ComctlLib.ImageList IMG 
       Left            =   4320
       Top             =   1320
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -433,39 +343,39 @@ Begin VB.Form frm_Rpt_Total_Receber
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   9
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":09A6
+            Picture         =   "frm_Rpt_Total_Receber.frx":0004
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0CC0
+            Picture         =   "frm_Rpt_Total_Receber.frx":031E
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0E9A
+            Picture         =   "frm_Rpt_Total_Receber.frx":04F8
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":11B4
+            Picture         =   "frm_Rpt_Total_Receber.frx":0812
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":14CE
+            Picture         =   "frm_Rpt_Total_Receber.frx":0B2C
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":17E8
+            Picture         =   "frm_Rpt_Total_Receber.frx":0E46
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":1B02
+            Picture         =   "frm_Rpt_Total_Receber.frx":1160
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":1CDC
+            Picture         =   "frm_Rpt_Total_Receber.frx":133A
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":1FF6
+            Picture         =   "frm_Rpt_Total_Receber.frx":1654
             Key             =   ""
          EndProperty
       EndProperty
@@ -476,7 +386,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Caption         =   "à"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.83
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -494,7 +404,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       Caption         =   "Período"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   8.83
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -699,7 +609,7 @@ Dim wDescontar As String
         pgBar.Visible = False
     End If
                
-        txt.text = w_SQL
+        txt.Text = w_SQL
     
 End Sub
 

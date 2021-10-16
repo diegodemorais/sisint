@@ -1,28 +1,28 @@
 VERSION 5.00
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Object = "{48E59290-9880-11CF-9754-00AA00C00908}#1.0#0"; "MSINET.OCX"
 Begin VB.MDIForm MDI 
    BackColor       =   &H8000000C&
    Caption         =   "Menu Principal"
-   ClientHeight    =   6840
-   ClientLeft      =   165
-   ClientTop       =   810
-   ClientWidth     =   13470
+   ClientHeight    =   6838
+   ClientLeft      =   143
+   ClientTop       =   754
+   ClientWidth     =   13468
    Icon            =   "mdi.frx":0000
    LinkTopic       =   "MDIForm1"
    StartUpPosition =   3  'Windows Default
    WindowState     =   2  'Maximized
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   819
       Left            =   0
       TabIndex        =   1
       Top             =   0
-      Width           =   13470
-      _ExtentX        =   23760
-      _ExtentY        =   1535
+      Width           =   13468
+      _ExtentX        =   23747
+      _ExtentY        =   1438
       ButtonWidth     =   2302
       ButtonHeight    =   1429
       ImageList       =   "ImageList1"
@@ -38,6 +38,7 @@ Begin VB.MDIForm MDI
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -64,6 +65,7 @@ Begin VB.MDIForm MDI
             ImageIndex      =   6
          EndProperty
          BeginProperty Button6 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -83,6 +85,7 @@ Begin VB.MDIForm MDI
             ImageIndex      =   7
          EndProperty
          BeginProperty Button9 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -95,6 +98,7 @@ Begin VB.MDIForm MDI
             ImageIndex      =   9
          EndProperty
          BeginProperty Button11 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -115,38 +119,8 @@ Begin VB.MDIForm MDI
          Top             =   0
          Visible         =   0   'False
          Width           =   1110
-         _ExtentX        =   1958
-         _ExtentY        =   1349
-         BTYPE           =   2
-         TX              =   "Sorocred &Ficha"
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "mdi.frx":08CA
-         PICN            =   "mdi.frx":08E6
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   2
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   1965
+         _ExtentY        =   1342
       End
       Begin Skin_Button.ctr_Button btn_TotRec 
          Height          =   765
@@ -156,38 +130,8 @@ Begin VB.MDIForm MDI
          Top             =   0
          Visible         =   0   'False
          Width           =   1110
-         _ExtentX        =   1958
-         _ExtentY        =   1349
-         BTYPE           =   2
-         TX              =   "&Teste"
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "mdi.frx":1BC8
-         PICN            =   "mdi.frx":1BE4
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   2
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   1965
+         _ExtentY        =   1342
       End
       Begin Skin_Button.ctr_Button ctr_Button1 
          Height          =   765
@@ -197,38 +141,8 @@ Begin VB.MDIForm MDI
          Top             =   2040
          Visible         =   0   'False
          Width           =   1110
-         _ExtentX        =   1958
-         _ExtentY        =   1349
-         BTYPE           =   2
-         TX              =   "Enviar Caixa"
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "mdi.frx":2036
-         PICN            =   "mdi.frx":2052
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   2
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   1965
+         _ExtentY        =   1342
       End
       Begin VB.PictureBox Picture1 
          AutoRedraw      =   -1  'True
@@ -236,7 +150,7 @@ Begin VB.MDIForm MDI
          BorderStyle     =   0  'None
          Height          =   135
          Left            =   5760
-         ScaleHeight     =   135
+         ScaleHeight     =   130
          ScaleWidth      =   975
          TabIndex        =   3
          Top             =   6600
@@ -249,11 +163,11 @@ Begin VB.MDIForm MDI
          Top             =   480
          Visible         =   0   'False
          Width           =   1575
-         _ExtentX        =   2778
-         _ExtentY        =   556
+         _ExtentX        =   2780
+         _ExtentY        =   551
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Times New Roman"
-            Size            =   9.75
+            Size            =   9.5094
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -262,7 +176,7 @@ Begin VB.MDIForm MDI
          EndProperty
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Times New Roman"
-            Size            =   9.75
+            Size            =   9.5094
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -285,8 +199,8 @@ Begin VB.MDIForm MDI
    Begin InetCtlsObjects.Inet Inet1 
       Left            =   600
       Top             =   840
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       _Version        =   393216
       Protocol        =   2
       RemotePort      =   21
@@ -294,33 +208,37 @@ Begin VB.MDIForm MDI
    End
    Begin ComctlLib.StatusBar StatusBar1 
       Align           =   2  'Align Bottom
-      Height          =   255
+      Height          =   260
       Left            =   0
       TabIndex        =   0
-      Top             =   6585
-      Width           =   13470
-      _ExtentX        =   23760
-      _ExtentY        =   450
+      Top             =   6578
+      Width           =   13468
+      _ExtentX        =   24825
+      _ExtentY        =   455
       SimpleText      =   ""
       _Version        =   327682
       BeginProperty Panels {0713E89E-850A-101B-AFC0-4210102A8DA7} 
          NumPanels       =   9
          BeginProperty Panel1 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             AutoSize        =   2
-            Object.Width           =   3175
+            Object.Width           =   3187
             MinWidth        =   3175
             Text            =   "Usuário : "
             TextSave        =   "Usuário : "
+            Key             =   ""
             Object.Tag             =   ""
             Object.ToolTipText     =   "Usuário Logado"
          EndProperty
          BeginProperty Panel2 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             AutoSize        =   1
-            Object.Width           =   10292
+            Object.Width           =   11334
+            TextSave        =   ""
+            Key             =   ""
             Object.Tag             =   ""
             Object.ToolTipText     =   "Status"
          EndProperty
          BeginProperty Panel3 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
+            TextSave        =   ""
             Key             =   "progbar"
             Object.Tag             =   ""
          EndProperty
@@ -330,6 +248,7 @@ Begin VB.MDIForm MDI
             MinWidth        =   1764
             Text            =   "Ver. 0.0.0"
             TextSave        =   "Ver. 0.0.0"
+            Key             =   ""
             Object.Tag             =   ""
             Object.ToolTipText     =   "Versão do Sistema"
          EndProperty
@@ -337,26 +256,29 @@ Begin VB.MDIForm MDI
             Style           =   1
             AutoSize        =   2
             Enabled         =   0   'False
-            Object.Width           =   900
+            Object.Width           =   911
             MinWidth        =   882
             TextSave        =   "CAPS"
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel6 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   2
             AutoSize        =   2
-            Object.Width           =   873
+            Object.Width           =   887
             MinWidth        =   882
             TextSave        =   "NUM"
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel7 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   3
             AutoSize        =   2
             Enabled         =   0   'False
-            Object.Width           =   635
+            Object.Width           =   647
             MinWidth        =   617
             TextSave        =   "INS"
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel8 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
@@ -364,15 +286,17 @@ Begin VB.MDIForm MDI
             AutoSize        =   2
             Object.Width           =   1773
             MinWidth        =   1764
-            TextSave        =   "11/04/2020"
+            TextSave        =   "16/10/2021"
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
          BeginProperty Panel9 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             Style           =   5
             AutoSize        =   2
-            Object.Width           =   1058
+            Object.Width           =   1054
             MinWidth        =   1058
-            TextSave        =   "09:17"
+            TextSave        =   "13:00"
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
       EndProperty
@@ -380,8 +304,8 @@ Begin VB.MDIForm MDI
    Begin ComctlLib.ImageList ImageList1 
       Left            =   0
       Top             =   840
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -390,47 +314,47 @@ Begin VB.MDIForm MDI
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   11
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":2CA4
+            Picture         =   "mdi.frx":08CA
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":38F6
+            Picture         =   "mdi.frx":151C
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":3C40
+            Picture         =   "mdi.frx":1866
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":4892
+            Picture         =   "mdi.frx":24B8
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":4BAC
+            Picture         =   "mdi.frx":27D2
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":4D86
+            Picture         =   "mdi.frx":29AC
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":59D8
+            Picture         =   "mdi.frx":35FE
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":752A
+            Picture         =   "mdi.frx":5150
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":8204
+            Picture         =   "mdi.frx":5E2A
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":8D5E
+            Picture         =   "mdi.frx":6984
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":8FB0
+            Picture         =   "mdi.frx":6BD6
             Key             =   ""
          EndProperty
       EndProperty

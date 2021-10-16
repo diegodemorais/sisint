@@ -1,32 +1,32 @@
 VERSION 5.00
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Rpt_Cod_Bon 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Relatório de Código / Bônus"
-   ClientHeight    =   2955
-   ClientLeft      =   150
-   ClientTop       =   540
-   ClientWidth     =   6615
+   ClientHeight    =   2951
+   ClientLeft      =   156
+   ClientTop       =   546
+   ClientWidth     =   6604
    Icon            =   "frm_Rpt_Cod_Bon.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   2955
-   ScaleWidth      =   6615
+   ScaleHeight     =   2951
+   ScaleWidth      =   6604
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   630
+      Height          =   819
       Left            =   0
       TabIndex        =   5
       Top             =   0
-      Width           =   6615
-      _ExtentX        =   11668
-      _ExtentY        =   1111
+      Width           =   6604
+      _ExtentX        =   11646
+      _ExtentY        =   1438
       ButtonWidth     =   1244
       ButtonHeight    =   1005
       ImageList       =   "IMG"
@@ -48,7 +48,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -70,7 +70,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Caption         =   "PL?"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -91,11 +91,11 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Top             =   2610
       Visible         =   0   'False
       Width           =   4335
-      _ExtentX        =   7646
-      _ExtentY        =   529
+      _ExtentX        =   7644
+      _ExtentY        =   527
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Times New Roman"
-         Size            =   9
+         Size            =   8.8302
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -104,7 +104,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Times New Roman"
-         Size            =   9
+         Size            =   8.8302
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -120,7 +120,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Caption         =   "Super?"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -138,7 +138,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Caption         =   "Acum?"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -157,7 +157,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Caption         =   "Logo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -186,11 +186,11 @@ Begin VB.Form frm_Rpt_Cod_Bon
       TabIndex        =   0
       Top             =   1515
       Width           =   1035
-      _ExtentX        =   1826
-      _ExtentY        =   556
+      _ExtentX        =   1821
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -203,7 +203,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText Txt_DtF 
       BeginProperty DataFormat 
@@ -220,11 +220,11 @@ Begin VB.Form frm_Rpt_Cod_Bon
       TabIndex        =   1
       Top             =   1515
       Width           =   1035
-      _ExtentX        =   1826
-      _ExtentY        =   556
+      _ExtentX        =   1821
+      _ExtentY        =   551
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -237,7 +237,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin Skin_Button.ctr_Button bt_Pesq 
       Height          =   840
@@ -246,37 +246,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Top             =   1155
       Width           =   1155
       _ExtentX        =   2037
-      _ExtentY        =   1482
-      BTYPE           =   2
-      TX              =   "&Consultar"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   9.75
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Rpt_Cod_Bon.frx":27A2
-      PICN            =   "frm_Rpt_Cod_Bon.frx":27BE
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   2
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentY        =   1486
    End
    Begin Skin_Button.ctr_Button bt_RPT_OBS 
       Height          =   840
@@ -284,38 +254,8 @@ Begin VB.Form frm_Rpt_Cod_Bon
       TabIndex        =   11
       Top             =   1155
       Width           =   675
-      _ExtentX        =   1191
-      _ExtentY        =   1482
-      BTYPE           =   2
-      TX              =   "&Obs"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   9.75
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Rpt_Cod_Bon.frx":2AD8
-      PICN            =   "frm_Rpt_Cod_Bon.frx":2AF4
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   2
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentX        =   1198
+      _ExtentY        =   1486
    End
    Begin VB.Shape Shape2 
       Height          =   450
@@ -326,8 +266,8 @@ Begin VB.Form frm_Rpt_Cod_Bon
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -336,35 +276,35 @@ Begin VB.Form frm_Rpt_Cod_Bon
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":2E0E
+            Picture         =   "frm_Rpt_Cod_Bon.frx":27A2
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":3128
+            Picture         =   "frm_Rpt_Cod_Bon.frx":2ABC
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":3302
+            Picture         =   "frm_Rpt_Cod_Bon.frx":2C96
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":361C
+            Picture         =   "frm_Rpt_Cod_Bon.frx":2FB0
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":3936
+            Picture         =   "frm_Rpt_Cod_Bon.frx":32CA
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":3C50
+            Picture         =   "frm_Rpt_Cod_Bon.frx":35E4
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":3F6A
+            Picture         =   "frm_Rpt_Cod_Bon.frx":38FE
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":4144
+            Picture         =   "frm_Rpt_Cod_Bon.frx":3AD8
             Key             =   ""
          EndProperty
       EndProperty
@@ -381,7 +321,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Caption         =   "Escopo de Data"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -400,7 +340,7 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Caption         =   "à"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -461,6 +401,8 @@ On Error Resume Next
         MsgBox "Nenhum Logo com Observação foi encontado!", vbExclamation
     End If
 End Sub
+
+
 
 Private Sub ckLogo_Click()
     If ckLogo.Value = 1 Then ckPL.Value = 0

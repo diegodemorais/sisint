@@ -292,7 +292,7 @@ If w_umaVez = 0 Then
        
     frmSplash.pb.MaxProgress = 100
     frmSplash.pb.Value = 5
-    frmSplash.pb.text = "Carregando " & frmSplash.pb.Value & "%"
+    frmSplash.pb.Text = "Carregando " & frmSplash.pb.Value & "%"
 
        
     'ABRE AS TABELAS
@@ -303,18 +303,18 @@ If w_umaVez = 0 Then
         Set w_ado_Logo = ExecuteSQL("SELECT usl_cod, usl_nome, usl_tipo, usl_ac FROM tab_usuario WHERE (usl_tipo = 'L') AND (usl_nome LIKE '" & w_Usu & "')", , , False).Clone
         
     frmSplash.pb.Value = 20
-    frmSplash.pb.text = "Carregando " & frmSplash.pb.Value & "%"
+    frmSplash.pb.Text = "Carregando " & frmSplash.pb.Value & "%"
         
         Set w_ado_Cartao = ExecuteSQL("SELECT tab_cartao_loja.ctl_cod, tab_usuario.usl_nome AS Logo, tab_tipo_cartao.tpc_desc AS Cartão, tab_cartao_loja.ctl_txv AS `%-Vista`, tab_cartao_loja.ctl_dias_v AS `Dias-V`, tab_cartao_loja.ctl_vr_des_v AS `Vr Desc - V`, tab_cartao_loja.ctl_txp AS `%-Prazo`, tab_cartao_loja.ctl_dias_p AS `Dias-Pz`, tab_cartao_loja.ctl_vr_des_p AS `Vr Desc - Pz`, tab_cartao_loja.ctl_vr_po AS `%-Pz Adic`, tab_banco.bco_desc AS `Bco Dep`, tab_cartao_loja.ctl_loja, tab_cartao_loja.ctl_tipoc, tab_cartao_loja.ctl_label_ndoc, tab_cartao_loja.ctl_des_parc, tab_cartao_loja.ctl_parc_alta_qt, tab_cartao_loja.ctl_parc_alta_tx FROM tab_tipo_cartao, tab_usuario, { oj tab_cartao_loja LEFT OUTER JOIN tab_banco ON tab_cartao_loja.ctl_banco = tab_banco.bco_cod } WHERE (tab_cartao_loja.ctl_loja = tab_usuario.usl_cod) AND (tab_cartao_loja.ctl_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_usuario.usl_nome LIKE '" & w_Usu & "') ORDER BY tab_usuario.usl_nome, tab_tipo_cartao.tpc_desc", , , False).Clone
         
     frmSplash.pb.Value = 50
-    frmSplash.pb.text = "Carregando " & frmSplash.pb.Value & "%"
+    frmSplash.pb.Text = "Carregando " & frmSplash.pb.Value & "%"
         
         Set w_ado_CadCartao = ExecuteSQL("SELECT * FROM tab_tipo_cartao ORDER BY tpc_desc", , , False).Clone
        
        
     frmSplash.pb.Value = 100
-    frmSplash.pb.text = "Carregando " & frmSplash.pb.Value & "%"
+    frmSplash.pb.Text = "Carregando " & frmSplash.pb.Value & "%"
        
     Pause 0.5
        
@@ -653,9 +653,14 @@ Public Sub CRIA_RPT_EXCEL(DtI As Date, DtF As Date)
 Dim xlA As New Excel.Application
 Dim wAdoDados As ADODB.Recordset
 Dim w_qtDias As Byte
+
+Dim wPlanName As String
     
 On Error GoTo err1
 
+
+    'wPlanName = "Plan"
+    wPlanName = "Sheet"
     w_qtDias = DtF - DtI
 
     'Pega os registros
@@ -673,13 +678,13 @@ On Error GoTo err1
     'xlA.Visible = True
     
     'Muda o Nome da Planilha
-    xl.Sheets("Plan1").Select
-    xl.Sheets.Item("Plan1").Name = "Cod"
+    xl.Sheets(wPlanName & "1").Select
+    xl.Sheets.Item(wPlanName & "1").Name = "Cod"
     'DESATIVA O DISPLAY DE ALERTA DO EXCEL
     xlA.DisplayAlerts = False
     'apaga as outras planilhas
-    xl.Sheets.Item("Plan2").Delete
-    xl.Sheets.Item("Plan3").Delete
+    'xl.Sheets.Item(wPlanName & "2").Delete
+    'xl.Sheets.Item(wPlanName & "3").Delete
     xlA.DisplayAlerts = True
     
     xlA.Cells.Select
@@ -820,7 +825,7 @@ If wComTotAcum Then
     
     If frm_Rpt_Cod_Bon.ckAcum.Value = 1 Then
      
-        'Insere o Total e o ACumulado
+        'Insere o Total, o ACumulado e o Bonus
         w_Col = w_Col + 2
         wXl.Sheets(1).Columns(w_Col).ColumnWidth = 10
         'Pega os Endereços das Celulas
@@ -840,6 +845,20 @@ If wComTotAcum Then
         wXl.Sheets(1).Cells(1, w_Col + 1).Value = "Acum"
         wXl.Sheets(1).Columns(w_Col + 1).ColumnWidth = 10
         wXl.Sheets(1).Columns(w_Col + 1).Select
+        With wXLA.Selection
+            .HorizontalAlignment = xlRight
+            .VerticalAlignment = xlBottom
+            .WrapText = False
+            .Orientation = 0
+            .AddIndent = False
+            .ShrinkToFit = False
+            .Font.ColorIndex = 3
+            .Font.Bold = True
+        End With
+        
+        wXl.Sheets(1).Cells(1, w_Col + 2).Value = "Bonus"
+        wXl.Sheets(1).Columns(w_Col + 2).ColumnWidth = 10
+        wXl.Sheets(1).Columns(w_Col + 2).Select
         With wXLA.Selection
             .HorizontalAlignment = xlRight
             .VerticalAlignment = xlBottom
@@ -926,7 +945,7 @@ Else 'wComTotAcum = false
 
     If frm_Rpt_Cod_Bon.ckAcum.Value = 1 Then
      
-        'Insere o Total e o ACumulado
+        'Insere o Total, o ACumulado e o Bonus
         w_Col = w_Col + 4
         wXl.Sheets(1).Columns(w_Col).ColumnWidth = 10
         'Pega os Endereços das Celulas
@@ -956,6 +975,20 @@ Else 'wComTotAcum = false
             .Font.ColorIndex = 3
             .Font.Bold = True
         End With
+        
+        wXl.Sheets(1).Cells(1, w_Col + 2).Value = "Bonus"
+        wXl.Sheets(1).Columns(w_Col + 2).ColumnWidth = 10
+        wXl.Sheets(1).Columns(w_Col + 2).Select
+        With wXLA.Selection
+            .HorizontalAlignment = xlRight
+            .VerticalAlignment = xlBottom
+            .WrapText = False
+            .Orientation = 0
+            .AddIndent = False
+            .ShrinkToFit = False
+            .Font.ColorIndex = 3
+            .Font.Bold = True
+        End With
     End If
 
 End If
@@ -973,12 +1006,12 @@ Dim w_arr_Tot_G() As Double
     w_qtGrp = ExecuteSQL("SELECT max(usl_grupo) FROM tab_tmp_" & w_Usu_Cod & "", , , False).Fields(0)
     w_Dias = DtF - DtI
     w_Row = 2
-    ReDim w_arr_Tot_G(w_Dias + 2)
+    ReDim w_arr_Tot_G(w_Dias + 3)
     
     For G = 1 To w_qtGrp
         wAdo.Filter = "usl_grupo = " & G
         w_SomaC = 0
-        ReDim w_arr_Tot(w_Dias + 2)
+        ReDim w_arr_Tot(w_Dias + 3)
         
         Do While Not wAdo.EOF
             If frm_Rpt_Cod_Bon.ckLogo.Value = 1 And frm_Rpt_Cod_Bon.ckSup.Value = 0 And G = 5 Then Exit Do
@@ -1035,9 +1068,11 @@ Dim w_arr_Tot_G() As Double
             If frm_Rpt_Cod_Bon.ckAcum.Value = 1 Then
                 wXl.Sheets(1).Cells(w_Row, w_Col + 2).Value = Formata_Valor_Logo(wAdo.Fields("Tot_C"))
                 wXl.Sheets(1).Cells(w_Row, w_Col + 3).Value = Formata_Valor_Logo(wAdo.Fields("Tot_AC_C"))
+                wXl.Sheets(1).Cells(w_Row, w_Col + 4).Value = Formata_Valor_Logo(wAdo.Fields("Tot_B"))
             End If
             w_arr_Tot(w_Dias + 1) = w_arr_Tot(w_Dias + 1) + IIf(IsNull(wAdo.Fields("Tot_C")), 0, wAdo.Fields("Tot_C"))
             w_arr_Tot(w_Dias + 2) = w_arr_Tot(w_Dias + 2) + IIf(IsNull(wAdo.Fields("Tot_AC_C")), 0, wAdo.Fields("Tot_AC_C"))
+            w_arr_Tot(w_Dias + 3) = w_arr_Tot(w_Dias + 3) + IIf(IsNull(wAdo.Fields("Tot_B")), 0, wAdo.Fields("Tot_B"))
             
             w_Row = w_Row + 1
             
@@ -1045,7 +1080,7 @@ Dim w_arr_Tot_G() As Double
         Loop
         'Acabou o Grupo - Coloca o Total
         w_Col = 1
-        For d = 0 To w_Dias + IIf(frm_Rpt_Cod_Bon.ckAcum.Value = 1, 2, 0)
+        For d = 0 To w_Dias + IIf(frm_Rpt_Cod_Bon.ckAcum.Value = 1, 3, 0)
             If d <= w_Dias Then
                 w_Col = w_Col + 2
             Else
@@ -1073,7 +1108,7 @@ Dim w_arr_Tot_G() As Double
             wXl.Sheets(1).Cells(1, 1).Select
             Cel_Ini = wXLA.ActiveCell.AddressLocal
             If frm_Rpt_Cod_Bon.ckAcum.Value = 1 Then
-                wXl.Sheets(1).Cells(w_Row, ((w_Dias + 1) * 2) + 3).Select
+                wXl.Sheets(1).Cells(w_Row, ((w_Dias + 1) * 2) + 4).Select
             Else
                 wXl.Sheets(1).Cells(w_Row, ((w_Dias + 1) * 2) + 1).Select
             End If
@@ -1105,12 +1140,12 @@ Dim w_arr_Tot_G() As Double
     w_qtGrp = ExecuteSQL("SELECT max(usl_grupo) FROM tab_tmp_" & w_Usu_Cod & "", , , False).Fields(0)
     w_Dias = DtF - DtI
     w_Row_I = w_Row
-    ReDim w_arr_Tot_G(w_Dias + 2)
+    ReDim w_arr_Tot_G(w_Dias + 3)
     
     For G = 1 To 4
         wAdo.Filter = "usl_grupo = " & G
         w_SomaC = 0
-        ReDim w_arr_Tot(w_Dias + 2)
+        ReDim w_arr_Tot(w_Dias + 3)
         
         Do While Not wAdo.EOF
             If frm_Rpt_Cod_Bon.ckLogo.Value = 1 And frm_Rpt_Cod_Bon.ckSup.Value = 0 And G = 5 Then Exit Do
@@ -1162,7 +1197,7 @@ Dim w_arr_Tot_G() As Double
         Loop
         'Acabou o Grupo - Coloca o Total
         w_Col = 1
-        For d = 0 To w_Dias + IIf(frm_Rpt_Cod_Bon.ckAcum.Value = 1, 2, 0)
+        For d = 0 To w_Dias + IIf(frm_Rpt_Cod_Bon.ckAcum.Value = 1, 3, 0)
             If d <= w_Dias Then
                 w_Col = w_Col + 2
             Else
@@ -1191,7 +1226,7 @@ Dim w_arr_Tot_G() As Double
             wXl.Sheets(1).Cells(w_Row_I, 1).Select
             Cel_Ini = wXLA.ActiveCell.AddressLocal
             If frm_Rpt_Cod_Bon.ckAcum.Value = 1 Then
-                wXl.Sheets(1).Cells(w_Row, ((w_Dias + 1) * 2) + 3).Select
+                wXl.Sheets(1).Cells(w_Row, ((w_Dias + 1) * 2) + 4).Select
             Else
                 wXl.Sheets(1).Cells(w_Row, ((w_Dias + 1) * 2) + 1).Select
             End If
@@ -1256,6 +1291,7 @@ On Error GoTo err1
                 If frm_Rpt_Cod_Bon.ckAcum = 1 Then
                     wXl.Sheets(1).Cells(w_Row, w_Col + 4).Value = Formata_Valor_Logo(wAdo.Fields("Tot_C"))
                     wXl.Sheets(1).Cells(w_Row, w_Col + 5).Value = Formata_Valor_Logo(wAdo.Fields("Tot_Ac_C"))
+                    wXl.Sheets(1).Cells(w_Row, w_Col + 6).Value = Formata_Valor_Logo(wAdo.Fields("Tot_B"))
                 End If
                 
                 
@@ -1267,7 +1303,7 @@ On Error GoTo err1
                 w_Tot_D_Ac = w_Tot_D_Ac + IIf(IsNull(wAdo.Fields("Tot_Ac_D")), 0, wAdo.Fields("Tot_Ac_D"))
                 
                 'vENDA - CODIGO
-                'SE TIVER ALGUMA POSIÇÃO NA CLASSIFICAÇÃO - ETNÃO PINTA O FUNDO E MUDAR A COR DO 1º P/ VERMELHO
+                'SE TIVER ALGUMA POSIÇÃO NA CLASSIFICAÇÃO - ENTÃO PINTA O FUNDO E MUDAR A COR DO 1º P/ VERMELHO
                 If Right(wXl.Sheets(1).Cells(w_Row, w_Col).Value, 1) = "º" And Not G = 5 Then
                     For i = 0 To 1
                         wXl.Sheets(1).Cells(w_Row, w_Col + i).Select
@@ -1377,6 +1413,10 @@ On Error GoTo err1
                 wXl.Sheets(1).Cells(w_Row, w_Col + 4).Value = Formata_Valor_Logo(w_Tot_C_Ac)
                 wXl.Sheets(1).Cells(w_Row, w_Col + 4).Select
                 wXLA.Selection.Font.ColorIndex = 5
+                
+                wXl.Sheets(1).Cells(w_Row, w_Col + 5).Value = Formata_Valor_Logo(w_Tot_B)
+                wXl.Sheets(1).Cells(w_Row, w_Col + 5).Select
+                wXLA.Selection.Font.ColorIndex = 5
                        
             End If
         End If
@@ -1406,6 +1446,10 @@ On Error GoTo err1
                 wXl.Sheets(1).Cells(w_Row, w_Col + 4).Value = Formata_Valor_Logo(w_Tot_Ac)
                 wXl.Sheets(1).Cells(w_Row, w_Col + 4).Select
                 wXLA.Selection.Font.ColorIndex = 3
+                
+                wXl.Sheets(1).Cells(w_Row, w_Col + 5).Value = Formata_Valor_Logo(w_Tot_B)
+                wXl.Sheets(1).Cells(w_Row, w_Col + 5).Select
+                wXLA.Selection.Font.ColorIndex = 3
             End If
             
             w_Row = w_Row - 1
@@ -1419,7 +1463,7 @@ On Error GoTo err1
             Cel_Ini = wXLA.ActiveCell.AddressLocal
             
             If frm_Rpt_Cod_Bon.ckAcum = 1 Then
-                wXl.Sheets(1).Cells(w_Row, 7).Select
+                wXl.Sheets(1).Cells(w_Row, 8).Select
             Else
                 wXl.Sheets(1).Cells(w_Row, 5).Select
             End If
@@ -1439,7 +1483,7 @@ On Error GoTo err1
             Cel_Ini = wXLA.ActiveCell.AddressLocal
             
             If frm_Rpt_Cod_Bon.ckAcum = 1 Then
-                wXl.Sheets(1).Cells(w_Row - 1, 7).Select
+                wXl.Sheets(1).Cells(w_Row - 1, 8).Select
             Else
                 wXl.Sheets(1).Cells(w_Row - 1, 5).Select
             End If
@@ -1637,7 +1681,7 @@ Dim w_File_exe
             FileCopy p_arquivo, App.Path & "\" & w_File_exe 'Copia o novo com outro nome
             Kill p_arquivo 'Deleta o novo chamdo New
                     
-            pgBar.text = "Atualizado com sucesso!"
+            pgBar.Text = "Atualizado com sucesso!"
             Pause 0.5
     Else
             MsgBox "Não foi possível baixar a atualização!", vbCritical
@@ -1667,7 +1711,7 @@ On Error GoTo ErroGeral
     Inet1.Password = strFTPPassW
     pgBar.Value = 0
     pgBar.MaxProgress = 10000
-    pgBar.text = "Atualizando ................."
+    pgBar.Text = "Atualizando ................."
     Pause 1
     pgBar.Visible = True
     wTime = Time
@@ -1705,7 +1749,7 @@ On Error GoTo ErroGeral
             FileCopy App.Path & "\" & w_File & "_new.exe", App.Path & "\" & w_File & ".exe" 'Copia o novo com outro nome
             Kill App.Path & "\" & w_File & "_new.exe" 'Deleta o novo chamdo New
                                         
-            pgBar.text = "Atualizado com sucesso!"
+            pgBar.Text = "Atualizado com sucesso!"
             Pause 0.5
         Else
             MsgBox "Não foi possível baixar a atualização!", vbCritical
@@ -1733,7 +1777,7 @@ On Error GoTo ErroGeral
     Inet1.Password = strFTPPassW
     pgBar.Value = 0
     pgBar.MaxProgress = 10000
-    pgBar.text = "Atualizando ................."
+    pgBar.Text = "Atualizando ................."
     Pause 1
     pgBar.Visible = True
     
@@ -1832,7 +1876,7 @@ On Error GoTo ErroGeral
     
             pgBar.Value = pgBar.MaxProgress
             
-            pgBar.text = "Atualizado com sucesso!"
+            pgBar.Text = "Atualizado com sucesso!"
             Pause 0.5
         Else
             MsgBox "Não foi possível baixar a atualização!", vbCritical
@@ -1848,10 +1892,10 @@ ErroGeral:
 End Sub
 
 
-Public Sub Sendkeys(text$, Optional wait As Boolean = False)
+Public Sub Sendkeys(Text$, Optional wait As Boolean = False)
    Dim WshShell As Object
    Set WshShell = CreateObject("wscript.shell")
-   WshShell.Sendkeys text, wait
+   WshShell.Sendkeys Text, wait
    Set WshShell = Nothing
 End Sub
 

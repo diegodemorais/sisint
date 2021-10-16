@@ -1,34 +1,34 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDatGrd.ocx"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "msdatgrd.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "msdatlst.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Lancamento_Pesq 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Consulta de Lançamentos"
-   ClientHeight    =   6960
-   ClientLeft      =   45
-   ClientTop       =   615
-   ClientWidth     =   11670
+   ClientHeight    =   6968
+   ClientLeft      =   39
+   ClientTop       =   611
+   ClientWidth     =   11674
    Icon            =   "frm_Lancamento_Pesq.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   6960
-   ScaleWidth      =   11670
+   ScaleHeight     =   6968
+   ScaleWidth      =   11674
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   870
+      Height          =   819
       Left            =   0
       TabIndex        =   18
       Top             =   0
-      Width           =   11670
-      _ExtentX        =   20585
-      _ExtentY        =   1535
+      Width           =   11674
+      _ExtentX        =   20584
+      _ExtentY        =   1438
       ButtonWidth     =   1535
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -44,6 +44,7 @@ Begin VB.Form frm_Lancamento_Pesq
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -56,6 +57,7 @@ Begin VB.Form frm_Lancamento_Pesq
             ImageIndex      =   5
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -67,6 +69,7 @@ Begin VB.Form frm_Lancamento_Pesq
             ImageIndex      =   9
          EndProperty
          BeginProperty Button6 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -82,14 +85,14 @@ Begin VB.Form frm_Lancamento_Pesq
          AutoRedraw      =   -1  'True
          AutoSize        =   -1  'True
          BorderStyle     =   0  'None
-         Height          =   480
+         Height          =   416
          Left            =   10680
          Picture         =   "frm_Lancamento_Pesq.frx":27A2
-         ScaleHeight     =   480
-         ScaleWidth      =   480
+         ScaleHeight     =   416
+         ScaleWidth      =   416
          TabIndex        =   44
          Top             =   120
-         Width           =   480
+         Width           =   416
       End
       Begin VB.TextBox Text1 
          Alignment       =   2  'Center
@@ -97,7 +100,7 @@ Begin VB.Form frm_Lancamento_Pesq
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -136,15 +139,15 @@ Begin VB.Form frm_Lancamento_Pesq
       AutoRedraw      =   -1  'True
       AutoSize        =   -1  'True
       BorderStyle     =   0  'None
-      Height          =   480
+      Height          =   416
       Left            =   6960
       Picture         =   "frm_Lancamento_Pesq.frx":2BE4
-      ScaleHeight     =   480
-      ScaleWidth      =   480
+      ScaleHeight     =   416
+      ScaleWidth      =   416
       TabIndex        =   43
       Top             =   1050
       Visible         =   0   'False
-      Width           =   480
+      Width           =   416
    End
    Begin MSDataGridLib.DataGrid DataGrid1 
       Bindings        =   "frm_Lancamento_Pesq.frx":2EEE
@@ -153,8 +156,8 @@ Begin VB.Form frm_Lancamento_Pesq
       TabIndex        =   42
       Top             =   2280
       Width           =   11400
-      _ExtentX        =   20108
-      _ExtentY        =   3201
+      _ExtentX        =   20104
+      _ExtentY        =   3211
       _Version        =   393216
       AllowUpdate     =   0   'False
       HeadLines       =   1
@@ -162,7 +165,7 @@ Begin VB.Form frm_Lancamento_Pesq
       FormatLocked    =   -1  'True
       BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -171,7 +174,7 @@ Begin VB.Form frm_Lancamento_Pesq
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -325,8 +328,6 @@ Begin VB.Form frm_Lancamento_Pesq
       SplitCount      =   1
       BeginProperty Split0 
          MarqueeStyle    =   3
-         AllowRowSizing  =   -1  'True
-         AllowSizing     =   -1  'True
          BeginProperty Column00 
             ColumnAllowSizing=   0   'False
          EndProperty
@@ -373,8 +374,8 @@ Begin VB.Form frm_Lancamento_Pesq
       Top             =   5520
       Visible         =   0   'False
       Width           =   2790
-      _ExtentX        =   4921
-      _ExtentY        =   661
+      _ExtentX        =   4912
+      _ExtentY        =   671
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -405,7 +406,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "adoGrid"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -420,8 +421,8 @@ Begin VB.Form frm_Lancamento_Pesq
       Left            =   0
       Top             =   6585
       Width           =   11670
-      _ExtentX        =   20585
-      _ExtentY        =   661
+      _ExtentX        =   20584
+      _ExtentY        =   671
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -452,7 +453,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Registros: 0 de 0"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -465,7 +466,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   " Filtros "
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -489,8 +490,8 @@ Begin VB.Form frm_Lancamento_Pesq
          Top             =   960
          Visible         =   0   'False
          Width           =   1200
-         _ExtentX        =   2117
-         _ExtentY        =   582
+         _ExtentX        =   2109
+         _ExtentY        =   575
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -521,7 +522,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Caption         =   "adoCartao"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -534,7 +535,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Caption         =   "Nº Resumo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -552,7 +553,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Caption         =   "Nº Doc"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -570,7 +571,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Caption         =   "Data Lanç."
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -588,7 +589,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Caption         =   "Cartão"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -606,7 +607,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Caption         =   "Logo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -635,12 +636,12 @@ Begin VB.Form frm_Lancamento_Pesq
          TabIndex        =   7
          Top             =   1005
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -653,7 +654,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin rdActiveText.ActiveText Txt_DtF 
          BeginProperty DataFormat 
@@ -670,12 +671,12 @@ Begin VB.Form frm_Lancamento_Pesq
          TabIndex        =   8
          Top             =   1005
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -688,18 +689,18 @@ Begin VB.Form frm_Lancamento_Pesq
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin MSDataListLib.DataCombo txt_Logo_P 
          Bindings        =   "frm_Lancamento_Pesq.frx":2F03
-         Height          =   315
-         Left            =   2280
+         Height          =   286
+         Left            =   2275
          TabIndex        =   5
          TabStop         =   0   'False
-         Top             =   420
-         Width           =   1965
-         _ExtentX        =   3466
-         _ExtentY        =   556
+         Top             =   416
+         Width           =   1976
+         _ExtentX        =   3642
+         _ExtentY        =   503
          _Version        =   393216
          Enabled         =   0   'False
          MatchEntry      =   -1  'True
@@ -711,13 +712,13 @@ Begin VB.Form frm_Lancamento_Pesq
       End
       Begin MSDataListLib.DataCombo txt_Cartao_P 
          Bindings        =   "frm_Lancamento_Pesq.frx":2F19
-         Height          =   315
-         Left            =   2280
+         Height          =   286
+         Left            =   2275
          TabIndex        =   6
-         Top             =   1005
-         Width           =   3210
-         _ExtentX        =   5662
-         _ExtentY        =   556
+         Top             =   1001
+         Width           =   3211
+         _ExtentX        =   5919
+         _ExtentY        =   503
          _Version        =   393216
          Enabled         =   0   'False
          MatchEntry      =   -1  'True
@@ -733,12 +734,12 @@ Begin VB.Form frm_Lancamento_Pesq
          TabIndex        =   9
          Top             =   420
          Width           =   1275
-         _ExtentX        =   2249
-         _ExtentY        =   556
+         _ExtentX        =   2252
+         _ExtentY        =   551
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -749,7 +750,7 @@ Begin VB.Form frm_Lancamento_Pesq
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin rdActiveText.ActiveText txt_NResumo_P 
          Height          =   315
@@ -757,12 +758,12 @@ Begin VB.Form frm_Lancamento_Pesq
          TabIndex        =   10
          Top             =   1005
          Width           =   1275
-         _ExtentX        =   2249
-         _ExtentY        =   556
+         _ExtentX        =   2252
+         _ExtentY        =   551
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -773,7 +774,7 @@ Begin VB.Form frm_Lancamento_Pesq
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin Skin_Button.ctr_Button bt_Pesq 
          Height          =   1080
@@ -782,37 +783,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Top             =   240
          Width           =   1155
          _ExtentX        =   2037
-         _ExtentY        =   1905
-         BTYPE           =   2
-         TX              =   "&Consultar"
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Lancamento_Pesq.frx":2F31
-         PICN            =   "frm_Lancamento_Pesq.frx":2F4D
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   2
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentY        =   1917
       End
       Begin MSAdodcLib.Adodc adoLogo 
          Height          =   330
@@ -820,8 +791,8 @@ Begin VB.Form frm_Lancamento_Pesq
          Top             =   360
          Visible         =   0   'False
          Width           =   1200
-         _ExtentX        =   2117
-         _ExtentY        =   582
+         _ExtentX        =   2109
+         _ExtentY        =   575
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -852,7 +823,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Caption         =   "adoLogo"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -867,7 +838,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -886,7 +857,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -905,7 +876,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -924,7 +895,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -944,7 +915,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -964,7 +935,7 @@ Begin VB.Form frm_Lancamento_Pesq
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -979,14 +950,14 @@ Begin VB.Form frm_Lancamento_Pesq
       End
    End
    Begin MSDataGridLib.DataGrid grid 
-      Bindings        =   "frm_Lancamento_Pesq.frx":3267
+      Bindings        =   "frm_Lancamento_Pesq.frx":2F31
       Height          =   2220
       Left            =   6120
       TabIndex        =   34
       Top             =   4320
       Width           =   5355
-      _ExtentX        =   9446
-      _ExtentY        =   3916
+      _ExtentX        =   9441
+      _ExtentY        =   3906
       _Version        =   393216
       AllowUpdate     =   0   'False
       Enabled         =   -1  'True
@@ -996,7 +967,7 @@ Begin VB.Form frm_Lancamento_Pesq
       FormatLocked    =   -1  'True
       BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1005,7 +976,7 @@ Begin VB.Form frm_Lancamento_Pesq
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1116,13 +1087,13 @@ Begin VB.Form frm_Lancamento_Pesq
       TabStop         =   0   'False
       Top             =   6240
       Width           =   585
-      _ExtentX        =   1032
-      _ExtentY        =   556
+      _ExtentX        =   1030
+      _ExtentY        =   551
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1133,20 +1104,20 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_Logo 
-      Bindings        =   "frm_Lancamento_Pesq.frx":327D
+      Bindings        =   "frm_Lancamento_Pesq.frx":2F47
       DataField       =   "Logo"
       DataSource      =   "adoReg"
-      Height          =   315
-      Left            =   1200
+      Height          =   286
+      Left            =   1196
       TabIndex        =   12
       TabStop         =   0   'False
-      Top             =   4800
-      Width           =   2025
-      _ExtentX        =   3572
-      _ExtentY        =   556
+      Top             =   4797
+      Width           =   2028
+      _ExtentX        =   3738
+      _ExtentY        =   503
       _Version        =   393216
       Enabled         =   0   'False
       MatchEntry      =   -1  'True
@@ -1157,16 +1128,16 @@ Begin VB.Form frm_Lancamento_Pesq
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_Cartao 
-      Bindings        =   "frm_Lancamento_Pesq.frx":3293
+      Bindings        =   "frm_Lancamento_Pesq.frx":2F5D
       DataField       =   "Cartao"
       DataSource      =   "adoReg"
-      Height          =   315
-      Left            =   1200
+      Height          =   286
+      Left            =   1196
       TabIndex        =   13
-      Top             =   5280
-      Width           =   2040
-      _ExtentX        =   3598
-      _ExtentY        =   556
+      Top             =   5278
+      Width           =   2041
+      _ExtentX        =   3762
+      _ExtentY        =   503
       _Version        =   393216
       Enabled         =   0   'False
       MatchEntry      =   -1  'True
@@ -1194,13 +1165,13 @@ Begin VB.Form frm_Lancamento_Pesq
       TabStop         =   0   'False
       Top             =   6240
       Width           =   1065
-      _ExtentX        =   1879
-      _ExtentY        =   556
+      _ExtentX        =   1869
+      _ExtentY        =   551
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1211,7 +1182,7 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_tx_po 
       DataField       =   "lnc_tx_po"
@@ -1231,13 +1202,13 @@ Begin VB.Form frm_Lancamento_Pesq
       TabStop         =   0   'False
       Top             =   6225
       Width           =   945
-      _ExtentX        =   1667
-      _ExtentY        =   556
+      _ExtentX        =   1677
+      _ExtentY        =   551
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1248,7 +1219,7 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_NDOC 
       DataField       =   "lnc_ndoc"
@@ -1258,12 +1229,12 @@ Begin VB.Form frm_Lancamento_Pesq
       TabIndex        =   16
       Top             =   4320
       Width           =   1500
-      _ExtentX        =   2646
-      _ExtentY        =   556
+      _ExtentX        =   2636
+      _ExtentY        =   551
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1274,19 +1245,19 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_FormaPg 
-      Bindings        =   "frm_Lancamento_Pesq.frx":32AB
+      Bindings        =   "frm_Lancamento_Pesq.frx":2F75
       DataField       =   "formapg"
       DataSource      =   "adoReg"
-      Height          =   315
-      Left            =   4440
+      Height          =   286
+      Left            =   4446
       TabIndex        =   14
-      Top             =   5280
+      Top             =   5278
       Width           =   1560
-      _ExtentX        =   2752
-      _ExtentY        =   556
+      _ExtentX        =   2875
+      _ExtentY        =   503
       _Version        =   393216
       Enabled         =   0   'False
       MatchEntry      =   -1  'True
@@ -1313,12 +1284,12 @@ Begin VB.Form frm_Lancamento_Pesq
       TabIndex        =   15
       Top             =   5760
       Width           =   1035
-      _ExtentX        =   1826
-      _ExtentY        =   556
+      _ExtentX        =   1821
+      _ExtentY        =   551
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1331,7 +1302,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_Valor_Vnd 
       DataField       =   "lnc_vr"
@@ -1350,13 +1321,13 @@ Begin VB.Form frm_Lancamento_Pesq
       TabIndex        =   17
       Top             =   5760
       Width           =   1305
-      _ExtentX        =   2302
-      _ExtentY        =   556
+      _ExtentX        =   2300
+      _ExtentY        =   551
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1366,7 +1337,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Text            =   "R$ 0,00"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin rdActiveText.ActiveText txt_NResumo 
       DataField       =   "lnc_nresumo"
@@ -1376,12 +1347,12 @@ Begin VB.Form frm_Lancamento_Pesq
       TabIndex        =   32
       Top             =   4320
       Width           =   1545
-      _ExtentX        =   2725
-      _ExtentY        =   556
+      _ExtentX        =   2732
+      _ExtentY        =   551
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.4717
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -1392,7 +1363,7 @@ Begin VB.Form frm_Lancamento_Pesq
       RawText         =   0
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   8.25
+      FontSize        =   7.472
    End
    Begin VB.Label Label4 
       Alignment       =   1  'Right Justify
@@ -1400,7 +1371,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Nº Resumo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1419,7 +1390,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Vr Compra"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1438,7 +1409,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Data Protocolo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1457,7 +1428,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Forma de Pagamento"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1476,7 +1447,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Nº Doc"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1495,7 +1466,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "%-Adic"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1514,7 +1485,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Vr Fixo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1533,7 +1504,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "%"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1552,7 +1523,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Cartão"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1571,7 +1542,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Caption         =   "Logo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1587,8 +1558,8 @@ Begin VB.Form frm_Lancamento_Pesq
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -1597,39 +1568,39 @@ Begin VB.Form frm_Lancamento_Pesq
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   9
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":32BC
+            Picture         =   "frm_Lancamento_Pesq.frx":2F86
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":35D6
+            Picture         =   "frm_Lancamento_Pesq.frx":32A0
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":37B0
+            Picture         =   "frm_Lancamento_Pesq.frx":347A
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":3ACA
+            Picture         =   "frm_Lancamento_Pesq.frx":3794
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":3DE4
+            Picture         =   "frm_Lancamento_Pesq.frx":3AAE
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":40FE
+            Picture         =   "frm_Lancamento_Pesq.frx":3DC8
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":4418
+            Picture         =   "frm_Lancamento_Pesq.frx":40E2
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":45F2
+            Picture         =   "frm_Lancamento_Pesq.frx":42BC
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":490C
+            Picture         =   "frm_Lancamento_Pesq.frx":45D6
             Key             =   ""
          EndProperty
       EndProperty
@@ -1707,7 +1678,7 @@ On Error GoTo err1
     w_Str = "SELECT tab_usuario.usl_nome AS Logo, tab_tipo_cartao.tpc_desc AS Cartao, tab_forma_pg.fpg_desc AS FormaPG, tab_lanc.lnc_ndoc, tab_lanc.lnc_dt_vnd, tab_lanc.lnc_tx, tab_lanc.lnc_tx_fixo, tab_lanc.lnc_tx_po, tab_lanc.lnc_vr, tab_lanc.lnc_vr_liq, tab_lanc.lnc_num, tab_lanc.lnc_nresumo, tab_lanc.lnc_tef_pos as TEF_POS FROM tab_lanc, tab_usuario, tab_tipo_cartao, tab_forma_pg WHERE " & w_Str & IIf(Len(w_Str) > 0, " and ", "") & "(tab_lanc.lnc_loj = tab_usuario.usl_cod) AND (tab_lanc.lnc_tipoc = tab_tipo_cartao.tpc_cod) AND (tab_lanc.lnc_formapg = tab_forma_pg.fpg_cod) ORDER BY tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome, tab_tipo_cartao.tpc_desc, tab_forma_pg.fpg_desc"
     w_str_Det = "SELECT * FROM tab_lanc_parc"
     
-    txt2.text = w_Str
+    txt2.Text = w_Str
 
     pic_Pesq.Visible = True
     Set adoReg.Recordset = ExecuteSQL(w_Str).Clone

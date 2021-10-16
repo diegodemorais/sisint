@@ -1,12 +1,12 @@
 VERSION 5.00
 Object = "{9A4D18F7-4EC7-11D5-9E33-0040C78773FC}#1.0#0"; "VBxPOLITEC.ocx"
-Object = "{48E59290-9880-11CF-9754-00AA00C00908}#1.0#0"; "MSINET.Ocx"
+Object = "{48E59290-9880-11CF-9754-00AA00C00908}#1.0#0"; "MSINET.OCX"
 Begin VB.Form frmSplash 
    BorderStyle     =   3  'Fixed Dialog
-   ClientHeight    =   4425
-   ClientLeft      =   255
-   ClientTop       =   1410
-   ClientWidth     =   7470
+   ClientHeight    =   4433
+   ClientLeft      =   260
+   ClientTop       =   1404
+   ClientWidth     =   7462
    ClipControls    =   0   'False
    ControlBox      =   0   'False
    Icon            =   "frmSplash.frx":0000
@@ -14,15 +14,15 @@ Begin VB.Form frmSplash
    LinkTopic       =   "Form2"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   4425
-   ScaleWidth      =   7470
+   ScaleHeight     =   4433
+   ScaleWidth      =   7462
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Begin InetCtlsObjects.Inet Inet1 
       Left            =   4080
       Top             =   2160
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       _Version        =   393216
       Protocol        =   2
       RemotePort      =   21
@@ -39,11 +39,11 @@ Begin VB.Form frmSplash
       TabIndex        =   3
       Top             =   3795
       Width           =   2175
-      _ExtentX        =   3836
-      _ExtentY        =   635
+      _ExtentX        =   3834
+      _ExtentY        =   647
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Times New Roman"
-         Size            =   12
+         Size            =   12.2264
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -52,7 +52,7 @@ Begin VB.Form frmSplash
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Times New Roman"
-         Size            =   12
+         Size            =   12.2264
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -71,11 +71,11 @@ Begin VB.Form frmSplash
       Top             =   0
       Visible         =   0   'False
       Width           =   2895
-      _ExtentX        =   5106
-      _ExtentY        =   635
+      _ExtentX        =   5104
+      _ExtentY        =   647
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Times New Roman"
-         Size            =   12
+         Size            =   12.2264
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -84,7 +84,7 @@ Begin VB.Form frmSplash
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Times New Roman"
-         Size            =   12
+         Size            =   12.2264
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -104,7 +104,7 @@ Begin VB.Form frmSplash
       Caption         =   "Versão : 1.0"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   12
+         Size            =   12.23
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -123,7 +123,7 @@ Begin VB.Form frmSplash
       BackStyle       =   0  'Transparent
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   9.75
+         Size            =   9.51
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False

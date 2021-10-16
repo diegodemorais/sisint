@@ -1,34 +1,34 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "msdatgrd.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Forma_Pg 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Forma de Pagamento"
-   ClientHeight    =   6990
-   ClientLeft      =   45
-   ClientTop       =   615
-   ClientWidth     =   8250
+   ClientHeight    =   6994
+   ClientLeft      =   39
+   ClientTop       =   611
+   ClientWidth     =   8255
    Icon            =   "frm_Forma_Pg.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   6990
-   ScaleWidth      =   8250
+   ScaleHeight     =   6994
+   ScaleWidth      =   8255
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   840
+      Height          =   819
       Left            =   0
       TabIndex        =   13
       Top             =   0
-      Width           =   8250
-      _ExtentX        =   14552
-      _ExtentY        =   1482
+      Width           =   8255
+      _ExtentX        =   14569
+      _ExtentY        =   1438
       ButtonWidth     =   1482
       ButtonHeight    =   1376
       ImageList       =   "IMG"
@@ -96,7 +96,7 @@ Begin VB.Form frm_Forma_Pg
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -120,8 +120,8 @@ Begin VB.Form frm_Forma_Pg
       TabIndex        =   10
       Top             =   1080
       Width           =   7725
-      _ExtentX        =   13626
-      _ExtentY        =   9551
+      _ExtentX        =   13635
+      _ExtentY        =   9561
       _Version        =   393216
       Tabs            =   2
       TabHeight       =   520
@@ -156,8 +156,8 @@ Begin VB.Form frm_Forma_Pg
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Forma_Pg.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Grid"
-      Tab(1).Control(1)=   "Painel"
+      Tab(1).Control(0)=   "Painel"
+      Tab(1).Control(1)=   "Grid"
       Tab(1).ControlCount=   2
       Begin rdActiveText.ActiveText txt_Qt 
          DataField       =   "fpg_qt_parc"
@@ -167,11 +167,11 @@ Begin VB.Form frm_Forma_Pg
          TabIndex        =   2
          Top             =   2445
          Width           =   495
-         _ExtentX        =   873
-         _ExtentY        =   556
+         _ExtentX        =   863
+         _ExtentY        =   551
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -181,7 +181,7 @@ Begin VB.Form frm_Forma_Pg
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin VB.ComboBox txt_Tipo 
          DataField       =   "fpg_Tipo"
@@ -245,38 +245,8 @@ Begin VB.Form frm_Forma_Pg
             TabStop         =   0   'False
             Top             =   120
             Width           =   735
-            _ExtentX        =   1296
-            _ExtentY        =   1508
-            BTYPE           =   9
-            TX              =   "&Filtrar"
-            ENAB            =   -1  'True
-            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   700
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            COLTYPE         =   2
-            FOCUSR          =   -1  'True
-            BCOL            =   -2147483633
-            BCOLO           =   -2147483624
-            FCOL            =   0
-            FCOLO           =   0
-            MCOL            =   12632256
-            MPTR            =   1
-            MICON           =   "frm_Forma_Pg.frx":27F4
-            PICN            =   "frm_Forma_Pg.frx":2810
-            UMCOL           =   -1  'True
-            SOFT            =   0   'False
-            PICPOS          =   2
-            NGREY           =   0   'False
-            FX              =   0
-            HAND            =   0   'False
-            CHECK           =   0   'False
-            VALUE           =   0   'False
+            _ExtentX        =   1294
+            _ExtentY        =   1510
          End
          Begin VB.Label lblFieldLabel 
             Alignment       =   1  'Right Justify
@@ -285,7 +255,7 @@ Begin VB.Form frm_Forma_Pg
             Caption         =   "Digite:"
             BeginProperty Font 
                Name            =   "MS Sans Serif"
-               Size            =   9.75
+               Size            =   8.83
                Charset         =   0
                Weight          =   700
                Underline       =   0   'False
@@ -301,14 +271,14 @@ Begin VB.Form frm_Forma_Pg
          End
       End
       Begin MSDataGridLib.DataGrid Grid 
-         Bindings        =   "frm_Forma_Pg.frx":2B2A
+         Bindings        =   "frm_Forma_Pg.frx":27F4
          Height          =   4080
          Left            =   -74280
          TabIndex        =   9
          Top             =   1575
          Width           =   5655
-         _ExtentX        =   9975
-         _ExtentY        =   7197
+         _ExtentX        =   9968
+         _ExtentY        =   7189
          _Version        =   393216
          AllowUpdate     =   0   'False
          HeadLines       =   1
@@ -316,7 +286,7 @@ Begin VB.Form frm_Forma_Pg
          FormatLocked    =   -1  'True
          BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -325,7 +295,7 @@ Begin VB.Form frm_Forma_Pg
          EndProperty
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Arial"
-            Size            =   6.75
+            Size            =   6.7925
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -423,11 +393,11 @@ Begin VB.Form frm_Forma_Pg
          TabIndex        =   1
          Top             =   1800
          Width           =   3375
-         _ExtentX        =   5953
-         _ExtentY        =   556
+         _ExtentX        =   5943
+         _ExtentY        =   551
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -438,7 +408,7 @@ Begin VB.Form frm_Forma_Pg
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin VB.Label Label1 
          Caption         =   "V (À Vista)"
@@ -471,7 +441,7 @@ Begin VB.Form frm_Forma_Pg
          Caption         =   "Tipo :"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   9.75
+            Size            =   8.83
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -492,7 +462,7 @@ Begin VB.Form frm_Forma_Pg
          Caption         =   "Qtde de Parc.:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   9.75
+            Size            =   8.83
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -519,7 +489,7 @@ Begin VB.Form frm_Forma_Pg
          Caption         =   "Descrição:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   9.75
+            Size            =   8.83
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -540,7 +510,7 @@ Begin VB.Form frm_Forma_Pg
          Caption         =   "Código:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   9.75
+            Size            =   8.83
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -557,12 +527,12 @@ Begin VB.Form frm_Forma_Pg
    End
    Begin MSAdodcLib.Adodc adoReg 
       Align           =   2  'Align Bottom
-      Height          =   375
+      Height          =   377
       Left            =   0
-      Top             =   6615
-      Width           =   8250
-      _ExtentX        =   14552
-      _ExtentY        =   661
+      Top             =   6617
+      Width           =   8255
+      _ExtentX        =   14569
+      _ExtentY        =   671
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -593,7 +563,7 @@ Begin VB.Form frm_Forma_Pg
       Caption         =   "Registro(s): 0 / 0"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.47
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -605,8 +575,8 @@ Begin VB.Form frm_Forma_Pg
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -615,35 +585,35 @@ Begin VB.Form frm_Forma_Pg
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":2B3F
+            Picture         =   "frm_Forma_Pg.frx":2809
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":2E59
+            Picture         =   "frm_Forma_Pg.frx":2B23
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3033
+            Picture         =   "frm_Forma_Pg.frx":2CFD
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":334D
+            Picture         =   "frm_Forma_Pg.frx":3017
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3667
+            Picture         =   "frm_Forma_Pg.frx":3331
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3981
+            Picture         =   "frm_Forma_Pg.frx":364B
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3C9B
+            Picture         =   "frm_Forma_Pg.frx":3965
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3E75
+            Picture         =   "frm_Forma_Pg.frx":3B3F
             Key             =   ""
          EndProperty
       EndProperty

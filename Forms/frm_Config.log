@@ -1,2 +1,2 @@
-Line 168: Property FontSize in txt_versao_login had an invalid value.
-Line 168: Property FontSize in txt_versao_login had an invalid value.
+Line 20: Class ComctlLib.Toolbar of control TBar was not a loaded control class.
+Line 218: Class ComctlLib.ImageList of control IMG was not a loaded control class.

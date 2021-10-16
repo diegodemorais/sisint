@@ -1,34 +1,34 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDATLST.OCX"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "comctl32.ocx"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "msdatgrd.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "msdatlst.ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Total_Lanc 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Total Lançamentos - Diários"
-   ClientHeight    =   5430
-   ClientLeft      =   45
-   ClientTop       =   615
-   ClientWidth     =   9735
+   ClientHeight    =   5434
+   ClientLeft      =   39
+   ClientTop       =   611
+   ClientWidth     =   9737
    Icon            =   "frm_Total_Lanc.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   5430
-   ScaleWidth      =   9735
+   ScaleHeight     =   5434
+   ScaleWidth      =   9737
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   840
+      Height          =   819
       Left            =   0
       TabIndex        =   0
       Top             =   0
-      Width           =   9735
-      _ExtentX        =   17171
-      _ExtentY        =   1482
+      Width           =   9737
+      _ExtentX        =   17181
+      _ExtentY        =   1438
       ButtonWidth     =   1244
       ButtonHeight    =   1376
       ImageList       =   "IMG"
@@ -50,7 +50,7 @@ Begin VB.Form frm_Total_Lanc
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   24
+            Size            =   23.77
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -74,45 +74,15 @@ Begin VB.Form frm_Total_Lanc
       TabIndex        =   5
       Top             =   4785
       Width           =   1935
-      _ExtentX        =   3413
-      _ExtentY        =   1085
-      BTYPE           =   2
-      TX              =   "Resumo"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Total_Lanc.frx":27A2
-      PICN            =   "frm_Total_Lanc.frx":27BE
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   0
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentX        =   3403
+      _ExtentY        =   1078
    End
    Begin VB.Frame fr_Resumo 
       BackColor       =   &H00FFC0C0&
       Caption         =   "Inserir Resumo"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   12
+         Size            =   12.23
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -132,8 +102,8 @@ Begin VB.Form frm_Total_Lanc
          Top             =   480
          Visible         =   0   'False
          Width           =   1200
-         _ExtentX        =   2117
-         _ExtentY        =   582
+         _ExtentX        =   2109
+         _ExtentY        =   575
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -164,7 +134,7 @@ Begin VB.Form frm_Total_Lanc
          Caption         =   "adoCartao"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -174,14 +144,14 @@ Begin VB.Form frm_Total_Lanc
          _Version        =   393216
       End
       Begin MSDataListLib.DataCombo txt_cartao 
-         Bindings        =   "frm_Total_Lanc.frx":3AA0
-         Height          =   315
+         Bindings        =   "frm_Total_Lanc.frx":27A2
+         Height          =   286
          Left            =   1365
          TabIndex        =   9
-         Top             =   480
-         Width           =   3330
-         _ExtentX        =   5874
-         _ExtentY        =   556
+         Top             =   481
+         Width           =   3328
+         _ExtentX        =   6134
+         _ExtentY        =   503
          _Version        =   393216
          Enabled         =   0   'False
          MatchEntry      =   -1  'True
@@ -197,11 +167,11 @@ Begin VB.Form frm_Total_Lanc
          TabIndex        =   10
          Top             =   1080
          Width           =   1995
-         _ExtentX        =   3519
-         _ExtentY        =   556
+         _ExtentX        =   3522
+         _ExtentY        =   551
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -211,7 +181,7 @@ Begin VB.Form frm_Total_Lanc
          MaxLength       =   20
          RawText         =   0
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin Skin_Button.ctr_Button bt_Sal_F 
          Height          =   525
@@ -220,38 +190,8 @@ Begin VB.Form frm_Total_Lanc
          TabStop         =   0   'False
          Top             =   885
          Width           =   495
-         _ExtentX        =   873
-         _ExtentY        =   926
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Total_Lanc.frx":3AB8
-         PICN            =   "frm_Total_Lanc.frx":3AD4
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   863
+         _ExtentY        =   935
       End
       Begin Skin_Button.ctr_Button bt_Canc_F 
          Height          =   525
@@ -260,38 +200,8 @@ Begin VB.Form frm_Total_Lanc
          TabStop         =   0   'False
          Top             =   885
          Width           =   495
-         _ExtentX        =   873
-         _ExtentY        =   926
-         BTYPE           =   2
-         TX              =   ""
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Total_Lanc.frx":3DEE
-         PICN            =   "frm_Total_Lanc.frx":3E0A
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   863
+         _ExtentY        =   935
       End
       Begin VB.Label lbResumo 
          Alignment       =   1  'Right Justify
@@ -299,7 +209,7 @@ Begin VB.Form frm_Total_Lanc
          Caption         =   "Nº Resumo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -319,7 +229,7 @@ Begin VB.Form frm_Total_Lanc
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -345,38 +255,8 @@ Begin VB.Form frm_Total_Lanc
          TabIndex        =   4
          Top             =   285
          Width           =   1635
-         _ExtentX        =   2884
-         _ExtentY        =   1032
-         BTYPE           =   2
-         TX              =   "Consultar"
-         ENAB            =   -1  'True
-         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         COLTYPE         =   1
-         FOCUSR          =   -1  'True
-         BCOL            =   14215660
-         BCOLO           =   14215660
-         FCOL            =   0
-         FCOLO           =   0
-         MCOL            =   12632256
-         MPTR            =   1
-         MICON           =   "frm_Total_Lanc.frx":4124
-         PICN            =   "frm_Total_Lanc.frx":4140
-         UMCOL           =   -1  'True
-         SOFT            =   0   'False
-         PICPOS          =   0
-         NGREY           =   0   'False
-         FX              =   0
-         HAND            =   0   'False
-         CHECK           =   0   'False
-         VALUE           =   0   'False
+         _ExtentX        =   2875
+         _ExtentY        =   1030
       End
       Begin MSAdodcLib.Adodc adoReg 
          Height          =   375
@@ -384,8 +264,8 @@ Begin VB.Form frm_Total_Lanc
          Top             =   3240
          Visible         =   0   'False
          Width           =   1935
-         _ExtentX        =   3413
-         _ExtentY        =   661
+         _ExtentX        =   3403
+         _ExtentY        =   671
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -416,7 +296,7 @@ Begin VB.Form frm_Total_Lanc
          Caption         =   "Adodc1"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -426,14 +306,14 @@ Begin VB.Form frm_Total_Lanc
          _Version        =   393216
       End
       Begin MSDataGridLib.DataGrid grid 
-         Bindings        =   "frm_Total_Lanc.frx":445A
+         Bindings        =   "frm_Total_Lanc.frx":27BA
          Height          =   2775
          Left            =   120
          TabIndex        =   7
          Top             =   1005
          Width           =   9255
-         _ExtentX        =   16325
-         _ExtentY        =   4895
+         _ExtentX        =   16318
+         _ExtentY        =   4888
          _Version        =   393216
          AllowUpdate     =   0   'False
          HeadLines       =   1
@@ -441,7 +321,7 @@ Begin VB.Form frm_Total_Lanc
          FormatLocked    =   -1  'True
          BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -450,7 +330,7 @@ Begin VB.Form frm_Total_Lanc
          EndProperty
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -596,15 +476,15 @@ Begin VB.Form frm_Total_Lanc
          EndProperty
       End
       Begin MSDataListLib.DataCombo txt_Logo 
-         Bindings        =   "frm_Total_Lanc.frx":446F
-         Height          =   315
-         Left            =   240
+         Bindings        =   "frm_Total_Lanc.frx":27CF
+         Height          =   286
+         Left            =   234
          TabIndex        =   1
          TabStop         =   0   'False
-         Top             =   540
-         Width           =   3285
-         _ExtentX        =   5794
-         _ExtentY        =   556
+         Top             =   546
+         Width           =   3289
+         _ExtentX        =   6062
+         _ExtentY        =   503
          _Version        =   393216
          MatchEntry      =   -1  'True
          Style           =   2
@@ -628,11 +508,11 @@ Begin VB.Form frm_Total_Lanc
          TabIndex        =   2
          Top             =   510
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -645,7 +525,7 @@ Begin VB.Form frm_Total_Lanc
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin MSAdodcLib.Adodc adoLogo 
          Height          =   375
@@ -653,8 +533,8 @@ Begin VB.Form frm_Total_Lanc
          Top             =   285
          Visible         =   0   'False
          Width           =   1215
-         _ExtentX        =   2143
-         _ExtentY        =   661
+         _ExtentX        =   2133
+         _ExtentY        =   671
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -685,7 +565,7 @@ Begin VB.Form frm_Total_Lanc
          Caption         =   "Adodc1"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -709,11 +589,11 @@ Begin VB.Form frm_Total_Lanc
          TabIndex        =   3
          Top             =   510
          Width           =   1035
-         _ExtentX        =   1826
-         _ExtentY        =   556
+         _ExtentX        =   1821
+         _ExtentY        =   551
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -726,14 +606,14 @@ Begin VB.Form frm_Total_Lanc
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   8.25
+         FontSize        =   7.472
       End
       Begin VB.Label Label1 
          BackStyle       =   0  'Transparent
          Caption         =   "Logo:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -752,7 +632,7 @@ Begin VB.Form frm_Total_Lanc
          Caption         =   "Escopo de Data"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -771,7 +651,7 @@ Begin VB.Form frm_Total_Lanc
          Caption         =   "à"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   8.25
+            Size            =   7.47
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -791,47 +671,17 @@ Begin VB.Form frm_Total_Lanc
       TabIndex        =   6
       Top             =   4785
       Width           =   2295
-      _ExtentX        =   4048
-      _ExtentY        =   1085
-      BTYPE           =   2
-      TX              =   "Inserir Resumo"
-      ENAB            =   -1  'True
-      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   9.75
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      COLTYPE         =   1
-      FOCUSR          =   -1  'True
-      BCOL            =   14215660
-      BCOLO           =   14215660
-      FCOL            =   0
-      FCOLO           =   0
-      MCOL            =   12632256
-      MPTR            =   1
-      MICON           =   "frm_Total_Lanc.frx":4485
-      PICN            =   "frm_Total_Lanc.frx":44A1
-      UMCOL           =   -1  'True
-      SOFT            =   0   'False
-      PICPOS          =   0
-      NGREY           =   0   'False
-      FX              =   0
-      HAND            =   0   'False
-      CHECK           =   0   'False
-      VALUE           =   0   'False
+      _ExtentX        =   4050
+      _ExtentY        =   1078
    End
    Begin VB.ListBox List1 
       Appearance      =   0  'Flat
       BackColor       =   &H8000000F&
       ForeColor       =   &H00FF0000&
-      Height          =   420
-      ItemData        =   "frm_Total_Lanc.frx":47C3
+      Height          =   364
+      ItemData        =   "frm_Total_Lanc.frx":27E5
       Left            =   5610
-      List            =   "frm_Total_Lanc.frx":47CD
+      List            =   "frm_Total_Lanc.frx":27EF
       TabIndex        =   20
       TabStop         =   0   'False
       Top             =   4890
@@ -866,8 +716,8 @@ Begin VB.Form frm_Total_Lanc
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   240
-      _ExtentX        =   1005
-      _ExtentY        =   1005
+      _ExtentX        =   1006
+      _ExtentY        =   1006
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
@@ -876,35 +726,35 @@ Begin VB.Form frm_Total_Lanc
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":47EB
+            Picture         =   "frm_Total_Lanc.frx":280D
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":4B05
+            Picture         =   "frm_Total_Lanc.frx":2B27
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":4CDF
+            Picture         =   "frm_Total_Lanc.frx":2D01
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":4FF9
+            Picture         =   "frm_Total_Lanc.frx":301B
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":5313
+            Picture         =   "frm_Total_Lanc.frx":3335
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":562D
+            Picture         =   "frm_Total_Lanc.frx":364F
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":5947
+            Picture         =   "frm_Total_Lanc.frx":3969
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":5B21
+            Picture         =   "frm_Total_Lanc.frx":3B43
             Key             =   ""
          EndProperty
       EndProperty
