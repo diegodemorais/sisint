@@ -29,8 +29,8 @@ Begin VB.Form frm_Banco
       Width           =   7709
       _ExtentX        =   13587
       _ExtentY        =   1438
-      ButtonWidth     =   1482
-      ButtonHeight    =   1376
+      ButtonWidth     =   1605
+      ButtonHeight    =   1342
       ImageList       =   "IMG"
       _Version        =   327682
       BeginProperty Buttons {0713E452-850A-101B-AFC0-4210102A8DA7} 
@@ -44,7 +44,6 @@ Begin VB.Form frm_Banco
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -57,7 +56,6 @@ Begin VB.Form frm_Banco
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -77,7 +75,6 @@ Begin VB.Form frm_Banco
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -197,6 +194,35 @@ Begin VB.Form frm_Banco
             Width           =   735
             _ExtentX        =   1294
             _ExtentY        =   1510
+            BTYPE           =   2
+            TX              =   ""
+            ENAB            =   -1  'True
+            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   7.4717
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            COLTYPE         =   1
+            FOCUSR          =   -1  'True
+            BCOL            =   15790320
+            BCOLO           =   15790320
+            FCOL            =   0
+            FCOLO           =   0
+            MCOL            =   12632256
+            MPTR            =   1
+            MICON           =   "frm_Banco.frx":27DA
+            UMCOL           =   -1  'True
+            SOFT            =   0   'False
+            PICPOS          =   0
+            NGREY           =   0   'False
+            FX              =   0
+            HAND            =   0   'False
+            CHECK           =   0   'False
+            VALUE           =   0   'False
          End
          Begin VB.Label lblFieldLabel 
             Alignment       =   1  'Right Justify
@@ -221,7 +247,7 @@ Begin VB.Form frm_Banco
          End
       End
       Begin MSDataGridLib.DataGrid Grid 
-         Bindings        =   "frm_Banco.frx":27DA
+         Bindings        =   "frm_Banco.frx":27F6
          Height          =   4080
          Left            =   -74280
          TabIndex        =   7
@@ -434,35 +460,35 @@ Begin VB.Form frm_Banco
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":27EF
+            Picture         =   "frm_Banco.frx":280B
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":2B09
+            Picture         =   "frm_Banco.frx":2B25
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":2CE3
+            Picture         =   "frm_Banco.frx":2CFF
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":2FFD
+            Picture         =   "frm_Banco.frx":3019
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":3317
+            Picture         =   "frm_Banco.frx":3333
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":3631
+            Picture         =   "frm_Banco.frx":364D
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":394B
+            Picture         =   "frm_Banco.frx":3967
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":3B25
+            Picture         =   "frm_Banco.frx":3B41
             Key             =   ""
          EndProperty
       EndProperty

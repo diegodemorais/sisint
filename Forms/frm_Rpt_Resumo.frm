@@ -21,13 +21,13 @@ Begin VB.Form frm_Rpt_Resumo
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   819
+      Height          =   871
       Left            =   0
       TabIndex        =   5
       Top             =   0
       Width           =   11531
       _ExtentX        =   20344
-      _ExtentY        =   1438
+      _ExtentY        =   1534
       ButtonWidth     =   1376
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -400,6 +400,35 @@ Begin VB.Form frm_Rpt_Resumo
          Width           =   1650
          _ExtentX        =   2899
          _ExtentY        =   1078
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.4717
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Rpt_Resumo.frx":27C0
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button bt_STodos 
          Height          =   495
@@ -411,6 +440,35 @@ Begin VB.Form frm_Rpt_Resumo
          Width           =   525
          _ExtentX        =   935
          _ExtentY        =   863
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.4717
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Rpt_Resumo.frx":27DC
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button bt_RTodos 
          Height          =   495
@@ -422,6 +480,35 @@ Begin VB.Form frm_Rpt_Resumo
          Width           =   525
          _ExtentX        =   935
          _ExtentY        =   863
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.4717
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Rpt_Resumo.frx":27F8
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button bt_STodos_Cart 
          Height          =   495
@@ -433,6 +520,35 @@ Begin VB.Form frm_Rpt_Resumo
          Width           =   525
          _ExtentX        =   935
          _ExtentY        =   863
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.4717
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Rpt_Resumo.frx":2814
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button bt_RTodos_Cart 
          Height          =   495
@@ -444,6 +560,35 @@ Begin VB.Form frm_Rpt_Resumo
          Width           =   525
          _ExtentX        =   935
          _ExtentY        =   863
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.4717
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Rpt_Resumo.frx":2830
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button bt_Consultar 
          Height          =   615
@@ -453,6 +598,35 @@ Begin VB.Form frm_Rpt_Resumo
          Width           =   1650
          _ExtentX        =   2899
          _ExtentY        =   1078
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.4717
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Rpt_Resumo.frx":284C
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin rdActiveText.ActiveText txt_Liq 
          BeginProperty DataFormat 
@@ -575,35 +749,35 @@ Begin VB.Form frm_Rpt_Resumo
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":27C0
+            Picture         =   "frm_Rpt_Resumo.frx":2868
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":2ADA
+            Picture         =   "frm_Rpt_Resumo.frx":2B82
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":2CB4
+            Picture         =   "frm_Rpt_Resumo.frx":2D5C
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":2FCE
+            Picture         =   "frm_Rpt_Resumo.frx":3076
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":32E8
+            Picture         =   "frm_Rpt_Resumo.frx":3390
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":3602
+            Picture         =   "frm_Rpt_Resumo.frx":36AA
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":391C
+            Picture         =   "frm_Rpt_Resumo.frx":39C4
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":3AF6
+            Picture         =   "frm_Rpt_Resumo.frx":3B9E
             Key             =   ""
          EndProperty
       EndProperty
@@ -843,11 +1017,11 @@ Private Sub Form_Unload(Cancel As Integer)
 End Sub
 
 Private Sub List1_Click()
-    grid.SetFocus
+    Grid.SetFocus
 End Sub
 
 Private Sub List1_GotFocus()
-    grid.SetFocus
+    Grid.SetFocus
 End Sub
 
 
@@ -912,36 +1086,36 @@ End Sub
 
 
 Sub Formata_Grid()
-    grid.Visible = False
-    grid.MergeCells = flexMergeRestrictColumns
+    Grid.Visible = False
+    Grid.MergeCells = flexMergeRestrictColumns
     '*** Colunas p/ Agrupar/Mesclar
-    grid.MergeCol(1) = True
+    Grid.MergeCol(1) = True
 
-    grid.ColWidth(0) = 200
+    Grid.ColWidth(0) = 200
     
     If op1.Value = True Then
-        grid.ColWidth(1) = 2500
-        grid.ColWidth(2) = 700
+        Grid.ColWidth(1) = 2500
+        Grid.ColWidth(2) = 700
     Else
-        grid.ColWidth(2) = 2500
-        grid.ColWidth(1) = 700
+        Grid.ColWidth(2) = 2500
+        Grid.ColWidth(1) = 700
     End If
     
-    grid.ColWidth(3) = 700
-    grid.ColWidth(4) = 700
+    Grid.ColWidth(3) = 700
+    Grid.ColWidth(4) = 700
     
-    grid.TextArray(1) = "Cartão"
-    grid.TextArray(2) = "Logo"
-    grid.TextArray(3) = "Bruto"
-    grid.TextArray(4) = "Líquido"
+    Grid.TextArray(1) = "Cartão"
+    Grid.TextArray(2) = "Logo"
+    Grid.TextArray(3) = "Bruto"
+    Grid.TextArray(4) = "Líquido"
     
-    grid.ColAlignment(2) = 3
-    grid.ColAlignment(3) = 6
-    grid.ColAlignment(4) = 6
+    Grid.ColAlignment(2) = 3
+    Grid.ColAlignment(3) = 6
+    Grid.ColAlignment(4) = 6
     
-    grid.Redraw = True
-    grid.Refresh
-    grid.Visible = True
+    Grid.Redraw = True
+    Grid.Refresh
+    Grid.Visible = True
     
     
 End Sub

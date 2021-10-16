@@ -1,34 +1,34 @@
 VERSION 5.00
-Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "msadodc.ocx"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "msdatgrd.ocx"
-Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "msdatlst.ocx"
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.OCX"
-Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "activetext.ocx"
+Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSAdoDc.ocx"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDatGrd.ocx"
+Object = "{F0D2F211-CCB0-11D0-A316-00AA00688B10}#1.0#0"; "MSDatLst.Ocx"
+Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.5#0"; "COMCTL32.ocx"
+Object = "{4E6B00F6-69BE-11D2-885A-A1A33992992C}#2.6#0"; "ACTIVETEXT.OCX"
 Object = "{83E7A33D-84B8-4C96-9A60-2290FFC1A9A1}#2.0#0"; "Skin_Button.ocx"
 Begin VB.Form frm_Baixa_Automatica 
    BorderStyle     =   3  'Fixed Dialog
-   Caption         =   "Baixa Automática"
-   ClientHeight    =   6968
-   ClientLeft      =   39
-   ClientTop       =   611
-   ClientWidth     =   12844
+   Caption         =   "Baixa Autom?tica"
+   ClientHeight    =   6960
+   ClientLeft      =   45
+   ClientTop       =   615
+   ClientWidth     =   12840
    Icon            =   "frm_Baixa_Automatica.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
-   ScaleHeight     =   6968
-   ScaleWidth      =   12844
+   ScaleHeight     =   6960
+   ScaleWidth      =   12840
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   871
+      Height          =   870
       Left            =   0
       TabIndex        =   15
       Top             =   0
-      Width           =   12844
-      _ExtentX        =   22644
-      _ExtentY        =   1534
+      Width           =   12840
+      _ExtentX        =   22648
+      _ExtentY        =   1535
       ButtonWidth     =   1693
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -44,6 +44,7 @@ Begin VB.Form frm_Baixa_Automatica
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -57,24 +58,26 @@ Begin VB.Form frm_Baixa_Automatica
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
             Object.Visible         =   0   'False
-            Caption         =   "Alt. Lanç."
+            Caption         =   "Alt. Lan?."
             Key             =   "altlanc"
-            Object.ToolTipText     =   "Altera o Lançamento"
+            Object.ToolTipText     =   "Altera o Lan?amento"
             Object.Tag             =   ""
          EndProperty
          BeginProperty Button5 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
          EndProperty
          BeginProperty Button6 {0713F354-850A-101B-AFC0-4210102A8DA7} 
-            Caption         =   "&Relatório"
+            Caption         =   "&Relat?rio"
             Key             =   "relatorio"
-            Object.ToolTipText     =   "Visualizar Relatório para Impressão"
+            Object.ToolTipText     =   "Visualizar Relat?rio para Impress?o"
             Object.Tag             =   ""
             ImageIndex      =   8
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -83,7 +86,7 @@ Begin VB.Form frm_Baixa_Automatica
             Caption         =   "E&xcel"
             Key             =   "excel"
             Object.Tag             =   ""
-            ImageIndex      =   10
+            ImageIndex      =   11
          EndProperty
       EndProperty
       Begin Skin_Button.ctr_Button btn_Acompanhamento 
@@ -92,14 +95,14 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   42
          Top             =   45
          Width           =   615
-         _ExtentX        =   1078
-         _ExtentY        =   1294
+         _ExtentX        =   1085
+         _ExtentY        =   1296
          BTYPE           =   2
          TX              =   "A&BS"
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.8302
+            Size            =   9.75
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -130,17 +133,17 @@ Begin VB.Form frm_Baixa_Automatica
          Left            =   11520
          TabIndex        =   35
          TabStop         =   0   'False
-         ToolTipText     =   "Cartões não Recebidos"
+         ToolTipText     =   "Cart?es n?o Recebidos"
          Top             =   60
          Width           =   1035
-         _ExtentX        =   1821
-         _ExtentY        =   1294
+         _ExtentX        =   1826
+         _ExtentY        =   1296
          BTYPE           =   2
-         TX              =   "Não Rec."
+         TX              =   "N?o Rec."
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -171,17 +174,17 @@ Begin VB.Form frm_Baixa_Automatica
          Left            =   10440
          TabIndex        =   34
          TabStop         =   0   'False
-         ToolTipText     =   "Cartões Recebidos"
+         ToolTipText     =   "Cart?es Recebidos"
          Top             =   60
          Width           =   1035
-         _ExtentX        =   1821
-         _ExtentY        =   1294
+         _ExtentX        =   1826
+         _ExtentY        =   1296
          BTYPE           =   2
          TX              =   "Rec."
          ENAB            =   0   'False
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -213,7 +216,7 @@ Begin VB.Form frm_Baixa_Automatica
          BorderStyle     =   0  'None
          BeginProperty Font 
             Name            =   "Times New Roman"
-            Size            =   23.77
+            Size            =   24
             Charset         =   0
             Weight          =   400
             Underline       =   -1  'True
@@ -226,17 +229,17 @@ Begin VB.Form frm_Baixa_Automatica
          Locked          =   -1  'True
          TabIndex        =   16
          TabStop         =   0   'False
-         Text            =   "Baixa Automática"
+         Text            =   "Baixa Autom?tica"
          Top             =   120
          Width           =   4005
       End
    End
    Begin VB.TextBox txtSql 
       Height          =   375
-      Left            =   3480
+      Left            =   6360
       TabIndex        =   43
       Text            =   "[debug]"
-      Top             =   2280
+      Top             =   2160
       Visible         =   0   'False
       Width           =   6135
    End
@@ -244,8 +247,8 @@ Begin VB.Form frm_Baixa_Automatica
       Height          =   555
       Left            =   5640
       Picture         =   "frm_Baixa_Automatica.frx":34EC
-      ScaleHeight     =   507
-      ScaleWidth      =   468
+      ScaleHeight     =   495
+      ScaleWidth      =   465
       TabIndex        =   41
       Top             =   4320
       Visible         =   0   'False
@@ -261,7 +264,7 @@ Begin VB.Form frm_Baixa_Automatica
       Caption         =   "Alterar Data de Vencimento"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   8.83
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -281,11 +284,11 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   30
          Top             =   675
          Width           =   1275
-         _ExtentX        =   2252
-         _ExtentY        =   551
+         _ExtentX        =   2249
+         _ExtentY        =   556
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -298,7 +301,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   7.472
+         FontSize        =   8.25
       End
       Begin Skin_Button.ctr_Button bt_Sal_F 
          Height          =   525
@@ -306,14 +309,14 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   31
          Top             =   480
          Width           =   495
-         _ExtentX        =   863
-         _ExtentY        =   935
+         _ExtentX        =   873
+         _ExtentY        =   926
          BTYPE           =   2
          TX              =   ""
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -346,14 +349,14 @@ Begin VB.Form frm_Baixa_Automatica
          TabStop         =   0   'False
          Top             =   480
          Width           =   495
-         _ExtentX        =   863
-         _ExtentY        =   935
+         _ExtentX        =   873
+         _ExtentY        =   926
          BTYPE           =   2
          TX              =   ""
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -384,7 +387,7 @@ Begin VB.Form frm_Baixa_Automatica
          Caption         =   "Data Vcto:"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -414,12 +417,12 @@ Begin VB.Form frm_Baixa_Automatica
       Top             =   6240
       Width           =   1155
       _ExtentX        =   2037
-      _ExtentY        =   551
+      _ExtentY        =   556
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.4717
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -429,7 +432,7 @@ Begin VB.Form frm_Baixa_Automatica
       Text            =   "0,00"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   7.472
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txt_Liq 
       BeginProperty DataFormat 
@@ -447,12 +450,12 @@ Begin VB.Form frm_Baixa_Automatica
       Top             =   6240
       Width           =   1155
       _ExtentX        =   2037
-      _ExtentY        =   551
+      _ExtentY        =   556
       Alignment       =   1
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.4717
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -462,16 +465,16 @@ Begin VB.Form frm_Baixa_Automatica
       Text            =   "0,00"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   7.472
+      FontSize        =   8.25
    End
    Begin MSAdodcLib.Adodc adoReg 
       Align           =   2  'Align Bottom
-      Height          =   325
+      Height          =   330
       Left            =   0
-      Top             =   6643
-      Width           =   12844
-      _ExtentX        =   22644
-      _ExtentY        =   575
+      Top             =   6630
+      Width           =   12840
+      _ExtentX        =   22648
+      _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -502,7 +505,7 @@ Begin VB.Form frm_Baixa_Automatica
       Caption         =   "Registros: 0 de 0"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.47
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -518,8 +521,8 @@ Begin VB.Form frm_Baixa_Automatica
       TabIndex        =   17
       Top             =   2520
       Width           =   12825
-      _ExtentX        =   22620
-      _ExtentY        =   6518
+      _ExtentX        =   22622
+      _ExtentY        =   6509
       _Version        =   393216
       AllowUpdate     =   0   'False
       Enabled         =   -1  'True
@@ -529,7 +532,7 @@ Begin VB.Form frm_Baixa_Automatica
       FormatLocked    =   -1  'True
       BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.4717
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -538,7 +541,7 @@ Begin VB.Form frm_Baixa_Automatica
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.4717
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -577,7 +580,7 @@ Begin VB.Form frm_Baixa_Automatica
          Caption         =   "Parc."
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   1
-            Format          =   "0º"
+            Format          =   "0?"
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
@@ -626,7 +629,7 @@ Begin VB.Form frm_Baixa_Automatica
       EndProperty
       BeginProperty Column06 
          DataField       =   "Cartao"
-         Caption         =   "Cartão"
+         Caption         =   "Cart?o"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -767,13 +770,13 @@ Begin VB.Form frm_Baixa_Automatica
       TabIndex        =   27
       Top             =   6240
       Width           =   600
-      _ExtentX        =   1054
-      _ExtentY        =   551
+      _ExtentX        =   1058
+      _ExtentY        =   556
       Alignment       =   2
       Enabled         =   0   'False
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.4717
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -783,21 +786,21 @@ Begin VB.Form frm_Baixa_Automatica
       Text            =   "0"
       RawText         =   0
       FontName        =   "MS Sans Serif"
-      FontSize        =   7.472
+      FontSize        =   8.25
    End
    Begin rdActiveText.ActiveText txtDtAntecipado 
       Height          =   315
-      Left            =   4920
+      Left            =   2520
       TabIndex        =   44
-      Top             =   1560
+      Top             =   2040
       Visible         =   0   'False
       Width           =   1275
-      _ExtentX        =   2252
-      _ExtentY        =   551
+      _ExtentX        =   2249
+      _ExtentY        =   556
       BackColor       =   12632319
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.4717
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -810,13 +813,13 @@ Begin VB.Form frm_Baixa_Automatica
       Mask            =   "##/##/####"
       eAuto           =   1
       FontName        =   "MS Sans Serif"
-      FontSize        =   7.472
+      FontSize        =   8.25
    End
    Begin VB.Frame frFiltro 
       Caption         =   " Filtros "
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   7.47
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -828,84 +831,14 @@ Begin VB.Form frm_Baixa_Automatica
       TabIndex        =   18
       Top             =   840
       Width           =   12765
-      Begin VB.CheckBox ckAntecipado 
-         Caption         =   "Antecipar?"
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   7.47
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   330
-         Left            =   4680
-         TabIndex        =   47
-         Top             =   420
-         Width           =   1335
-      End
-      Begin VB.Timer Timer2 
-         Enabled         =   0   'False
-         Interval        =   100
-         Left            =   1200
-         Top             =   960
-      End
-      Begin MSAdodcLib.Adodc adoLogo 
-         Height          =   330
-         Left            =   2505
-         Top             =   525
-         Visible         =   0   'False
-         Width           =   1200
-         _ExtentX        =   2109
-         _ExtentY        =   575
-         ConnectMode     =   0
-         CursorLocation  =   3
-         IsolationLevel  =   -1
-         ConnectionTimeout=   15
-         CommandTimeout  =   30
-         CursorType      =   3
-         LockType        =   3
-         CommandType     =   8
-         CursorOptions   =   0
-         CacheSize       =   50
-         MaxRecords      =   0
-         BOFAction       =   0
-         EOFAction       =   0
-         ConnectStringType=   1
-         Appearance      =   1
-         BackColor       =   -2147483643
-         ForeColor       =   -2147483640
-         Orientation     =   0
-         Enabled         =   -1
-         Connect         =   ""
-         OLEDBString     =   ""
-         OLEDBFile       =   ""
-         DataSourceName  =   ""
-         OtherAttributes =   ""
-         UserName        =   ""
-         Password        =   ""
-         RecordSource    =   ""
-         Caption         =   "Adodc1"
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   7.47
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         _Version        =   393216
-      End
       Begin MSAdodcLib.Adodc adoCartao 
          Height          =   330
-         Left            =   3720
-         Top             =   1110
+         Left            =   4680
+         Top             =   120
          Visible         =   0   'False
          Width           =   1200
-         _ExtentX        =   2109
-         _ExtentY        =   575
+         _ExtentX        =   2117
+         _ExtentY        =   582
          ConnectMode     =   0
          CursorLocation  =   3
          IsolationLevel  =   -1
@@ -936,7 +869,184 @@ Begin VB.Form frm_Baixa_Automatica
          Caption         =   "adoCartao"
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         _Version        =   393216
+      End
+      Begin VB.ListBox List_cartao_bounded 
+         Appearance      =   0  'Flat
+         Enabled         =   0   'False
+         Height          =   930
+         ItemData        =   "frm_Baixa_Automatica.frx":3E77
+         Left            =   4680
+         List            =   "frm_Baixa_Automatica.frx":3E79
+         Style           =   1  'Checkbox
+         TabIndex        =   51
+         Top             =   240
+         Visible         =   0   'False
+         Width           =   735
+      End
+      Begin Skin_Button.ctr_Button bt_RTodos 
+         Height          =   345
+         Left            =   6070
+         TabIndex        =   50
+         TabStop         =   0   'False
+         ToolTipText     =   "Retira Selec?o de todos"
+         Top             =   120
+         Width           =   345
+         _ExtentX        =   609
+         _ExtentY        =   609
+         BTYPE           =   2
+         TX              =   " "
+         ENAB            =   0   'False
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   14215660
+         BCOLO           =   14215660
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Baixa_Automatica.frx":3E7B
+         PICN            =   "frm_Baixa_Automatica.frx":3E97
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
+      End
+      Begin Skin_Button.ctr_Button bt_STodos 
+         Height          =   345
+         Left            =   6480
+         TabIndex        =   49
+         TabStop         =   0   'False
+         ToolTipText     =   "Seleciona todos"
+         Top             =   120
+         Width           =   345
+         _ExtentX        =   609
+         _ExtentY        =   609
+         BTYPE           =   2
+         TX              =   " "
+         ENAB            =   0   'False
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   14215660
+         BCOLO           =   14215660
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Baixa_Automatica.frx":53E9
+         PICN            =   "frm_Baixa_Automatica.frx":5405
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
+      End
+      Begin VB.ListBox List_cartao 
+         Appearance      =   0  'Flat
+         Enabled         =   0   'False
+         Height          =   1155
+         ItemData        =   "frm_Baixa_Automatica.frx":2F7A6
+         Left            =   4080
+         List            =   "frm_Baixa_Automatica.frx":2F7A8
+         Style           =   1  'Checkbox
+         TabIndex        =   48
+         Top             =   480
+         Width           =   2865
+      End
+      Begin VB.CheckBox ckAntecipado 
+         Caption         =   "Antecipar?"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   195
+         Left            =   2040
+         TabIndex        =   47
+         Top             =   960
+         Width           =   1335
+      End
+      Begin VB.Timer Timer2 
+         Enabled         =   0   'False
+         Interval        =   100
+         Left            =   1200
+         Top             =   960
+      End
+      Begin MSAdodcLib.Adodc adoLogo 
+         Height          =   330
+         Left            =   2640
+         Top             =   120
+         Visible         =   0   'False
+         Width           =   1200
+         _ExtentX        =   2117
+         _ExtentY        =   582
+         ConnectMode     =   0
+         CursorLocation  =   3
+         IsolationLevel  =   -1
+         ConnectionTimeout=   15
+         CommandTimeout  =   30
+         CursorType      =   3
+         LockType        =   3
+         CommandType     =   8
+         CursorOptions   =   0
+         CacheSize       =   50
+         MaxRecords      =   0
+         BOFAction       =   0
+         EOFAction       =   0
+         ConnectStringType=   1
+         Appearance      =   1
+         BackColor       =   -2147483643
+         ForeColor       =   -2147483640
+         Orientation     =   0
+         Enabled         =   -1
+         Connect         =   ""
+         OLEDBString     =   ""
+         OLEDBFile       =   ""
+         DataSourceName  =   ""
+         OtherAttributes =   ""
+         UserName        =   ""
+         Password        =   ""
+         RecordSource    =   ""
+         Caption         =   "Adodc1"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -946,10 +1056,10 @@ Begin VB.Form frm_Baixa_Automatica
          _Version        =   393216
       End
       Begin VB.CheckBox ck 
-         Caption         =   "Nº Resumo"
+         Caption         =   "N? Resumo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -964,10 +1074,10 @@ Begin VB.Form frm_Baixa_Automatica
          Width           =   1575
       End
       Begin VB.CheckBox ck 
-         Caption         =   "Nº Doc"
+         Caption         =   "N? Doc"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -985,7 +1095,7 @@ Begin VB.Form frm_Baixa_Automatica
          Caption         =   "Data Vcto"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1003,7 +1113,7 @@ Begin VB.Form frm_Baixa_Automatica
          Caption         =   "Data Protocolo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1021,7 +1131,7 @@ Begin VB.Form frm_Baixa_Automatica
          Caption         =   "Mostrar Baixados?"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1030,16 +1140,16 @@ Begin VB.Form frm_Baixa_Automatica
          EndProperty
          Height          =   330
          Index           =   5
-         Left            =   4680
+         Left            =   2040
          TabIndex        =   38
-         Top             =   150
-         Width           =   1935
+         Top             =   600
+         Width           =   2055
       End
       Begin VB.CheckBox ck 
-         Caption         =   "Cartão"
+         Caption         =   "Cart?o"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1057,7 +1167,7 @@ Begin VB.Form frm_Baixa_Automatica
          Caption         =   "Logo"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1086,12 +1196,12 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   10
          Top             =   1095
          Width           =   1035
-         _ExtentX        =   1821
-         _ExtentY        =   551
+         _ExtentX        =   1826
+         _ExtentY        =   556
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -1104,7 +1214,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   7.472
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText Txt_DtF 
          BeginProperty DataFormat 
@@ -1121,12 +1231,12 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   11
          Top             =   1080
          Width           =   1035
-         _ExtentX        =   1821
-         _ExtentY        =   551
+         _ExtentX        =   1826
+         _ExtentY        =   556
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -1139,18 +1249,18 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   7.472
+         FontSize        =   8.25
       End
       Begin MSDataListLib.DataCombo txt_Logo_P 
-         Bindings        =   "frm_Baixa_Automatica.frx":3E77
-         Height          =   286
-         Left            =   2041
+         Bindings        =   "frm_Baixa_Automatica.frx":2F7AA
+         Height          =   315
+         Left            =   2640
          TabIndex        =   6
          TabStop         =   0   'False
-         Top             =   507
-         Width           =   1976
-         _ExtentX        =   3642
-         _ExtentY        =   503
+         Top             =   240
+         Width           =   1125
+         _ExtentX        =   1984
+         _ExtentY        =   556
          _Version        =   393216
          Enabled         =   0   'False
          MatchEntry      =   -1  'True
@@ -1160,15 +1270,16 @@ Begin VB.Form frm_Baixa_Automatica
          Text            =   ""
          Object.DataMember      =   ""
       End
-      Begin MSDataListLib.DataCombo txt_Cartao_P 
-         Bindings        =   "frm_Baixa_Automatica.frx":3E8D
-         Height          =   286
-         Left            =   2041
+      Begin MSDataListLib.DataCombo txt_Cartao_P2 
+         Bindings        =   "frm_Baixa_Automatica.frx":2F7C0
+         Height          =   315
+         Left            =   5400
          TabIndex        =   7
-         Top             =   1105
-         Width           =   4173
-         _ExtentX        =   7692
-         _ExtentY        =   503
+         Top             =   120
+         Visible         =   0   'False
+         Width           =   1530
+         _ExtentX        =   2699
+         _ExtentY        =   556
          _Version        =   393216
          Enabled         =   0   'False
          MatchEntry      =   -1  'True
@@ -1184,12 +1295,12 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   12
          Top             =   510
          Width           =   1275
-         _ExtentX        =   2252
-         _ExtentY        =   551
+         _ExtentX        =   2249
+         _ExtentY        =   556
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -1200,7 +1311,7 @@ Begin VB.Form frm_Baixa_Automatica
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   7.472
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText txt_NResumo_P 
          Height          =   315
@@ -1208,12 +1319,12 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   13
          Top             =   1095
          Width           =   1275
-         _ExtentX        =   2252
-         _ExtentY        =   551
+         _ExtentX        =   2249
+         _ExtentY        =   556
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -1224,22 +1335,22 @@ Begin VB.Form frm_Baixa_Automatica
          RawText         =   0
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   7.472
+         FontSize        =   8.25
       End
       Begin Skin_Button.ctr_Button bt_Pesq 
          Height          =   1080
-         Left            =   11520
+         Left            =   11640
          TabIndex        =   14
          Top             =   360
-         Width           =   1155
-         _ExtentX        =   2037
-         _ExtentY        =   1917
+         Width           =   1035
+         _ExtentX        =   1826
+         _ExtentY        =   1905
          BTYPE           =   2
          TX              =   "&Consultar"
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   8.8302
+            Size            =   9.75
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1254,8 +1365,8 @@ Begin VB.Form frm_Baixa_Automatica
          FCOLO           =   0
          MCOL            =   12632256
          MPTR            =   1
-         MICON           =   "frm_Baixa_Automatica.frx":3EA5
-         PICN            =   "frm_Baixa_Automatica.frx":3EC1
+         MICON           =   "frm_Baixa_Automatica.frx":2F7D8
+         PICN            =   "frm_Baixa_Automatica.frx":2F7F4
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   2
@@ -1280,12 +1391,12 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   8
          Top             =   510
          Width           =   1035
-         _ExtentX        =   1821
-         _ExtentY        =   551
+         _ExtentX        =   1826
+         _ExtentY        =   556
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -1298,7 +1409,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   7.472
+         FontSize        =   8.25
       End
       Begin rdActiveText.ActiveText Txt_DtFP 
          BeginProperty DataFormat 
@@ -1315,12 +1426,12 @@ Begin VB.Form frm_Baixa_Automatica
          TabIndex        =   9
          Top             =   510
          Width           =   1035
-         _ExtentX        =   1821
-         _ExtentY        =   551
+         _ExtentX        =   1826
+         _ExtentY        =   556
          Enabled         =   0   'False
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.4717
+            Size            =   8.25
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -1333,7 +1444,7 @@ Begin VB.Form frm_Baixa_Automatica
          Mask            =   "##/##/####"
          eAuto           =   1
          FontName        =   "MS Sans Serif"
-         FontSize        =   7.472
+         FontSize        =   8.25
       End
       Begin VB.Label lb_DtP 
          Alignment       =   2  'Center
@@ -1342,7 +1453,7 @@ Begin VB.Form frm_Baixa_Automatica
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1358,11 +1469,11 @@ Begin VB.Form frm_Baixa_Automatica
       Begin VB.Label lb_Dt2P 
          Alignment       =   2  'Center
          BackStyle       =   0  'Transparent
-         Caption         =   "à"
+         Caption         =   "?"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1377,11 +1488,11 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin VB.Label lb_Doc 
          BackStyle       =   0  'Transparent
-         Caption         =   "Nº Doc"
+         Caption         =   "N? Doc"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1396,11 +1507,11 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin VB.Label lb_resumo 
          BackStyle       =   0  'Transparent
-         Caption         =   "Nº Resumo"
+         Caption         =   "N? Resumo"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1415,11 +1526,11 @@ Begin VB.Form frm_Baixa_Automatica
       End
       Begin VB.Label lb_Cartao 
          BackStyle       =   0  'Transparent
-         Caption         =   "Cartão"
+         Caption         =   "Cart?o"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1427,9 +1538,9 @@ Begin VB.Form frm_Baixa_Automatica
             Strikethrough   =   0   'False
          EndProperty
          Height          =   225
-         Left            =   2040
+         Left            =   3960
          TabIndex        =   22
-         Top             =   870
+         Top             =   240
          Width           =   1215
       End
       Begin VB.Label lb_Logo 
@@ -1438,7 +1549,7 @@ Begin VB.Form frm_Baixa_Automatica
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1454,11 +1565,11 @@ Begin VB.Form frm_Baixa_Automatica
       Begin VB.Label lb_Dt2 
          Alignment       =   2  'Center
          BackStyle       =   0  'Transparent
-         Caption         =   "à"
+         Caption         =   "?"
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1478,7 +1589,7 @@ Begin VB.Form frm_Baixa_Automatica
          Enabled         =   0   'False
          BeginProperty Font 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   8.25
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -1498,7 +1609,7 @@ Begin VB.Form frm_Baixa_Automatica
       Enabled         =   0   'False
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   7.47
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1517,7 +1628,7 @@ Begin VB.Form frm_Baixa_Automatica
       Caption         =   "P/ Remover TODOS  CTRL + T"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   7.47
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1536,7 +1647,7 @@ Begin VB.Form frm_Baixa_Automatica
       Caption         =   "P/ Remover   CTRL + R"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   7.47
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1556,7 +1667,7 @@ Begin VB.Form frm_Baixa_Automatica
       Enabled         =   0   'False
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   7.47
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1576,7 +1687,7 @@ Begin VB.Form frm_Baixa_Automatica
       Enabled         =   0   'False
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   7.47
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -1592,53 +1703,57 @@ Begin VB.Form frm_Baixa_Automatica
    Begin ComctlLib.ImageList IMG 
       Left            =   8760
       Top             =   4200
-      _ExtentX        =   1006
-      _ExtentY        =   1006
+      _ExtentX        =   1005
+      _ExtentY        =   1005
       BackColor       =   -2147483643
       ImageWidth      =   32
       ImageHeight     =   32
       MaskColor       =   12632256
       _Version        =   327682
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
-         NumListImages   =   10
+         NumListImages   =   11
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":41DB
+            Picture         =   "frm_Baixa_Automatica.frx":2FB0E
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":44F5
+            Picture         =   "frm_Baixa_Automatica.frx":2FE28
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":46CF
+            Picture         =   "frm_Baixa_Automatica.frx":30002
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":49E9
+            Picture         =   "frm_Baixa_Automatica.frx":3031C
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":4D03
+            Picture         =   "frm_Baixa_Automatica.frx":30636
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":501D
+            Picture         =   "frm_Baixa_Automatica.frx":30950
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":5337
+            Picture         =   "frm_Baixa_Automatica.frx":30C6A
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":5511
+            Picture         =   "frm_Baixa_Automatica.frx":30E44
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":582B
+            Picture         =   "frm_Baixa_Automatica.frx":3115E
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Baixa_Automatica.frx":5B45
+            Picture         =   "frm_Baixa_Automatica.frx":31478
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage11 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+            Picture         =   "frm_Baixa_Automatica.frx":31C92
             Key             =   ""
          EndProperty
       EndProperty
@@ -1650,11 +1765,11 @@ Begin VB.Form frm_Baixa_Automatica
       Caption         =   "|  &Alterar Vcto  |"
    End
    Begin VB.Menu mnuAltlanc 
-      Caption         =   "Altera Lanç.  |"
+      Caption         =   "Altera Lan?.  |"
       Visible         =   0   'False
    End
    Begin VB.Menu mnuAc 
-      Caption         =   "Ações"
+      Caption         =   "A??es"
       Begin VB.Menu mnuAcBaixar 
          Caption         =   "Baixar"
          Shortcut        =   {F5}
@@ -1693,9 +1808,13 @@ Private Sub adoReg_MoveComplete(ByVal adReason As ADODB.EventReasonEnum, ByVal p
 On Error GoTo err1
     adoReg.Caption = "Registro " & adoReg.Recordset.AbsolutePosition & " de " & adoReg.Recordset.RecordCount
     
-    If wHabStatus = True And (txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19") Then
-        MDI.StatusBar1.Panels(2).Text = adoReg.Recordset.Fields("N")
-    ElseIf wHabStatus = True Then
+    'If wHabStatus = True And (txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19") Then
+    '    MDI.StatusBar1.Panels(2).Text = adoReg.Recordset.Fields("N")
+    'ElseIf wHabStatus = True Then
+    '    MDI.StatusBar1.Panels(2).Text = ""
+    'End If
+    
+    If wHabStatus = True Then
         MDI.StatusBar1.Panels(2).Text = ""
     End If
 
@@ -1717,24 +1836,42 @@ End Sub
 
 Private Sub bt_Pesq_Click()
 Dim w_Str As String
+Dim w_cartao As String
 On Error GoTo err1
 
 wHabStatus = False
 
     wWherePG = ""
+    w_cartao = ""
     If ck(0).Value <> 0 And txt_Logo_P <> "" Then
         w_Str = "tab_lanc.lnc_loj = " & txt_Logo_P.BoundText & ""
     End If
-    If ck(1).Value <> 0 And txt_Cartao_P <> "" Then
-        w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
-        w_Str = w_Str & "tab_lanc.lnc_tipoc = " & txt_Cartao_P.BoundText & ""
+    'If ck(1).Value <> 0 And txt_Cartao_P <> "" Then
+    If ck(1).Value <> 0 Then
+        Call Copy_List_cartao_to_bounded
+        For i = 0 To List_cartao_bounded.ListCount - 1
+            If List_cartao_bounded.Selected(i) = True Then
+                If w_cartao <> "" Then
+                    w_cartao = w_cartao & " or "
+                End If
+                w_cartao = w_cartao & " tab_lanc.lnc_tipoc = " & List_cartao_bounded.List(i) & " "
+            End If
+        Next i
+        If w_cartao <> "" Then
+            w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
+            w_Str = w_Str & "(" & w_cartao & ")"
+        End If
+
+        'w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
+        'w_Str = w_Str & "tab_lanc.lnc_tipoc = " & txt_Cartao_P.BoundText & ""
+
     End If
     wWherePG = w_Str
     
     If ck(2).Value <> 0 And Txt_DtI <> "" And Txt_DtF <> "" Then
         w_Str = IIf(Len(w_Str) > 0, w_Str & " and ", "")
         
-        'Mostrar Baixados não selecionado
+        'Mostrar Baixados n?o selecionado
         If ck(5).Value = 0 Then
             w_Str = w_Str & "tab_lanc_parc.lcp_dt_vcto >= '" & Format(Txt_DtI, "yyyy-mm-dd") & "' and tab_lanc_parc.lcp_dt_vcto <= '" & Format(Txt_DtF, "yyyy-mm-dd") & "'"
         
@@ -1789,7 +1926,7 @@ wHabStatus = False
     
     wWhereN = wWherePG
     
-    If txt_Cartao_P.BoundText = "6" Or txt_Cartao_P.BoundText = "17" Or txt_Cartao_P.BoundText = "18" Or txt_Cartao_P.BoundText = "19" Then
+    If Contains("6", w_cartao) Or Contains("17", w_cartao) Or Contains("18", w_cartao) Or Contains("19", w_cartao) Then
         w_Str = "SELECT tab_lanc.lnc_tipoc, tab_lanc.lnc_num, tab_lanc_parc.lcp_nresumo as N, tab_lanc_parc.lcp_ndoc as NDOC, tab_lanc_parc.lcp_dt_vcto AS vcto, tab_tipo_cartao.tpc_desc AS cartao,  tab_lanc_parc.lcp_parc,  tab_lanc.lnc_loj, tab_lanc.lnc_dt_vnd, tab_usuario.usl_nome AS Logo, tab_lanc_parc.lcp_baixa AS Baixa, tab_lanc.lnc_tef_pos AS TEF_POS, Sum(tab_lanc.lnc_vr) AS vr_compra, Sum(tab_lanc_parc.lcp_vr_bto) AS vr_bto, Sum(tab_lanc_parc.lcp_vr_liq) AS vr_liq " & _
                 "From tab_usuario, tab_lanc, tab_forma_pg, tab_tipo_cartao, tab_lanc_parc " & _
                 "Where (tab_usuario.usl_cod =  tab_lanc.lnc_loj And tab_lanc_parc.lcp_num_lanc =  tab_lanc.lnc_num  And tab_lanc.lnc_tipoc =  tab_tipo_cartao.tpc_cod  And tab_lanc.lnc_formapg = tab_forma_pg.fpg_cod ) " & _
@@ -1848,6 +1985,12 @@ err1:
     Resume sair
 End Sub
 
+Function Contains(Value As String, Text As String, Optional Prefix_Sufix As String = " ")
+    Contains = InStr(1, Prefix_Sufix & Value & Prefix_Sufix, Text) > 0
+End Function
+
+
+
 Private Sub bt_Rel_Click()
 On Error GoTo err1
 
@@ -1873,7 +2016,7 @@ On Error GoTo err1
         Rel_ResumoRec.Show
         Rel_ResumoRec.WindowState = vbMaximized
     Else
-        MsgBox "Nenhum registro encontrado para gerar o relatório!", vbExclamation
+        MsgBox "Nenhum registro encontrado para gerar o relat?rio!", vbExclamation
     End If
 
 sair:
@@ -1882,6 +2025,13 @@ sair:
 err1:
     MsgBox msgErro(err), vbCritical
     Resume sair
+End Sub
+
+Private Sub bt_RTodos_Click()
+    For i = List_cartao.ListCount - 1 To 0 Step -1
+        List_cartao.Selected(i) = False
+    Next i
+    List_cartao.Selected(0) = False
 End Sub
 
 Private Sub bt_Sal_F_Click()
@@ -1921,6 +2071,13 @@ Dim wAdo As ADODB.Recordset
     bt_Pesq_Click
 End Sub
 
+Private Sub bt_STodos_Click()
+    For i = List_cartao.ListCount - 1 To 0 Step -1
+        List_cartao.Selected(i) = True
+    Next i
+    
+End Sub
+
 Private Sub btn_Acompanhamento_Click()
     frm_Acompanhamento.Show
 End Sub
@@ -1934,8 +2091,12 @@ On Error GoTo err1
             If txt_Logo_P.Enabled = True Then txt_Logo_P.SetFocus
     Case 1:
             lb_Cartao.Enabled = ck(Index).Value
-            txt_Cartao_P.Enabled = ck(Index).Value
-            If txt_Cartao_P.Enabled = True Then txt_Cartao_P.SetFocus
+            'txt_Cartao_P.Enabled = ck(Index).Value
+            'If txt_Cartao_P.Enabled = True Then txt_Cartao_P.SetFocus
+            bt_RTodos.Enabled = ck(Index).Value
+            bt_STodos.Enabled = ck(Index).Value
+            List_cartao.Enabled = ck(Index).Value
+            If List_cartao.Enabled = True Then List_cartao.SetFocus
     Case 2:
             lb_Dt.Enabled = ck(Index).Value
             lb_Dt2.Enabled = ck(Index).Value
@@ -1993,6 +2154,12 @@ Private Sub ckAntecipado_Click()
     End If
 End Sub
 
+Sub Copy_List_cartao_to_bounded()
+    For i = List_cartao.ListCount - 1 To 0 Step -1
+        List_cartao_bounded.Selected(i) = List_cartao.Selected(i)
+    Next i
+End Sub
+
 Private Sub ctr_Button1_Click()
 Dim rs As Object
 On Error GoTo err1
@@ -2009,15 +2176,15 @@ On Error GoTo err1
         mnuAlt.Visible = False
         Set Rel_ResumoRec.DataSource = rs.Clone
         If ck(0).Value = 0 Then
-            Rel_ResumoRec.Sections("SecCab").Controls("LBTitulo").Caption = "Não Recebidos"
+            Rel_ResumoRec.Sections("SecCab").Controls("LBTitulo").Caption = "N?o Recebidos"
         Else
-            Rel_ResumoRec.Sections("SecCab").Controls("LBTitulo").Caption = txt_Logo_P & " - Não Recebidos"
+            Rel_ResumoRec.Sections("SecCab").Controls("LBTitulo").Caption = txt_Logo_P & " - N?o Recebidos"
             'Rel_ResumoRec.Sections("SecDet").Controls("txtlogo").Visible = False
         End If
         Rel_ResumoRec.Show
         Rel_ResumoRec.WindowState = vbMaximized
     Else
-        MsgBox "Nenhum registro encontrado para gerar o relatório!", vbExclamation
+        MsgBox "Nenhum registro encontrado para gerar o relat?rio!", vbExclamation
     End If
 
 sair:
@@ -2040,6 +2207,15 @@ On Error GoTo err1
   
     Set adoLogo.Recordset = w_ado_Logo.Clone
     Set adoCartao.Recordset = w_ado_CadCartao.Clone
+    
+    List_cartao.Enabled = True
+    adoCartao.Recordset.MoveFirst
+    For i = 1 To adoCartao.Recordset.RecordCount
+        Call List_cartao.AddItem(adoCartao.Recordset.Fields("tpc_desc"), List_cartao.ListCount)
+        Call List_cartao_bounded.AddItem(adoCartao.Recordset.Fields("tpc_cod"), List_cartao_bounded.ListCount)
+        adoCartao.Recordset.MoveNext
+    Next i
+    List_cartao.Enabled = False
     
     Txt_DtI = w_Data_Server
     Txt_DtF = w_Data_Server
@@ -2075,7 +2251,7 @@ On Error Resume Next
     wAntecipado = False
     If ckAntecipado.Value Then
         If Not IsDate(txtDtAntecipado) Then
-            MsgBox "Preencha o campo da Data de Antecipação ou retire a seleção do item 'Antecipado?'", vbCritical, "Data de antecipação não preenchida"
+            MsgBox "Preencha o campo da Data de Antecipa??o ou retire a sele??o do item 'Antecipado?'", vbCritical, "Data de antecipa??o n?o preenchida"
             Exit Sub
         Else
             wAntecipado = True
@@ -2106,7 +2282,7 @@ On Error Resume Next
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
         grid.SetFocus
     Else
-        MsgBox "Não foi possível baixar, especifique na consulta qual cartão deseja!", vbCritical
+        MsgBox "N?o foi poss?vel baixar, especifique na consulta qual cart?o deseja!", vbCritical
     End If
    
 End Sub
@@ -2122,7 +2298,7 @@ On Error Resume Next
         wQtRegistros = adoReg.Recordset.RecordCount
         mnuAcBaixar_Click
         If wQtRegistros = adoReg.Recordset.RecordCount Then
-            MsgBox "Não foi possível baixar algum cartão. Cancelando!", vbCritical, "Erro de baixa"
+            MsgBox "N?o foi poss?vel baixar algum cart?o. Cancelando!", vbCritical, "Erro de baixa"
             Exit Sub
         End If
     Loop
@@ -2156,7 +2332,7 @@ On Error Resume Next
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
         grid.SetFocus
     Else
-        MsgBox "Não foi possível remover a baixa, especifique na consulta qual cartão deseja!", vbCritical
+        MsgBox "N?o foi poss?vel remover a baixa, especifique na consulta qual cart?o deseja!", vbCritical
     End If
     
 End Sub
@@ -2172,7 +2348,7 @@ On Error Resume Next
         wQtRegistros = adoReg.Recordset.RecordCount
         mnuAcRem_Click
         If wQtRegistros = adoReg.Recordset.RecordCount Then
-            MsgBox "Não foi possível remover a baixa algum cartão. Cancelando!", vbCritical, "Erro de remoção de baixa"
+            MsgBox "N?o foi poss?vel remover a baixa algum cart?o. Cancelando!", vbCritical, "Erro de remo??o de baixa"
             Exit Sub
         End If
     Loop
@@ -2188,7 +2364,7 @@ On Error GoTo err1
         grid.Enabled = False
         adoReg.Enabled = False
     Else
-        MsgBox "Não é possível alterar o vcto porque esta parcela já foi baixada!", vbCritical
+        MsgBox "N?o ? poss?vel alterar o vcto porque esta parcela j? foi baixada!", vbCritical
     End If
 
 sair:
@@ -2208,8 +2384,8 @@ On Error Resume Next
 
     Set Rel_Baixa_Automatica.DataSource = w_Rec.Clone
     Rel_Baixa_Automatica.WindowState = vbMaximized
-    'Se "mostrar baixados", muda título para "Pendência do Relatório das Baixas"
-    If ck(5).Value = 1 Then Rel_Baixa_Automatica.Sections("Section4").Controls("lbTitulo").Caption = "Pendência do Relatório das Baixas"
+    'Se "mostrar baixados", muda t?tulo para "Pend?ncia do Relat?rio das Baixas"
+    If ck(5).Value = 1 Then Rel_Baixa_Automatica.Sections("Section4").Controls("lbTitulo").Caption = "Pend?ncia do Relat?rio das Baixas"
     Rel_Baixa_Automatica.Show
 
 End Sub
@@ -2258,7 +2434,7 @@ On Error GoTo err1
     wResp = vbYes
     'Verifica se possui alguma parcela baixada
     If 0 <> ExecuteSQL("Select Count(*) from tab_lanc_parc Where lcp_num_lanc = '" & adoReg.Recordset.Fields("lnc_num") & "' and lcp_baixa <> '0000-00-00'").Fields(0) Then
-        wResp = MsgBox("Umas das parcelas já foi baixada, pois após a alteração as parcelas baixadas retonarão como não baixadas! " & Chr(13) & "Deseja realmente alterar?", vbQuestion + vbYesNo)
+        wResp = MsgBox("Umas das parcelas j? foi baixada, pois ap?s a altera??o as parcelas baixadas retonar?o como n?o baixadas! " & Chr(13) & "Deseja realmente alterar?", vbQuestion + vbYesNo)
     End If
     
     If wResp = vbYes Then

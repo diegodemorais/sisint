@@ -11,17 +11,18 @@ Begin VB.Form frm_Rpt_Total_Receber
    ClientTop       =   2548
    ClientWidth     =   5356
    LinkTopic       =   "Form1"
+   MDIChild        =   -1  'True
    ScaleHeight     =   8216
    ScaleWidth      =   5356
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   819
+      Height          =   624
       Left            =   0
       TabIndex        =   6
       Top             =   0
       Width           =   5356
       _ExtentX        =   9441
-      _ExtentY        =   1438
+      _ExtentY        =   1102
       ButtonWidth     =   1244
       ButtonHeight    =   1005
       ImageList       =   "IMG"
@@ -224,6 +225,35 @@ Begin VB.Form frm_Rpt_Total_Receber
       Width           =   1155
       _ExtentX        =   2037
       _ExtentY        =   1917
+      BTYPE           =   2
+      TX              =   ""
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   7.4717
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "frm_Rpt_Total_Receber.frx":0004
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin MSAdodcLib.Adodc adoLogo 
       Height          =   375
@@ -282,6 +312,35 @@ Begin VB.Form frm_Rpt_Total_Receber
       Width           =   1965
       _ExtentX        =   3475
       _ExtentY        =   863
+      BTYPE           =   2
+      TX              =   ""
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   7.4717
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "frm_Rpt_Total_Receber.frx":0020
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin Skin_Button.ctr_Button bt_RTodos 
       Height          =   495
@@ -293,6 +352,35 @@ Begin VB.Form frm_Rpt_Total_Receber
       Width           =   1965
       _ExtentX        =   3475
       _ExtentY        =   863
+      BTYPE           =   2
+      TX              =   ""
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   7.4717
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "frm_Rpt_Total_Receber.frx":003C
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin VB.Label Label2 
       BackStyle       =   0  'Transparent
@@ -343,39 +431,39 @@ Begin VB.Form frm_Rpt_Total_Receber
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   9
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0004
+            Picture         =   "frm_Rpt_Total_Receber.frx":0058
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":031E
+            Picture         =   "frm_Rpt_Total_Receber.frx":0372
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":04F8
+            Picture         =   "frm_Rpt_Total_Receber.frx":054C
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0812
+            Picture         =   "frm_Rpt_Total_Receber.frx":0866
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0B2C
+            Picture         =   "frm_Rpt_Total_Receber.frx":0B80
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0E46
+            Picture         =   "frm_Rpt_Total_Receber.frx":0E9A
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":1160
+            Picture         =   "frm_Rpt_Total_Receber.frx":11B4
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":133A
+            Picture         =   "frm_Rpt_Total_Receber.frx":138E
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":1654
+            Picture         =   "frm_Rpt_Total_Receber.frx":16A8
             Key             =   ""
          EndProperty
       EndProperty

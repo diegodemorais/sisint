@@ -14,20 +14,20 @@ Begin VB.Form frm_Acompanhamento
    ClientWidth     =   11193
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
+   MDIChild        =   -1  'True
    MinButton       =   0   'False
    ScaleHeight     =   2366
    ScaleWidth      =   11193
    ShowInTaskbar   =   0   'False
-   StartUpPosition =   3  'Windows Default
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   819
+      Height          =   624
       Left            =   0
       TabIndex        =   13
       Top             =   0
       Width           =   11193
       _ExtentX        =   19745
-      _ExtentY        =   1438
+      _ExtentY        =   1102
       ButtonWidth     =   1244
       ButtonHeight    =   1005
       ImageList       =   "IMG"
@@ -921,6 +921,10 @@ sair:
 err1:
     MsgBox msgErro(err), vbCritical
     Resume sair
+
+End Sub
+
+Private Sub Frame1_DragDrop(Source As Control, X As Single, Y As Single)
 
 End Sub
 
