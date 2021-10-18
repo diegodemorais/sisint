@@ -659,8 +659,8 @@ Dim wPlanName As String
 On Error GoTo err1
 
 
-    'wPlanName = "Plan"
-    wPlanName = "Sheet"
+    wPlanName = "Plan"
+    'wPlanName = "Sheet"
     w_qtDias = DtF - DtI
 
     'Pega os registros
@@ -683,8 +683,8 @@ On Error GoTo err1
     'DESATIVA O DISPLAY DE ALERTA DO EXCEL
     xlA.DisplayAlerts = False
     'apaga as outras planilhas
-    'xl.Sheets.Item(wPlanName & "2").Delete
-    'xl.Sheets.Item(wPlanName & "3").Delete
+    xl.Sheets.Item(wPlanName & "2").Delete
+    xl.Sheets.Item(wPlanName & "3").Delete
     xlA.DisplayAlerts = True
     
     xlA.Cells.Select
