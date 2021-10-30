@@ -21,13 +21,13 @@ Begin VB.Form frm_Rpt_Resumo
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   871
+      Height          =   819
       Left            =   0
       TabIndex        =   5
       Top             =   0
       Width           =   11531
       _ExtentX        =   20344
-      _ExtentY        =   1534
+      _ExtentY        =   1438
       ButtonWidth     =   1376
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -401,7 +401,7 @@ Begin VB.Form frm_Rpt_Resumo
          _ExtentX        =   2899
          _ExtentY        =   1078
          BTYPE           =   2
-         TX              =   ""
+         TX              =   "Relatório"
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
@@ -421,6 +421,7 @@ Begin VB.Form frm_Rpt_Resumo
          MCOL            =   12632256
          MPTR            =   1
          MICON           =   "frm_Rpt_Resumo.frx":27C0
+         PICN            =   "frm_Rpt_Resumo.frx":27DC
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -460,7 +461,7 @@ Begin VB.Form frm_Rpt_Resumo
          FCOLO           =   0
          MCOL            =   12632256
          MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":27DC
+         MICON           =   "frm_Rpt_Resumo.frx":3ABE
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -500,7 +501,7 @@ Begin VB.Form frm_Rpt_Resumo
          FCOLO           =   0
          MCOL            =   12632256
          MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":27F8
+         MICON           =   "frm_Rpt_Resumo.frx":3ADA
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -540,7 +541,7 @@ Begin VB.Form frm_Rpt_Resumo
          FCOLO           =   0
          MCOL            =   12632256
          MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":2814
+         MICON           =   "frm_Rpt_Resumo.frx":3AF6
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -580,7 +581,7 @@ Begin VB.Form frm_Rpt_Resumo
          FCOLO           =   0
          MCOL            =   12632256
          MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":2830
+         MICON           =   "frm_Rpt_Resumo.frx":3B12
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -599,7 +600,7 @@ Begin VB.Form frm_Rpt_Resumo
          _ExtentX        =   2899
          _ExtentY        =   1078
          BTYPE           =   2
-         TX              =   ""
+         TX              =   "Consultar"
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
@@ -618,7 +619,8 @@ Begin VB.Form frm_Rpt_Resumo
          FCOLO           =   0
          MCOL            =   12632256
          MPTR            =   1
-         MICON           =   "frm_Rpt_Resumo.frx":284C
+         MICON           =   "frm_Rpt_Resumo.frx":3B2E
+         PICN            =   "frm_Rpt_Resumo.frx":3B4A
          UMCOL           =   -1  'True
          SOFT            =   0   'False
          PICPOS          =   0
@@ -749,35 +751,35 @@ Begin VB.Form frm_Rpt_Resumo
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":2868
+            Picture         =   "frm_Rpt_Resumo.frx":408D
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":2B82
+            Picture         =   "frm_Rpt_Resumo.frx":43A7
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":2D5C
+            Picture         =   "frm_Rpt_Resumo.frx":4581
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":3076
+            Picture         =   "frm_Rpt_Resumo.frx":489B
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":3390
+            Picture         =   "frm_Rpt_Resumo.frx":4BB5
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":36AA
+            Picture         =   "frm_Rpt_Resumo.frx":4ECF
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":39C4
+            Picture         =   "frm_Rpt_Resumo.frx":51E9
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Resumo.frx":3B9E
+            Picture         =   "frm_Rpt_Resumo.frx":53C3
             Key             =   ""
          EndProperty
       EndProperty

@@ -44,6 +44,7 @@ Begin VB.Form frm_Banco
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -56,6 +57,7 @@ Begin VB.Form frm_Banco
             ImageIndex      =   8
          EndProperty
          BeginProperty Button4 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -75,6 +77,7 @@ Begin VB.Form frm_Banco
             ImageIndex      =   4
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -139,8 +142,10 @@ Begin VB.Form frm_Banco
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Banco.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Painel"
-      Tab(1).Control(1)=   "Grid"
+      Tab(1).Control(0)=   "Grid"
+      Tab(1).Control(0).Enabled=   0   'False
+      Tab(1).Control(1)=   "Painel"
+      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).ControlCount=   2
       Begin VB.Frame Painel 
          Caption         =   "Tipo de Filtro"
@@ -215,6 +220,7 @@ Begin VB.Form frm_Banco
             MCOL            =   12632256
             MPTR            =   1
             MICON           =   "frm_Banco.frx":27DA
+            PICN            =   "frm_Banco.frx":27F6
             UMCOL           =   -1  'True
             SOFT            =   0   'False
             PICPOS          =   0
@@ -247,7 +253,7 @@ Begin VB.Form frm_Banco
          End
       End
       Begin MSDataGridLib.DataGrid Grid 
-         Bindings        =   "frm_Banco.frx":27F6
+         Bindings        =   "frm_Banco.frx":2B10
          Height          =   4080
          Left            =   -74280
          TabIndex        =   7
@@ -460,35 +466,35 @@ Begin VB.Form frm_Banco
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":280B
-            Key             =   ""
-         EndProperty
-         BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
             Picture         =   "frm_Banco.frx":2B25
             Key             =   ""
          EndProperty
-         BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":2CFF
+         BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+            Picture         =   "frm_Banco.frx":2E3F
             Key             =   ""
          EndProperty
-         BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+         BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
             Picture         =   "frm_Banco.frx":3019
             Key             =   ""
          EndProperty
-         BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+         BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
             Picture         =   "frm_Banco.frx":3333
             Key             =   ""
          EndProperty
-         BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+         BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
             Picture         =   "frm_Banco.frx":364D
             Key             =   ""
          EndProperty
-         BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+         BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
             Picture         =   "frm_Banco.frx":3967
             Key             =   ""
          EndProperty
+         BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
+            Picture         =   "frm_Banco.frx":3C81
+            Key             =   ""
+         EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Banco.frx":3B41
+            Picture         =   "frm_Banco.frx":3E5B
             Key             =   ""
          EndProperty
       EndProperty

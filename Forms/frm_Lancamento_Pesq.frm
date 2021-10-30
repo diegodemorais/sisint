@@ -784,6 +784,36 @@ Begin VB.Form frm_Lancamento_Pesq
          Width           =   1155
          _ExtentX        =   2037
          _ExtentY        =   1917
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.47
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Lancamento_Pesq.frx":2F31
+         PICN            =   "frm_Lancamento_Pesq.frx":2F4D
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin MSAdodcLib.Adodc adoLogo 
          Height          =   330
@@ -950,7 +980,7 @@ Begin VB.Form frm_Lancamento_Pesq
       End
    End
    Begin MSDataGridLib.DataGrid grid 
-      Bindings        =   "frm_Lancamento_Pesq.frx":2F31
+      Bindings        =   "frm_Lancamento_Pesq.frx":3267
       Height          =   2220
       Left            =   6120
       TabIndex        =   34
@@ -1107,7 +1137,7 @@ Begin VB.Form frm_Lancamento_Pesq
       FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_Logo 
-      Bindings        =   "frm_Lancamento_Pesq.frx":2F47
+      Bindings        =   "frm_Lancamento_Pesq.frx":327D
       DataField       =   "Logo"
       DataSource      =   "adoReg"
       Height          =   286
@@ -1128,7 +1158,7 @@ Begin VB.Form frm_Lancamento_Pesq
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_Cartao 
-      Bindings        =   "frm_Lancamento_Pesq.frx":2F5D
+      Bindings        =   "frm_Lancamento_Pesq.frx":3293
       DataField       =   "Cartao"
       DataSource      =   "adoReg"
       Height          =   286
@@ -1248,7 +1278,7 @@ Begin VB.Form frm_Lancamento_Pesq
       FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_FormaPg 
-      Bindings        =   "frm_Lancamento_Pesq.frx":2F75
+      Bindings        =   "frm_Lancamento_Pesq.frx":32AB
       DataField       =   "formapg"
       DataSource      =   "adoReg"
       Height          =   286
@@ -1568,39 +1598,39 @@ Begin VB.Form frm_Lancamento_Pesq
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   9
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":2F86
+            Picture         =   "frm_Lancamento_Pesq.frx":32BC
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":32A0
+            Picture         =   "frm_Lancamento_Pesq.frx":35D6
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":347A
+            Picture         =   "frm_Lancamento_Pesq.frx":37B0
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":3794
+            Picture         =   "frm_Lancamento_Pesq.frx":3ACA
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":3AAE
+            Picture         =   "frm_Lancamento_Pesq.frx":3DE4
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":3DC8
+            Picture         =   "frm_Lancamento_Pesq.frx":40FE
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":40E2
+            Picture         =   "frm_Lancamento_Pesq.frx":4418
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":42BC
+            Picture         =   "frm_Lancamento_Pesq.frx":45F2
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento_Pesq.frx":45D6
+            Picture         =   "frm_Lancamento_Pesq.frx":490C
             Key             =   ""
          EndProperty
       EndProperty

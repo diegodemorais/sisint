@@ -16,13 +16,13 @@ Begin VB.Form frm_Rpt_Total_Receber
    ScaleWidth      =   5356
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   624
+      Height          =   819
       Left            =   0
       TabIndex        =   6
       Top             =   0
       Width           =   5356
       _ExtentX        =   9441
-      _ExtentY        =   1102
+      _ExtentY        =   1438
       ButtonWidth     =   1244
       ButtonHeight    =   1005
       ImageList       =   "IMG"
@@ -246,6 +246,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       MCOL            =   12632256
       MPTR            =   1
       MICON           =   "frm_Rpt_Total_Receber.frx":0004
+      PICN            =   "frm_Rpt_Total_Receber.frx":0020
       UMCOL           =   -1  'True
       SOFT            =   0   'False
       PICPOS          =   0
@@ -313,7 +314,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       _ExtentX        =   3475
       _ExtentY        =   863
       BTYPE           =   2
-      TX              =   ""
+      TX              =   "Selecionar todas"
       ENAB            =   -1  'True
       BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
@@ -332,7 +333,8 @@ Begin VB.Form frm_Rpt_Total_Receber
       FCOLO           =   0
       MCOL            =   12632256
       MPTR            =   1
-      MICON           =   "frm_Rpt_Total_Receber.frx":0020
+      MICON           =   "frm_Rpt_Total_Receber.frx":0563
+      PICN            =   "frm_Rpt_Total_Receber.frx":057F
       UMCOL           =   -1  'True
       SOFT            =   0   'False
       PICPOS          =   0
@@ -353,7 +355,7 @@ Begin VB.Form frm_Rpt_Total_Receber
       _ExtentX        =   3475
       _ExtentY        =   863
       BTYPE           =   2
-      TX              =   ""
+      TX              =   "Remover seleção"
       ENAB            =   -1  'True
       BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
@@ -372,7 +374,8 @@ Begin VB.Form frm_Rpt_Total_Receber
       FCOLO           =   0
       MCOL            =   12632256
       MPTR            =   1
-      MICON           =   "frm_Rpt_Total_Receber.frx":003C
+      MICON           =   "frm_Rpt_Total_Receber.frx":0899
+      PICN            =   "frm_Rpt_Total_Receber.frx":08B5
       UMCOL           =   -1  'True
       SOFT            =   0   'False
       PICPOS          =   0
@@ -431,39 +434,39 @@ Begin VB.Form frm_Rpt_Total_Receber
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   9
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0058
+            Picture         =   "frm_Rpt_Total_Receber.frx":0BCF
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0372
+            Picture         =   "frm_Rpt_Total_Receber.frx":0EE9
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":054C
+            Picture         =   "frm_Rpt_Total_Receber.frx":10C3
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0866
+            Picture         =   "frm_Rpt_Total_Receber.frx":13DD
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0B80
+            Picture         =   "frm_Rpt_Total_Receber.frx":16F7
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":0E9A
+            Picture         =   "frm_Rpt_Total_Receber.frx":1A11
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":11B4
+            Picture         =   "frm_Rpt_Total_Receber.frx":1D2B
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":138E
+            Picture         =   "frm_Rpt_Total_Receber.frx":1F05
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Total_Receber.frx":16A8
+            Picture         =   "frm_Rpt_Total_Receber.frx":221F
             Key             =   ""
          EndProperty
       EndProperty

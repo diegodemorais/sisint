@@ -123,10 +123,11 @@ Begin VB.Form frm_Usuario
       _ExtentY        =   9753
       _Version        =   393216
       Tabs            =   2
+      Tab             =   1
       TabHeight       =   520
       TabCaption(0)   =   "Ficha Individual"
       TabPicture(0)   =   "frm_Usuario.frx":27A2
-      Tab(0).ControlEnabled=   -1  'True
+      Tab(0).ControlEnabled=   0   'False
       Tab(0).Control(0)=   "lblFieldLabel(3)"
       Tab(0).Control(0).Enabled=   0   'False
       Tab(0).Control(1)=   "Shape1(0)"
@@ -184,16 +185,18 @@ Begin VB.Form frm_Usuario
       Tab(0).ControlCount=   27
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Usuario.frx":27BE
-      Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Painel"
-      Tab(1).Control(1)=   "Grid"
+      Tab(1).ControlEnabled=   -1  'True
+      Tab(1).Control(0)=   "Grid"
+      Tab(1).Control(0).Enabled=   0   'False
+      Tab(1).Control(1)=   "Painel"
+      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).ControlCount=   2
       Begin VB.TextBox Text2 
          Alignment       =   2  'Center
          DataField       =   "usl_windows"
          DataSource      =   "adoReg"
          Height          =   285
-         Left            =   2925
+         Left            =   -72075
          TabIndex        =   41
          Top             =   4995
          Width           =   1980
@@ -203,7 +206,7 @@ Begin VB.Form frm_Usuario
          DataField       =   "usl_versao_login"
          DataSource      =   "adoReg"
          Height          =   285
-         Left            =   4950
+         Left            =   -70050
          TabIndex        =   10
          Top             =   4605
          Width           =   1020
@@ -213,7 +216,7 @@ Begin VB.Form frm_Usuario
          DataField       =   "usl_versao"
          DataSource      =   "adoReg"
          Height          =   285
-         Left            =   2070
+         Left            =   -72930
          TabIndex        =   9
          Top             =   4605
          Width           =   1020
@@ -221,9 +224,9 @@ Begin VB.Form frm_Usuario
       Begin VB.ComboBox txt_Rpt 
          DataField       =   "usl_Rpt"
          DataSource      =   "adoReg"
-         Height          =   315
+         Height          =   273
          ItemData        =   "frm_Usuario.frx":27DA
-         Left            =   2565
+         Left            =   -72435
          List            =   "frm_Usuario.frx":27E4
          TabIndex        =   6
          Top             =   3360
@@ -233,7 +236,7 @@ Begin VB.Form frm_Usuario
          DataField       =   "usl_ordem"
          DataSource      =   "adoReg"
          Height          =   285
-         Left            =   5325
+         Left            =   -69675
          TabIndex        =   5
          Top             =   2760
          Width           =   660
@@ -241,9 +244,9 @@ Begin VB.Form frm_Usuario
       Begin VB.ComboBox txt_ac 
          DataField       =   "usl_ac"
          DataSource      =   "adoReg"
-         Height          =   315
+         Height          =   273
          ItemData        =   "frm_Usuario.frx":27EE
-         Left            =   5325
+         Left            =   -69675
          List            =   "frm_Usuario.frx":27F8
          TabIndex        =   7
          Top             =   3360
@@ -252,9 +255,9 @@ Begin VB.Form frm_Usuario
       Begin VB.ComboBox txt_grupo 
          DataField       =   "usl_grupo"
          DataSource      =   "adoReg"
-         Height          =   315
+         Height          =   273
          ItemData        =   "frm_Usuario.frx":2802
-         Left            =   2565
+         Left            =   -72435
          List            =   "frm_Usuario.frx":2815
          TabIndex        =   4
          Top             =   2760
@@ -264,7 +267,7 @@ Begin VB.Form frm_Usuario
          DataField       =   "usl_nome"
          DataSource      =   "adoReg"
          Height          =   285
-         Left            =   3525
+         Left            =   -71475
          TabIndex        =   1
          Top             =   840
          Width           =   1620
@@ -274,7 +277,7 @@ Begin VB.Form frm_Usuario
          DataSource      =   "adoReg"
          Height          =   285
          IMEMode         =   3  'DISABLE
-         Left            =   3525
+         Left            =   -71475
          PasswordChar    =   "*"
          TabIndex        =   2
          Top             =   1590
@@ -283,7 +286,7 @@ Begin VB.Form frm_Usuario
       Begin VB.TextBox txt_PassConf 
          Height          =   285
          IMEMode         =   3  'DISABLE
-         Left            =   3525
+         Left            =   -71475
          PasswordChar    =   "*"
          TabIndex        =   3
          Top             =   2055
@@ -292,9 +295,9 @@ Begin VB.Form frm_Usuario
       Begin VB.ComboBox txt_Tipo 
          DataField       =   "usl_tipo"
          DataSource      =   "adoReg"
-         Height          =   315
+         Height          =   273
          ItemData        =   "frm_Usuario.frx":2828
-         Left            =   3525
+         Left            =   -71475
          List            =   "frm_Usuario.frx":2838
          TabIndex        =   8
          Top             =   3855
@@ -303,7 +306,7 @@ Begin VB.Form frm_Usuario
       Begin VB.Frame Painel 
          Caption         =   "Tipo de Filtro"
          Height          =   930
-         Left            =   -74040
+         Left            =   960
          TabIndex        =   18
          Top             =   360
          Width           =   3870
@@ -352,6 +355,36 @@ Begin VB.Form frm_Usuario
             Width           =   735
             _ExtentX        =   1294
             _ExtentY        =   1294
+            BTYPE           =   2
+            TX              =   ""
+            ENAB            =   -1  'True
+            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   7.47
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            COLTYPE         =   1
+            FOCUSR          =   -1  'True
+            BCOL            =   15790320
+            BCOLO           =   15790320
+            FCOL            =   0
+            FCOLO           =   0
+            MCOL            =   12632256
+            MPTR            =   1
+            MICON           =   "frm_Usuario.frx":2848
+            PICN            =   "frm_Usuario.frx":2864
+            UMCOL           =   -1  'True
+            SOFT            =   0   'False
+            PICPOS          =   0
+            NGREY           =   0   'False
+            FX              =   0
+            HAND            =   0   'False
+            CHECK           =   0   'False
+            VALUE           =   0   'False
          End
          Begin VB.Label lblFieldLabel 
             Alignment       =   1  'Right Justify
@@ -376,9 +409,9 @@ Begin VB.Form frm_Usuario
          End
       End
       Begin MSDataGridLib.DataGrid Grid 
-         Bindings        =   "frm_Usuario.frx":2848
+         Bindings        =   "frm_Usuario.frx":2B7E
          Height          =   3975
-         Left            =   -74880
+         Left            =   120
          TabIndex        =   15
          Top             =   1320
          Width           =   6375
@@ -541,7 +574,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   18
-         Left            =   1680
+         Left            =   -73320
          TabIndex        =   42
          Top             =   5010
          Width           =   1155
@@ -561,7 +594,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   17
-         Left            =   3540
+         Left            =   -71460
          TabIndex        =   40
          Top             =   4620
          Width           =   1320
@@ -581,7 +614,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   16
-         Left            =   825
+         Left            =   -74175
          TabIndex        =   39
          Top             =   4620
          Width           =   1200
@@ -590,7 +623,7 @@ Begin VB.Form frm_Usuario
          BackStyle       =   0  'Transparent
          Caption         =   "S - SuperV )"
          Height          =   255
-         Left            =   4500
+         Left            =   -70500
          TabIndex        =   38
          Top             =   4200
          Width           =   975
@@ -610,7 +643,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   240
          Index           =   15
-         Left            =   585
+         Left            =   -74415
          TabIndex        =   37
          Top             =   3360
          Width           =   1815
@@ -630,7 +663,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   14
-         Left            =   4320
+         Left            =   -70680
          TabIndex        =   36
          Top             =   2775
          Width           =   885
@@ -650,7 +683,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   13
-         Left            =   3480
+         Left            =   -71520
          TabIndex        =   35
          Top             =   3360
          Width           =   1650
@@ -670,7 +703,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   12
-         Left            =   1560
+         Left            =   -73440
          TabIndex        =   34
          Top             =   2760
          Width           =   840
@@ -679,7 +712,7 @@ Begin VB.Form frm_Usuario
          BackStyle       =   0  'Transparent
          Caption         =   "( A - Administrador"
          Height          =   255
-         Left            =   1200
+         Left            =   -73800
          TabIndex        =   33
          Top             =   4200
          Width           =   1380
@@ -688,7 +721,7 @@ Begin VB.Form frm_Usuario
          BackStyle       =   0  'Transparent
          Caption         =   "L - Logo"
          Height          =   255
-         Left            =   2640
+         Left            =   -72360
          TabIndex        =   32
          Top             =   4200
          Width           =   735
@@ -697,7 +730,7 @@ Begin VB.Form frm_Usuario
          BackStyle       =   0  'Transparent
          Caption         =   "U - Usuário"
          Height          =   255
-         Left            =   3480
+         Left            =   -71520
          TabIndex        =   31
          Top             =   4200
          Width           =   855
@@ -717,7 +750,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   1
-         Left            =   1560
+         Left            =   -73440
          TabIndex        =   30
          Top             =   855
          Width           =   1500
@@ -737,7 +770,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   2
-         Left            =   1560
+         Left            =   -73440
          TabIndex        =   29
          Top             =   1605
          Width           =   1725
@@ -757,7 +790,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   0
-         Left            =   1560
+         Left            =   -73440
          TabIndex        =   28
          Top             =   2070
          Width           =   1725
@@ -765,7 +798,7 @@ Begin VB.Form frm_Usuario
       Begin VB.Shape Shape1 
          Height          =   4920
          Index           =   0
-         Left            =   360
+         Left            =   -74640
          Top             =   495
          Width           =   5895
       End
@@ -784,7 +817,7 @@ Begin VB.Form frm_Usuario
          EndProperty
          Height          =   300
          Index           =   3
-         Left            =   1560
+         Left            =   -73440
          TabIndex        =   27
          Top             =   3855
          Width           =   600
@@ -1003,27 +1036,27 @@ Begin VB.Form frm_Usuario
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   6
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Usuario.frx":285D
+            Picture         =   "frm_Usuario.frx":2B93
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Usuario.frx":2B77
+            Picture         =   "frm_Usuario.frx":2EAD
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Usuario.frx":2E91
+            Picture         =   "frm_Usuario.frx":31C7
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Usuario.frx":31AB
+            Picture         =   "frm_Usuario.frx":34E1
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Usuario.frx":34C5
+            Picture         =   "frm_Usuario.frx":37FB
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Usuario.frx":37DF
+            Picture         =   "frm_Usuario.frx":3B15
             Key             =   ""
          EndProperty
       EndProperty

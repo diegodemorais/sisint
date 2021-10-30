@@ -127,6 +127,36 @@ Begin VB.Form frm_Lancamento
       Width           =   2175
       _ExtentX        =   3834
       _ExtentY        =   1078
+      BTYPE           =   2
+      TX              =   "Calcular"
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   7.47
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "frm_Lancamento.frx":27BA
+      PICN            =   "frm_Lancamento.frx":27D6
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin MSHierarchicalFlexGridLib.MSHFlexGrid Grid 
       Height          =   3195
@@ -320,7 +350,7 @@ Begin VB.Form frm_Lancamento
       FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_Logo 
-      Bindings        =   "frm_Lancamento.frx":27BA
+      Bindings        =   "frm_Lancamento.frx":2D19
       Height          =   286
       Left            =   1677
       TabIndex        =   0
@@ -338,7 +368,7 @@ Begin VB.Form frm_Lancamento
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_Cartao 
-      Bindings        =   "frm_Lancamento.frx":27D0
+      Bindings        =   "frm_Lancamento.frx":2D2F
       Height          =   286
       Left            =   1677
       TabIndex        =   1
@@ -472,7 +502,7 @@ Begin VB.Form frm_Lancamento
       FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_FormaPg 
-      Bindings        =   "frm_Lancamento.frx":27E8
+      Bindings        =   "frm_Lancamento.frx":2D47
       Height          =   286
       Left            =   1677
       TabIndex        =   3
@@ -489,7 +519,7 @@ Begin VB.Form frm_Lancamento
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_banco 
-      Bindings        =   "frm_Lancamento.frx":27FF
+      Bindings        =   "frm_Lancamento.frx":2D5E
       Height          =   286
       Left            =   1677
       TabIndex        =   24
@@ -507,7 +537,7 @@ Begin VB.Form frm_Lancamento
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_tipoC 
-      Bindings        =   "frm_Lancamento.frx":2817
+      Bindings        =   "frm_Lancamento.frx":2D76
       Height          =   286
       Left            =   2158
       TabIndex        =   26
@@ -557,7 +587,7 @@ Begin VB.Form frm_Lancamento
       FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_FormaPg_Parc 
-      Bindings        =   "frm_Lancamento.frx":282F
+      Bindings        =   "frm_Lancamento.frx":2D8E
       Height          =   286
       Left            =   1924
       TabIndex        =   28
@@ -575,7 +605,7 @@ Begin VB.Form frm_Lancamento
       Object.DataMember      =   ""
    End
    Begin MSDataListLib.DataCombo txt_FormaPg_Tipo 
-      Bindings        =   "frm_Lancamento.frx":2846
+      Bindings        =   "frm_Lancamento.frx":2DA5
       Height          =   286
       Left            =   3120
       TabIndex        =   29
@@ -628,7 +658,7 @@ Begin VB.Form frm_Lancamento
       FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_LbDoc 
-      Bindings        =   "frm_Lancamento.frx":285D
+      Bindings        =   "frm_Lancamento.frx":2DBC
       Height          =   286
       Left            =   3003
       TabIndex        =   33
@@ -675,7 +705,7 @@ Begin VB.Form frm_Lancamento
       FontSize        =   7.472
    End
    Begin MSDataListLib.DataCombo txt_Desc_Parc 
-      Bindings        =   "frm_Lancamento.frx":2875
+      Bindings        =   "frm_Lancamento.frx":2DD4
       Height          =   286
       Left            =   3484
       TabIndex        =   35
@@ -1053,35 +1083,35 @@ Begin VB.Form frm_Lancamento
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":288D
+            Picture         =   "frm_Lancamento.frx":2DEC
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":2BA7
+            Picture         =   "frm_Lancamento.frx":3106
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":2D81
+            Picture         =   "frm_Lancamento.frx":32E0
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":309B
+            Picture         =   "frm_Lancamento.frx":35FA
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":33B5
+            Picture         =   "frm_Lancamento.frx":3914
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":36CF
+            Picture         =   "frm_Lancamento.frx":3C2E
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":39E9
+            Picture         =   "frm_Lancamento.frx":3F48
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Lancamento.frx":3BC3
+            Picture         =   "frm_Lancamento.frx":4122
             Key             =   ""
          EndProperty
       EndProperty
@@ -1208,7 +1238,7 @@ If txt_NDOC = "" And (txt_tipoC >= 24 And txt_tipoC <= 28) Then
 End If
 
 
-If CDbl(txt_Valor_Vnd) > 0 And txt_NDOC <> "" And grid.TextMatrix(1, 2) <> "" Then
+If CDbl(txt_Valor_Vnd) > 0 And txt_NDOC <> "" And Grid.TextMatrix(1, 2) <> "" Then
     
     txt_Calc_Click
     
@@ -1234,11 +1264,11 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_NDOC <> "" And grid.TextMatrix(1, 2) <> "" Th
         w_NumLanc = ExecuteSQL("Select max(lnc_num) from tab_lanc WHERE lnc_loj = '" & txt_Logo.BoundText & "'").Fields(0)
         
         'Salva as Parcelas
-        For i = 1 To grid.Rows - 1
-            grid.Row = i
+        For i = 1 To Grid.Rows - 1
+            Grid.Row = i
             strSQL = "INSERT INTO tab_lanc_parc(lcp_ndoc, lcp_parc, lcp_dt_vcto, lcp_vr_bto, lcp_vr_liq, lcp_num_lanc, lcp_tipo, lcp_nresumo, lcp_baixa) " _
-                   & "VALUES ('" & grid.TextMatrix(i, 5) & "', " & i & ", '" & Format(grid.TextMatrix(i, 2), "YYYY-MM-DD") & "', " _
-                   & "'" & grid.TextMatrix(i, 3) & "', '" & grid.TextMatrix(i, 6) & "', '" & w_NumLanc & "', " _
+                   & "VALUES ('" & Grid.TextMatrix(i, 5) & "', " & i & ", '" & Format(Grid.TextMatrix(i, 2), "YYYY-MM-DD") & "', " _
+                   & "'" & Grid.TextMatrix(i, 3) & "', '" & Grid.TextMatrix(i, 6) & "', '" & w_NumLanc & "', " _
                    & "'" & txt_FormaPg_Tipo & "', '" & w_NRESUMO & "','0000-00-00')"
             'add parcelas
             Call ExecuteSQL(strSQL, wRegAf)
@@ -1257,7 +1287,7 @@ Else
         MsgBox "Preencha o valor da compra!", vbExclamation
     ElseIf txt_NDOC = "" Then
         MsgBox "Preencha o Nº Doc.!", vbExclamation
-    ElseIf grid.TextMatrix(1, 2) = "" Then
+    ElseIf Grid.TextMatrix(1, 2) = "" Then
         MsgBox "Clique em calcular parcelas!", vbExclamation
     End If
 End If
@@ -1299,7 +1329,7 @@ On Error GoTo err1
     
     txt_Logo.Enabled = True
     txt_dt_vnd = w_Data_Server
-    txt_Cartao = ""
+    txt_cartao = ""
     txt_NDOC = ""
     txt_banco = ""
     txt_FormaPg = ""
@@ -1317,7 +1347,7 @@ On Error Resume Next
         txt_Logo.BoundText = w_Usu_Cod
         txt_Logo.Enabled = False
         
-        txt_Cartao.SetFocus
+        txt_cartao.SetFocus
     Else
         txt_Logo.SetFocus
     End If
@@ -1385,10 +1415,10 @@ End Sub
 Private Sub txt_Cartao_Change()
 On Error GoTo err1
 
-    txt_banco.BoundText = txt_Cartao.BoundText
-    txt_tipoC.BoundText = txt_Cartao.BoundText
-    txt_Desc_Parc.BoundText = txt_Cartao.BoundText
-    txt_LbDoc.BoundText = txt_Cartao.BoundText
+    txt_banco.BoundText = txt_cartao.BoundText
+    txt_tipoC.BoundText = txt_cartao.BoundText
+    txt_Desc_Parc.BoundText = txt_cartao.BoundText
+    txt_LbDoc.BoundText = txt_cartao.BoundText
     lbDoc.Caption = txt_LbDoc
     
     txt_FormaPg = ""
@@ -1531,43 +1561,43 @@ End Sub
 'Procedimento q/ Formata o Grid
 Sub Format_Grid()
 On Error GoTo err1
-    grid.Rows = 0
+    Grid.Rows = 0
     'Caption da Colunas
-    grid.Rows = IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc) + 1
-    grid.FixedRows = 1
-    grid.TextArray(1) = "Parc."
-    grid.TextArray(2) = "Dt. Vcto"
-    grid.TextArray(3) = "Vr Bruto"
-    grid.TextArray(4) = "Vr. Liq"
-    grid.TextArray(5) = "Num. Doc."
-    grid.TextArray(6) = "Vr. Liq com todas as casas decimais"
+    Grid.Rows = IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc) + 1
+    Grid.FixedRows = 1
+    Grid.TextArray(1) = "Parc."
+    Grid.TextArray(2) = "Dt. Vcto"
+    Grid.TextArray(3) = "Vr Bruto"
+    Grid.TextArray(4) = "Vr. Liq"
+    Grid.TextArray(5) = "Num. Doc."
+    Grid.TextArray(6) = "Vr. Liq com todas as casas decimais"
     
     'Formata a Largura das colunas
-    grid.ColWidth(0) = 250
-    grid.ColWidth(1) = 550
-    grid.ColWidth(2) = 1000
-    grid.ColWidth(3) = 1000
-    grid.ColWidth(4) = 1000
-    grid.ColWidth(5) = 1430
-    grid.ColWidth(6) = 0
+    Grid.ColWidth(0) = 250
+    Grid.ColWidth(1) = 550
+    Grid.ColWidth(2) = 1000
+    Grid.ColWidth(3) = 1000
+    Grid.ColWidth(4) = 1000
+    Grid.ColWidth(5) = 1430
+    Grid.ColWidth(6) = 0
     
     'Formata Alinhamento do Texto
-    grid.ColAlignment(1) = 6
-    grid.ColAlignment(2) = 4
-    grid.ColAlignment(3) = 6
-    grid.ColAlignment(4) = 6
-    grid.ColAlignment(5) = 6
+    Grid.ColAlignment(1) = 6
+    Grid.ColAlignment(2) = 4
+    Grid.ColAlignment(3) = 6
+    Grid.ColAlignment(4) = 6
+    Grid.ColAlignment(5) = 6
 
-    grid.ColAlignmentFixed(1) = 6
-    grid.ColAlignmentFixed(2) = 4
-    grid.ColAlignmentFixed(3) = 6
-    grid.ColAlignmentFixed(4) = 6
-    grid.ColAlignmentFixed(5) = 6
+    Grid.ColAlignmentFixed(1) = 6
+    Grid.ColAlignmentFixed(2) = 4
+    Grid.ColAlignmentFixed(3) = 6
+    Grid.ColAlignmentFixed(4) = 6
+    Grid.ColAlignmentFixed(5) = 6
     
-    grid.Row = 0
+    Grid.Row = 0
     For c = 1 To 5
-        grid.Col = c
-        grid.CellFontBold = True
+        Grid.Col = c
+        Grid.CellFontBold = True
     Next c
     
 sair:
@@ -1644,7 +1674,7 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
         'Qtde de Parcelas q/ Resta
         v_QtParcRest = CDbl(txt_FormaPg_Parc) - (i - 1)
         
-        grid.TextMatrix(i, 1) = i & "º"   'Identifica a Parcela
+        Grid.TextMatrix(i, 1) = i & "º"   'Identifica a Parcela
                 
         'se não for MaxCred
         If Not (txt_tipoC = "8") Then
@@ -1666,7 +1696,7 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                     If i = 1 Then w_DT_Calc = CVDate(w_DT_Calc - 31)
                     w_DT_Calc = CVDate(w_DT_Calc + 31)
                     w_DT_Calc = CVDate(w_Day & Format(w_DT_Calc, "mm/yyyy"))
-                    grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
+                    Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
                                     
                 Else
                 
@@ -1679,22 +1709,22 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                        Else
                           w_Dt = w_Dt + CDbl(txt_dias_V)
                        End If
-                        grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
+                        Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
                     Else 'Pre Datado
-                        grid.TextMatrix(i, 2) = ProximoDiaUtil(txt_Pre)
+                        Grid.TextMatrix(i, 2) = ProximoDiaUtil(txt_Pre)
                     End If
                     
                     If (txt_tipoC = 22) Then
                         w_DT_Calc = CVDate(w_DT_Calc + 31)
                         w_DT_Calc = CVDate("10/" & Format(w_DT_Calc, "mm/yyyy"))
-                        grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
+                        Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_DT_Calc)
                     End If
                  'End If
                 
             End If
             
             Else 'Se for DbCred
-                grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
+                Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
                 w_Dt = Format(Day(w_Dt), "00") & "/" & Format(CVDate(w_Dt) + 32, "mm/yyyy")
             End If
             
@@ -1710,7 +1740,7 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
                     w_DT_Calc = CVDate("05/" & Format(w_DT_Calc, "mm/yyyy"))
                 End If
                 w_Dt = w_DT_Calc
-                grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
+                Grid.TextMatrix(i, 2) = ProximoDiaUtil(w_Dt)
             
         End If
         
@@ -1720,32 +1750,32 @@ If CDbl(txt_Valor_Vnd) > 0 And txt_Valor_Vnd <> "" Then
             w_valor_entrada_SEM_TAXA = txt_Valor_Entrada - w_taxa_adesao
             If i = 1 Then 'Se parcela 1
                 w_taxa_adesao = 9.99
-                grid.TextMatrix(i, 3) = Format(((txt_Valor_Vnd - w_valor_entrada_SEM_TAXA) / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc) + w_valor_entrada_SEM_TAXA), "0.00")
+                Grid.TextMatrix(i, 3) = Format(((txt_Valor_Vnd - w_valor_entrada_SEM_TAXA) / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc) + w_valor_entrada_SEM_TAXA), "0.00")
             Else
-                grid.TextMatrix(i, 3) = Format(((txt_Valor_Vnd - w_valor_entrada_SEM_TAXA) / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc)), "0.00")
+                Grid.TextMatrix(i, 3) = Format(((txt_Valor_Vnd - w_valor_entrada_SEM_TAXA) / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc)), "0.00")
             End If
         Else
-            grid.TextMatrix(i, 3) = Format(txt_Valor_Vnd / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc), "0.00")
+            Grid.TextMatrix(i, 3) = Format(txt_Valor_Vnd / IIf(txt_FormaPg_Parc = "", 1, txt_FormaPg_Parc), "0.00")
         End If
-        grid.TextMatrix(i, 3) = Replace(grid.TextMatrix(i, 3), ",", ".")
+        Grid.TextMatrix(i, 3) = Replace(Grid.TextMatrix(i, 3), ",", ".")
         v_ValorCalc = Calc_ParcLiq(v_QtParcRest, i)
         
         'Inserir o Valor Liquido da Parcela -  Com as Retenções
-        grid.TextMatrix(i, 4) = Format(v_ValorCalc, "0.00")
-        grid.TextMatrix(i, 4) = Replace(grid.TextMatrix(i, 4), ",", ".")
+        Grid.TextMatrix(i, 4) = Format(v_ValorCalc, "0.00")
+        Grid.TextMatrix(i, 4) = Replace(Grid.TextMatrix(i, 4), ",", ".")
 
         'Inserir o Valor Liquido da Parcela -  Com as Retenções   na Com todas as Casas Decimais
-        grid.TextMatrix(i, 6) = v_ValorCalc
-        grid.TextMatrix(i, 6) = Replace(grid.TextMatrix(i, 6), ",", ".")
+        Grid.TextMatrix(i, 6) = v_ValorCalc
+        Grid.TextMatrix(i, 6) = Replace(Grid.TextMatrix(i, 6), ",", ".")
        
         w_Total_liq = w_Total_liq + v_ValorCalc
         
         If txt_Desc_Parc = "N" Then
             'Inserir o Nº DOC
-            grid.TextMatrix(i, 5) = txt_NDOC
+            Grid.TextMatrix(i, 5) = txt_NDOC
         Else
             'Inserir o Nº DOC
-            grid.TextMatrix(i, 5) = txt_NDOC + (i - 1)
+            Grid.TextMatrix(i, 5) = txt_NDOC + (i - 1)
         End If
         
     Next i
@@ -1853,7 +1883,7 @@ On Error GoTo err1
         txt_Calc_Click
         If txt_Logo.Enabled = False Then
             w_Pos = 2
-            If txt_Cartao.Enabled = True Then txt_Cartao.SetFocus
+            If txt_cartao.Enabled = True Then txt_cartao.SetFocus
         Else
             w_Pos = 3
             If txt_Logo.Enabled = True Then txt_Logo.SetFocus

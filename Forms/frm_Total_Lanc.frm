@@ -76,6 +76,36 @@ Begin VB.Form frm_Total_Lanc
       Width           =   1935
       _ExtentX        =   3403
       _ExtentY        =   1078
+      BTYPE           =   2
+      TX              =   "Relatório"
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   7.47
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "frm_Total_Lanc.frx":27A2
+      PICN            =   "frm_Total_Lanc.frx":27BE
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin VB.Frame fr_Resumo 
       BackColor       =   &H00FFC0C0&
@@ -144,7 +174,7 @@ Begin VB.Form frm_Total_Lanc
          _Version        =   393216
       End
       Begin MSDataListLib.DataCombo txt_cartao 
-         Bindings        =   "frm_Total_Lanc.frx":27A2
+         Bindings        =   "frm_Total_Lanc.frx":3AA0
          Height          =   286
          Left            =   1365
          TabIndex        =   9
@@ -192,6 +222,35 @@ Begin VB.Form frm_Total_Lanc
          Width           =   495
          _ExtentX        =   863
          _ExtentY        =   935
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.47
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Total_Lanc.frx":3AB8
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button bt_Canc_F 
          Height          =   525
@@ -202,6 +261,35 @@ Begin VB.Form frm_Total_Lanc
          Width           =   495
          _ExtentX        =   863
          _ExtentY        =   935
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.47
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Total_Lanc.frx":3AD4
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin VB.Label lbResumo 
          Alignment       =   1  'Right Justify
@@ -257,6 +345,36 @@ Begin VB.Form frm_Total_Lanc
          Width           =   1635
          _ExtentX        =   2875
          _ExtentY        =   1030
+         BTYPE           =   2
+         TX              =   "Pesquisar"
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.47
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "frm_Total_Lanc.frx":3AF0
+         PICN            =   "frm_Total_Lanc.frx":3B0C
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin MSAdodcLib.Adodc adoReg 
          Height          =   375
@@ -306,7 +424,7 @@ Begin VB.Form frm_Total_Lanc
          _Version        =   393216
       End
       Begin MSDataGridLib.DataGrid grid 
-         Bindings        =   "frm_Total_Lanc.frx":27BA
+         Bindings        =   "frm_Total_Lanc.frx":404F
          Height          =   2775
          Left            =   120
          TabIndex        =   7
@@ -476,7 +594,7 @@ Begin VB.Form frm_Total_Lanc
          EndProperty
       End
       Begin MSDataListLib.DataCombo txt_Logo 
-         Bindings        =   "frm_Total_Lanc.frx":27CF
+         Bindings        =   "frm_Total_Lanc.frx":4064
          Height          =   286
          Left            =   234
          TabIndex        =   1
@@ -673,15 +791,45 @@ Begin VB.Form frm_Total_Lanc
       Width           =   2295
       _ExtentX        =   4050
       _ExtentY        =   1078
+      BTYPE           =   2
+      TX              =   "Resumo"
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   7.47
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "frm_Total_Lanc.frx":407A
+      PICN            =   "frm_Total_Lanc.frx":4096
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin VB.ListBox List1 
       Appearance      =   0  'Flat
       BackColor       =   &H8000000F&
       ForeColor       =   &H00FF0000&
       Height          =   364
-      ItemData        =   "frm_Total_Lanc.frx":27E5
+      ItemData        =   "frm_Total_Lanc.frx":43B8
       Left            =   5610
-      List            =   "frm_Total_Lanc.frx":27EF
+      List            =   "frm_Total_Lanc.frx":43C2
       TabIndex        =   20
       TabStop         =   0   'False
       Top             =   4890
@@ -726,35 +874,35 @@ Begin VB.Form frm_Total_Lanc
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":280D
+            Picture         =   "frm_Total_Lanc.frx":43E0
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":2B27
+            Picture         =   "frm_Total_Lanc.frx":46FA
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":2D01
+            Picture         =   "frm_Total_Lanc.frx":48D4
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":301B
+            Picture         =   "frm_Total_Lanc.frx":4BEE
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":3335
+            Picture         =   "frm_Total_Lanc.frx":4F08
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":364F
+            Picture         =   "frm_Total_Lanc.frx":5222
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":3969
+            Picture         =   "frm_Total_Lanc.frx":553C
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Total_Lanc.frx":3B43
+            Picture         =   "frm_Total_Lanc.frx":5716
             Key             =   ""
          EndProperty
       EndProperty
@@ -870,12 +1018,12 @@ On Error GoTo err1
     
    
     
-    If vbYes = MsgBox("Será atualizado o resumo do dia " & adoReg.Recordset.Fields("DT") & " do cartão " & txt_Cartao & "!", vbQuestion + vbYesNo + vbDefaultButton1, " Logo - " & txt_Logo) Then
+    If vbYes = MsgBox("Será atualizado o resumo do dia " & adoReg.Recordset.Fields("DT") & " do cartão " & txt_cartao & "!", vbQuestion + vbYesNo + vbDefaultButton1, " Logo - " & txt_Logo) Then
         
         
     Dim w_ado As ADODB.Recordset
         'Pega numeros do lançamentos p/ atualizar suas parcelas
-        Set w_ado = ExecuteSQL("Select lnc_num from tab_lanc WHERE (lnc_loj = " & txt_Logo.BoundText & " and lnc_tipoc = " & txt_Cartao.BoundText & " and lnc_dt_vnd = '" & Format(adoReg.Recordset.Fields("DT"), "yyyy-mm-dd") & "' and lnc_nresumo = '" & adoReg.Recordset.Fields("resumo") & "' and lnc_tipo = '" & adoReg.Recordset.Fields("tipo") & "' and lnc_tef_pos = '" & adoReg.Recordset.Fields("tef_pos") & "')").Clone
+        Set w_ado = ExecuteSQL("Select lnc_num from tab_lanc WHERE (lnc_loj = " & txt_Logo.BoundText & " and lnc_tipoc = " & txt_cartao.BoundText & " and lnc_dt_vnd = '" & Format(adoReg.Recordset.Fields("DT"), "yyyy-mm-dd") & "' and lnc_nresumo = '" & adoReg.Recordset.Fields("resumo") & "' and lnc_tipo = '" & adoReg.Recordset.Fields("tipo") & "' and lnc_tef_pos = '" & adoReg.Recordset.Fields("tef_pos") & "')").Clone
 
         'Atualiza o Resumo das Parcelas
         Do While Not w_ado.EOF
@@ -885,7 +1033,7 @@ On Error GoTo err1
         Loop
    
         'Tab_lanc
-        Call ExecuteSQL("UPDATE tab_lanc SET lnc_nresumo = '" & txt_NResumo & "' WHERE (lnc_loj = " & txt_Logo.BoundText & " and lnc_tipoc = " & txt_Cartao.BoundText & " and lnc_dt_vnd = '" & Format(adoReg.Recordset.Fields("DT"), "yyyy-mm-dd") & "' and lnc_nresumo = '" & adoReg.Recordset.Fields("resumo") & "' and lnc_tipo = '" & adoReg.Recordset.Fields("tipo") & "' and lnc_tef_pos = '" & adoReg.Recordset.Fields("tef_pos") & "')", w_RegAf)
+        Call ExecuteSQL("UPDATE tab_lanc SET lnc_nresumo = '" & txt_NResumo & "' WHERE (lnc_loj = " & txt_Logo.BoundText & " and lnc_tipoc = " & txt_cartao.BoundText & " and lnc_dt_vnd = '" & Format(adoReg.Recordset.Fields("DT"), "yyyy-mm-dd") & "' and lnc_nresumo = '" & adoReg.Recordset.Fields("resumo") & "' and lnc_tipo = '" & adoReg.Recordset.Fields("tipo") & "' and lnc_tef_pos = '" & adoReg.Recordset.Fields("tef_pos") & "')", w_RegAf)
     
         If w_RegAf = 0 Then MsgBox "Não foi possível atualizar o Nº de Resumo para este Cartão!", vbCritical
         bt_Canc_F_Click
@@ -908,13 +1056,13 @@ On Error GoTo err1
         btResumo.Visible = False
         fr_Resumo.Visible = True
         txt_NResumo = adoReg.Recordset.Fields("Resumo")
-        txt_Cartao.BoundText = adoReg.Recordset.Fields("lnc_tipoc")
+        txt_cartao.BoundText = adoReg.Recordset.Fields("lnc_tipoc")
         txt_NResumo.SetFocus
         fr_Principal.Enabled = False
         txt_dt_vnd = adoReg.Recordset.Fields("Dt")
         
         If adoReg.Recordset.Fields("TEF_POS") = "POS" Then
-            Select Case txt_Cartao.BoundText
+            Select Case txt_cartao.BoundText
             Case "4":
                 If txt_FormaPg_Tipo = "V" Then
                     txt_NResumo = Format(txt_dt_vnd, "yy") & Format(txt_dt_vnd, "MM") & Format(txt_dt_vnd, "dd")
@@ -933,7 +1081,7 @@ On Error GoTo err1
                     txt_NResumo = "A" & Format(txt_dt_vnd, "YY") & Format(txt_dt_vnd, "MM") & Format(txt_dt_vnd, "dd")
             End Select
         Else ' se for TEF
-            Select Case txt_Cartao.BoundText
+            Select Case txt_cartao.BoundText
                 Case "9": 'Hipercard
                      txt_NResumo = "H" & Format(txt_dt_vnd, "YY") & Format(txt_dt_vnd, "MM") & Format(txt_dt_vnd, "dd")
                 Case "7": 'Sorocred
@@ -995,9 +1143,9 @@ On Error GoTo err1
     Else
         txt_Logo.Enabled = False
         txt_Logo = w_Usu
-        grid.Columns(0).Visible = False
-        grid.Left = 850
-        grid.Width = 7741
+        Grid.Columns(0).Visible = False
+        Grid.Left = 850
+        Grid.Width = 7741
         bt_Pesq_Click
     End If
     
@@ -1014,11 +1162,11 @@ Private Sub Form_Unload(Cancel As Integer)
 End Sub
 
 Private Sub List1_Click()
-    grid.SetFocus
+    Grid.SetFocus
 End Sub
 
 Private Sub List1_GotFocus()
-    grid.SetFocus
+    Grid.SetFocus
 End Sub
 
 Private Sub mnuFechar_Click()

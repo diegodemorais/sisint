@@ -21,13 +21,13 @@ Begin VB.Form frm_Acompanhamento
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   624
+      Height          =   819
       Left            =   0
       TabIndex        =   13
       Top             =   0
       Width           =   11193
       _ExtentX        =   19745
-      _ExtentY        =   1102
+      _ExtentY        =   1438
       ButtonWidth     =   1244
       ButtonHeight    =   1005
       ImageList       =   "IMG"

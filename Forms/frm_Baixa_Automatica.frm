@@ -22,13 +22,13 @@ Begin VB.Form frm_Baixa_Automatica
    ShowInTaskbar   =   0   'False
    Begin ComctlLib.Toolbar TBar 
       Align           =   1  'Align Top
-      Height          =   871
+      Height          =   819
       Left            =   0
       TabIndex        =   15
       Top             =   0
       Width           =   12844
       _ExtentX        =   22644
-      _ExtentY        =   1534
+      _ExtentY        =   1438
       ButtonWidth     =   1693
       ButtonHeight    =   1429
       ImageList       =   "IMG"
@@ -44,6 +44,7 @@ Begin VB.Form frm_Baixa_Automatica
             Object.Width           =   1e-4
          EndProperty
          BeginProperty Button2 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -63,6 +64,7 @@ Begin VB.Form frm_Baixa_Automatica
             Object.Tag             =   ""
          EndProperty
          BeginProperty Button5 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -75,6 +77,7 @@ Begin VB.Form frm_Baixa_Automatica
             ImageIndex      =   8
          EndProperty
          BeginProperty Button7 {0713F354-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
             Style           =   3
             MixedState      =   -1  'True
@@ -1711,7 +1714,7 @@ Private Sub bt_Canc_F_Click()
     txt_DtVcto = ""
     fr.Visible = False
     frFiltro.Visible = True
-    grid.Enabled = True
+    Grid.Enabled = True
     adoReg.Enabled = True
 End Sub
 
@@ -1810,7 +1813,7 @@ txtSql.Text = w_Str
     DoEvents
     Set adoReg.Recordset = ExecuteSQL(w_Str)
 
-    grid.Visible = False
+    Grid.Visible = False
     txt_Liq = 0
     txt_Bto = 0
     txt_Qtde = 0
@@ -1827,7 +1830,7 @@ txtSql.Text = w_Str
         txt_Qtde = adoReg.Recordset.RecordCount
     End If
     
-    grid.Visible = False
+    Grid.Visible = False
     'If txt_Cartao_P.BoundText = 6 Or txt_Cartao_P.BoundText = 17 Or txt_Cartao_P.BoundText = 18 Or txt_Cartao_P.BoundText = 19 Then
     '    grid.Columns(4).Visible = False
     '    grid.Columns(5).Visible = True
@@ -1835,12 +1838,12 @@ txtSql.Text = w_Str
     '    grid.Columns(4).Visible = True
     '    grid.Columns(5).Visible = False
     'End If
-    grid.Visible = True
+    Grid.Visible = True
     
 wHabStatus = True
     
 sair:
-    grid.Visible = True
+    Grid.Visible = True
     pic_Pesq.Visible = False
     Exit Sub
 err1:
@@ -1913,7 +1916,7 @@ Dim wAdo As ADODB.Recordset
         wAdo.MoveNext
     Loop
     
-    grid.Enabled = True
+    Grid.Enabled = True
     adoReg.Enabled = True
     fr.Visible = False
     frFiltro.Visible = True
@@ -2104,7 +2107,7 @@ On Error Resume Next
         Call ExecuteSQL("UPDATE tab_lanc_parc SET lcp_Baixa = '" & IIf(wAntecipado, Format(txtDtAntecipado, "yyyy-mm-dd"), Format(adoReg.Recordset.Fields("VCTO"), "yyyy-mm-dd")) & "', lcp_usu_baixa = " & w_Usu_Cod & " WHERE (tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("ndoc") & "' AND lcp_num IN(" & wNum & "))")
         bt_Pesq_Click
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
-        grid.SetFocus
+        Grid.SetFocus
     Else
         MsgBox "Não foi possível baixar, especifique na consulta qual cartão deseja!", vbCritical
     End If
@@ -2154,7 +2157,7 @@ On Error Resume Next
         Call ExecuteSQL("UPDATE tab_lanc_parc SET lcp_Baixa = '0000-00-00' WHERE (tab_lanc_parc.lcp_nresumo = '" & adoReg.Recordset.Fields("n") & "' AND tab_lanc_parc.lcp_ndoc = '" & adoReg.Recordset.Fields("ndoc") & "' AND lcp_num IN(" & wNum & "))")
         bt_Pesq_Click
         If Not adoReg.Recordset.EOF Then adoReg.Recordset.Move w_Pos
-        grid.SetFocus
+        Grid.SetFocus
     Else
         MsgBox "Não foi possível remover a baixa, especifique na consulta qual cartão deseja!", vbCritical
     End If
@@ -2185,7 +2188,7 @@ On Error GoTo err1
         frFiltro.Visible = False
         fr.Visible = True
         txt_DtVcto = Format(adoReg.Recordset.Fields("vcto"), "dd/mm/yyyy")
-        grid.Enabled = False
+        Grid.Enabled = False
         adoReg.Enabled = False
     Else
         MsgBox "Não é possível alterar o vcto porque esta parcela já foi baixada!", vbCritical
@@ -2307,7 +2310,7 @@ End Sub
 
 
 Private Sub Text2_GotFocus()
-    grid.SetFocus
+    Grid.SetFocus
 End Sub
 
 Private Sub Timer1_Timer()

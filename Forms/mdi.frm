@@ -121,6 +121,36 @@ Begin VB.MDIForm MDI
          Width           =   1110
          _ExtentX        =   1965
          _ExtentY        =   1342
+         BTYPE           =   2
+         TX              =   "Sorocred Ficha"
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.47
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "mdi.frx":08CA
+         PICN            =   "mdi.frx":08E6
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button btn_TotRec 
          Height          =   765
@@ -132,6 +162,36 @@ Begin VB.MDIForm MDI
          Width           =   1110
          _ExtentX        =   1965
          _ExtentY        =   1342
+         BTYPE           =   2
+         TX              =   "Total Receber"
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.47
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "mdi.frx":0D38
+         PICN            =   "mdi.frx":0D54
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button ctr_Button1 
          Height          =   765
@@ -143,6 +203,35 @@ Begin VB.MDIForm MDI
          Width           =   1110
          _ExtentX        =   1965
          _ExtentY        =   1342
+         BTYPE           =   2
+         TX              =   ""
+         ENAB            =   -1  'True
+         BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   7.47
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         COLTYPE         =   1
+         FOCUSR          =   -1  'True
+         BCOL            =   15790320
+         BCOLO           =   15790320
+         FCOL            =   0
+         FCOLO           =   0
+         MCOL            =   12632256
+         MPTR            =   1
+         MICON           =   "mdi.frx":3506
+         UMCOL           =   -1  'True
+         SOFT            =   0   'False
+         PICPOS          =   0
+         NGREY           =   0   'False
+         FX              =   0
+         HAND            =   0   'False
+         CHECK           =   0   'False
+         VALUE           =   0   'False
       End
       Begin VB.PictureBox Picture1 
          AutoRedraw      =   -1  'True
@@ -213,7 +302,7 @@ Begin VB.MDIForm MDI
       TabIndex        =   0
       Top             =   6578
       Width           =   13468
-      _ExtentX        =   24825
+      _ExtentX        =   23747
       _ExtentY        =   455
       SimpleText      =   ""
       _Version        =   327682
@@ -231,7 +320,7 @@ Begin VB.MDIForm MDI
          EndProperty
          BeginProperty Panel2 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
             AutoSize        =   1
-            Object.Width           =   11334
+            Object.Width           =   10256
             TextSave        =   ""
             Key             =   ""
             Object.Tag             =   ""
@@ -286,7 +375,7 @@ Begin VB.MDIForm MDI
             AutoSize        =   2
             Object.Width           =   1773
             MinWidth        =   1764
-            TextSave        =   "16/10/2021"
+            TextSave        =   "30/10/2021"
             Key             =   ""
             Object.Tag             =   ""
          EndProperty
@@ -295,7 +384,7 @@ Begin VB.MDIForm MDI
             AutoSize        =   2
             Object.Width           =   1054
             MinWidth        =   1058
-            TextSave        =   "13:00"
+            TextSave        =   "08:40"
             Key             =   ""
             Object.Tag             =   ""
          EndProperty
@@ -314,47 +403,47 @@ Begin VB.MDIForm MDI
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   11
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":08CA
+            Picture         =   "mdi.frx":3522
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":151C
+            Picture         =   "mdi.frx":4174
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":1866
+            Picture         =   "mdi.frx":44BE
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":24B8
+            Picture         =   "mdi.frx":5110
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":27D2
+            Picture         =   "mdi.frx":542A
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":29AC
+            Picture         =   "mdi.frx":5604
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":35FE
+            Picture         =   "mdi.frx":6256
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":5150
+            Picture         =   "mdi.frx":7DA8
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":5E2A
+            Picture         =   "mdi.frx":8A82
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":6984
+            Picture         =   "mdi.frx":95DC
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "mdi.frx":6BD6
+            Picture         =   "mdi.frx":982E
             Key             =   ""
          EndProperty
       EndProperty

@@ -275,8 +275,11 @@ Begin VB.Form frm_Cartao_Loja
       TabPicture(1)   =   "frm_Cartao_Loja.frx":27BE
       Tab(1).ControlEnabled=   0   'False
       Tab(1).Control(0)=   "grid"
+      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).Control(1)=   "Painel"
+      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).Control(2)=   "txt_Status_Filtro"
+      Tab(1).Control(2).Enabled=   0   'False
       Tab(1).ControlCount=   3
       Begin MSAdodcLib.Adodc adoCartao 
          Height          =   375
@@ -398,7 +401,7 @@ Begin VB.Form frm_Cartao_Loja
       Begin VB.ComboBox txt_Des_Parc 
          DataField       =   "ctl_des_parc"
          DataSource      =   "adoReg"
-         Height          =   315
+         Height          =   273
          ItemData        =   "frm_Cartao_Loja.frx":27DA
          Left            =   2445
          List            =   "frm_Cartao_Loja.frx":27E4
@@ -459,9 +462,39 @@ Begin VB.Form frm_Cartao_Loja
             Width           =   735
             _ExtentX        =   1294
             _ExtentY        =   1510
+            BTYPE           =   2
+            TX              =   ""
+            ENAB            =   -1  'True
+            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   7.47
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            COLTYPE         =   1
+            FOCUSR          =   -1  'True
+            BCOL            =   15790320
+            BCOLO           =   15790320
+            FCOL            =   0
+            FCOLO           =   0
+            MCOL            =   12632256
+            MPTR            =   1
+            MICON           =   "frm_Cartao_Loja.frx":27EE
+            PICN            =   "frm_Cartao_Loja.frx":280A
+            UMCOL           =   -1  'True
+            SOFT            =   0   'False
+            PICPOS          =   0
+            NGREY           =   0   'False
+            FX              =   0
+            HAND            =   0   'False
+            CHECK           =   0   'False
+            VALUE           =   0   'False
          End
          Begin MSDataListLib.DataCombo txt_logo_pesq 
-            Bindings        =   "frm_Cartao_Loja.frx":27EE
+            Bindings        =   "frm_Cartao_Loja.frx":2B24
             Height          =   286
             Left            =   2275
             TabIndex        =   30
@@ -479,7 +512,7 @@ Begin VB.Form frm_Cartao_Loja
             Object.DataMember      =   ""
          End
          Begin MSDataListLib.DataCombo txt_cartao_pesq 
-            Bindings        =   "frm_Cartao_Loja.frx":2804
+            Bindings        =   "frm_Cartao_Loja.frx":2B3A
             Height          =   286
             Left            =   2275
             TabIndex        =   32
@@ -536,7 +569,7 @@ Begin VB.Form frm_Cartao_Loja
          End
       End
       Begin MSDataGridLib.DataGrid grid 
-         Bindings        =   "frm_Cartao_Loja.frx":281C
+         Bindings        =   "frm_Cartao_Loja.frx":2B52
          Height          =   3975
          Left            =   -74880
          TabIndex        =   5
@@ -778,7 +811,7 @@ Begin VB.Form frm_Cartao_Loja
          FontSize        =   7.472
       End
       Begin MSDataListLib.DataCombo txt_Logo_add 
-         Bindings        =   "frm_Cartao_Loja.frx":2831
+         Bindings        =   "frm_Cartao_Loja.frx":2B67
          DataField       =   "ctl_loja"
          DataSource      =   "adoReg"
          Height          =   286
@@ -797,7 +830,7 @@ Begin VB.Form frm_Cartao_Loja
          Object.DataMember      =   ""
       End
       Begin MSDataListLib.DataCombo txt_Cartao_add 
-         Bindings        =   "frm_Cartao_Loja.frx":2847
+         Bindings        =   "frm_Cartao_Loja.frx":2B7D
          DataField       =   "ctl_tipoc"
          DataSource      =   "adoReg"
          Height          =   286
@@ -1003,7 +1036,7 @@ Begin VB.Form frm_Cartao_Loja
          FontSize        =   7.472
       End
       Begin MSDataListLib.DataCombo txt_bco_add 
-         Bindings        =   "frm_Cartao_Loja.frx":285F
+         Bindings        =   "frm_Cartao_Loja.frx":2B95
          DataField       =   "ctl_banco"
          DataSource      =   "adoReg"
          Height          =   286
@@ -1492,55 +1525,55 @@ Begin VB.Form frm_Cartao_Loja
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   13
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":2870
+            Picture         =   "frm_Cartao_Loja.frx":2BA6
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":2B8A
+            Picture         =   "frm_Cartao_Loja.frx":2EC0
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":2D64
+            Picture         =   "frm_Cartao_Loja.frx":309A
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":307E
+            Picture         =   "frm_Cartao_Loja.frx":33B4
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":3398
+            Picture         =   "frm_Cartao_Loja.frx":36CE
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":36B2
+            Picture         =   "frm_Cartao_Loja.frx":39E8
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":39CC
+            Picture         =   "frm_Cartao_Loja.frx":3D02
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":3BA6
+            Picture         =   "frm_Cartao_Loja.frx":3EDC
             Key             =   ""
          EndProperty
          BeginProperty ListImage9 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":3EC0
+            Picture         =   "frm_Cartao_Loja.frx":41F6
             Key             =   ""
          EndProperty
          BeginProperty ListImage10 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":409A
+            Picture         =   "frm_Cartao_Loja.frx":43D0
             Key             =   ""
          EndProperty
          BeginProperty ListImage11 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":43B4
+            Picture         =   "frm_Cartao_Loja.frx":46EA
             Key             =   ""
          EndProperty
          BeginProperty ListImage12 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":46CE
+            Picture         =   "frm_Cartao_Loja.frx":4A04
             Key             =   ""
          EndProperty
          BeginProperty ListImage13 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Cartao_Loja.frx":49E8
+            Picture         =   "frm_Cartao_Loja.frx":4D1E
             Key             =   ""
          EndProperty
       EndProperty
@@ -1995,7 +2028,7 @@ Private Sub TBar_ButtonClick(ByVal Button As ComctlLib.Button)
     Case "copy":
                   frm_Copy_CartLoja.Show
                   frm_Copy_CartLoja.txt_Logo = txt_Logo_add
-                  frm_Copy_CartLoja.txt_Cartao = txt_Cartao_add
+                  frm_Copy_CartLoja.txt_cartao = txt_Cartao_add
                   
     End Select
 End Sub

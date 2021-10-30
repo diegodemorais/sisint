@@ -267,7 +267,7 @@ sair:
 Dim W_VER As String
     W_VER = App.Major & "." & App.Minor & "." & App.Revision
     
-    MDI.StatusBar1.Panels(4).text = "Ver. " & W_VER
+    MDI.StatusBar1.Panels(4).Text = "Ver. " & W_VER
     MDI.timer_at.Enabled = w_FazerAT
     
     Unload frmSplash

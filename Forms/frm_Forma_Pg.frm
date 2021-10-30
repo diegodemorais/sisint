@@ -156,8 +156,10 @@ Begin VB.Form frm_Forma_Pg
       TabCaption(1)   =   "Grade"
       TabPicture(1)   =   "frm_Forma_Pg.frx":27BE
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Painel"
-      Tab(1).Control(1)=   "Grid"
+      Tab(1).Control(0)=   "Grid"
+      Tab(1).Control(0).Enabled=   0   'False
+      Tab(1).Control(1)=   "Painel"
+      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).ControlCount=   2
       Begin rdActiveText.ActiveText txt_Qt 
          DataField       =   "fpg_qt_parc"
@@ -186,7 +188,7 @@ Begin VB.Form frm_Forma_Pg
       Begin VB.ComboBox txt_Tipo 
          DataField       =   "fpg_Tipo"
          DataSource      =   "adoReg"
-         Height          =   315
+         Height          =   273
          ItemData        =   "frm_Forma_Pg.frx":27DA
          Left            =   5490
          List            =   "frm_Forma_Pg.frx":27E7
@@ -247,6 +249,36 @@ Begin VB.Form frm_Forma_Pg
             Width           =   735
             _ExtentX        =   1294
             _ExtentY        =   1510
+            BTYPE           =   2
+            TX              =   ""
+            ENAB            =   -1  'True
+            BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   7.47
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            COLTYPE         =   1
+            FOCUSR          =   -1  'True
+            BCOL            =   15790320
+            BCOLO           =   15790320
+            FCOL            =   0
+            FCOLO           =   0
+            MCOL            =   12632256
+            MPTR            =   1
+            MICON           =   "frm_Forma_Pg.frx":27F4
+            PICN            =   "frm_Forma_Pg.frx":2810
+            UMCOL           =   -1  'True
+            SOFT            =   0   'False
+            PICPOS          =   0
+            NGREY           =   0   'False
+            FX              =   0
+            HAND            =   0   'False
+            CHECK           =   0   'False
+            VALUE           =   0   'False
          End
          Begin VB.Label lblFieldLabel 
             Alignment       =   1  'Right Justify
@@ -271,7 +303,7 @@ Begin VB.Form frm_Forma_Pg
          End
       End
       Begin MSDataGridLib.DataGrid Grid 
-         Bindings        =   "frm_Forma_Pg.frx":27F4
+         Bindings        =   "frm_Forma_Pg.frx":2B2A
          Height          =   4080
          Left            =   -74280
          TabIndex        =   9
@@ -585,35 +617,35 @@ Begin VB.Form frm_Forma_Pg
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":2809
+            Picture         =   "frm_Forma_Pg.frx":2B3F
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":2B23
+            Picture         =   "frm_Forma_Pg.frx":2E59
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":2CFD
+            Picture         =   "frm_Forma_Pg.frx":3033
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3017
+            Picture         =   "frm_Forma_Pg.frx":334D
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3331
+            Picture         =   "frm_Forma_Pg.frx":3667
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":364B
+            Picture         =   "frm_Forma_Pg.frx":3981
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3965
+            Picture         =   "frm_Forma_Pg.frx":3C9B
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Forma_Pg.frx":3B3F
+            Picture         =   "frm_Forma_Pg.frx":3E75
             Key             =   ""
          EndProperty
       EndProperty

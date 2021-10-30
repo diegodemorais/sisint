@@ -240,13 +240,43 @@ Begin VB.Form frm_Rpt_Cod_Bon
       FontSize        =   7.472
    End
    Begin Skin_Button.ctr_Button bt_Pesq 
-      Height          =   840
-      Left            =   4335
+      Height          =   845
+      Left            =   4446
       TabIndex        =   4
-      Top             =   1155
-      Width           =   1155
-      _ExtentX        =   2037
+      Top             =   1157
+      Width           =   1040
+      _ExtentX        =   1845
       _ExtentY        =   1486
+      BTYPE           =   2
+      TX              =   ""
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   7.47
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "frm_Rpt_Cod_Bon.frx":27A2
+      PICN            =   "frm_Rpt_Cod_Bon.frx":27BE
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin Skin_Button.ctr_Button bt_RPT_OBS 
       Height          =   840
@@ -256,6 +286,36 @@ Begin VB.Form frm_Rpt_Cod_Bon
       Width           =   675
       _ExtentX        =   1198
       _ExtentY        =   1486
+      BTYPE           =   2
+      TX              =   ""
+      ENAB            =   -1  'True
+      BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   7.47
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      COLTYPE         =   1
+      FOCUSR          =   -1  'True
+      BCOL            =   15790320
+      BCOLO           =   15790320
+      FCOL            =   0
+      FCOLO           =   0
+      MCOL            =   12632256
+      MPTR            =   1
+      MICON           =   "frm_Rpt_Cod_Bon.frx":2D01
+      PICN            =   "frm_Rpt_Cod_Bon.frx":2D1D
+      UMCOL           =   -1  'True
+      SOFT            =   0   'False
+      PICPOS          =   0
+      NGREY           =   0   'False
+      FX              =   0
+      HAND            =   0   'False
+      CHECK           =   0   'False
+      VALUE           =   0   'False
    End
    Begin VB.Shape Shape2 
       Height          =   450
@@ -276,35 +336,35 @@ Begin VB.Form frm_Rpt_Cod_Bon
       BeginProperty Images {0713E8C2-850A-101B-AFC0-4210102A8DA7} 
          NumListImages   =   8
          BeginProperty ListImage1 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":27A2
+            Picture         =   "frm_Rpt_Cod_Bon.frx":3037
             Key             =   ""
          EndProperty
          BeginProperty ListImage2 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":2ABC
+            Picture         =   "frm_Rpt_Cod_Bon.frx":3351
             Key             =   ""
          EndProperty
          BeginProperty ListImage3 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":2C96
+            Picture         =   "frm_Rpt_Cod_Bon.frx":352B
             Key             =   ""
          EndProperty
          BeginProperty ListImage4 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":2FB0
+            Picture         =   "frm_Rpt_Cod_Bon.frx":3845
             Key             =   ""
          EndProperty
          BeginProperty ListImage5 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":32CA
+            Picture         =   "frm_Rpt_Cod_Bon.frx":3B5F
             Key             =   ""
          EndProperty
          BeginProperty ListImage6 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":35E4
+            Picture         =   "frm_Rpt_Cod_Bon.frx":3E79
             Key             =   ""
          EndProperty
          BeginProperty ListImage7 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":38FE
+            Picture         =   "frm_Rpt_Cod_Bon.frx":4193
             Key             =   ""
          EndProperty
          BeginProperty ListImage8 {0713E8C3-850A-101B-AFC0-4210102A8DA7} 
-            Picture         =   "frm_Rpt_Cod_Bon.frx":3AD8
+            Picture         =   "frm_Rpt_Cod_Bon.frx":436D
             Key             =   ""
          EndProperty
       EndProperty
