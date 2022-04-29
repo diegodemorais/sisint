@@ -23,8 +23,8 @@ Begin VB.MDIForm MDI
       Width           =   13468
       _ExtentX        =   23747
       _ExtentY        =   1438
-      ButtonWidth     =   2302
-      ButtonHeight    =   1429
+      ButtonWidth     =   2228
+      ButtonHeight    =   1342
       ImageList       =   "ImageList1"
       _Version        =   327682
       BeginProperty Buttons {0713E452-850A-101B-AFC0-4210102A8DA7} 
@@ -112,21 +112,21 @@ Begin VB.MDIForm MDI
          EndProperty
       EndProperty
       Begin Skin_Button.ctr_Button btnSorocredFicha 
-         Height          =   765
-         Left            =   10200
+         Height          =   741
+         Left            =   10179
          TabIndex        =   6
          TabStop         =   0   'False
          Top             =   0
          Visible         =   0   'False
-         Width           =   1110
-         _ExtentX        =   1965
-         _ExtentY        =   1342
+         Width           =   1339
+         _ExtentX        =   2372
+         _ExtentY        =   1318
          BTYPE           =   2
          TX              =   "Sorocred Ficha"
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Name            =   "Arial"
+            Size            =   8.8302
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -153,21 +153,21 @@ Begin VB.MDIForm MDI
          VALUE           =   0   'False
       End
       Begin Skin_Button.ctr_Button btn_TotRec 
-         Height          =   765
-         Left            =   11280
+         Height          =   741
+         Left            =   11466
          TabIndex        =   5
          TabStop         =   0   'False
          Top             =   0
          Visible         =   0   'False
-         Width           =   1110
-         _ExtentX        =   1965
-         _ExtentY        =   1342
+         Width           =   1105
+         _ExtentX        =   1941
+         _ExtentY        =   1318
          BTYPE           =   2
          TX              =   "Total Receber"
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Name            =   "Arial"
+            Size            =   8.8302
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -208,7 +208,7 @@ Begin VB.MDIForm MDI
          ENAB            =   -1  'True
          BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "MS Sans Serif"
-            Size            =   7.47
+            Size            =   7.4717
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -384,7 +384,7 @@ Begin VB.MDIForm MDI
             AutoSize        =   2
             Object.Width           =   1054
             MinWidth        =   1058
-            TextSave        =   "08:40"
+            TextSave        =   "08:59"
             Key             =   ""
             Object.Tag             =   ""
          EndProperty
