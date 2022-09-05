@@ -18,7 +18,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandTimeout  =   80000
       ConnectionTimeout=   100000
       SourceOfData    =   3
-      ConnectionSource=   $"de.dsx":0000
+      ConnectionSource=   "Provider=MSDASQL.1;Password=poter12poter12;Persist Security Info=True;User ID=radica40_integrado;Data Source=SisInt"
       Expanded        =   -1  'True
       QuoteChar       =   96
       SeparatorChar   =   46
@@ -60,7 +60,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "tab_cartao_loja"
       CommDispId      =   1004
       RsDispId        =   1055
-      CommandText     =   $"de.dsx":00D0
+      CommandText     =   $"de.dsx":0000
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       Locktype        =   2
@@ -268,7 +268,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "tab_tipo_forma"
       CommDispId      =   1014
       RsDispId        =   1046
-      CommandText     =   $"de.dsx":0183
+      CommandText     =   $"de.dsx":00B3
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       Locktype        =   2
@@ -550,7 +550,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "Sql_Cartao_Loja"
       CommDispId      =   1170
       RsDispId        =   1210
-      CommandText     =   $"de.dsx":02E5
+      CommandText     =   $"de.dsx":0215
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       Locktype        =   2
@@ -711,7 +711,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "Sql_Tipo_Forma"
       CommDispId      =   1173
       RsDispId        =   1175
-      CommandText     =   $"de.dsx":0697
+      CommandText     =   $"de.dsx":05C7
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       IsRSReturning   =   -1  'True
@@ -759,7 +759,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "Command1"
       CommDispId      =   1177
       RsDispId        =   -1
-      CommandText     =   $"de.dsx":0797
+      CommandText     =   $"de.dsx":06C7
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       NumFields       =   0
@@ -772,7 +772,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "Command2"
       CommDispId      =   1179
       RsDispId        =   -1
-      CommandText     =   $"de.dsx":0D65
+      CommandText     =   $"de.dsx":0C95
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       NumFields       =   0
@@ -785,7 +785,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "total_diario_a_receber"
       CommDispId      =   1183
       RsDispId        =   -1
-      CommandText     =   $"de.dsx":0E4E
+      CommandText     =   $"de.dsx":0D7E
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       NumFields       =   0
@@ -818,7 +818,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} de
       CommandName     =   "sqlSorocredFicha"
       CommDispId      =   1185
       RsDispId        =   1209
-      CommandText     =   $"de.dsx":0F7A
+      CommandText     =   $"de.dsx":0EAA
       ActiveConnectionName=   "cncCartao"
       CommandType     =   1
       Grouping        =   -1  'True
