@@ -26,7 +26,7 @@ Public w_Usu_Rpt As String
 Public strConectaMySQL As String, strConectaMySQL2 As String
 
 
-Declare Function GetPrivateProfileString Lib "Kernel32" Alias _
+Declare Function GetPrivateProfileString Lib "kernel32" Alias _
 "GetPrivateProfileStringA" (ByVal lpApplicationName As String, _
 ByVal lpKeyName As String, ByVal lpDefault As String, ByVal _
 lpReturnedString As String, ByVal nSize As Long, ByVal lpFileName _
@@ -238,7 +238,7 @@ End Function
 
 
 Public Sub Put_System_CNC()
-Dim wbd, wftp
+Dim wbd, wftp, wbdodbc
 
     
     'bd="0-host | 1-user | 2-pw | 3database"
@@ -246,6 +246,8 @@ Dim wbd, wftp
     
     'ftp = "0-host | 1-user | 2-pw | 3-dir"
     wftp = Split(GetIni("SYSTEM", "ftp", App.Path & "\System_cnc.INI"), "|")
+    
+    wbdodbc = GetIni("SYSTEM", "bdodbc", App.Path & "\System_cnc.INI")
     
     'Dados Banco Dados
     strBDHost = wbd(0)
@@ -259,11 +261,17 @@ Dim wbd, wftp
     strFTPPassW = wftp(2)
     strFTPDir = wftp(3)
     
-    strConectaMySQL = "driver={MySQL ODBC 3.51 Driver}; server=" & strBDHost & _
-                      "; uid=" & strBDUser & _
-                      ";Pwd=" & strBDPW & _
-                      ";database=" & strBDDataBase
-
+   If Len(wbdodbc) > 0 Then
+        strConectaMySQL = "Provider=MSDASQL.1;Persist Security Info=true;Data Source=" & wbdodbc
+   Else
+        strConectaMySQL = "DRIVER={MySQL ODBC 3.51 Driver};SERVER=" & strBDHost & _
+                      ";PORT=3306" & _
+                      ";DATABASE=" & strBDDataBase & _
+                      "; USER=" & strBDUser & _
+                      ";PASSWORD=" & strBDPW & _
+                      ";OPTION=3;"
+   End If
+   
 
     strConectaMySQL2 = "Provider=MSDASQL.1;Persist Security Info=False; " & _
                       "User ID=rpaps_2;Data Source=odbc_cartao"
