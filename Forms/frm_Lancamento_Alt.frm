@@ -1851,6 +1851,18 @@ On Error GoTo err1
         ElseIf (Day(txt_dt_vnd) >= 23 And Day(txt_dt_vnd) <= 31) Then
             w_Dt = "30/" & Format(CVDate(txt_dt_vnd) + 19, "mm/yyyy")
         End If
+    ElseIf txt_tipoC = 31 Then 'Brasil Card
+        If (Day(txt_dt_vnd) >= 1 And Day(txt_dt_vnd) <= 6) Then
+            w_Dt = "13/" & Format(CVDate(txt_dt_vnd) + 45, "mm/yyyy")
+        ElseIf (Day(txt_dt_vnd) >= 7 And Day(txt_dt_vnd) <= 12) Then
+            w_Dt = "20/" & Format(CVDate(txt_dt_vnd) + 32, "mm/yyyy")
+        ElseIf (Day(txt_dt_vnd) >= 13 And Day(txt_dt_vnd) <= 18) Then
+            w_Dt = "26/" & Format(CVDate(txt_dt_vnd) + 32, "mm/yyyy")
+        ElseIf (Day(txt_dt_vnd) >= 19 And Day(txt_dt_vnd) <= 24) Then
+            w_Dt = "03/" & Format(CVDate(txt_dt_vnd) + 45, "mm/yyyy")
+        ElseIf (Day(txt_dt_vnd) >= 25 And Day(txt_dt_vnd) <= 31) Then
+            w_Dt = "08/" & Format(CVDate(txt_dt_vnd) + 45, "mm/yyyy")
+        End If
     Else
         w_Dt = CVDate(txt_dt_vnd)
     End If
